@@ -1,0 +1,12 @@
+// buttons
+
+.btn {
+  all: unset;
+  display: block;
+  padding: 20px 15px;
+  &--primary {
+    background-color: none;
+    color: none;
+    @include transition($args);
+  }
+}

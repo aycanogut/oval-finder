@@ -1,0 +1,277 @@
+// icons
+
+// !icon-variables
+
+$icomoon-font-family: "oval-job-finder" !default;
+$icomoon-font-path: "../assets/fonts" !default;
+
+$oval-approve: "\e900";
+$oval-arrow-down: "\e901";
+$oval-arrow-left: "\e902";
+$oval-arrow-right: "\e903";
+$oval-bookmark: "\e904";
+$oval-business: "\e905";
+$oval-check-fill: "\e906";
+$oval-check-rounded: "\e907";
+$oval-check: "\e908";
+$oval-employees: "\e909";
+$oval-facebook-path1: "\e90a";
+$oval-facebook-path2: "\e90b";
+$oval-flag: "\e90c";
+$oval-like: "\e90d";
+$oval-linkedin-path1: "\e90e";
+$oval-linkedin-path2: "\e90f";
+$oval-linkedin-path3: "\e910";
+$oval-linkedin-path4: "\e911";
+$oval-location: "\e912";
+$oval-play-path1: "\e913";
+$oval-play-path2: "\e914";
+$oval-quotation: "\e915";
+$oval-report: "\e916";
+$oval-right: "\e917";
+$oval-salary: "\e918";
+$oval-search: "\e919";
+$oval-share: "\e91a";
+$oval-star-top: "\e91b";
+$oval-star: "\e91c";
+$oval-time: "\e91d";
+$oval-twitter-path1: "\e91e";
+$oval-twitter-path2: "\e91f";
+$oval-website: "\e920";
+
+// !font-face
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eieasb");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eieasb#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?eieasb")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?eieasb")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?eieasb##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="oval"],
+[class*=" oval"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.oval-approve {
+  &:before {
+    content: $oval-approve;
+    color: #b3b1b7;
+  }
+}
+.oval-arrow-down {
+  &:before {
+    content: $oval-arrow-down;
+    color: #b3b1b7;
+  }
+}
+.oval-arrow-left {
+  &:before {
+    content: $oval-arrow-left;
+    color: #64626a;
+  }
+}
+.oval-arrow-right {
+  &:before {
+    content: $oval-arrow-right;
+    color: #64626a;
+  }
+}
+.oval-bookmark {
+  &:before {
+    content: $oval-bookmark;
+    color: #8e8c95;
+  }
+}
+.oval-business {
+  &:before {
+    content: $oval-business;
+    color: #b3b1b7;
+  }
+}
+.oval-check-fill {
+  &:before {
+    content: $oval-check-fill;
+    color: #00d095;
+  }
+}
+.oval-check-rounded {
+  &:before {
+    content: $oval-check-rounded;
+    color: #39b163;
+  }
+}
+.oval-check {
+  &:before {
+    content: $oval-check;
+  }
+}
+.oval-employees {
+  &:before {
+    content: $oval-employees;
+    color: #b3b1b7;
+  }
+}
+.oval-facebook .path1 {
+  &:before {
+    content: $oval-facebook-path1;
+    color: rgb(59, 89, 152);
+  }
+}
+.oval-facebook .path2 {
+  &:before {
+    content: $oval-facebook-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-flag {
+  &:before {
+    content: $oval-flag;
+    color: #b3b1b7;
+  }
+}
+.oval-like {
+  &:before {
+    content: $oval-like;
+    color: #39b163;
+  }
+}
+.oval-linkedin .path1 {
+  &:before {
+    content: $oval-linkedin-path1;
+    color: rgb(9, 118, 180);
+  }
+}
+.oval-linkedin .path2 {
+  &:before {
+    content: $oval-linkedin-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-linkedin .path3 {
+  &:before {
+    content: $oval-linkedin-path3;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-linkedin .path4 {
+  &:before {
+    content: $oval-linkedin-path4;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-location {
+  &:before {
+    content: $oval-location;
+    color: #b3b1b7;
+  }
+}
+.oval-play .path1 {
+  &:before {
+    content: $oval-play-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-play .path2 {
+  &:before {
+    content: $oval-play-path2;
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+}
+.oval-quotation {
+  &:before {
+    content: $oval-quotation;
+    color: #ffcb84;
+  }
+}
+.oval-report {
+  &:before {
+    content: $oval-report;
+    color: #8e8c95;
+  }
+}
+.oval-right {
+  &:before {
+    content: $oval-right;
+  }
+}
+.oval-salary {
+  &:before {
+    content: $oval-salary;
+    color: #b3b1b7;
+  }
+}
+.oval-search {
+  &:before {
+    content: $oval-search;
+    color: #b3b1b7;
+  }
+}
+.oval-share {
+  &:before {
+    content: $oval-share;
+    color: #8e8c95;
+  }
+}
+.oval-star-top {
+  &:before {
+    content: $oval-star-top;
+    color: #b3b1b7;
+  }
+}
+.oval-star {
+  &:before {
+    content: $oval-star;
+    color: #ffb353;
+  }
+}
+.oval-time {
+  &:before {
+    content: $oval-time;
+    color: #b3b1b7;
+  }
+}
+.oval-twitter .path1 {
+  &:before {
+    content: $oval-twitter-path1;
+    color: rgb(85, 172, 238);
+  }
+}
+.oval-twitter .path2 {
+  &:before {
+    content: $oval-twitter-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.oval-website {
+  &:before {
+    content: $oval-website;
+    color: #b3b1b7;
+  }
+}

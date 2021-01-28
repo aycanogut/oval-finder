@@ -1,0 +1,49 @@
+// homepage
+
+.text1 {
+  @include font(aileron, regular);
+}
+
+.text2 {
+  @include font(inter, regular);
+}
+
+.text3 {
+  @include font(inter, medium);
+}
+
+.text4 {
+  @include font(inter, semibold);
+}
+
+.text5 {
+  @include font(inter, bold);
+}
+
+.text6 {
+  @include font(manrope, extralight);
+}
+
+.text7 {
+  @include font(manrope, light);
+}
+
+.text8 {
+  @include font(manrope, semibold);
+}
+
+.text9 {
+  @include font(manrope, bold);
+}
+
+.text10 {
+  @include font(manrope, extrabold);
+}
+
+.text11 {
+  @include font(poppins, semibold);
+}
+
+.text12 {
+  @include font(roboto, regular);
+}
