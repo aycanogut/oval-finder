@@ -1,33 +1,75 @@
 // typo
 
-// !font-family
+h1 {
+  @include font(manrope, semibold);
+  font-size: $font-64;
+}
 
-// aileron
-$font-aileron: "Aileron";
+h2 {
+  @include font(manrope, semibold);
+  font-size: $font-48;
+}
 
-// inter
-$font-inter-regular: "Inter Regular";
-$font-inter-medium: "Inter Medium";
-$font-inter-semibold: "Inter SemiBold";
-$font-inter-bold: "Inter Bold";
+h3 {
+  @include font(manrope, semibold);
+  font-size: $font-32;
+}
 
-// manrope
-$font-manrope-extralight: "Manrope ExtraLight";
-$font-manrope-light: "Manrope Light";
-$font-manrope-semibold: "Manrope SemiBold";
-$font-manrope-bold: "Manrope Bold";
-$font-manrope-extrabold: "Manrope ExtraBold";
+h1 + p {
+  @include font(inter, regular);
+  font-size: $font-16;
+}
 
-// poppins
-$font-poppins: "Poppins SemiBold";
+// !nav
+.navbar {
+  font-size: $font-14;
+  &__menu-left {
+    @include font(inter, medium);
+  }
+  &__menu-right {
+    @include font(inter, semibold);
+  }
+}
 
-// roboto
-$font-roboto: "Roboto";
+// !header
+.header {
+  &__search-box {
+    &__top {
+      @include font(manrope, extrabold);
+      font-size: $font-12;
+    }
+    &__searchInput {
+      @include font(inter, regular);
+      font-size: $font-18;
+    }
+    &__btn {
+      @include font(inter, bold);
+      font-size: $font-18;
+    }
+  }
+}
 
-$extralight: 200;
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semibold: 600;
-$bold: 700;
-$extrabold: 800;
+// !sidebar
+.filter {
+  &__title {
+    @include font(manrope, extrabold);
+    font-size: $font-12;
+  }
+}
+
+// !!pricing
+.pricing {
+  h2 + p {
+    @include font(aileron, regular);
+    font-size: $font-16;
+  }
+}
+
+// !footer
+footer {
+  &__copyright,
+  &__bottom {
+    @include font(inter, regular);
+    font-size: $font-12;
+  }
+}

@@ -1,21 +1,23 @@
 // global stylesheet
 
 // tools
-@import "01-tools/bootstrap";
 @import "01-tools/normalize";
+@import "01-tools/bootstrap";
 
 // variables
 @import "02-variables/colors";
 @import "02-variables/icons";
-@import "02-variables/typo";
 @import "02-variables/font-stack";
 @import "02-variables/font-face";
+@import "02-variables/typo";
 @import "02-variables/mixin";
 
 // components
 @import "03-components/button";
 @import "03-components/card";
 @import "03-components/icon";
+@import "03-components/search-bar";
+@import "03-components/filter";
 
 // base
 @import "04-base/base";
