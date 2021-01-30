@@ -20,6 +20,22 @@ h1 + p {
   font-size: $font-16;
 }
 
+// !search-box
+.search-box {
+  &__top {
+    @include font(manrope, extrabold);
+    font-size: $font-12;
+  }
+  &__searchInput {
+    @include font(inter, regular);
+    font-size: $font-18;
+  }
+  &__btn {
+    @include font(inter, bold);
+    font-size: $font-18;
+  }
+}
+
 // !nav
 .navbar {
   font-size: $font-14;
@@ -33,20 +49,6 @@ h1 + p {
 
 // !header
 .header {
-  &__search-box {
-    &__top {
-      @include font(manrope, extrabold);
-      font-size: $font-12;
-    }
-    &__searchInput {
-      @include font(inter, regular);
-      font-size: $font-18;
-    }
-    &__btn {
-      @include font(inter, bold);
-      font-size: $font-18;
-    }
-  }
 }
 
 // !sidebar

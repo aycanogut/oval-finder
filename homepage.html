@@ -14,7 +14,7 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <img src="/assets/img/oval.svg" alt="">
+    <div class="navbar-brand"> <img src="../assets/img/oval.svg" alt=""></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,513 @@
         <li class="navbar__menu-right">
           <a class="navbar__link" href="#">Sign In</a>
         </li>
-        <li class="navbar__btn navbar__menu-right ml-auto">
+        <li class="navbar__btn navbar__menu-right">
           <a class="btn_def btn_def--nav">Post A Job</a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <main>
+
+    <section class="header">
+
+      <header class="header">
+        <h1 class="hero__header">Find the Job
+          that Fits Your Life</h1>
+        <p class="hero__text">Millions of people are searching for jobs, salary information, company reviews, and
+          interview questions. See what others are looking for on Oval today.</p>
+      </header>
+
+      <form class="search-box">
+        <div class="search-box__top">
+          <a href="#" class="search-box__top__btn">Jobs</a>
+          <a href="#" class="search-box__top__btn">Employers</a>
+        </div>
+        <div class="search-box__searchInput">
+          <i class="oval-search"></i><input type="text" class="search" placeholder="Job title or keyword">
+          <i class="oval-location"></i><input type="text" class="search" placeholder="City, state or zip">
+          <button class="btn_def btn_def--search-box button" type="submit">Find Job</button>
+        </div>
+
+      </form>
+
+      <section class="header__trending">
+        <div class="header__trending__left">
+          <p>Trending Searches</p>
+          <a href="#">View more jobs</a>
+        </div>
+        <div class="header__trending__right d-flex">
+          <a href="#" class="btn_def btn_def--trending">work from home</a>
+          <a href="#" class="btn_def btn_def--trending">no experince</a>
+          <a href="#" class="btn_def btn_def--trending">remote work</a>
+          <a href="#" class="btn_def btn_def--trending">healthcare job</a>
+          <a href="#" class="btn_def btn_def--trending">online job</a>
+          <a href="#" class="btn_def btn_def--trending">no life</a>
+        </div>
+      </section>
+    </section>
+
+    <aside class="how-works">
+      <p>How Oval Works for You</p>
+      <ul class="d-flex">
+        <li>
+          <p><span>1</span>Create Oval Profile <i class="oval-right"></i></p>
+        </li>
+        <li>
+          <p><span>2</span>Find job you love<i class="oval-right"></i></p>
+        </li>
+        <li>
+          <p><span>3</span>Get hired</p>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="daily">
+      <header class="daily__heading">
+        <h2>New jobs daily you might love</h2>
+      </header>
+
+      <div class="daily__category btn-group">
+        <span>Jobs Category : </span>
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Internet & Technology
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </div>
+
+      <section class="daily__job-board">
+        <div class="row">
+
+          <div class="col-4">
+
+            <section class="daily__cards">
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/adobe.svg" alt="">
+                  <header>Adobe</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>San Jose, CA</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/spotify.svg" alt="">
+                  <header>Spotify</header>
+                  <aside>4.8 <span> <i class="oval-star-solid"></i>
+                      <i class="oval-star-solid"></i>
+                      <i class="oval-star-solid"></i>
+                      <i class="oval-star-solid"></i>
+                      <i class="oval-star-solid"></i></span></aside>
+                  <div class="description">
+                    <span><i class="oval-location"></i>Stockholm, Sweden</span>
+                    <span><i class="oval-business"></i>Internet</span>
+                  </div>
+                </section>
+
+                <section class=card__body>
+                  <p>At Spotify, we're focused on providing the right music for every moment. We've connected millions
+                    of people to their favorite songs and created a service that people use to discover and share music
+                    they love.</p>
+                </section>
+                <section class="card__bottom">
+                  <p>5 jobs openings,</p> <a href="#">Apply Now <span><i class="oval-arrow-right"></i></span></a>
+                </section>
+              </article>
+
+            </section>
+
+          </div>
+
+          <div class="col-4">
+
+            <section class="daily__cards">
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/mercedes.svg" alt="">
+                  <header>Mercedes-Benz</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>Head of Third Party Strategy and Deals, Go-to-Market</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>Aurora, CO</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/microsoft.svg" alt="">
+                  <header>Microsoft</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>G Suite Specialist, Google Cloud Customer Engineering</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>Atlanta,GA</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/ebay.svg" alt="">
+                  <header>Ebay</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>Austin TX</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+            </section>
+
+          </div>
+
+          <div class="col-4">
+
+            <section class="daily__cards">
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/dropbox.svg" alt="">
+                  <header>Dropbox</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>Marketing Associate Director - Consumer Experience</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>Lowell, MA</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+              <article class="card card--daily">
+                <section class="card__top">
+                  <img class="card__image" src="../assets/img/airbnb.svg" alt="">
+                  <header>Airbnb</header>
+                  <aside>3 days ago</aside>
+                </section>
+                <section class=card__body>
+                  <p>Brand Marketing Manager – Services Portfolio</p>
+                </section>
+                <section class="card__bottom">
+                  <aside>
+                    <span><i class="oval-location"></i>Aurora, CO</span>
+                    <span><i class="oval-time"></i>Fulltime</span>
+                  </aside>
+                </section>
+              </article>
+
+
+            </section>
+
+            <aside class="daily__explore">
+              <span>+ 148</span>
+              <p>Daily jobs : </p><a href="#">Explore more<i class="oval-arrow-right"></i></a>
+            </aside>
+
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+    <section class="testimonial">
+
+      <div id=" carousel-homepage" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-homepage" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-homepage" data-slide-to="1"></li>
+          <li data-target="#carousel-homepage" data-slide-to="2"></li>
+          <li data-target="#carousel-homepage" data-slide-to="3"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <article class="card card--testimonial">
+              <span><i class="oval-quotation"></i></span>
+              <h3>Moving to a new place is scary, but using Oval to find a job within one week of moving in has been
+                such a
+                blessing to me and my family!</h3>
+              <aside><span>James Lyons, </span>Finance</aside>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="card card--testimonial">
+              <span><i class="oval-quotation"></i></span>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore quidem amet ab assumenda
+                vitae,
+                reprehenderit officia odit at nostrum placeat nam, accusamus eos molestias in et omnis facilis
+                doloremque.
+              </h3>
+              <aside><span>Aycan ÖĞÜT, </span>Fiance</aside>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="card card--testimonial">
+              <span><i class="oval-quotation"></i></span>
+              <h3>I actually don't like thinking. I think people think I like to think a lot. And I don't. I do not like
+                to
+                think at all.</h3>
+              <aside><span>Kanye West, </span>Thinker</aside>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="card card--testimonial">
+              <span><i class="oval-quotation"></i></span>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolore quidem amet ab assumenda
+                vitae,
+                reprehenderit officia odit at nostrum placeat nam, accusamus eos molestias in et omnis facilis
+                doloremque.
+              </h3>
+              <aside><span>Aycan ÖĞÜT, </span>Fiance</aside>
+            </article>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carousel-homepage" role="button" data-slide="prev">
+          <span class="oval-arrow-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carousel-homepage" role="button" data-slide="next">
+          <span class="oval-arrow-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+
+
+
+    </section>
+
+    <section class="clients">
+      <header class="clients__heading">
+        <h2>Companies we’ve helped to hire the best candidate</h2>
+      </header>
+
+      <img src="../assets/img/img-clients.png" alt="">
+
+      <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+
+      <a href="#">Post a Job</a>
+
+      <div class="row">
+
+        <div class="col-3">
+          <article class="card card--clients">
+            <img src="../assets/img/uber.svg" alt="">
+            <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+          </article>
+        </div>
+
+        <div class="col-3">
+          <article class="card card--clients">
+            <img src="../assets/img/shopify.svg" alt="">
+            <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+          </article>
+        </div>
+
+        <div class="col-3">
+          <article class="card card--clients">
+            <img src="../assets/img/airbnb-logo.svg" alt="">
+            <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+          </article>
+        </div>
+
+      </div>
+
+      <section class="clients__bottom">
+        <div class="clients__company-logos">
+          <ul class="d-flex">
+            <li>
+              <a href="#">
+                <img src="../assets/img/microsoft-logo.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/google.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/ge.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/automatic.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/philips.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/intel.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>Some of the many companies that rely on Oval for hiring.</p>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <img src="/assets/img/oval.svg" alt="" class="footer__brand">
+      <span>© 2019 Oval</span>
+
+      <div class="row">
+        <div class="col-2">
+          <ul>
+            <li>
+              <p>For Job Seekers</p>
+            </li>
+            <li><a href="#">Search Jobs</a></li>
+            <li><a href="#">Browse Jobs</a></li>
+            <li><a href="#">Salaries</a></li>
+            <li><a href="#">Job Seeker Reviews</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Create Free Account</a></li>
+            <li><a href="#">Job Seeker Support</a></li>
+            <li><a href="#">Trust and Safety</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <p>For Employers</p>
+            </li>
+            <li><a href="#">Post a Job Now</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Job Sites</a></li>
+            <li><a href="#">Oval Reviews</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Search Resumes</a></li>
+            <li><a href="#">New Account Help</a></li>
+            <li><a href="#">Employer Support</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <p>Industry Solutions</p>
+            </li>
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Construction</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <p>Partner with Us</p>
+            </li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Job Board API</a></li>
+            <li><a href="#">Email Alert Program</a></li>
+            <li><a href="#">Reseller Program</a></li>
+            <li><a href="#">Job Board Software</a></li>
+            <li><a href="#">ATS Integrations</a></li>
+            <li><a href="#">Newspaper Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <p>Company</p>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Oval.org</a></li>
+            <li><a href="#">Oval ID</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <section class="footer__bottom">
+
+        <section class="footer__social-icons">
+          <img src="/assets/icons/icon-svg/twitter.svg" alt="">
+          <img src="/assets/icons/icon-svg/facebook.svg" alt="">
+          <img src="/assets/icons/icon-svg/linkedin.svg" alt="">
+        </section>
+
+        <section class="footer__bottom-links">
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Trust & Safety</a></li>
+          </ul>
+        </section>
+
+        <aside class="footer__language-bar">
+          <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            EN
+          </button>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">DE</a>
+            <a class="dropdown-item" href="#">IT</a>
+            <a class="dropdown-item" href="#">FR</a>
+          </div>
+        </aside>
+
+
+      </section>
+    </footer>
+  </main>
+
 
 
 
@@ -51,6 +552,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>

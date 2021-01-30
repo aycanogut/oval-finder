@@ -5,18 +5,22 @@
 $icomoon-font-family: "oval-job-finder" !default;
 $icomoon-font-path: "../assets/fonts" !default;
 
-$oval-approve: "\e900";
-$oval-arrow-down: "\e901";
-$oval-arrow-left: "\e902";
-$oval-arrow-right: "\e903";
-$oval-bookmark: "\e904";
-$oval-business: "\e905";
-$oval-check-fill: "\e906";
-$oval-check-rounded: "\e907";
-$oval-check: "\e908";
-$oval-employees: "\e909";
-$oval-facebook-path1: "\e90a";
-$oval-facebook-path2: "\e90b";
+$oval-dropdown: "\e923";
+$oval-star-half: "\e91b";
+$oval-star-solid: "\e91c";
+$oval-right: "\e900";
+$oval-approve: "\e901";
+$oval-arrow-down: "\e902";
+$oval-arrow-left: "\e903";
+$oval-arrow-right: "\e904";
+$oval-bookmark: "\e905";
+$oval-business: "\e906";
+$oval-check-fill: "\e907";
+$oval-check-rounded: "\e908";
+$oval-check: "\e909";
+$oval-employees: "\e90a";
+$oval-facebook-path1: "\e90b";
+$oval-facebook-path2: "\e917";
 $oval-flag: "\e90c";
 $oval-like: "\e90d";
 $oval-linkedin-path1: "\e90e";
@@ -28,12 +32,9 @@ $oval-play-path1: "\e913";
 $oval-play-path2: "\e914";
 $oval-quotation: "\e915";
 $oval-report: "\e916";
-$oval-right: "\e917";
 $oval-salary: "\e918";
 $oval-search: "\e919";
 $oval-share: "\e91a";
-$oval-star-top: "\e91b";
-$oval-star: "\e91c";
 $oval-time: "\e91d";
 $oval-twitter-path1: "\e91e";
 $oval-twitter-path2: "\e91f";
@@ -73,6 +74,21 @@ $oval-website: "\e920";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.oval-dropdown {
+  &:before {
+    content: $oval-dropdown;
+  }
+}
+.oval-star-half {
+  &:before {
+    content: $oval-star-half;
+  }
+}
+.oval-star-solid {
+  &:before {
+    content: $oval-star-solid;
+  }
+}
 .oval-approve {
   &:before {
     content: $oval-approve;
@@ -236,18 +252,6 @@ $oval-website: "\e920";
   &:before {
     content: $oval-share;
     color: #8e8c95;
-  }
-}
-.oval-star-top {
-  &:before {
-    content: $oval-star-top;
-    color: #b3b1b7;
-  }
-}
-.oval-star {
-  &:before {
-    content: $oval-star;
-    color: #ffb353;
   }
 }
 .oval-time {

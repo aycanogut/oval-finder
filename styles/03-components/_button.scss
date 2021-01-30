@@ -1,12 +1,13 @@
 // buttons
 
-.btn {
-  all: unset;
+.btn_def {
   display: block;
   padding: 20px 15px;
-  &--primary {
-    background-color: none;
-    color: none;
-    @include transition($args);
+  @include transition($args);
+  &--nav {
+  }
+  &----search-box {
+  }
+  &--trending {
   }
 }
