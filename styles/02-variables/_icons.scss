@@ -5,6 +5,10 @@
 $icomoon-font-family: "oval-job-finder" !default;
 $icomoon-font-path: "../assets/fonts" !default;
 
+$oval-check-filled: "\e907";
+$oval-check-solid: "\e909";
+$oval-dislike: "\e921";
+$oval-star-outline: "\e922";
 $oval-dropdown: "\e923";
 $oval-star-half: "\e91b";
 $oval-star-solid: "\e91c";
@@ -15,9 +19,7 @@ $oval-arrow-left: "\e903";
 $oval-arrow-right: "\e904";
 $oval-bookmark: "\e905";
 $oval-business: "\e906";
-$oval-check-fill: "\e907";
 $oval-check-rounded: "\e908";
-$oval-check: "\e909";
 $oval-employees: "\e90a";
 $oval-facebook-path1: "\e90b";
 $oval-facebook-path2: "\e917";
@@ -74,6 +76,28 @@ $oval-website: "\e920";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.oval-check-filled {
+  &:before {
+    content: $oval-check-filled;
+  }
+}
+.oval-check-solid {
+  &:before {
+    content: $oval-check-solid;
+  }
+}
+.oval-dislike {
+  &:before {
+    content: $oval-dislike;
+    color: #ff6161;
+  }
+}
+.oval-star-outline {
+  &:before {
+    content: $oval-star-outline;
+  }
+}
+
 .oval-dropdown {
   &:before {
     content: $oval-dropdown;
@@ -125,23 +149,14 @@ $oval-website: "\e920";
     color: #b3b1b7;
   }
 }
-.oval-check-fill {
-  &:before {
-    content: $oval-check-fill;
-    color: #00d095;
-  }
-}
+
 .oval-check-rounded {
   &:before {
     content: $oval-check-rounded;
     color: #39b163;
   }
 }
-.oval-check {
-  &:before {
-    content: $oval-check;
-  }
-}
+
 .oval-employees {
   &:before {
     content: $oval-employees;

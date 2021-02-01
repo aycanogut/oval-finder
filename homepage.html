@@ -8,46 +8,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- User CSS -->
-  <link rel="stylesheet" href="styles/index.css">
+  <link href="styles/index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="navbar-brand"> <img src="../assets/img/oval.svg" alt=""></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar__list navbar-nav">
-          <li class="navbar__menu-left">
-            <a class="navbar__link" href="#">For Job Seekers</a>
-          </li>
-          <li class="navbar__menu-left">
-            <a class="navbar__link" href="#">For Employers</a>
-          </li>
-          <li class="navbar__menu-right">
-            <a class="navbar__link" href="#">Sign In</a>
-          </li>
-          <li class="navbar__btn navbar__menu-right">
-            <a class="btn_def btn_def--nav">Post A Job</a>
-          </li>
-        </ul>
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img src="./assets/img/oval.png" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-default justify-content-between" id="navbarNav">
+          <ul class="navbar__list navbar-nav">
+            <li class="navbar__menu-left">
+              <a class="navbar__link" href="#">For Job Seekers</a>
+            </li>
+            <li class="navbar__menu-left">
+              <a class="navbar__link" href="#">For Employers</a>
+            </li>
+          </ul>
+          <ul class="navbar__list navbar-nav ml-auto">
+            <li class="navbar__menu-right">
+              <a class="navbar__link" href="#">Sign In</a>
+            </li>
+          </ul>
+          <div class="navbar__btn">
+            <a class="btn_def btn_def--nav">Post a Job</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <main>
-
-    <section class="header">
+    <section class="homepage">
 
       <div class="container">
-        <header class="header">
-          <h1 class="hero__header">Find the Job
+        <header class="homepage__heading">
+          <h1 class="homepage__header">Find the Job
             that Fits Your Life</h1>
-          <p class="hero__text">Millions of people are searching for jobs, salary information, company reviews, and
+          <p class="homepage__text">Millions of people are searching for jobs, salary information, company reviews, and
             interview questions. See what others are looking for on Oval today.</p>
         </header>
 
@@ -63,12 +67,12 @@
           </section>
         </form>
 
-        <section class="header__trending">
-          <section class="header__trending__left">
+        <section class="homepage__trending">
+          <section class="homepage__trending__left">
             <p>Trending Searches</p>
             <a href="#">View more jobs</a>
           </section>
-          <section class="header__trending__right d-flex">
+          <section class="homepage__trending__right d-flex">
             <a href="#" class="btn_def btn_def--trending">work from home</a>
             <a href="#" class="btn_def btn_def--trending">no experince</a>
             <a href="#" class="btn_def btn_def--trending">remote work</a>
@@ -80,8 +84,15 @@
       </div>
     </section>
 
-    <aside class="how-works">
-      <div class="container">
+
+  </header>
+
+
+  <main>
+
+    <div class=" container">
+
+      <aside class="how-works">
         <p>How Oval Works for You</p>
         <ul class="d-flex">
           <li>
@@ -94,17 +105,15 @@
             <p><span>3</span>Get hired</p>
           </li>
         </ul>
-      </div>
-    </aside>
+      </aside>
 
-    <section class="daily">
-      <div class="container">
-        <header class="daily__heading">
+      <section class="homepage__daily">
+        <header class="homepage__daily__heading">
           <h2>New jobs daily you might love</h2>
         </header>
 
-        <div class="daily__category btn-group">
-          <span>Jobs Category : </span>
+        <div class="homepage__daily__category btn-group">
+          <div>Jobs Category : </div>
           <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Internet & Technology
@@ -116,17 +125,17 @@
           </div>
         </div>
 
-        <section class="daily__job-board">
+        <section class="homepage__daily__job-board">
           <div class="row">
 
             <div class="col-4">
 
-              <section class="daily__cards">
+              <section class="homepage__daily__cards">
 
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/adobe.svg" alt="">
+                    <img class="card__image" src="./assets/img/adobe.svg" alt="">
                     <header>Adobe</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -143,14 +152,14 @@
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/spotify.svg" alt="">
+                    <img class="card__image" src="./assets/img/spotify.svg" alt="">
                     <header>Spotify</header>
-                    <aside>4.8 <span> <i class="oval-star-solid"></i>
+                    <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i></span></aside>
-                    <aside class="description">
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Stockholm, Sweden</span>
                       <span><i class="oval-business"></i>Internet</span>
                     </aside>
@@ -173,11 +182,11 @@
 
             <div class="col-4">
 
-              <section class="daily__cards">
+              <section class="homepage__daily__cards">
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/mercedes.svg" alt="">
+                    <img class="card__image" src="./assets/img/mercedes.svg" alt="">
                     <header>Mercedes-Benz</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -194,7 +203,7 @@
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/microsoft.svg" alt="">
+                    <img class="card__image" src="./assets/img/microsoft.svg" alt="">
                     <header>Microsoft</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -211,7 +220,7 @@
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/ebay.svg" alt="">
+                    <img class="card__image" src="./assets/img/ebay.svg" alt="">
                     <header>Ebay</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -232,11 +241,11 @@
 
             <div class="col-4">
 
-              <section class="daily__cards">
+              <section class="homepage__daily__cards">
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/dropbox.svg" alt="">
+                    <img class="card__image" src="./assets/img/dropbox.svg" alt="">
                     <header>Dropbox</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -253,7 +262,7 @@
 
                 <article class="card card--daily">
                   <section class="card__topper">
-                    <img class="card__image" src="../assets/img/airbnb.svg" alt="">
+                    <img class="card__image" src="./assets/img/airbnb.svg" alt="">
                     <header>Airbnb</header>
                     <aside>3 days ago</aside>
                   </section>
@@ -271,22 +280,20 @@
 
               </section>
 
-              <aside class="daily__explore">
-                <span>+ 148</span>
+              <aside class="homepage__daily__explore">
+                <div>+ 148</div>
                 <p>Daily jobs : </p><a href="#">Explore more<i class="oval-arrow-right"></i></a>
               </aside>
 
             </div>
 
           </div>
-      </div>
-    </section>
+        </section>
 
-    </section>
+      </section>
 
-    <section class="testimonial">
-      <div class="container">
-        <section id=" carousel-homepage" class="carousel slide" data-ride="carousel">
+      <section class="testimonial">
+        <section id="carousel-homepage" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-homepage" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-homepage" data-slide-to="1"></li>
@@ -355,17 +362,15 @@
 
         </section>
 
-      </div>
 
-    </section>
+      </section>
 
-    <section class="clients">
-      <div class="container">
+      <section class="clients">
         <header class="clients__heading">
           <h2>Companies we’ve helped to hire the best candidate</h2>
         </header>
 
-        <img src="../assets/img/img-clients.png" alt="">
+        <img src="./assets/img/img-clients.png" alt="">
 
         <p>We have end-to-end solutions that can keep up with you and your standards.</p>
 
@@ -375,21 +380,21 @@
 
           <div class="col-3">
             <article class="card card--clients">
-              <img src="../assets/img/uber.svg" alt="">
+              <img src="./assets/img/uber.svg" alt="">
               <p>We have end-to-end solutions that can keep up with you and your standards.</p>
             </article>
           </div>
 
           <div class="col-3">
             <article class="card card--clients">
-              <img src="../assets/img/shopify.svg" alt="">
+              <img src="./assets/img/shopify.svg" alt="">
               <p>We have end-to-end solutions that can keep up with you and your standards.</p>
             </article>
           </div>
 
           <div class="col-3">
             <article class="card card--clients">
-              <img src="../assets/img/airbnb-logo.svg" alt="">
+              <img src="./assets/img/airbnb-logo.svg" alt="">
               <p>We have end-to-end solutions that can keep up with you and your standards.</p>
             </article>
           </div>
@@ -401,174 +406,180 @@
             <ul class="d-flex">
               <li>
                 <a href="#">
-                  <img src="../assets/img/microsoft-logo.svg" alt="">
+                  <img src="./assets/img/microsoft-logo.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../assets/img/google.svg" alt="">
+                  <img src="./assets/img/google.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../assets/img/ge.svg" alt="">
+                  <img src="./assets/img/ge.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../assets/img/automatic.svg" alt="">
+                  <img src="./assets/img/automatic.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../assets/img/philips.svg" alt="">
+                  <img src="./assets/img/philips.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../assets/img/intel.svg" alt="">
+                  <img src="./assets/img/intel.svg" alt="">
                 </a>
               </li>
             </ul>
-            </>
           </section>
           <p>Some of the many companies that rely on Oval for hiring.</p>
         </section>
 
-      </div>
-    </section>
+      </section>
 
-    <section class="find-job">
-      <div class="row">
-        <div class="col-6">
-          <section>
-            <h2>You’re now discovering jobs from <span>Indonesia</span></h2>
-          </section>
-        </div>
-        <div class="col-6">
-          <div class="find-job__btn">
-            <a href="#" class="btn__def btn__def--find-job">Find Job Now</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__brand">
-          <img src="/assets/img/oval.svg" alt=""></div>
-        <span>© 2019 Oval</span>
-
+      <section class="find-job">
         <div class="row">
-          <div class="col-2">
-            <ul class="list-unstyled">
-              <li>
-                <p>For Job Seekers</p>
-              </li>
-              <li><a href="#">Search Jobs</a></li>
-              <li><a href="#">Browse Jobs</a></li>
-              <li><a href="#">Salaries</a></li>
-              <li><a href="#">Job Seeker Reviews</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">Create Free Account</a></li>
-              <li><a href="#">Job Seeker Support</a></li>
-              <li><a href="#">Trust and Safety</a></li>
-            </ul>
+          <div class="col-6">
+            <section>
+              <h2>You’re now discovering jobs from <span>Indonesia</span></h2>
+            </section>
           </div>
-          <div class="col-2">
-            <ul class="list-unstyled">
-              <li>
-                <p>For Employers</p>
-              </li>
-              <li><a href="#">Post a Job Now</a></li>
-              <li><a href="#">How it Works</a></li>
-              <li><a href="#">Job Sites</a></li>
-              <li><a href="#">Oval Reviews</a></li>
-              <li><a href="#">Plans</a></li>
-              <li><a href="#">Enterprise</a></li>
-              <li><a href="#">Search Resumes</a></li>
-              <li><a href="#">New Account Help</a></li>
-              <li><a href="#">Employer Support</a></li>
-            </ul>
+          <div class="col-6">
+            <div class="find-job__btn">
+              <a href="#" class="btn__def btn__def--find-job">Find Job Now</a>
+            </div>
           </div>
-          <div class="col-2">
-            <ul class="list-unstyled">
-              <li>
-                <p>Industry Solutions</p>
-              </li>
-              <li><a href="#">Accounting</a></li>
-              <li><a href="#">Construction</a></li>
-              <li><a href="#">Healthcare</a></li>
-              <li><a href="#">Legal</a></li>
-              <li><a href="#">Sales</a></li>
-              <li><a href="#">Technology</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul class="list-unstyled">
-              <li>
-                <p>Partner with Us</p>
-              </li>
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Job Board API</a></li>
-              <li><a href="#">Email Alert Program</a></li>
-              <li><a href="#">Reseller Program</a></li>
-              <li><a href="#">Job Board Software</a></li>
-              <li><a href="#">ATS Integrations</a></li>
-              <li><a href="#">Newspaper Partnerships</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul class="list-unstyled">
-              <li>
-                <p>Company</p>
-              </li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Oval.org</a></li>
-              <li><a href="#">Oval ID</a></li>
-            </ul>
-          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img src="/assets/img/oval.svg" alt=""></div>
+      <div>© 2019 Oval</div>
+
+      <div class="row">
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li>
+              <p>For Job Seekers</p>
+            </li>
+            <li><a href="#">Search Jobs</a></li>
+            <li><a href="#">Browse Jobs</a></li>
+            <li><a href="#">Salaries</a></li>
+            <li><a href="#">Job Seeker Reviews</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Create Free Account</a></li>
+            <li><a href="#">Job Seeker Support</a></li>
+            <li><a href="#">Trust and Safety</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li>
+              <p>For Employers</p>
+            </li>
+            <li><a href="#">Post a Job Now</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Job Sites</a></li>
+            <li><a href="#">Oval Reviews</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Search Resumes</a></li>
+            <li><a href="#">New Account Help</a></li>
+            <li><a href="#">Employer Support</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li>
+              <p>Industry Solutions</p>
+            </li>
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Construction</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li>
+              <p>Partner with Us</p>
+            </li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Job Board API</a></li>
+            <li><a href="#">Email Alert Program</a></li>
+            <li><a href="#">Reseller Program</a></li>
+            <li><a href="#">Job Board Software</a></li>
+            <li><a href="#">ATS Integrations</a></li>
+            <li><a href="#">Newspaper Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li>
+              <p>Company</p>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Oval.org</a></li>
+            <li><a href="#">Oval ID</a></li>
+          </ul>
         </div>
 
-        <section class="footer__bottom">
-
-          <section class="footer__social-icons">
-            <img src="/assets/icons/icon-svg/twitter.svg" alt="">
-            <img src="/assets/icons/icon-svg/facebook.svg" alt="">
-            <img src="/assets/icons/icon-svg/linkedin.svg" alt="">
-          </section>
-
-          <section class="footer__bottom-links">
-            <ul class="list-unstyled">
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Trust & Safety</a></li>
-            </ul>
-          </section>
-
-          <aside class="footer__language-bar">
-            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              EN
-            </button>
-
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">DE</a>
-              <a class="dropdown-item" href="#">IT</a>
-              <a class="dropdown-item" href="#">FR</a>
-            </div>
-          </aside>
-
-
-        </section>
       </div>
-    </footer>
-  </main>
+
+      <section class="footer__bottom">
+
+        <section class="footer__social-icons">
+          <a href="#">
+            <img src="./assets/icons/icon-svg/twitter.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./assets/icons/icon-svg/facebook.svg" alt="">
+          </a>
+
+          <a href="#">
+            <img src="./assets/icons/icon-svg/linkedin.svg" alt="">
+          </a>
+        </section>
+
+        <section class="footer__bottom-links">
+          <ul class="list-unstyled">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Trust & Safety</a></li>
+          </ul>
+        </section>
+
+        <aside class="footer__language-bar">
+          <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            EN
+          </button>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">DE</a>
+            <a class="dropdown-item" href="#">IT</a>
+            <a class="dropdown-item" href="#">FR</a>
+          </div>
+        </aside>
+
+
+      </section>
+    </div>
+  </footer>
+
 
 
 

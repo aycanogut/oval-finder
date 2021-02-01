@@ -2,14 +2,29 @@
 
 .btn_def {
   display: block;
-  padding: 20px 15px;
   @include transition($args);
+
   &--nav {
+    padding: 8px 22px 9px 19px;
+    color: $color-shipgray;
+    background-color: $color-white;
   }
   &----search-box {
   }
   &--trending {
   }
   &--find-job {
+  }
+  &--location {
+  }
+  &--recommendation {
+  }
+  &--share {
+  }
+  &--review {
+  }
+  &--pricing {
+  }
+  &--pricing-gray {
   }
 }

@@ -42,7 +42,7 @@ h1 + p {
   &__menu-left {
     @include font(inter, medium);
   }
-  &__menu-right {
+  &__btn {
     @include font(inter, semibold);
   }
 }
