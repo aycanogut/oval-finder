@@ -2,6 +2,33 @@
 
 .card {
   &--daily {
+    padding: 24px;
+
+    .card__topper {
+      display: flex;
+      align-items: center;
+
+      .company-name {
+        margin-right: auto;
+        padding: 0 12px;
+      }
+    }
+
+    .card__description {
+      span {
+        padding-right: 20px;
+      }
+      i {
+        padding-right: 6px;
+      }
+    }
+    .card__body {
+      padding: 16px 2px 24px 0;
+    }
+
+    .card__bottom {
+      display: flex;
+    }
   }
   &--testimonial {
   }

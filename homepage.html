@@ -7,6 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Fontawesome CDN -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- User CSS -->
   <link href="styles/index.css" rel="stylesheet" type="text/css" />
 </head>
@@ -55,17 +58,44 @@
             interview questions. See what others are looking for on Oval today.</p>
         </header>
 
-        <form class="search-box">
-          <section class="search-box__top">
-            <a href="#" class="search-box__top__btn">Jobs</a>
-            <a href="#" class="search-box__top__btn">Employers</a>
-          </section>
-          <section class="search-box__searchInput">
-            <i class="oval-search"></i><input type="text" class="search" placeholder="Job title or keyword">
-            <i class="oval-location"></i><input type="text" class="search" placeholder="City, state or zip">
-            <button class="btn_def btn_def--search-box button" type="submit">Find Job</button>
-          </section>
-        </form>
+        <div class="row">
+          <div class="col-9">
+
+            <section class="search-box">
+              <section class="search-box__top">
+                <a href="#" class="search-box__top__btn">Jobs</a>
+                <a href="#" class="search-box__top__btn">Employers</a>
+              </section>
+
+              <section class="search-box__searchInput">
+
+                <div class="row">
+
+                  <div class="col-6">
+                    <div class="input">
+                      <i class="oval-search"></i>
+                      <input type="text" class="input-search" placeholder="Job title or keyword">
+                    </div>
+                  </div>
+                  <div class="col-6">
+
+                    <div class="input">
+                      <i class="oval-location"></i>
+                      <input type="text" class="input-search" placeholder="City, state or zip">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-btn">
+                  <button class="btn_def btn_def--search-box button" type="submit">Find Job</button>
+                </div>
+
+              </section>
+            </section>
+
+          </div>
+        </div>
+
 
         <section class="homepage__trending">
           <section class="homepage__trending__left">
@@ -92,17 +122,17 @@
 
     <div class=" container">
 
-      <aside class="how-works">
+      <aside class="homepage__how-works">
         <p>How Oval Works for You</p>
         <ul class="d-flex">
           <li>
-            <p><span>1</span>Create Oval Profile <i class="oval-right"></i></p>
+            <p class="profile"><span class="number">1</span>Create Oval Profile <i class="oval-right"></i></p>
           </li>
           <li>
-            <p><span>2</span>Find job you love<i class="oval-right"></i></p>
+            <p class="profile"><span class="number">2</span>Find job you love<i class="oval-right"></i></p>
           </li>
           <li>
-            <p><span>3</span>Get hired</p>
+            <p class="profile"><span class="number">3</span>Get hired</p>
           </li>
         </ul>
       </aside>
@@ -113,7 +143,7 @@
         </header>
 
         <div class="homepage__daily__category btn-group">
-          <div>Jobs Category : </div>
+          <p>Jobs Category : </p>
           <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Internet & Technology
@@ -136,14 +166,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/adobe.svg" alt="">
-                    <header>Adobe</header>
+                    <header class="company-name">Adobe</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
+                    <p class="title">Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>San Jose, CA</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -153,20 +183,22 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/spotify.svg" alt="">
-                    <header>Spotify</header>
+                    <header class="company-name">Spotify</header>
                     <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i>
                         <i class="oval-star-solid"></i></span></aside>
-                    <aside class="card__description">
-                      <span><i class="oval-location"></i>Stockholm, Sweden</span>
-                      <span><i class="oval-business"></i>Internet</span>
-                    </aside>
                   </section>
 
+                  <aside class="card__description">
+                    <span><i class="oval-location"></i>Stockholm, Sweden</span>
+                    <span><i class="oval-business"></i>Internet</span>
+                  </aside>
+
                   <section class=card__body>
-                    <p>At Spotify, we're focused on providing the right music for every moment. We've connected millions
+                    <p class="title">At Spotify, we're focused on providing the right music for every moment.
+                      We've connected millions
                       of people to their favorite songs and created a service that people use to discover and share
                       music
                       they love.</p>
@@ -187,14 +219,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/mercedes.svg" alt="">
-                    <header>Mercedes-Benz</header>
+                    <header class="company-name">Mercedes-Benz</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>Head of Third Party Strategy and Deals, Go-to-Market</p>
+                    <p class="title">Head of Third Party Strategy and Deals, Go-to-Market</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Aurora, CO</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -204,14 +236,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/microsoft.svg" alt="">
-                    <header>Microsoft</header>
+                    <header class="company-name">Microsoft</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>G Suite Specialist, Google Cloud Customer Engineering</p>
+                    <p class="title">G Suite Specialist, Google Cloud Customer Engineering</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Atlanta,GA</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -221,14 +253,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/ebay.svg" alt="">
-                    <header>Ebay</header>
+                    <header class="company-name">Ebay</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
+                    <p class="title">Sales Engineer, Application Modernization, Healthcare, Google Cloud</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Austin TX</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -246,14 +278,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/dropbox.svg" alt="">
-                    <header>Dropbox</header>
+                    <header class="company-name">Dropbox</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>Marketing Associate Director - Consumer Experience</p>
+                    <p class="title">Marketing Associate Director - Consumer Experience</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Lowell, MA</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -263,14 +295,14 @@
                 <article class="card card--daily">
                   <section class="card__topper">
                     <img class="card__image" src="./assets/img/airbnb.svg" alt="">
-                    <header>Airbnb</header>
+                    <header class="company-name">Airbnb</header>
                     <aside>3 days ago</aside>
                   </section>
                   <section class=card__body>
-                    <p>Brand Marketing Manager – Services Portfolio</p>
+                    <p class="title">Brand Marketing Manager – Services Portfolio</p>
                   </section>
                   <section class="card__bottom">
-                    <aside>
+                    <aside class="card__description">
                       <span><i class="oval-location"></i>Aurora, CO</span>
                       <span><i class="oval-time"></i>Fulltime</span>
                     </aside>
@@ -309,7 +341,7 @@
                 <h3>Moving to a new place is scary, but using Oval to find a job within one week of moving in has been
                   such a
                   blessing to me and my family!</h3>
-                <aside><span>James Lyons, </span>Finance</aside>
+                <aside class="title"><span class="name">James Lyons, </span>Finance</aside>
               </article>
             </section>
 
@@ -321,7 +353,7 @@
                   reprehenderit officia odit at nostrum placeat nam, accusamus eos molestias in et omnis facilis
                   doloremque.
                 </h3>
-                <aside><span>Aycan ÖĞÜT, </span>Fiance</aside>
+                <aside class="title"><span class="name">Aycan ÖĞÜT, </span>Fiance</aside>
               </article>
             </section>
 
@@ -332,7 +364,7 @@
                   like
                   to
                   think at all.</h3>
-                <aside><span>Kanye West, </span>Thinker</aside>
+                <aside class="title"><span class="name">Kanye West, </span>Thinker</aside>
               </article>
             </section>
 
@@ -344,7 +376,7 @@
                   reprehenderit officia odit at nostrum placeat nam, accusamus eos molestias in et omnis facilis
                   doloremque.
                 </h3>
-                <aside><span>Aycan ÖĞÜT, </span>Fiance</aside>
+                <aside class="title"><span class="name">Aycan ÖĞÜT, </span>Fiance</aside>
               </article>
             </section>
 
@@ -365,16 +397,17 @@
 
       </section>
 
-      <section class="clients">
-        <header class="clients__heading">
+      <section class="homepage__clients">
+        <header class="homepage clients__heading">
           <h2>Companies we’ve helped to hire the best candidate</h2>
         </header>
 
         <img src="./assets/img/img-clients.png" alt="">
 
-        <p>We have end-to-end solutions that can keep up with you and your standards.</p>
-
-        <a href="#">Post a Job</a>
+        <aside class="homepage__clients__post-job">
+          <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+          <a href="#">Post a Job</a>
+        </aside>
 
         <div class="row">
 
@@ -401,8 +434,8 @@
 
         </div>
 
-        <section class="clients__bottom">
-          <section class="clients__company-logos">
+        <section class="homepage__clients__bottom">
+          <section class="homepage__clients__company-logos">
             <ul class="d-flex">
               <li>
                 <a href="#">
@@ -436,20 +469,20 @@
               </li>
             </ul>
           </section>
-          <p>Some of the many companies that rely on Oval for hiring.</p>
+          <p class="homepage__clients__text">Some of the many companies that rely on Oval for hiring.</p>
         </section>
 
       </section>
 
-      <section class="find-job">
+      <section class="homepage__find-job">
         <div class="row">
           <div class="col-6">
             <section>
-              <h2>You’re now discovering jobs from <span>Indonesia</span></h2>
+              <h2 class="homepage__find-job__title">You’re now discovering jobs from <span>Indonesia</span></h2>
             </section>
           </div>
           <div class="col-6">
-            <div class="find-job__btn">
+            <div class="homepage__find-job__btn">
               <a href="#" class="btn__def btn__def--find-job">Find Job Now</a>
             </div>
           </div>
@@ -462,11 +495,11 @@
     <div class="container">
       <div class="footer__brand">
         <img src="/assets/img/oval.svg" alt=""></div>
-      <div>© 2019 Oval</div>
+      <div class="footer__copyright">© 2019 Oval</div>
 
       <div class="row">
         <div class="col-2">
-          <ul class="list-unstyled">
+          <ul class="footer__list list-unstyled">
             <li>
               <p>For Job Seekers</p>
             </li>
@@ -481,7 +514,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul class="list-unstyled">
+          <ul class="footer__list list-unstyled">
             <li>
               <p>For Employers</p>
             </li>
@@ -497,7 +530,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul class="list-unstyled">
+          <ul class="footer__list list-unstyled">
             <li>
               <p>Industry Solutions</p>
             </li>
@@ -510,7 +543,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul class="list-unstyled">
+          <ul class="footer__list list-unstyled">
             <li>
               <p>Partner with Us</p>
             </li>
@@ -524,7 +557,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul class="list-unstyled">
+          <ul class="footer__list list-unstyled">
             <li>
               <p>Company</p>
             </li>
@@ -563,6 +596,7 @@
         </section>
 
         <aside class="footer__language-bar">
+          <p>Language : </p>
           <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             EN

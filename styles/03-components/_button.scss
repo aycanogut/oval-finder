@@ -3,28 +3,64 @@
 .btn_def {
   display: block;
   @include transition($args);
+  border: none;
 
+  // navigation
   &--nav {
     padding: 8px 22px 9px 19px;
-    color: $color-shipgray;
     background-color: $color-white;
+    color: $color-shipgray;
   }
-  &----search-box {
+  // homepage-search-box
+  &--search-box {
+    padding: 16px 39px;
+    background-color: $color-coral;
+    color: $color-white;
   }
+
+  // company-vacancies
+  &--search-box-xs {
+    padding: 10px 17px;
+    background-color: $color-coral;
+    color: $color-white;
+  }
+  // search-jobsOne/searchJobsTwo-searchbox
+  &--search-box-sm {
+    padding: 10px 39px 10px 39px;
+    background-color: $color-coral;
+    color: $color-white;
+  }
+
+  // homepage-trending
   &--trending {
+    padding: 9px 14px 10px 14px;
+    background-color: $color-white;
+    color: $color-midgray;
   }
-  &--find-job {
-  }
+
+  // searchjobsTwo-location
   &--location {
+    padding: 16px 47px;
+    background-color: $color-white;
+    color: $color-shipgray;
   }
-  &--recommendation {
+
+  // company-reviews-cards
+  &--helpful {
+    padding: 10px 12px;
+    background-color: $color-white;
+    color: $color-shipgray;
+    border: 1px solid $color-shipgray;
   }
-  &--share {
-  }
-  &--review {
-  }
+
   &--pricing {
+    padding: 16px 20px;
+    background-color: $color-white;
+    color: $color-shipgray;
   }
   &--pricing-gray {
+    padding: 16px 20px;
+    background-color: $color-bonjour;
+    color: $color-midgray;
   }
 }

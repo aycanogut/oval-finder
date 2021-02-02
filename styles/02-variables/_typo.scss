@@ -16,62 +16,317 @@ h3 {
 }
 
 h1 + p {
-  @include font(inter, regular);
+  // @include font(inter, regular);
   font-size: $font-16;
 }
 
-// !search-box
-.search-box {
-  &__top {
-    @include font(manrope, extrabold);
-    font-size: $font-12;
+// !font-families - global classes
+
+// aileron-regular
+.pricing h2 + p {
+  @include font(aileron, regular);
+}
+
+// inter-regular
+.company-name + aside,
+.card__bottom,
+.card__clients,
+.search-box__searchInput,
+.footer__copyright,
+.footer__bottom,
+.footer__list li a,
+.footer__language-bar p,
+.homepage__text,
+.homepage__left p,
+.homepage__left a,
+.homepage__trending__right,
+.homepage__daily__category p,
+.homepage_-daily__explore p,
+.homepage_-daily__explore a,
+.homepage__clients__post-job p,
+.homepage__clients__text   {
+  @include font(inter, regular);
+}
+
+// inter-medium
+.card .title,
+.card--testimonial .title,
+.navbar__menu-left,
+.homepage__how-works .profile,
+.homepage__daily__category .btn {
+  @include font(inter, medium);
+}
+
+// inter-semibold
+.card--testimonial .name,
+.btn_def--nav {
+  @include font(inter, semibold);
+}
+
+// inter-bold
+.search-box__top__btn {
+  @include font(inter, medium);
+}
+
+// manrope-extralight
+.homepage__daily__explore div {
+  @include font(manrope, extralight);
+}
+
+// manrope-light
+
+// manrope-semibold
+.homepage__how-works aside p,
+.footer li p {
+  @include font(manrope, semibold);
+}
+
+// manrope-bold
+.card--daily .card-bottom a {
+  @include font(manrope, bold);
+}
+
+// manrope-extrabold
+.filter__title,
+.search-box__top,
+.homepage__how-works .number {
+  @include font(manrope, extrabold);
+}
+
+// poppins-semibold
+
+// roboto-regular
+
+// !font-families, font-size, font-weight / components, layout, pages
+
+// !components
+
+// cards
+.card {
+  &--daily {
+    .company-name {
+      @include font(manrope, medium);
+      font-size: $font-14;
+      font-weight: $medium;
+    }
+
+    .company-name + aside {
+      // @include font(inter, regular);
+      font-size: $font-14;
+    }
+    .title {
+      // @include font(inter, medium);
+      font-size: $font-18;
+    }
+    .card__bottom {
+      // @include font(inter, regular);
+      font-size: $font-14;
+
+      p {
+        @include font(manrope, medium);
+        font-size: $font-14;
+      }
+      a {
+        // @include font(manrope, bold);
+        font-size: $font-14;
+        font-weight: $regular;
+      }
+    }
   }
-  &__searchInput {
-    @include font(inter, regular);
-    font-size: $font-18;
+  &--testimonial {
+    aside {
+      // @include font(inter, medium);
+      font-size: $font-20;
+      font-weight: $extralight;
+
+      .card__name {
+        // @include font(inter, semibold);
+        font-size: $font-20;
+        font-weight: $extralight;
+      }
+    }
   }
-  &__btn {
-    @include font(inter, bold);
+  &--clients {
+    p {
+      // @include font(inter, regular);
+      font-size: $font-14;
+    }
+  }
+}
+
+.btn_def {
+  &--nav {
+    // @include font(inter, semibold);
+    font-size: $font-14;
+  }
+  &--find-job {
+    // @include font(poppins, semibold);
     font-size: $font-18;
   }
 }
 
-// !nav
+// search-box
+.search-box,
+.search-box-sm {
+  &__top {
+    // @include font(manrope, extrabold);
+    font-size: $font-12;
+  }
+  &__searchInput {
+    // @include font(inter, regular);
+    font-size: $font-18;
+  }
+  &__btn {
+    // @include font(inter, bold);
+    font-size: $font-18;
+  }
+}
+
+// !layout
+// nav
 .navbar {
   font-size: $font-14;
   &__menu-left {
     @include font(inter, medium);
   }
-  &__btn {
-    @include font(inter, semibold);
-  }
 }
 
-// !header
+// header
 .header {
 }
 
-// !sidebar
+// sidebar
 .filter {
   &__title {
-    @include font(manrope, extrabold);
+    // @include font(manrope, extrabold);
     font-size: $font-12;
   }
 }
 
-// !!pricing
-.pricing {
-  h2 + p {
-    @include font(aileron, regular);
-    font-size: $font-16;
-  }
-}
-
-// !footer
-footer {
+// footer
+.footer {
   &__copyright,
   &__bottom {
-    @include font(inter, regular);
+    // @include font(inter, regular);
     font-size: $font-12;
+  }
+  &__list {
+    li p {
+      // @include font(manrope, semibold);
+      font-size: $font-14;
+      font-weight: $medium;
+    }
+    li a {
+      // @include font(inter, regular);
+      font-size: $font-14;
+    }
+  }
+  &__language-bar {
+    p {
+      // @include font(inter, regular);
+      font-size: $font-12;
+    }
+  }
+}
+
+// !pages
+// homepage
+.homepage {
+  &__text {
+    // @include font(inter, regular);
+    font-size: $font-16;
+  }
+
+  &__trending__left {
+    p {
+      // @include font(inter, regular);
+      font-size: $font-18;
+    }
+    a {
+      // @include font(inter, regular);
+      font-size: $font-14;
+      text-decoration: underline;
+    }
+  }
+
+  &__trending__right {
+    // @include font(inter, regular);
+    font-size: $font-14;
+  }
+
+  &__how-works {
+    aside p {
+      @include font(manrope, semibold);
+      font-size: $font-14;
+    }
+
+    .number {
+      // @include font(manrope, extrabold);
+      font-size: $font-16;
+    }
+
+    .profile {
+      // @include font(inter, medium);
+      font-size: $font-18;
+    }
+  }
+
+  &__daily__category {
+    p {
+      // @include font(inter, regular);
+      font-size: $font-18;
+    }
+    .btn {
+      // @include font(inter, medium);
+      font-size: $font-18;
+    }
+  }
+  &__daily__explore {
+    div {
+      // @include font(manrope, extralight);
+      font-size: $font-72;
+    }
+
+    p {
+      // @include font(inter, regular);
+      font-size: $font-18;
+    }
+    a {
+      // @include font(inter, regular);
+      font-size: $font-18;
+    }
+  }
+
+  &__clients {
+    &__post-job {
+      p {
+        // @include font(inter, regular);
+        font-size: $font-16;
+      }
+      a {
+        @include font(manrope, medium);
+        font-size: $font-18;
+      }
+    }
+
+    &__text {
+      // @include font(inter, regular);
+      font-size: $font-14;
+    }
+  }
+
+  // &__find-job__title {
+  //   @include font(manrope, light);
+  //   span {
+  //     @include font(manrope, semibold);
+  //   }
+  // }
+}
+
+// pricing
+.pricing {
+  h2 + p {
+    // @include font(aileron, regular);
+    font-size: $font-16;
   }
 }

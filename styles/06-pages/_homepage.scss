@@ -1,7 +1,15 @@
 // homepage
 
+.homepage {
+  .container {
+    padding: 0;
+  }
+}
 .header {
   width: 100%;
   height: 603px;
   background-color: $color-corduroy;
+}
+
+.search-box__top {
 }
