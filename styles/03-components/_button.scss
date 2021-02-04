@@ -2,7 +2,6 @@
 
 .btn_def {
   display: block;
-  @include transition($args);
   border: none;
 
   // navigation

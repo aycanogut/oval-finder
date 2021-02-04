@@ -2,7 +2,7 @@
 
 // transition
 
-$args: all 0.3 ease in;
+$args: all 0.3s ease-in-out;
 
 @mixin transition($args) {
   -webkit-transition: $args;
