@@ -64,13 +64,14 @@
 
   <main>
 
+
     <section class="search-employeers">
       <div class="container">
         <div class="row">
 
           <div class="col-3">
 
-            <section class="filter">
+            <section class="filter filter-employeers">
               <div>Filter Employers</div>
 
               <form action="">
@@ -104,7 +105,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Administrative</div>
+                          <div class="filter__text">Administrative</div>
                         </div>
 
                       </div>
@@ -123,7 +124,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Arts & Design</div>
+                          <div class="filter__text">Arts & Design</div>
                         </div>
 
                       </div>
@@ -143,7 +144,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Business</div>
+                          <div class="filter__text">Business</div>
                         </div>
 
                       </div>
@@ -162,7 +163,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Consulting</div>
+                          <div class="filter__text">Consulting</div>
                         </div>
 
                       </div>
@@ -181,7 +182,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Customer Services & Support</div>
+                          <div class="filter__text">Customer Services & Support</div>
                         </div>
 
                       </div>
@@ -215,7 +216,7 @@
                             </div>
                           </div>
 
-                          <div class="text">1 - 50</div>
+                          <div class="filter__text">1 - 50</div>
                         </div>
 
                       </div>
@@ -234,7 +235,7 @@
                             </div>
                           </div>
 
-                          <div class="text">51 - 200</div>
+                          <div class="filter__text">51 - 200</div>
                         </div>
 
                       </div>
@@ -253,7 +254,7 @@
                             </div>
                           </div>
 
-                          <div class="text">201 - 500</div>
+                          <div class="filter__text">201 - 500</div>
                         </div>
 
                       </div>
@@ -273,7 +274,7 @@
                             </div>
                           </div>
 
-                          <div class="text">501 - 1000</div>
+                          <div class="filter__text">501 - 1000</div>
                         </div>
 
                       </div>
@@ -292,7 +293,7 @@
                             </div>
                           </div>
 
-                          <div class="text">1001 - 5000</div>
+                          <div class="filter__text">1001 - 5000</div>
                         </div>
 
                       </div>
@@ -311,7 +312,7 @@
                             </div>
                           </div>
 
-                          <div class="text">5001 - 10000</div>
+                          <div class="filter__text">5001 - 10000</div>
                         </div>
 
                       </div>
@@ -330,7 +331,7 @@
                             </div>
                           </div>
 
-                          <div class="text">10000+</div>
+                          <div class="filter__text">10000+</div>
                         </div>
 
                       </div>
@@ -349,8 +350,9 @@
 
             <section class="search-employeers__result">
               <aside class="search-employeers__result__top">
-                <div class="">Showing: 599 filtered jobs</div>
-                <div>Sort by : <a href="#">Relevance <span><i class="oval-arrow-down"></i></span> </a></div>
+                <div class="showing">Showing: 599 filtered jobs</div>
+                <div class="sort-by">Sort by : <a href="#">Relevance <span><i class="oval-arrow-down"></i></span> </a>
+                </div>
               </aside>
 
               <section class="search-employeers__result__cards">
@@ -358,7 +360,7 @@
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/adobe.svg" alt="">
-                    <header>Adobe</header>
+                    <header class="card__company-name">Adobe</header>
                     <aside>
                       <div class="card__reviews">1.2k <span>Reviews</span> </div>
                       <div class="card__jobs">65 <span>Jobs</span> </div>
@@ -378,8 +380,9 @@
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
                   <section class=card__bottom>
-                    <header>Company Description</header>
-                    <p>10 years of experience in one of the following: digital advertising sales, third party channel
+                    <header class="card__descriptor">Company Description</header>
+                    <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                      third party channel
                       strategy, or governance experience in a technology/media company. Ability to speak and write in
                       English and Mandarin fluently and idiomatically.</p>
                   </section>
@@ -388,7 +391,7 @@
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/nvidia.svg" alt="">
-                    <header>Nvidia</header>
+                    <header class="card__company-name">Nvidia</header>
                     <aside>
                       <div class="card__reviews">1.2k <span>Reviews</span> </div>
                       <div class="card__jobs">65 <span>Jobs</span> </div>
@@ -408,8 +411,9 @@
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
                   <section class=card__bottom>
-                    <header>Company Description</header>
-                    <p>NVIDIA is like no place you’ve ever worked. You’ll solve some of the world’s hardest problems and
+                    <header class="card__descriptor">Company Description</header>
+                    <p class="card__text">NVIDIA is like no place you’ve ever worked. You’ll solve some of the world’s
+                      hardest problems and
                       discover never-before-seen ways to improve the quality of life for people everywhere. From
                       healthcare to robots. Self-driving cars to blockbuster movies. And a growing list of new
                       opportunities every single day…</p>
@@ -419,7 +423,7 @@
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/microsoft.svg" alt="">
-                    <header>Microsoft</header>
+                    <header class="card__company-name">Microsoft</header>
                     <aside>
                       <div class="card__reviews">1.2k <span>Reviews</span> </div>
                       <div class="card__jobs">65 <span>Jobs</span> </div>
@@ -439,8 +443,8 @@
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
                   <section class=card__bottom>
-                    <header>Company Description</header>
-                    <p>Our drive to change the world unites us!
+                    <header class="card__descriptor">Company Description</header>
+                    <p class="card__text">Our drive to change the world unites us!
                       Microsoft is the ideal place for people who have passion for their work and the desire to make an
                       impact—in their careers, in the community and on the world. Microsoft is a unique company; and not
                       just within the tech industry…</p>
@@ -450,7 +454,7 @@
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/cisco.svg" alt="">
-                    <header>Cisco Systems</header>
+                    <header class="card__company-name">Cisco Systems</header>
                     <aside>
                       <div class="card__reviews">1.2k <span>Reviews</span> </div>
                       <div class="card__jobs">65 <span>Jobs</span> </div>
@@ -470,8 +474,9 @@
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
                   <section class=card__bottom>
-                    <header>Company Description</header>
-                    <p>#WeAreCisco, where each person is unique, but we bring our talents to work as a team and make a
+                    <header class="card__descriptor">Company Description</header>
+                    <p class="card__text">#WeAreCisco, where each person is unique, but we bring our talents to work as
+                      a team and make a
                       difference. Here’s how we do it. We embrace digital, and help our customers implement change in
                       their digital businesses. Some may think we’re “old” (30 years strong!) and only about hardware,
                       but
@@ -481,8 +486,8 @@
 
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/deree.svg" alt="">
-                    <header>John Deere</header>
+                    <img class="card__image" src="./assets/img/deere.svg" alt="">
+                    <header class="card__company-name">John Deere</header>
                     <aside>
                       <div class="card__reviews">1.2k <span>Reviews</span> </div>
                       <div class="card__jobs">65 <span>Jobs</span> </div>
@@ -502,8 +507,9 @@
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
                   <section class=card__bottom>
-                    <header>Company Description</header>
-                    <p>Since its founding in 1837, John Deere has seen a great many changes in its business, its
+                    <header class="card__descriptor">Company Description</header>
+                    <p class="card__text">Since its founding in 1837, John Deere has seen a great many changes in its
+                      business, its
                       products,
                       its services. Change always comes with opportunity. And Deere has always been ready and willing to
                       embrace it. Yet, through it all, John Deere is still dedicated to those who are linked to the land
@@ -545,14 +551,13 @@
         <img src="/assets/img/oval.svg" alt="">
       </div>
 
-      <div>
+      <section class="footer__bottom-links">
         <ul class="list-unstyled">
           <li><a href="#">Terms of Service</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Trust & Safety</a></li>
         </ul>
-      </div>
-
+      </section>
     </div>
   </footer>
 

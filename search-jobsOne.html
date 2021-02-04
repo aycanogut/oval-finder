@@ -16,7 +16,7 @@
 
 <body>
 
-  <header>
+  <header class="header-srOne">
 
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
@@ -66,17 +66,17 @@
 
   <main>
 
-    <section class="search-jobsOne">
+    <section class="srjOne">
 
       <div class="container">
         <div class="row">
 
           <div class="col-3">
 
-            <section class="filter">
-              <span>Filter Jobs</span>
+            <section class="filter filter--srOne">
+              <header class="filter__header">Filter Jobs</header>
               <form action="">
-                <section class="filter__section">
+                <section class=" filter__section">
                   <a href="#" class="filter-toggle" onclick="return false;">
                     <div class="filter__controls">
                       <div class="row">
@@ -101,7 +101,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Full-time</div>
+                          <div class="filter__text">Full-time</div>
                         </div>
 
                       </div>
@@ -120,7 +120,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Temporary</div>
+                          <div class="filter__text">Temporary</div>
                         </div>
 
                       </div>
@@ -139,7 +139,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Part-time</div>
+                          <div class="filter__text">Part-time</div>
                         </div>
 
                       </div>
@@ -158,7 +158,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Intern</div>
+                          <div class="filter__text">Intern</div>
                         </div>
 
                       </div>
@@ -192,7 +192,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Associate</div>
+                          <div class="filter__text">Associate</div>
                         </div>
 
                       </div>
@@ -211,7 +211,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Bachelor's</div>
+                          <div class="filter__text">Bachelor's</div>
                         </div>
 
                       </div>
@@ -230,7 +230,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Master's</div>
+                          <div class="filter__text">Master's</div>
                         </div>
 
                       </div>
@@ -250,7 +250,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Ph.D.</div>
+                          <div class="filter__text">Ph.D.</div>
                         </div>
 
                       </div>
@@ -269,7 +269,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Pursuing Degree</div>
+                          <div class="filter__text">Pursuing Degree</div>
                         </div>
 
                       </div>
@@ -306,7 +306,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Full-time</div>
+                          <div class="filter__text">Full-time</div>
                         </div>
 
                       </div>
@@ -325,7 +325,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Temporary</div>
+                          <div class="filter__text">Temporary</div>
                         </div>
 
                       </div>
@@ -344,7 +344,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Part-time</div>
+                          <div class="filter__text">Part-time</div>
                         </div>
 
                       </div>
@@ -363,7 +363,7 @@
                             </div>
                           </div>
 
-                          <div class="text">Intern</div>
+                          <div class="filter__text">Intern</div>
                         </div>
 
                       </div>
@@ -377,19 +377,20 @@
 
           <div class="col-9">
 
-            <section class="result">
-              <aside class="result__top">
-                <div class="">Showing: 599 filtered jobs</div>
-                <div>Sort by : <a href="#">Relevance <span><i class="oval-arrow-down"></i></span> </a></div>
+            <section class="srjOne__result">
+              <aside class="srjOne__result__top">
+                <span class="showing">Showing: 599 filtered jobs</span>
+                <div class="sort-by">Sort by : <a href="#">Relevance <span><i class="oval-arrow-down"></i></span> </a>
+                </div>
               </aside>
 
-              <section class="result__cards">
-                <article class="card card--srOne">
+              <section class="srjOne__result__cards">
 
+                <article class="card card--srOne">
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/adobe.svg" alt="">
-                    <header>Adobe</header>
-                    <aside>3 days ago</aside>
+                    <header class="card__company-name">Adobe</header>
+                    <aside class="card__time">3 days ago</aside>
                   </section>
                   <aside class="card__description">
                     <span><i class="oval-business"></i>Internet & Technology</span>
@@ -399,14 +400,14 @@
                   <header>
                     <h4>Sales Engineer, Application Modernization, Healthcare, Google Cloud</h4>
                   </header>
-
                   <section class=card__bottom>
                     <ul>
                       <li class="list-unstyled">
-                        <p>Qualifications :</p>
+                        <p class="card__descriptor">Qualifications :</p>
                       </li>
                       <li>
-                        <p>10 years of experience in one of the following: digital advertising sales, third party
+                        <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                          third party
                           channel
                           strategy, or governance experience in a technology/media company.</p>
                       </li>
@@ -415,15 +416,13 @@
                       </li>
                     </ul>
                   </section>
-
                 </article>
 
                 <article class="card card--srOne">
-
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/mercedes.svg" alt="">
-                    <header>Mercedes-Benz</header>
-                    <aside>3 days ago</aside>
+                    <header class="card__company-name">Mercedes-Benz</header>
+                    <aside class="card__time">3 days ago</aside>
                   </section>
                   <aside class="card__description">
                     <span><i class="oval-business"></i>Internet & Technology</span>
@@ -433,14 +432,14 @@
                   <header>
                     <h4>Head of Third Party Strategy and Deals, Go-to-Market</h4>
                   </header>
-
                   <section class=card__bottom>
                     <ul>
                       <li class="list-unstyled">
-                        <p>Qualifications :</p>
+                        <p class="card__descriptor">Qualifications :</p>
                       </li>
                       <li>
-                        <p>10 years of experience in one of the following: digital advertising sales, third party
+                        <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                          third party
                           channel
                           strategy, or governance experience in a technology/media company.</p>
                       </li>
@@ -449,15 +448,13 @@
                       </li>
                     </ul>
                   </section>
-
                 </article>
 
                 <article class="card card--srOne">
-
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/dropbox.svg" alt="">
-                    <header>Dropbox</header>
-                    <aside>3 days ago</aside>
+                    <header class="card__company-name">Dropbox</header>
+                    <aside class="card__time">3 days ago</aside>
                   </section>
                   <aside class="card__description">
                     <span><i class="oval-business"></i>Internet & Technology</span>
@@ -467,14 +464,14 @@
                   <header>
                     <h4>Marketing Associate Director - Consumer Experience</h4>
                   </header>
-
                   <section class=card__bottom>
                     <ul>
                       <li class="list-unstyled">
-                        <p>Qualifications :</p>
+                        <p class="card__descriptor">Qualifications :</p>
                       </li>
                       <li>
-                        <p>10 years of experience in one of the following: digital advertising sales, third party
+                        <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                          third party
                           channel
                           strategy, or governance experience in a technology/media company.</p>
                       </li>
@@ -483,15 +480,13 @@
                       </li>
                     </ul>
                   </section>
-
                 </article>
 
                 <article class="card card--srOne">
-
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/microsoft.svg" alt="">
-                    <header>Microsoft</header>
-                    <aside>3 days ago</aside>
+                    <header class="card__company-name">Microsoft</header>
+                    <aside class="card__time">3 days ago</aside>
                   </section>
                   <aside class="card__description">
                     <span><i class="oval-business"></i>Internet & Technology</span>
@@ -505,10 +500,11 @@
                   <section class=card__bottom>
                     <ul>
                       <li class="list-unstyled">
-                        <p>Qualifications :</p>
+                        <p class="card__descriptor">Qualifications :</p>
                       </li>
                       <li>
-                        <p>10 years of experience in one of the following: digital advertising sales, third party
+                        <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                          third party
                           channel
                           strategy, or governance experience in a technology/media company.</p>
                       </li>
@@ -517,15 +513,13 @@
                       </li>
                     </ul>
                   </section>
-
                 </article>
 
                 <article class="card card--srOne">
-
                   <section class="card__topper d-flex">
                     <img class="card__image" src="./assets/img/airbnb.svg" alt="">
-                    <header>Airbnb</header>
-                    <aside>3 days ago</aside>
+                    <header class="card__company-name">Airbnb</header>
+                    <aside class="card__time">3 days ago</aside>
                   </section>
                   <aside class="card__description">
                     <span><i class="oval-business"></i>Internet & Technology</span>
@@ -535,14 +529,14 @@
                   <header>
                     <h4>Brand Marketing Manager – Services Portfolio</h4>
                   </header>
-
                   <section class=card__bottom>
                     <ul>
                       <li class="list-unstyled">
-                        <p>Qualifications :</p>
+                        <p class="card__descriptor">Qualifications :</p>
                       </li>
                       <li>
-                        <p>10 years of experience in one of the following: digital advertising sales, third party
+                        <p class="card__text">10 years of experience in one of the following: digital advertising sales,
+                          third party
                           channel
                           strategy, or governance experience in a technology/media company.</p>
                       </li>
@@ -551,7 +545,6 @@
                       </li>
                     </ul>
                   </section>
-
                 </article>
               </section>
 
@@ -590,13 +583,13 @@
         <img src="/assets/img/oval.svg" alt="">
       </div>
 
-      <div>
+      <section class="footer__bottom-links">
         <ul class="list-unstyled">
           <li><a href="#">Terms of Service</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Trust & Safety</a></li>
         </ul>
-      </div>
+      </section>
 
     </div>
   </footer>

@@ -16,86 +16,15 @@ h3 {
 }
 
 h1 + p {
-  // @include font(inter, regular);
+  @include font(inter, regular);
   font-size: $font-16;
 }
 
-// !font-families - global classes
-
-// aileron-regular
-.pricing h2 + p {
-  @include font(aileron, regular);
-}
-
-// inter-regular
-.company-name + aside,
-.card__bottom,
-.card__clients,
-.search-box__searchInput,
-.footer__copyright,
-.footer__bottom,
-.footer__list li a,
-.footer__language-bar p,
-.homepage__text,
-.homepage__left p,
-.homepage__left a,
-.homepage__trending__right,
-.homepage__daily__category p,
-.homepage_-daily__explore p,
-.homepage_-daily__explore a,
-.homepage__clients__post-job p,
-.homepage__clients__text   {
+h4 {
   @include font(inter, regular);
+  font-size: $font-24;
+  font-weight: $medium;
 }
-
-// inter-medium
-.card .title,
-.card--testimonial .title,
-.navbar__menu-left,
-.homepage__how-works .profile,
-.homepage__daily__category .btn {
-  @include font(inter, medium);
-}
-
-// inter-semibold
-.card--testimonial .name,
-.btn_def--nav {
-  @include font(inter, semibold);
-}
-
-// inter-bold
-.search-box__top__btn {
-  @include font(inter, medium);
-}
-
-// manrope-extralight
-.homepage__daily__explore div {
-  @include font(manrope, extralight);
-}
-
-// manrope-light
-
-// manrope-semibold
-.homepage__how-works aside p,
-.footer li p {
-  @include font(manrope, semibold);
-}
-
-// manrope-bold
-.card--daily .card-bottom a {
-  @include font(manrope, bold);
-}
-
-// manrope-extrabold
-.filter__title,
-.search-box__top,
-.homepage__how-works .number {
-  @include font(manrope, extrabold);
-}
-
-// poppins-semibold
-
-// roboto-regular
 
 // !font-families, font-size, font-weight / components, layout, pages
 
@@ -103,31 +32,50 @@ h1 + p {
 
 // cards
 .card {
+  &__company-name {
+    @include font(manrope, bold);
+    font-size: $font-14;
+    font-weight: $medium;
+  }
+  &__text {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+  &__description {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+  &__descriptor {
+    @include font(manrope, semibold);
+    font-size: $font-14;
+    font-weight: $light;
+  }
+  &__time {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+  &__ratings {
+    @include font(inter, medium);
+    font-size: $font-14;
+  }
+
+  &__social {
+    @include font(inter, medium);
+    font-size: $font-14;
+  }
+  &__title {
+    @include font(inter, medium);
+    font-size: $font-18;
+  }
+
   &--daily {
-    .company-name {
-      @include font(manrope, medium);
-      font-size: $font-14;
-      font-weight: $medium;
-    }
-
-    .company-name + aside {
-      // @include font(inter, regular);
-      font-size: $font-14;
-    }
-    .title {
-      // @include font(inter, medium);
-      font-size: $font-18;
-    }
     .card__bottom {
-      // @include font(inter, regular);
-      font-size: $font-14;
-
       p {
         @include font(manrope, medium);
         font-size: $font-14;
       }
       a {
-        // @include font(manrope, bold);
+        @include font(manrope, bold);
         font-size: $font-14;
         font-weight: $regular;
       }
@@ -135,12 +83,12 @@ h1 + p {
   }
   &--testimonial {
     aside {
-      // @include font(inter, medium);
+      @include font(inter, medium);
       font-size: $font-20;
       font-weight: $extralight;
 
       .card__name {
-        // @include font(inter, semibold);
+        @include font(inter, semibold);
         font-size: $font-20;
         font-weight: $extralight;
       }
@@ -148,37 +96,150 @@ h1 + p {
   }
   &--clients {
     p {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-14;
+    }
+  }
+  &--srOne {
+    .card__topper {
+    }
+  }
+  &--company {
+    .card__reviews {
+      @include font(inter, semibold);
+      font-size: $font-14;
+      font-weight: $light;
+      span {
+        @include font(inter, regular);
+        font-size: $font-12;
+      }
+    }
+  }
+  &--reviews {
+    .card__name {
+      @include font(manrope, extrabold);
+      font-size: $font-14;
+      font-weight: $regular;
+    }
+
+    .card__comment {
+      @include font(inter, semibold);
+      font-size: $font-16;
+      font-weight: $regular;
+    }
+
+    .share {
+      @include font(inter, medium);
+      font-size: $font-14;
+    }
+    .report {
+      @include font(inter, regular);
+      font-size: $font-12;
+    }
+  }
+  &--benefits {
+    header {
+      @include font(inter, medium);
+      font-size: $font-14;
+    }
+    p {
+      @include font(inter, regular);
+      font-size: $font-12;
     }
   }
 }
 
+// buttons
 .btn_def {
   &--nav {
-    // @include font(inter, semibold);
+    @include font(inter, semibold);
     font-size: $font-14;
   }
   &--find-job {
-    // @include font(poppins, semibold);
+    @include font(poppins, semibold);
     font-size: $font-18;
+    font-weight: $light;
+  }
+
+  &--recommendation {
+    @include font(inter, medium);
+    font-size: $font-14;
+  }
+  &--helpful {
+    @include font(inter, semibold);
+    font-size: $font-14;
+    font-weight: $regular;
+  }
+  &--pricing,
+  &--pricing-gray {
+    @include font(inter, medium);
+    font-size: $font-14;
   }
 }
 
 // search-box
-.search-box,
-.search-box-sm {
+.search-box {
   &__top {
-    // @include font(manrope, extrabold);
+    @include font(manrope, extrabold);
     font-size: $font-12;
   }
   &__searchInput {
-    // @include font(inter, regular);
+    @include font(inter, regular);
     font-size: $font-18;
   }
   &__btn {
-    // @include font(inter, bold);
+    @include font(inter, bold);
     font-size: $font-18;
+  }
+  .showing {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+  .sort-by {
+    @include font(inter, regular);
+    font-size: $font-14;
+    a {
+      @include font(inter, medium);
+    }
+  }
+  .filter {
+    @include font(manrope, bold);
+    font-size: $font-12;
+    text-transform: uppercase;
+  }
+}
+
+// forms
+.filter {
+  .filter__header {
+    @include font(manrope, bold);
+    font-size: $font-12;
+  }
+
+  .filter__title {
+    @include font(manrope, bold);
+    font-size: $font-14;
+    font-weight: $light;
+  }
+
+  .filter__text {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+
+  &--srOne {
+  }
+}
+
+// pager
+.pager {
+  @include font(inter, regular);
+  font-size: $font-14;
+}
+.page-navigations {
+  .page-item {
+    @include font(inter, regular);
+    font-size: $font-14;
   }
 }
 
@@ -198,32 +259,36 @@ h1 + p {
 // sidebar
 .filter {
   &__title {
-    // @include font(manrope, extrabold);
+    @include font(manrope, extrabold);
     font-size: $font-12;
   }
 }
 
 // footer
 .footer {
+  &__bottom-links {
+    @include font(inter, regular);
+    font-size: $font-12;
+  }
   &__copyright,
   &__bottom {
-    // @include font(inter, regular);
+    @include font(inter, regular);
     font-size: $font-12;
   }
   &__list {
     li p {
-      // @include font(manrope, semibold);
+      @include font(manrope, semibold);
       font-size: $font-14;
       font-weight: $medium;
     }
     li a {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-14;
     }
   }
   &__language-bar {
     p {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-12;
     }
   }
@@ -233,100 +298,269 @@ h1 + p {
 // homepage
 .homepage {
   &__text {
-    // @include font(inter, regular);
+    @include font(inter, regular);
     font-size: $font-16;
   }
 
   &__trending__left {
     p {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-18;
     }
     a {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-14;
       text-decoration: underline;
     }
   }
 
   &__trending__right {
-    // @include font(inter, regular);
+    @include font(inter, regular);
     font-size: $font-14;
   }
 
   &__how-works {
-    aside p {
+    p {
       @include font(manrope, semibold);
       font-size: $font-14;
     }
 
     .number {
-      // @include font(manrope, extrabold);
+      @include font(manrope, extrabold);
       font-size: $font-16;
     }
 
     .profile {
-      // @include font(inter, medium);
+      @include font(inter, medium);
       font-size: $font-18;
     }
   }
 
   &__daily__category {
     p {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-18;
     }
     .btn {
-      // @include font(inter, medium);
+      @include font(inter, medium);
       font-size: $font-18;
     }
   }
   &__daily__explore {
     div {
-      // @include font(manrope, extralight);
+      @include font(manrope, extralight);
       font-size: $font-72;
     }
 
     p {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-18;
     }
     a {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-18;
+    }
+  }
+
+  &__testimonial {
+    .carousel-item h3 {
+      @include font(manrope, semibold);
+      font-size: $font-32;
+    }
+    h3 + aside.title {
+      @include font(inter, semibold);
+      font-size: $font-20;
+    }
+    aside .name {
+      @include font(inter, regular);
+      font-size: $font-20;
     }
   }
 
   &__clients {
     &__post-job {
       p {
-        // @include font(inter, regular);
+        @include font(inter, regular);
         font-size: $font-16;
       }
       a {
-        @include font(manrope, medium);
+        @include font(manrope, bold);
         font-size: $font-18;
       }
     }
 
     &__text {
-      // @include font(inter, regular);
+      @include font(inter, regular);
       font-size: $font-14;
     }
   }
 
-  // &__find-job__title {
-  //   @include font(manrope, light);
-  //   span {
-  //     @include font(manrope, semibold);
-  //   }
-  // }
+  &__find-job__title {
+    @include font(manrope, light);
+    span {
+      @include font(manrope, semibold);
+    }
+  }
+}
+
+// search-jobsOne
+.srjOne {
+}
+
+// search-jobsTwo
+.srjTwo {
+}
+
+// company
+.company {
+  &__ratings {
+    .rating {
+      @include font(inter, medium);
+      font-size: $font-36;
+    }
+
+    .sort {
+      @include font(inter, medium);
+      font-size: $font-34;
+    }
+
+    .review {
+      @include font(inter, regular);
+      font-size: $font-12;
+    }
+  }
+  &__benefits__top {
+    header {
+      @include font(manrope, semibold);
+      font-size: $font-16;
+      font-weight: $regular;
+    }
+    p {
+      @include font(manrope, regular);
+      font-size: $font-14;
+    }
+  }
 }
 
 // pricing
 .pricing {
-  h2 + p {
-    // @include font(aileron, regular);
+  &__heading__text {
+    @include font(aileron, regular);
     font-size: $font-16;
   }
+  .selection {
+    @include font(inter, medium);
+    font-size: $font-18;
+  }
+  .selection + span {
+    @include font(inter, semibold);
+    font-size: $font-12;
+    font-weight: $regular;
+  }
+  &__text {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
+  &__price {
+    @include font(manrope, extrabold);
+    font-size: $font-48;
+  }
+  &__stacks-title {
+    @include font(inter, bold);
+    font-size: $font-12;
+    font-weight: $regular;
+    text-transform: uppercase;
+  }
+  &__stacks-text {
+    @include font(inter, regular);
+    font-size: $font-16;
+  }
+  &__traits__option {
+    @include font(inter, semibold);
+    font-size: $font-14;
+    font-weight: $extralight;
+  }
+
+  &__option {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
 }
+
+// // !font-families - global classes
+
+// // aileron-regular
+// .pricing h2 + p {
+//   @include font(aileron, regular);
+// }
+
+// // inter-regular
+// .company-name + aside,
+// .card__bottom,
+// .card__clients,
+// .search-box__searchInput,
+// .footer__copyright,
+// .footer__bottom,
+// .footer__list li a,
+// .footer__language-bar p,
+// .homepage__text,
+// .homepage__left p,
+// .homepage__left a,
+// .homepage__trending__right,
+// .homepage__daily__category p,
+// .homepage_-daily__explore p,
+// .homepage_-daily__explore a,
+// .homepage__clients__post-job p,
+// .homepage__clients__text   {
+//   @include font(inter, regular);
+// }
+
+// // inter-medium
+// .card .title,
+// .card--testimonial .title,
+// .navbar__menu-left,
+// .homepage__how-works .profile,
+// .homepage__daily__category .btn {
+//   @include font(inter, medium);
+// }
+
+// // inter-semibold
+// .card--testimonial .name,
+// .btn_def--nav {
+//   @include font(inter, semibold);
+// }
+
+// // inter-bold
+// .search-box__top__btn {
+//   @include font(inter, medium);
+// }
+
+// // manrope-extralight
+// .homepage__daily__explore div {
+//   @include font(manrope, extralight);
+// }
+
+// // manrope-light
+
+// // manrope-semibold
+// .homepage__how-works aside p,
+// .footer li p,
+// .filter__title {
+//   @include font(manrope, semibold);
+// }
+
+// // manrope-bold
+// .card--daily .card-bottom a {
+//   @include font(manrope, bold);
+// }
+
+// // manrope-extrabold
+// .search-box__top,
+// .homepage__how-works .number,
+// .filter__header {
+//   @include font(manrope, extrabold);
+// }
+
+// poppins-semibold
+
+// roboto-regular
