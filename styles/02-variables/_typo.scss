@@ -68,7 +68,7 @@ h4 {
     font-size: $font-18;
   }
 
-  &__reviews {
+  &__review {
     @include font(inter, medium);
     font-size: $font-14;
     font-weight: $bold;
@@ -421,6 +421,17 @@ h4 {
 
 // search-jobsTwo
 .srjTwo {
+  &__location {
+    header {
+      @include font(manrope, regular);
+      font-size: $font-14;
+      font-weight: $bold;
+      .price {
+        @include font(inter, medium);
+        font-size: $font-14;
+      }
+    }
+  }
 }
 
 // company

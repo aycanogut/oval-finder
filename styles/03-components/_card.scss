@@ -1,46 +1,50 @@
 // cards
 
 .card {
-  &__description {
-    i {
-      padding-right: 6px;
-    }
-    span {
-      padding-right: 24px;
-    }
-
-    padding: 24px 0 16px 0;
-  }
+  // homepage-daily-job-board
   &--daily {
-    padding: 24px;
+    padding: 24px 26px 18px 24px;
 
     .card__topper {
       display: flex;
       align-items: center;
 
-      .company-name {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .card__company-name {
         margin-right: auto;
         padding: 0 12px;
       }
+      .card__time {
+        margin-left: auto;
+      }
     }
 
-    .card__description {
-      span {
-        padding-right: 20px;
-      }
-      i {
-        padding-right: 6px;
-      }
-    }
     .card__body {
-      padding: 16px 2px 24px 0;
+      padding-top: 16px;
+      padding-bottom: 0px;
+      min-height: 120px;
     }
 
     .card__bottom {
       display: flex;
     }
+
+    .card__description {
+      // padding-top: 26px;
+      i {
+        padding-right: 6px;
+      }
+      span {
+        padding-right: 24px;
+      }
+    }
   }
 
+  // homepage-testimonial
   &--testimonial {
     padding: 38px 56px 56px 56px;
 
@@ -54,6 +58,7 @@
     }
   }
 
+  // homepage-clients
   &--clients {
     padding: 47px 10px;
     text-align: center;
@@ -69,6 +74,7 @@
     }
   }
 
+  // search-jobsOne- srjOne-result
   &--srOne {
     padding: 24px 32px 32px 32px;
 
@@ -79,6 +85,10 @@
       list-style-type: none;
     }
     .card__topper {
+      img {
+        width: 32px;
+        height: 32px;
+      }
       .card__company-name {
         margin: auto 0 auto 0;
         padding-left: 12px;
@@ -113,35 +123,47 @@
     }
   }
 
+  // search-employeers-search-employeers-result
   &--employee {
     padding: 24px 32px;
 
-    .card__review {
-      margin-left: auto;
-    }
+    .card__topper {
+      img {
+        width: 48px;
+        height: 48px;
+        header + aside {
+          display: block;
+          margin-left: auto;
+        }
+      }
+      .card__topper-left {
+        padding-left: 12px;
+      }
 
-    header + aside {
-      display: block;
-      margin-left: auto;
-    }
-    .card__topper-left {
-      padding-left: 12px;
-    }
+      .card__topper-right {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        text-align: right;
 
-    .card__topper-right {
-      margin-left: auto;
-      display: flex;
-      flex-direction: row;
-      text-align: right;
-
-      .card__review,
-      span {
-        display: block;
+        .card__review {
+          margin-left: auto;
+          span {
+            display: block;
+          }
+        }
       }
     }
 
     .card__description {
+      padding: 27px 0 16px 0;
       border-bottom: 1px solid $color-bonjour;
+      span {
+        padding-right: 10px;
+        i {
+          padding-right: 6px;
+        }
+      }
     }
 
     .card__descriptor {
@@ -149,13 +171,225 @@
     }
   }
 
+  // search-jobsTwo - srjTwo-job-details
   &--srTwo {
+    padding: 24px 32px 32px 32px;
+
+    .card__topper {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      .card__company-name {
+        margin: auto 0 auto 0;
+        padding: 0 10px;
+      }
+
+      .card__ratings {
+        margin: auto 0 auto 0;
+      }
+      .card__social {
+        margin: auto 0 auto auto;
+        i {
+          padding: 0 3px;
+        }
+        a {
+          padding: 0 16px;
+        }
+      }
+    }
+    header {
+      h4 {
+        padding-top: 23px;
+      }
+    }
+    .card__description {
+      display: flex;
+      border-bottom: 1px solid $color-bonjour;
+      .card__time {
+        margin-left: auto;
+        padding: 0;
+      }
+    }
+
+    .card__body {
+      padding-bottom: 32px;
+      .card__descriptor {
+        font-weight: $bold;
+
+        padding: 22px 0 14px 0;
+      }
+      ul {
+        padding: 0;
+        padding-left: 16px;
+      }
+      p {
+        margin: 0;
+        line-height: 26px;
+      }
+    }
+
+    .card__bottom {
+      border-top: 1px solid $color-bonjour;
+      padding-top: 32px;
+      img {
+        padding: 50px 0 0 32px;
+      }
+    }
   }
 
+  // company - company-employeer-information
   &--company {
+    padding: 24px 30px 30px 30px;
+
+    .card__topper {
+      img {
+        width: 72px;
+        height: 72px;
+      }
+      .card__topper-left {
+        padding-left: 12px;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0 auto 0;
+      }
+
+      .card__topper-right {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+
+        .card__review,
+        span {
+          display: block;
+        }
+      }
+
+      border-bottom: 1px solid $color-bonjour;
+    }
+    .card__description__icons {
+      padding-top: 32px;
+      span {
+        display: flex;
+        i {
+          padding-right: 6px;
+        }
+      }
+      span:nth-child(even) {
+        padding-left: 20px;
+      }
+      .card__description__item {
+        padding-bottom: 24px;
+      }
+    }
+    .card__description__text {
+      .card__descriptor {
+        font-weight: $bold;
+        padding-bottom: 14px;
+      }
+      p:nth-last-child(1) {
+        margin: 0;
+      }
+    }
   }
 
+  // company - company-job-boards
+  &--boards {
+    padding: 24px 0;
+    border-bottom: 1px solid $color-bonjour;
+    .card__topper {
+      display: flex;
+      span {
+        margin-left: auto;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .card__company-name {
+        margin: auto 0 auto 0;
+      }
+    }
+    .card__body {
+      .card__title {
+        padding: 16px 0;
+      }
+    }
+    .card__description {
+      display: flex;
+
+      span {
+        padding-right: 24px;
+        i {
+          padding-right: 7px;
+        }
+      }
+      .card__time {
+        margin-left: auto;
+      }
+    }
+  }
+
+  // company - company-reviews-cards
   &--reviews {
+    padding: 24px 0 34px 0;
+
+    .card__topper {
+      display: flex;
+
+      .card__user {
+        padding-left: 12px;
+        .card__ratings {
+          i {
+            font-size: 10px;
+          }
+          i:nth-last-child(1) {
+            font-size: 16px;
+          }
+        }
+      }
+      .card__time {
+        margin-left: auto;
+      }
+    }
+
+    .card__recommendation {
+      display: flex;
+      padding-left: 60px;
+      .btn_def {
+        padding-right: 8px;
+        i {
+          padding: 0 4px;
+        }
+      }
+    }
+
+    .card__body {
+      padding: 14px 23px 16px 65px;
+      .card__comment {
+        padding-bottom: 9px;
+      }
+      .card__text {
+        margin: 0;
+      }
+    }
+    .card__bottom {
+      display: flex;
+      padding: 0px 23px 0 65px;
+
+      i {
+        padding: 0 8px;
+      }
+      .report {
+        margin: auto 0;
+      }
+      .share {
+        margin: auto 0 auto auto;
+        padding: 0 32px;
+      }
+    }
   }
 
   &--benefits {

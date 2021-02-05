@@ -3,6 +3,7 @@
 .btn_def {
   display: block;
   border: none;
+  text-align: center;
 
   // navigation
   &--nav {
@@ -39,17 +40,35 @@
 
   // searchjobsTwo-location
   &--location {
-    padding: 16px 47px;
-    background-color: $color-white;
-    color: $color-shipgray;
+    display: inline-block;
+    padding: 12px 78px;
+    background-color: $color-coral;
+    color: $color-white;
   }
 
   // company-reviews-cards
   &--helpful {
+    display: inline-block;
     padding: 10px 12px;
-    background-color: $color-white;
-    color: $color-shipgray;
-    border: 1px solid $color-shipgray;
+    background-color: transparent;
+    color: $color-coral;
+    border: 1px solid $color-coral;
+  }
+
+  // company-reviews-cards
+
+  &--recommendation-green {
+    color: $color-chateaugreen;
+    background-color: rgba(57, 177, 99, 0.1);
+  }
+  &--recommendation-red {
+    color: $color-bittersweet;
+    background-color: rgba(255, 97, 97, 0.1);
+  }
+
+  &--recommendation-gray {
+    color: $color-midgray;
+    background-color: rgba(100, 98, 106, 0.1);
   }
 
   &--pricing {

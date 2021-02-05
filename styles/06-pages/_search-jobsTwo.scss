@@ -1,0 +1,17 @@
+// search-jobs-two
+
+.srjTwo {
+  &__location {
+    padding: 23px 14px 10px 10px;
+    header {
+      padding-bottom: 15px;
+    }
+
+    .price {
+      padding: 16px 8px;
+      i {
+        padding-right: 8px;
+      }
+    }
+  }
+}
