@@ -78,21 +78,38 @@
     color: $color-bittersweet;
     background-color: rgba(255, 97, 97, 0.1);
   }
-
   &--recommendation-gray {
     color: $color-midgray;
     background-color: rgba(100, 98, 106, 0.1);
   }
 
+  // pricing-price
   &--pricing {
     padding: 16px 20px;
-    background-color: $color-white;
-    color: $color-shipgray;
+    background-color: $color-coral;
+    color: $color-white;
   }
   &--pricing-gray {
     padding: 16px 20px;
-    background-color: $color-bonjour;
+    background-color: $color-athensgray;
     color: $color-midgray;
+  }
+
+  // company-right
+  &--share {
+    display: inline-block;
+    padding: 16px 28px;
+    color: $color-midgray;
+    background-color: $color-white;
+    i {
+      padding-right: 7px;
+    }
+  }
+  &--review {
+    display: inline-block;
+    padding: 16px 47px;
+    color: $color-white;
+    background-color: $color-blazeorange;
   }
 }
 

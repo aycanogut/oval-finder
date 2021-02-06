@@ -1,0 +1,8 @@
+// search-employees
+
+.navbar {
+  &__menu-left > a,
+  &__menu-right > a {
+    color: $color-shipgray;
+  }
+}

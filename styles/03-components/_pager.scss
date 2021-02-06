@@ -1,1 +1,21 @@
 // pager
+
+.page-item > a {
+  color: $color-mountainmist;
+  border: none;
+}
+.page-item.active {
+  color: $color-shipgray;
+}
+.page-item > a:hover {
+  color: $color-shipgray;
+}
+
+.pager > a {
+  color: $color-blazeorange;
+  text-decoration: none;
+}
+
+.pager > a:hover {
+  color: $color-shipgray;
+}

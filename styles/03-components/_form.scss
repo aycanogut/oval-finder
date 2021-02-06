@@ -1,1 +1,17 @@
 // filter
+
+.filter {
+  &__header {
+    color: $color-mountainmist;
+    text-transform: uppercase;
+  }
+  &__section > a {
+    text-decoration: none;
+  }
+  &__title {
+    color: $color-black;
+  }
+  &__text {
+    color: $color-shipgray;
+  }
+}

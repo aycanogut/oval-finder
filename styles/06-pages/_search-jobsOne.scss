@@ -1,5 +1,12 @@
-// pages
+// search-jobs-one
 
 .header-srOne {
   background-color: $color-nebula;
+
+  .navbar {
+    &__menu-left > a,
+    &__menu-right > a {
+      color: $color-shipgray;
+    }
+  }
 }

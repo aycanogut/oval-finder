@@ -55,8 +55,12 @@ h4 {
     font-size: $font-14;
   }
   &__ratings {
-    @include font(inter, medium);
+    @include font(inter, light);
     font-size: $font-14;
+    font-weight: $regular;
+    span {
+      font-weight: $regular;
+    }
   }
 
   &__social {
@@ -69,7 +73,7 @@ h4 {
   }
 
   &__review {
-    @include font(inter, medium);
+    @include font(inter, regular);
     font-size: $font-14;
     font-weight: $bold;
     span {
@@ -218,6 +222,7 @@ h4 {
   .filter {
     @include font(manrope, bold);
     font-size: $font-12;
+    font-weight: $light;
     text-transform: uppercase;
   }
 }
@@ -225,14 +230,14 @@ h4 {
 // forms
 .filter {
   .filter__header {
-    @include font(manrope, bold);
+    @include font(manrope, regular);
     font-size: $font-12;
   }
 
   .filter__title {
-    @include font(manrope, bold);
+    @include font(manrope, light);
     font-size: $font-14;
-    font-weight: $light;
+    font-weight: $extrabold;
   }
 
   .filter__text {
@@ -462,6 +467,30 @@ h4 {
     p {
       @include font(manrope, regular);
       font-size: $font-14;
+      font-weight: $light;
+    }
+  }
+  &__culture {
+    header {
+      @include font(manrope, bold);
+      font-size: $font-16;
+      font-weight: $light;
+    }
+    p,
+    a {
+      @include font(inter, regular);
+      font-size: $font-14;
+    }
+  }
+  &__contact {
+    header {
+      @include font(manrope, bold);
+      font-size: $font-16;
+      font-weight: $light;
+    }
+    div {
+      @include font(inter, regular);
+      font-size: $font-14;
     }
   }
 }
@@ -485,6 +514,10 @@ h4 {
     @include font(inter, regular);
     font-size: $font-14;
   }
+  &__old-price {
+    @include font(inter, regular);
+    font-size: $font-14;
+  }
   &__price {
     @include font(manrope, extrabold);
     font-size: $font-48;
@@ -499,16 +532,22 @@ h4 {
     @include font(inter, regular);
     font-size: $font-16;
   }
-  &__traits__option {
-    @include font(inter, semibold);
+  &__traits__option,
+  &__traits__option--marked {
+    @include font(inter, regular);
     font-size: $font-14;
-    font-weight: $extralight;
+    font-weight: $bold;
   }
 
   &__option {
     @include font(inter, regular);
     font-size: $font-14;
   }
+}
+
+.showing {
+  @include font(inter, regular);
+  font-size: $font-14;
 }
 
 // // !font-families - global classes

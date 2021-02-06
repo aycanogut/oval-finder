@@ -1,14 +1,23 @@
 // search-jobs-two
 
+.navbar {
+  &__menu-left > a,
+  &__menu-right > a {
+    color: $color-shipgray;
+  }
+}
+
 .srjTwo {
   &__location {
     padding: 23px 14px 10px 10px;
     header {
       padding-bottom: 15px;
+      color: $color-black;
     }
 
     .price {
       padding: 16px 8px;
+      color: $color-midgray;
       i {
         padding-right: 8px;
       }

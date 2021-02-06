@@ -6,7 +6,7 @@
   background-color: $color-corduroy;
 
   .navbar {
-    .navbar-brand {
+    &__brand > img {
       color: $color-white;
     }
 

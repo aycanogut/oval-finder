@@ -1,0 +1,49 @@
+// pricing
+
+.navbar {
+  &__menu-left > a,
+  &__menu-right > a {
+    color: $color-shipgray;
+  }
+}
+
+.pricing {
+  &__heading__text {
+    color: $color-midgray;
+  }
+  &__plans__form {
+    .selection {
+      color: $color-shipgray;
+    }
+    span {
+      color: $color-coral;
+    }
+  }
+  &__text {
+    color: $color-mountainmist;
+  }
+  &__stacks__title {
+    color: $color-spunpearl;
+  }
+  &__stacks__text {
+    color: $color-shipgray;
+  }
+  &__old-price {
+    color: $color-spunpearl;
+    text-decoration: line-through;
+  }
+  &__traits__option {
+    color: $color-spunpearl;
+  }
+  &__traits__option--marked {
+    color: $color-shipgray;
+  }
+  .oval-check-filled {
+    color: $color-carbbeangreen;
+  }
+  &__button {
+    a {
+      text-decoration: none;
+    }
+  }
+}

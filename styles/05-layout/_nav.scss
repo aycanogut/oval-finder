@@ -5,26 +5,31 @@
   height: 80px;
   padding: 16px 23px;
 
-  .navbar-brand {
+  &__brand {
     padding: 0;
     margin: 0;
-    color: $color-white;
   }
 
   &__list {
     padding: 0 22px;
+    li a {
+      text-decoration: none;
+    }
+  }
+  &__btn {
+    a {
+      text-decoration: none;
+    }
   }
 
   &__menu-left {
     .navbar__link {
-      color: $color-white;
       padding: 0 24px;
     }
   }
   &__menu-right {
     padding: 0 25px;
     .navbar__link {
-      color: $color-white;
     }
   }
 }

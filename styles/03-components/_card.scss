@@ -403,12 +403,15 @@
   &--benefits {
     header {
       padding: 0 0 4px 0;
+      color: $color-shipgray;
     }
     i {
       padding: 1px 8px 0 1px;
+      color: $color-chateaugreen;
     }
     p {
       padding: 0 10px 0 24px;
+      color: $color-mountainmist;
     }
   }
 
@@ -446,5 +449,38 @@
     }
   }
   &__carousel {
+  }
+  &__header {
+    color: $color-shipgray;
+  }
+  &__review {
+    color: $color-coral;
+    span {
+      color: $color-mountainmist;
+    }
+  }
+  &__descriptor {
+    color: $color-black;
+  }
+  &__ratings {
+    color: $color-mountainmist;
+    span {
+      color: $color-manatee;
+    }
+  }
+  &__social {
+    a {
+      color: $color-midgray;
+      text-decoration: none;
+    }
+  }
+  &__text {
+    color: $color-shipgray;
+  }
+  &__name {
+    color: $color-shipgray;
+  }
+  &__comment {
+    color: $color-shipgray;
   }
 }

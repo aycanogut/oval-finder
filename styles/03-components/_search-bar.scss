@@ -4,8 +4,8 @@
   background-color: $color-white;
 
   &__top {
-    position: absolute;
-    top: -25px;
+    // position: absolute;
+    // top: -25px;
   }
   &__top__btn {
     color: $color-shipgray;
@@ -74,6 +74,15 @@
   }
 }
 
+.showing {
+  color: $color-mountainmist;
+}
+
 .sort-by {
   color: $color-mountainmist;
+}
+
+.filter {
+  color: $color-mountainmist;
+  text-transform: uppercase;
 }

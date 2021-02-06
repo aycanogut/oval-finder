@@ -17,6 +17,10 @@
     color: $color-midgray;
   }
 
+  &__bottom-links ul li a {
+    text-decoration: none !important;
+  }
+
   &--sm {
   }
 }
