@@ -5,5 +5,11 @@ body {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-black;
 }

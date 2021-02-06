@@ -18,6 +18,19 @@
     color: $color-white;
   }
 
+  // homepage-find-job
+  &--find-jobs-now {
+    display: inline;
+    padding: 24px 44px;
+    color: $color-white;
+    background-color: $color-coral;
+    img {
+      padding-right: 11px;
+      font-size: 20px;
+      color: $color-white;
+    }
+  }
+
   // company-vacancies
   &--search-box-xs {
     padding: 10px 17px;
@@ -81,4 +94,8 @@
     background-color: $color-bonjour;
     color: $color-midgray;
   }
+}
+
+.dropdown-toggle {
+  color: $color-shipgray;
 }

@@ -1,15 +1,78 @@
 // homepage
 
-.homepage {
-  .container {
-    padding: 0;
-  }
-}
-
 .header-homepage {
   width: 100%;
   height: 603px;
   background-color: $color-corduroy;
+
+  .navbar {
+    .navbar-brand {
+      color: $color-white;
+    }
+
+    &__menu-left,
+    &__menu-right {
+      .navbar__link {
+        color: $color-white;
+      }
+    }
+  }
+  .homepage {
+    .container {
+      padding: 0;
+    }
+    &__heading {
+      padding: 85px 520px 0 0;
+      color: $color-white;
+    }
+    &__text {
+      padding-top: 21px;
+    }
+    &__trending__left {
+      p {
+        color: $color-shipgray;
+      }
+      a {
+        color: $color-blazeorange;
+      }
+    }
+  }
+}
+
+.homepage {
+  &__how-works > p {
+    color: $color-mountainmist;
+  }
+  &__how-works > ul > li > p {
+    color: $color-black;
+  }
+  &__how-works > ul > li > p > i {
+    color: $color-spunpearl;
+  }
+  &__how-works > ul > li > p > span {
+    color: $color-blazeorange;
+  }
+  &__how-works {
+    ul {
+      list-style: none;
+    }
+  }
+  &__daily__explore {
+    div {
+      color: $color-haiti;
+    }
+  }
+  &__clients__post-job {
+    p {
+      color: $color-shipgray;
+    }
+    a {
+      color: $color-blazeorange;
+    }
+  }
+  &__clients__text {
+    color: $color-shipgray;
+  }
 }
 
 .search-box__top {

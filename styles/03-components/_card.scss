@@ -56,6 +56,13 @@
     h3 {
       padding: 21px 0 59px 0;
     }
+
+    &__aside {
+      color: $color-mountainmist;
+      span {
+        color: $color-shipgray;
+      }
+    }
   }
 
   // homepage-clients
@@ -71,6 +78,7 @@
     }
     p {
       padding: 0 16px;
+      color: $color-midgray;
     }
   }
 
@@ -393,12 +401,50 @@
   }
 
   &--benefits {
+    header {
+      padding: 0 0 4px 0;
+    }
+    i {
+      padding: 1px 8px 0 1px;
+    }
+    p {
+      padding: 0 10px 0 24px;
+    }
   }
 
-  &:hover {
+  &--daily:hover,
+  &--srOne:hover,
+  &--employee:hover,
+  &--boards:hover {
     .card__title {
       color: $color-coral;
       transition: color 0.5s ease-in-out;
+      text-decoration: none !important;
     }
+  }
+
+  // #########
+  // COLORING
+  // #########
+
+  &__company-name,
+  &__title {
+    color: $color-shipgray;
+  }
+  &__time {
+    color: $color-spunpearl;
+  }
+  &__description {
+    color: $color-midgray;
+  }
+  &__bottom {
+    p {
+      color: $color-shipgray;
+    }
+    a {
+      color: $color-blazeorange;
+    }
+  }
+  &__carousel {
   }
 }

@@ -1,6 +1,22 @@
 // footer
 
 .footer {
+  &__brand {
+    img {
+      color: $color-coral;
+    }
+  }
+  &__list > li > p {
+    color: $color-shipgray;
+  }
+  &__list > li > a {
+    color: $color-midgray;
+  }
+  &__bottom-links a,
+  &__language-bar {
+    color: $color-midgray;
+  }
+
   &--sm {
   }
 }

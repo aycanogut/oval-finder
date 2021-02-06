@@ -194,6 +194,7 @@ h4 {
   &__top {
     @include font(manrope, extrabold);
     font-size: $font-12;
+    font-weight: $light;
   }
   &__searchInput {
     @include font(inter, regular);
@@ -333,7 +334,7 @@ h4 {
 
   &__how-works {
     p {
-      @include font(manrope, semibold);
+      @include font(manrope, regular);
       font-size: $font-14;
     }
 
@@ -396,7 +397,7 @@ h4 {
         font-size: $font-16;
       }
       a {
-        @include font(manrope, bold);
+        @include font(manrope, regular);
         font-size: $font-18;
       }
     }
