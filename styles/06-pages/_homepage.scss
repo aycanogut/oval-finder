@@ -1,8 +1,10 @@
 // homepage
 
 .header-homepage {
-  width: 100%;
+  width: auto;
   height: 603px;
+  background: url("../assets/img/bg-homepage.svg");
+  background-repeat: no-repeat;
   background-color: $color-corduroy;
 
   .navbar {

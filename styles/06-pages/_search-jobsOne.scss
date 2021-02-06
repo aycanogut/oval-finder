@@ -1,7 +1,11 @@
 // search-jobs-one
 
 .header-srOne {
+  width: auto;
+  height: 241px;
+  background: url("../assets/img/bg-searchone.svg");
   background-color: $color-nebula;
+  background-repeat: no-repeat;
 
   .navbar {
     &__menu-left > a,

@@ -6,3 +6,16 @@
     color: $color-shipgray;
   }
 }
+
+.search-employeers-header {
+  width: auto;
+  height: 241px;
+  background: url("../assets/img/bg-employee.svg");
+  background-color: $color-bridesmaid;
+  background-repeat: no-repeat;
+
+  // nav {
+  //   background: url("/assets/img/bg-employee.svg");
+  //   background-color: $color-bridesmaid;
+  // }
+}
