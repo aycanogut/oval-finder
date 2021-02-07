@@ -1,21 +1,42 @@
 // pager
 
-.page-item > a {
-  color: $color-mountainmist;
-  border: none;
-}
-.page-item.active {
-  color: $color-shipgray;
-}
-.page-item > a:hover {
-  color: $color-shipgray;
-}
+.page-navigations {
+  display: flex;
+  padding: 30px 0;
 
-.pager > a {
-  color: $color-blazeorange;
-  text-decoration: none;
-}
+  .page-item > a {
+    color: $color-mountainmist;
+    border: none;
+    padding: 0;
+    margin-right: 32px;
+  }
+  .page-item.active {
+    color: $color-shipgray;
+  }
+  .page-link:hover {
+    color: $color-shipgray;
+    background-color: $color-white;
+    border: none;
+  }
 
-.pager > a:hover {
-  color: $color-shipgray;
+  .page-link:focus {
+    box-shadow: $color-white;
+  }
+
+  .pager {
+    margin-left: auto;
+    .previous,
+    .next {
+      padding-left: 36px;
+    }
+  }
+
+  .pager > a {
+    color: $color-blazeorange;
+    text-decoration: none;
+  }
+
+  .pager > a:hover {
+    color: $color-shipgray;
+  }
 }

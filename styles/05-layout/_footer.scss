@@ -22,5 +22,22 @@
   }
 
   &--sm {
+    width: auto;
+    height: 64px;
+    background-color: $color-white;
+
+    &__brand {
+      display: flex;
+      padding-left: 150px;
+    }
+
+    .footer__bottom-links div > ul {
+      display: flex;
+      justify-content: end;
+      margin: 0;
+      a {
+        padding-left: 48px;
+      }
+    }
   }
 }

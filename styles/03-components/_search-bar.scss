@@ -4,40 +4,53 @@
   background-color: $color-white;
 
   &__top {
-    // position: absolute;
-    // top: -25px;
+    position: absolute;
   }
   &__top__btn {
+    position: relative;
+    top: -20px;
+    width: 109px;
+    height: 33px;
     color: $color-shipgray;
-    background-color: $color-dustygray;
     text-transform: uppercase;
     text-decoration: none !important;
-    padding: 6px 57px 11px 18px;
+  }
+  &__top__btn:first-child {
+    padding: 6px 57px 3px 18px;
+  }
+  &__top__btn:last-child {
+    padding: 6px 18px 3px 12px;
+    margin-left: -3px;
   }
 
-  // !search-box top ile padding ver
+  // top-btn pseudo actions
 
+  &__top__btn:link {
+    color: $color-shipgray;
+    background-color: $color-white;
+  }
+
+  &__top__btn:visited {
+    color: $color-shipgray;
+    background-color: $color-white;
+  }
   &__top__btn:hover {
     color: $color-shipgray;
   }
 
-  &__top__btn:link {
-    background-color: $color-white;
+  &__top__btn:focus {
+    color: $color-shipgray;
+    background-color: $color-dustygray;
   }
 
-  &__top__btn:focus-visible {
-    background-color: $color-shipgray;
-  }
-  &__top__btn:focus-within {
+  &__top__btn:active {
     background-color: $color-white;
+    background-color: $color-dustygray;
   }
 
   &__searchInput {
     display: flex;
     flex-direction: row;
-  }
-
-  .col-6:first-child {
   }
 
   .input-search {
@@ -49,19 +62,18 @@
     color: $color-midgray;
   }
 
-  .input-search:nth-of-type(2) {
-    border-left: 1px solid $color-bonjour;
-  }
-
   .input i {
     font-size: 22px;
     background-color: $color-white;
     color: $color-spunpearl;
-    // padding-left: 21px;
+    padding-left: 20px;
   }
   input {
     outline: none;
     text-indent: 15px;
+  }
+
+  input[placeholder="City, state or zip"] {
   }
 
   .search-btn {
@@ -84,5 +96,4 @@
 
 .filter {
   color: $color-mountainmist;
-  text-transform: uppercase;
 }

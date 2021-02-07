@@ -95,10 +95,13 @@ h4 {
     }
   }
   &--testimonial {
-    h3 {
+    figure {
+      @include font(manrope, medium);
+      font-size: $font-32;
+      font-weight: $medium;
       line-height: 44px;
     }
-    aside {
+    figcaption {
       @include font(inter, medium);
       font-size: $font-20;
       font-weight: $extralight;
