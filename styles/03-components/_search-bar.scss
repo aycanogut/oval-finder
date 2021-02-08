@@ -1,6 +1,7 @@
 // search-bar
 
 .search-box {
+  display: flex;
   background-color: $color-white;
 
   &__top {
@@ -14,38 +15,34 @@
     color: $color-shipgray;
     text-transform: uppercase;
     text-decoration: none !important;
+
+    &:link {
+      color: $color-shipgray;
+      background-color: $color-white;
+    }
+    &:visited {
+      color: $color-shipgray;
+      background-color: $color-white;
+    }
+    &:hover {
+      color: $color-shipgray;
+    }
+    &:focus {
+      color: $color-shipgray;
+      background-color: $color-dustygray;
+    }
+    &:active {
+      background-color: $color-white;
+      background-color: $color-dustygray;
+    }
   }
+
   &__top__btn:first-child {
     padding: 6px 57px 3px 18px;
   }
   &__top__btn:last-child {
     padding: 6px 18px 3px 12px;
     margin-left: -3px;
-  }
-
-  // top-btn pseudo actions
-
-  &__top__btn:link {
-    color: $color-shipgray;
-    background-color: $color-white;
-  }
-
-  &__top__btn:visited {
-    color: $color-shipgray;
-    background-color: $color-white;
-  }
-  &__top__btn:hover {
-    color: $color-shipgray;
-  }
-
-  &__top__btn:focus {
-    color: $color-shipgray;
-    background-color: $color-dustygray;
-  }
-
-  &__top__btn:active {
-    background-color: $color-white;
-    background-color: $color-dustygray;
   }
 
   &__searchInput {
@@ -73,16 +70,20 @@
     text-indent: 15px;
   }
 
-  input[placeholder="City, state or zip"] {
-  }
-
   .search-btn {
     margin: auto 12px auto auto;
   }
 
-  &--xs {
-  }
   &--sm {
+  }
+
+  &--md {
+    .row {
+      width: 975px;
+    }
+    .input-search {
+      margin: 1px;
+    }
   }
 }
 

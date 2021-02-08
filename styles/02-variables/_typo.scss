@@ -41,6 +41,11 @@ h4 {
     @include font(inter, regular);
     font-size: $font-14;
   }
+  &__header {
+    @include font(inter, regular);
+    font-size: $font-24;
+    font-weight: $light;
+  }
   &__description {
     @include font(inter, regular);
     font-size: $font-14;

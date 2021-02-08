@@ -16,9 +16,15 @@
       text-decoration: none;
     }
   }
+
   &__btn {
     a {
       text-decoration: none;
+      @include transition($all);
+      &:hover {
+        color: $color-haiti;
+        background-color: $color-spunpearl;
+      }
     }
   }
 

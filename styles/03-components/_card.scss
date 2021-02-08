@@ -97,6 +97,7 @@
       list-style-type: none;
     }
     .card__topper {
+      padding-bottom: 16px;
       img {
         width: 32px;
         height: 32px;
@@ -119,6 +120,7 @@
     }
 
     .card__description {
+      padding-top: 16px;
       i {
         padding-right: 6px;
       }
@@ -423,10 +425,9 @@
   &--srOne:hover,
   &--employee:hover,
   &--boards:hover {
-    .card__title {
+    .card__title,
+    .card__header {
       color: $color-coral;
-      transition: color 0.5s ease-in-out;
-      text-decoration: none !important;
     }
   }
 
@@ -435,9 +436,14 @@
   // #########
 
   &__company-name,
-  &__title {
+  &__title,
+  &__header {
+    transition-property: color;
+    transition-duration: 00.3s;
     color: $color-shipgray;
+    text-decoration: none !important;
   }
+
   &__time {
     color: $color-spunpearl;
   }

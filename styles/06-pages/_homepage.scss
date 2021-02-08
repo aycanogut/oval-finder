@@ -5,6 +5,7 @@
   height: 603px;
   background: url("../assets/img/bg-homepage.svg");
   background-repeat: no-repeat;
+  background-position: right;
   background-color: $color-corduroy;
 
   .navbar {
@@ -16,9 +17,15 @@
     &__menu-right {
       .navbar__link {
         color: $color-white;
+        @include transition($all);
+        &:hover {
+          @include transition($all);
+          color: $color-nebula;
+        }
       }
     }
   }
+
   .homepage {
     .container {
       padding: 0;
@@ -27,8 +34,11 @@
       padding: 85px 520px 0 0;
       color: $color-white;
     }
+    &__header {
+      color: $color-white;
+    }
     &__text {
-      padding-top: 21px;
+      padding: 21px 0 108px 0;
     }
     &__trending__left {
       p {
@@ -42,6 +52,42 @@
 }
 
 .homepage {
+  &__trending {
+    display: flex;
+    padding: 81px 0 86px 0px;
+    left: 50;
+    background-color: $color-geyser;
+
+    &__left {
+      padding-right: 35px;
+      p {
+        margin: 0;
+        padding-top: 16px;
+        color: $color-shipgray;
+        white-space: nowrap;
+      }
+      a {
+        color: $color-blazeorange;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__right {
+      a {
+        margin: 0px 8px 8px 0;
+        color: $color-midgray;
+        text-decoration: none;
+        @include transition($all);
+        &:hover {
+          color: $color-white;
+          background-color: $color-corduroy;
+        }
+      }
+    }
+  }
+
   &__how-works > p {
     color: $color-mountainmist;
   }

@@ -1,12 +1,11 @@
 // mixin
 
 // transition
+$all: all 0.3s ease-in-out;
 
-$args: all 0.3s ease-in-out;
-
-@mixin transition($args) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -o-transition: $args;
-  transition: $args;
+@mixin transition($all) {
+  -webkit-transition: $all;
+  -moz-transition: $all;
+  -o-transition: $all;
+  transition: $all;
 }
