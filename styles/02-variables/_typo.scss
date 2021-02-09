@@ -237,23 +237,27 @@ h4 {
 
 // forms
 .filter {
-  .filter__header {
-    @include font(manrope, regular);
+  &__header {
+    @include font(manrope, bold);
     font-size: $font-12;
+    font-weight: $light;
+    letter-spacing: 1px;
   }
 
-  .filter__title {
-    @include font(manrope, light);
+  &__title {
+    @include font(manrope, medium);
     font-size: $font-14;
-    font-weight: $extrabold;
+    font-weight: $medium;
   }
 
-  .filter__text {
+  &__text {
     @include font(inter, regular);
     font-size: $font-14;
   }
 
-  &--srOne {
+  &__search-box::placeholder {
+    @include font(inter, regular);
+    font-size: $font-14;
   }
 }
 
@@ -283,12 +287,6 @@ h4 {
 }
 
 // sidebar
-.filter {
-  &__title {
-    @include font(manrope, extrabold);
-    font-size: $font-12;
-  }
-}
 
 // footer
 .footer {

@@ -85,279 +85,140 @@
 
           <div class="col-3">
 
-            <section class="filter filter-employeers">
-              <div>Filter Employers</div>
 
-              <form action="">
+            <aside class="filter">
+              <header class="filter__header">Filter Employers</header>
+              <div id="accordianId" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="filter__item" role="tab" id="section1HeaderId">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true"
+                      aria-controls="section1ContentId" class="filter__title">
+                      Company Sectors
+                    </a>
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true"
+                      aria-controls="section1ContentId" class="filter__icon"><i class="oval-arrow-down"></i>
+                    </a>
+                  </div>
+                  <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
 
-                <section class="filter__section">
-                  <a href="#" class="filter-toggle" onclick="return false;">
-                    <div class="filter__controls">
-                      <div class="row">
-                        <div class="col-11">
-                          <div class="filter__title">Company Sectors<i class="oval-arrow-down"></i></div>
-                        </div>
-                        <div class="col-1">
-                          <div class="filter__arrow"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-
-                  <section class="search-box--filter">
-                    <i class="oval-search"></i><input type="text" class="search" placeholder="Search sector">
-                  </section>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Administrative</div>
-                        </div>
-
-                      </div>
+                    <div class="filter__search">
+                      <i class="oval-search"></i>
+                      <input class="filter__search-box" type="search" id="site-search" name="q"
+                        aria-label="Search through site content" placeholder="Search sector">
                     </div>
 
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="" checked>
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Arts & Design</div>
-                        </div>
-
+                    <div class="filter__card-body">
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          Administrative
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue" checked>
+                          Arts & Design
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          Business
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          Consulting
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          Customer Services & Support
+                        </label>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <hr>
 
-                  </label>
-
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Business</div>
-                        </div>
-
+                <div class="card">
+                  <div class="filter__item" role="tab" id="section3HeaderId">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true"
+                      aria-controls="section3ContentId" class="filter__title">
+                      Global Company Size
+                    </a>
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true"
+                      aria-controls="section3ContentId" class="filter__icon"><i class="oval-arrow-down"></i>
+                    </a>
+                  </div>
+                  <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                    <div class="filter__card-body">
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          1 - 50
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          51 - 200
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          201 - 500
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          501 - 1000
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          1001 - 5000
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          5001 - 10000
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label filter__text">
+                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                            value="checkedValue">
+                          10000+
+                        </label>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <hr>
 
-                  </label>
+              </div>
 
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Consulting</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Customer Services & Support</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-                </section>
-
-                <section class="filter__section">
-                  <a href="#" class="filter-toggle" onclick="return false;">
-                    <div class="filter__controls">
-                      <div class="row">
-                        <div class="col-11">
-                          <div class="filter__title">Global Company Size<i class="oval-arrow-down"></i></div>
-                        </div>
-                        <div class="col-11">
-                          <div class="filter__arrow"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">1 - 50</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">51 - 200</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">201 - 500</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">501 - 1000</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">1001 - 5000</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">5001 - 10000</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">10000+</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                </section>
+            </aside>
 
 
-              </form>
-            </section>
           </div>
 
           <div class="col-9">

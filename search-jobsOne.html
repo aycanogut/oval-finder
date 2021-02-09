@@ -80,6 +80,7 @@
 
   <main>
 
+
     <section class="srjOne">
 
       <div class="container">
@@ -87,258 +88,170 @@
 
           <div class="col-3">
 
-            <section class="filter filter--srOne">
+
+            <aside class="filter">
               <header class="filter__header">Filter Jobs</header>
-              <form action="">
-                <section class=" filter__section">
-                  <a href="#" class="filter-toggle" onclick="return false;">
-                    <div class="filter__controls">
+              <div id="accordianId" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="filter__item" role="tab" id="section1HeaderId">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true"
+                      aria-controls="section1ContentId" class="filter__title">
+                      Job Types
+                    </a>
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true"
+                      aria-controls="section1ContentId" class="filter__icon"><i class="oval-arrow-down"></i></a>
+                  </div>
+                  <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                    <div class="filter__card-body">
                       <div class="row">
-                        <div class="col-11">
-                          <div class="filter__title">Job Types<i class="oval-arrow-down"></i></div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue" checked>
+                              Full-time
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Part-time
+                            </label>
+                          </div>
                         </div>
-                        <div class="col-1">
-                          <div class="filter__arrow"></div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Temporary
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Intern
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div class="options d-block">
-                    <label for="">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Full-time</div>
-                        </div>
-
-                      </div>
-                    </label>
                   </div>
-                  <div class="options d-block">
-                    <label for="">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-
-                          <div class="filter__text">Temporary</div>
-                        </div>
-
-                      </div>
-                    </label>
+                </div>
+                <hr>
+                <div class="card">
+                  <div class="filter__item" role="tab" id="section2HeaderId">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true"
+                      aria-controls="section2ContentId" class="filter__title">
+                      Degree
+                    </a>
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true"
+                      aria-controls="section2ContentId" class="filter__icon"><i class="oval-arrow-down"></i>
+                    </a>
                   </div>
-                  <div class="options d-block">
-                    <label for="">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-                          <div class="filter__text">Part-time</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="options d-block">
-                    <label for="">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
-                          </div>
-                          <div class="filter__text">Intern</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </section>
-                <section class="filter__section">
-                  <a href="#" class="filter-toggle" onclick="return false;">
-                    <div class="filter__controls">
+                  <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                    <div class="filter__card-body">
                       <div class="row">
-                        <div class="col-11">
-                          <div class="filter__title">Degree<i class="oval-arrow-down"></i></div>
-                        </div>
-                        <div class="col-11">
-                          <div class="filter__arrow"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <label for="">
-                    <div class="options d-block">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Associate
+                            </label>
                           </div>
-                          <div class="filter__text">Associate</div>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                  <label for="">
-                    <div class="options d-block">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Master's
+                            </label>
                           </div>
-                          <div class="filter__text">Bachelor's</div>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                  <label for="">
-                    <div class="options d-block">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Pursuing Degree
+                            </label>
                           </div>
-                          <div class="filter__text">Master's</div>
                         </div>
-                      </div>
-                    </div>
-                  </label>
-                  <label for="">
-                    <div class="options d-block">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Bachelor's
+                            </label>
                           </div>
-                          <div class="filter__text">Ph.D.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                  <label for="">
-                    <div class="options d-block">
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Ph.D.
+                            </label>
                           </div>
-                          <div class="filter__text">Pursuing Degree</div>
                         </div>
                       </div>
                     </div>
-                  </label>
-                </section>
-                <section class="filter__section">
-                  <a href="#" class="filter-toggle" onclick="return false;">
-                    <div class="filter__controls">
+                  </div>
+                </div>
+                <hr>
+                <div class="card">
+                  <div class="filter__item" role="tab" id="section3HeaderId">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true"
+                      aria-controls="section3ContentId" class="filter__title">
+                      Skill & qualifications
+                    </a>
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true"
+                      aria-controls="section3ContentId" class="filter__icon"><i class="oval-arrow-down"></i></a>
+
+                  </div>
+                  <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                    <div class="filter__card-body">
                       <div class="row">
-                        <div class="col-11">
-                          <div class="filter__title">Skill & qualifications<i class="oval-arrow-down"></i></div>
-                        </div>
-                        <div class="col-11">
-                          <div class="filter__arrow"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Full-time
+                            </label>
                           </div>
-
-                          <div class="filter__text">Full-time</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Part-time
+                            </label>
                           </div>
-
-                          <div class="filter__text">Temporary</div>
                         </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Temporary
+                            </label>
                           </div>
-
-                          <div class="filter__text">Part-time</div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </label>
-
-                  <label for="">
-                    <div class="options d-block">
-
-                      <div class="option">
-                        <div class="row">
-                          <div class="col-1">
-                            <div class="input">
-                              <input type="checkbox" class="filter-input" data-type="">
-                            </div>
+                          <div class="form-check">
+                            <label class="form-check-label filter__text">
+                              <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                                value="checkedValue">
+                              Intern
+                            </label>
                           </div>
-
-                          <div class="filter__text">Intern</div>
                         </div>
-
                       </div>
                     </div>
+                  </div>
+                </div>
+                <hr>
+              </div>
 
-                  </label>
-                </section>
-              </form>
-            </section>
+            </aside>
+
           </div>
 
           <div class="col-9">
