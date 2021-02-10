@@ -21,13 +21,20 @@
   // homepage-find-job
   &--find-jobs-now {
     display: inline;
-    padding: 24px 44px;
+    padding: 23px 52px;
     color: $color-white;
     background-color: $color-coral;
     img {
       padding-right: 11px;
       font-size: 20px;
       color: $color-white;
+    }
+    @include transition($all);
+    &:hover {
+      @include transition($all);
+      color: $color-black;
+      background-color: $color-nebula;
+      text-decoration: none;
     }
   }
 

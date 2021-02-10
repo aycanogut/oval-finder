@@ -1,6 +1,9 @@
 // footer
 
 .footer {
+  width: 100%;
+  height: auto;
+  float: left;
   &__brand {
     img {
       color: $color-coral;
@@ -12,7 +15,7 @@
   &__list > li > a {
     color: $color-midgray;
   }
-  &__bottom-links a,
+
   &__language-bar {
     color: $color-midgray;
   }
@@ -22,22 +25,138 @@
   }
 
   &--sm {
-    width: auto;
     height: 64px;
     background-color: $color-white;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    .row {
+      display: flex;
+    }
+    &__brand {
+    }
+    &__bottom-links {
+      margin-left: auto;
+    }
+    &__bottom-links > ul {
+      display: flex;
+      li {
+        padding-top: 6px;
+        a {
+          padding-left: 48px;
+          @include transition($all);
+          &:hover {
+            @include transition($all);
+            color: $color-rangoongreen;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &__bottom-links a {
+      color: $color-midgray;
+    }
+  }
 
+  &--lg {
+    padding-top: 100px;
     &__brand {
       display: flex;
-      padding-left: 150px;
+      flex-direction: column;
+      img {
+        width: 81px;
+        height: 24px;
+      }
+      span {
+        padding-top: 32px;
+      }
+    }
+    .footer__links {
+      padding-bottom: 23px;
     }
 
-    .footer__bottom-links div > ul {
+    .footer__list {
+      li > a {
+        text-decoration: none;
+        @include transition($all);
+        &:hover {
+          @include transition($all);
+          color: $color-rangoongreen;
+          font-weight: $regular;
+        }
+      }
+      li {
+        padding-bottom: 8px;
+      }
+    }
+    &__bottom {
       display: flex;
-      justify-content: end;
-      margin: 0;
+      .footer__social-icons {
+        a {
+          text-decoration: none;
+          padding: 0 5px;
+          img {
+            margin: auto;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding: 8px 0 12px 0;
+    }
+
+    &__bottom-links {
+      display: flex;
+      margin-left: 5%;
       a {
-        padding-left: 48px;
+        color: $color-midgray;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &__bottom-links > ul {
+      display: flex;
+      li {
+        padding: 6px 24px;
+        a {
+          @include transition($all);
+          &:hover {
+            @include transition($all);
+            color: $color-rangoongreen;
+          }
+        }
+      }
+    }
+    .footer__language-bar {
+      display: flex;
+      margin-left: auto;
+      p {
+        padding-right: 12px;
+      }
+      .dropdown-menu,
+      button {
+        margin-top: -20px;
+        color: $color-midgray;
+        background-color: transparent;
+        border: 1px solid $color-bonjour;
+        border-radius: 10px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $color-white;
+        }
+        .dropdown-menu {
+          padding: 0;
+          margin-top: 16px;
+          background-color: $color-white;
+        }
+
+        .dropdown-item {
+          background-color: $color-white;
+          padding: 8px 0 5px 0;
+          width: 50px;
+          &:hover {
+            background-color: $color-geyser;
+          }
+        }
       }
     }
   }

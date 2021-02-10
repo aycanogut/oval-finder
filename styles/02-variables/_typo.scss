@@ -6,8 +6,10 @@ h1 {
 }
 
 h2 {
-  @include font(manrope, semibold);
+  @include font(manrope, light);
   font-size: $font-48;
+  font-weight: $extrabold;
+  line-height: 66px;
 }
 
 h3 {
@@ -290,9 +292,17 @@ h4 {
 
 // footer
 .footer {
-  &__bottom-links {
-    @include font(inter, regular);
-    font-size: $font-12;
+  &--sm {
+    &__bottom-links {
+      @include font(inter, regular);
+      font-size: $font-12;
+    }
+  }
+  &--lg {
+    &__bottom-links {
+      @include font(inter, regular);
+      font-size: $font-12;
+    }
   }
   &__copyright,
   &__bottom {
@@ -301,19 +311,28 @@ h4 {
   }
   &__list {
     li p {
-      @include font(manrope, semibold);
+      @include font(manrope, regular);
       font-size: $font-14;
-      font-weight: $medium;
+      font-weight: $bold;
     }
     li a {
-      @include font(inter, regular);
+      @include font(inter, light);
       font-size: $font-14;
+      font-weight: $light;
     }
   }
   &__language-bar {
     p {
       @include font(inter, regular);
       font-size: $font-12;
+    }
+    button {
+      font-weight: $bold;
+    }
+    .dropdown-item {
+      @include font(inter, light);
+      font-size: $font-14;
+      font-weight: $medium;
     }
   }
 }
@@ -325,7 +344,6 @@ h4 {
     @include font(inter, regular);
     font-size: $font-16;
   }
-
   &__trending__left {
     p {
       @include font(inter, regular);
@@ -337,29 +355,25 @@ h4 {
       text-decoration: underline;
     }
   }
-
   &__trending__right {
     @include font(inter, regular);
     font-size: $font-14;
   }
-
   &__how-works {
     p {
-      @include font(manrope, regular);
-      font-size: $font-14;
+      @include font(manrope, medium);
+      font-size: $font-24;
+      font-weight: $regular;
     }
-
     .number {
       @include font(manrope, extrabold);
       font-size: $font-16;
     }
-
     .profile {
       @include font(inter, medium);
       font-size: $font-18;
     }
   }
-
   &__daily__category {
     p {
       @include font(inter, regular);
@@ -384,8 +398,15 @@ h4 {
       @include font(inter, regular);
       font-size: $font-18;
     }
+    .sort-by {
+      display: inline-block;
+    }
   }
-
+  &__daily__explore__category > a {
+    @include font(inter, regular);
+    font-size: $font-18;
+    text-decoration: underline;
+  }
   &__testimonial {
     .carousel-item h3 {
       @include font(manrope, semibold);
@@ -400,7 +421,6 @@ h4 {
       font-size: $font-20;
     }
   }
-
   &__clients {
     &__post-job {
       p {
@@ -418,11 +438,11 @@ h4 {
       font-size: $font-14;
     }
   }
-
   &__find-job__title {
     @include font(manrope, light);
+    line-height: 66px;
     span {
-      @include font(manrope, semibold);
+      font-weight: $extrabold;
     }
   }
 }

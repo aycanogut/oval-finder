@@ -13,14 +13,18 @@
   .page-item.active {
     color: $color-shipgray;
   }
-  .page-link:hover {
-    color: $color-shipgray;
-    background-color: $color-white;
-    border: none;
-  }
 
-  .page-link:focus {
-    box-shadow: $color-white;
+  .page-link {
+    @include transition($all);
+    &:hover {
+      @include transition($all);
+      color: $color-shipgray;
+      background-color: $color-white;
+      border: none;
+    }
+    &:focus {
+      box-shadow: $color-white;
+    }
   }
 
   .pager {
@@ -34,9 +38,10 @@
   .pager > a {
     color: $color-blazeorange;
     text-decoration: none;
-  }
-
-  .pager > a:hover {
-    color: $color-shipgray;
+    @include transition($all);
+    &:hover {
+      @include transition($all);
+      color: $color-shipgray;
+    }
   }
 }

@@ -3,7 +3,9 @@
 .card {
   // homepage-daily-job-board
   &--daily {
-    padding: 24px 26px 18px 24px;
+    margin-bottom: 30px;
+    padding: 22px 26px 18px 24px;
+    border: 1px solid $color-bonjour;
 
     .card__topper {
       display: flex;
@@ -31,6 +33,12 @@
 
     .card__bottom {
       display: flex;
+      p {
+        padding-right: 5px;
+      }
+      i {
+        color: red;
+      }
     }
 
     .card__description {
@@ -71,18 +79,22 @@
 
   // homepage-clients
   &--clients {
-    padding: 47px 10px;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    min-width: 263px;
+    min-height: 227px;
+    padding: 46px 20px 0 20px;
 
     img {
-      width: 60%;
+      width: 35%;
       height: auto;
-      margin: auto;
-      padding-bottom: 32px;
+      margin: 0 auto;
     }
     p {
-      padding: 0 16px;
       color: $color-midgray;
+      padding-top: 32px;
+      margin: 0;
     }
   }
 
