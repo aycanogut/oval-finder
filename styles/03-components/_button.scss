@@ -7,15 +7,28 @@
 
   // navigation
   &--nav {
-    padding: 8px 22px 9px 19px;
+    padding: 10px 22px 11px 19px;
     background-color: $color-white;
     color: $color-shipgray;
+    @include transition($all);
+    &:hover {
+      color: $color-haiti;
+      background-color: $color-nebula;
+      @include transition($all);
+      text-decoration: none;
+    }
   }
+
   // homepage-search-box
   &--search-box {
-    padding: 16px 39px;
+    padding: 19px 40px 16px 39px;
     background-color: $color-coral;
     color: $color-white;
+    @include transition($all);
+    &:hover {
+      background-color: $color-blazeorange;
+      @include transition($all);
+    }
   }
 
   // homepage-find-job
@@ -53,9 +66,10 @@
 
   // homepage-trending
   &--trending {
-    padding: 9px 14px 10px 14px;
+    padding: 7px 15px 8px 15px;
     background-color: $color-white;
     color: $color-midgray;
+    opacity: 0.7;
   }
 
   // searchjobsTwo-location

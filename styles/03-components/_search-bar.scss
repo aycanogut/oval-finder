@@ -2,57 +2,60 @@
 
 .search-box {
   display: flex;
+  position: relative;
   background-color: $color-white;
-
+  z-index: 1;
+  box-shadow: 0px 60px 75px -4px rgba(0, 0, 0, 0.1); // !mixin ile yap
   &__top {
     position: absolute;
-  }
-  &__top__btn {
-    position: relative;
-    top: -20px;
-    width: 109px;
-    height: 33px;
-    color: $color-shipgray;
-    text-transform: uppercase;
-    text-decoration: none !important;
+    &__btn {
+      position: relative;
+      top: -27px;
+      color: $color-shipgray;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      padding-bottom: 25px;
+      @include transition($all);
 
-    &:link {
-      color: $color-shipgray;
-      background-color: $color-white;
+      &:link {
+        color: $color-shipgray;
+        background-color: $color-white;
+      }
+      &:visited {
+        color: $color-shipgray;
+        background-color: $color-white;
+      }
+      &:hover {
+        color: $color-shipgray;
+      }
+      &:focus {
+        color: $color-shipgray;
+        background-color: $color-dustygray;
+      }
+      &:active {
+        background-color: $color-white;
+        background-color: $color-dustygray;
+      }
     }
-    &:visited {
-      color: $color-shipgray;
-      background-color: $color-white;
-    }
-    &:hover {
-      color: $color-shipgray;
-    }
-    &:focus {
-      color: $color-shipgray;
-      background-color: $color-dustygray;
-    }
-    &:active {
-      background-color: $color-white;
-      background-color: $color-dustygray;
-    }
-  }
 
-  &__top__btn:first-child {
-    padding: 6px 57px 3px 18px;
-  }
-  &__top__btn:last-child {
-    padding: 6px 18px 3px 12px;
-    margin-left: -3px;
+    &__btn:first-child {
+      padding: 6px 52px 10px 18px;
+    }
+    &__btn:last-child {
+      padding: 6px 18px 10px 17px;
+      margin-left: -4px;
+    }
   }
 
   &__searchInput {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    padding: 0 12px 0 24px;
   }
 
   .input-search {
     border: none;
-    padding: 28px 0px;
+    padding: 30px 0 27px 0;
   }
 
   .input-search::-webkit-input-placeholder {
@@ -60,30 +63,25 @@
   }
 
   .input i {
-    font-size: 22px;
+    font-size: $font-22;
     background-color: $color-white;
     color: $color-spunpearl;
-    padding-left: 20px;
   }
+
   input {
     outline: none;
     text-indent: 15px;
   }
 
   .search-btn {
-    margin: auto 12px auto auto;
+    margin: auto 0 auto auto;
   }
-
+  &--homepage {
+    width: 847px;
+    min-height: 86px;
+  }
   &--sm {
-  }
-
-  &--md {
-    .row {
-      width: 975px;
-    }
-    .input-search {
-      margin: 1px;
-    }
+    min-height: 80px;
   }
 }
 

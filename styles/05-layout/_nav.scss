@@ -3,7 +3,7 @@
 .navbar {
   width: 100%;
   height: 80px;
-  padding: 16px 23px;
+  padding: 16px 22px;
 
   &__brand {
     padding: 0;
@@ -11,20 +11,9 @@
   }
 
   &__list {
-    padding: 0 22px;
+    padding: 0 24px;
     li a {
       text-decoration: none;
-    }
-  }
-
-  &__btn {
-    a {
-      text-decoration: none;
-      @include transition($all);
-      &:hover {
-        color: $color-haiti;
-        background-color: $color-spunpearl;
-      }
     }
   }
 

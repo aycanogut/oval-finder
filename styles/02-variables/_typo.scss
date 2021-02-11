@@ -1,8 +1,11 @@
 // typo
 
 h1 {
-  @include font(manrope, semibold);
+  @include font(manrope);
   font-size: $font-64;
+  font-weight: medium;
+  line-height: 87px;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -15,11 +18,6 @@ h2 {
 h3 {
   @include font(manrope, semibold);
   font-size: $font-32;
-}
-
-h1 + p {
-  @include font(inter, regular);
-  font-size: $font-16;
 }
 
 h4 {
@@ -209,6 +207,7 @@ h4 {
     @include font(manrope, extrabold);
     font-size: $font-12;
     font-weight: $light;
+    letter-spacing: 1px;
   }
   &__searchInput {
     @include font(inter, regular);
@@ -217,6 +216,7 @@ h4 {
   &__btn {
     @include font(inter, bold);
     font-size: $font-18;
+    line-height: $font-22;
   }
   .showing {
     @include font(inter, regular);
@@ -279,8 +279,13 @@ h4 {
 // nav
 .navbar {
   font-size: $font-14;
+  line-height: $font-17;
   &__menu-left {
-    @include font(inter, medium);
+    @include font(inter, regular);
+  }
+  &__menu-right {
+    @include font(inter, semibold);
+    font-weight: $extralight;
   }
 }
 
@@ -343,6 +348,8 @@ h4 {
   &__text {
     @include font(inter, regular);
     font-size: $font-16;
+    font-weight: 100;
+    line-height: $font-26;
   }
   &__trending__left {
     p {
@@ -360,10 +367,11 @@ h4 {
     font-size: $font-14;
   }
   &__how-works {
-    p {
+    &__text {
       @include font(manrope, medium);
-      font-size: $font-24;
-      font-weight: $regular;
+      font-size: $font-26;
+      font-weight: $light;
+      line-height: $font-33;
     }
     .number {
       @include font(manrope, extrabold);

@@ -5,7 +5,7 @@
   height: 603px;
   background: url("../assets/img/bg-homepage.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 100% 0%;
   background-color: $color-corduroy;
 
   .navbar {
@@ -20,10 +20,18 @@
         @include transition($all);
         &:hover {
           @include transition($all);
-          color: $color-nebula;
+          color: $color-rangoongreen;
         }
       }
     }
+  }
+
+  .homepage__heading__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    padding-top: 144px;
   }
 
   .homepage {
@@ -31,14 +39,14 @@
       padding: 0;
     }
     &__heading {
-      padding: 85px 520px 0 0;
+      padding: 85px 520px 89px 0;
       color: $color-white;
     }
     &__header {
       color: $color-white;
     }
     &__text {
-      padding: 21px 0 108px 0;
+      padding-top: 13px;
     }
     &__trending__left {
       p {
@@ -54,27 +62,30 @@
 .homepage {
   &__trending {
     display: flex;
+    height: 247px;
     padding: 81px 0 86px 0px;
-    left: 50;
     background-color: $color-geyser;
 
     &__left {
       padding-right: 35px;
       p {
         margin: 0;
-        padding-top: 16px;
+        padding-top: 14px;
         color: $color-shipgray;
         white-space: nowrap;
       }
       a {
         color: $color-blazeorange;
-        text-decoration: none;
+        text-decoration: underline;
+        text-underline-position: under;
+        padding-bottom: 1px;
         &:hover {
           text-decoration: underline;
         }
       }
     }
     &__right {
+      padding: 0 0 0 6px;
       a {
         margin: 0px 8px 8px 0;
         color: $color-midgray;
@@ -87,21 +98,21 @@
       }
     }
   }
-  &__how-works > p {
-    color: $color-mountainmist;
-    padding-right: 120px;
-    white-space: nowrap;
-  }
   &__how-works {
     display: flex;
     height: 286px;
-    padding: 137px 20px 116px 0;
+    padding: 139px 20px 116px 0;
+    & > p {
+      color: $color-mountainmist;
+      padding-right: 103px;
+      white-space: nowrap;
+    }
     ul {
       list-style: none;
     }
     &__item {
       display: flex;
-      margin: auto 0;
+      margin: 5px 0;
       white-space: nowrap;
     }
     .profile {
@@ -110,12 +121,12 @@
     }
     .oval-right {
       color: $color-spunpearl;
-      margin: auto 0;
-      padding: 0 30px 0 60px;
+      padding: 7px 32px 0 65px;
+      font-size: $font-12;
     }
     .number {
       color: $color-blazeorange;
-      padding-right: 16px;
+      padding-right: 26px;
     }
   }
   &__daily__top {
@@ -230,7 +241,4 @@
       margin-top: 3px;
     }
   }
-}
-
-.search-box__top {
 }
