@@ -127,50 +127,93 @@
     .number {
       color: $color-blazeorange;
       padding-right: 26px;
+      margin-top: -1px;
     }
   }
-  &__daily__top {
-    display: flex;
-    width: auto;
-    padding: 90px 0 65px 0;
-  }
-  &__daily__category {
-    margin: auto 0 0 auto;
-    button {
-      padding: 0;
-      padding-left: 5px;
-      &:focus {
+
+  &__daily {
+    height: 1181px;
+    &__top {
+      display: flex;
+      width: auto;
+      padding: 116px 0 65px 0;
+    }
+    &__category {
+      margin: auto 0 0 auto;
+      button {
+        padding: 0;
+        padding-left: 5px;
+        box-shadow: none;
         outline: none;
       }
-    }
-    .sort-by {
-      margin-bottom: 0;
-    }
-  }
-  &__daily__explore {
-    padding: 37px 59px 0 72px;
-    white-space: nowrap;
-    div.number {
-      margin-left: 25px;
-      padding-bottom: 16px;
-      color: $color-haiti;
-    }
-  }
-  &__daily__explore__category {
-    a {
-      padding-left: 5px;
-      color: $color-shipgray;
-      @include transition($all);
-      &:hover {
-        @include transition($all);
-        color: $color-black;
+      .sort-by {
+        margin-bottom: 0;
       }
     }
-    img {
-      width: 24px;
-      height: auto;
-      transform: rotate(270deg);
-      text-decoration: none;
+    &__explore {
+      padding: 34px 55px 0 63px;
+      white-space: nowrap;
+      div.number {
+        margin-left: 44px;
+        padding-bottom: 15px;
+        color: $color-haiti;
+      }
+      a {
+        text-underline-position: under;
+      }
+      &__category {
+        a {
+          padding-left: 5px;
+          color: $color-shipgray;
+          @include transition($all);
+          &:hover {
+            @include transition($all);
+            color: $color-black;
+          }
+        }
+        img {
+          width: 24px;
+          height: auto;
+          transform: rotate(270deg);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__testimonial {
+    height: 818px;
+    position: relative;
+    background: url("../assets/img/bg-testimonial.svg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    &__image > img {
+      padding: 119px 0 157px 0;
+    }
+    &__blockquote-card {
+      position: absolute;
+      top: 175px;
+      left: 15%;
+      min-width: 520px;
+      min-height: 522px;
+    }
+
+    .carousel {
+      position: relative;
+      .controls {
+        position: absolute;
+      }
+    }
+
+    // testimonials-background-color
+    &:before {
+      content: "";
+      position: absolute;
+      top: 119px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-athensgray;
+      z-index: -9;
     }
   }
 

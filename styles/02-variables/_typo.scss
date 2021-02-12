@@ -9,9 +9,9 @@ h1 {
 }
 
 h2 {
-  @include font(manrope, light);
+  @include font(manrope, semibold);
   font-size: $font-48;
-  font-weight: $extrabold;
+  font-weight: $regular;
   line-height: 66px;
 }
 
@@ -33,7 +33,7 @@ h4 {
 // cards
 .card {
   &__company-name {
-    @include font(manrope, bold);
+    @include font(manrope, regular);
     font-size: $font-14;
     font-weight: $medium;
   }
@@ -75,6 +75,7 @@ h4 {
   &__title {
     @include font(inter, medium);
     font-size: $font-18;
+    line-height: $font-26;
   }
 
   &__review {
@@ -87,15 +88,16 @@ h4 {
   }
 
   &--daily {
-    .card__bottom {
+    .card__bottom__apply {
+      line-height: $font-26;
       p {
         @include font(manrope, medium);
         font-size: $font-14;
+        font-weight: $medium;
       }
       a {
         @include font(manrope, bold);
         font-size: $font-14;
-        font-weight: $regular;
       }
     }
   }
@@ -348,7 +350,6 @@ h4 {
   &__text {
     @include font(inter, regular);
     font-size: $font-16;
-    font-weight: 100;
     line-height: $font-26;
   }
   &__trending__left {
@@ -383,7 +384,7 @@ h4 {
     }
   }
   &__daily__category {
-    p {
+    .sort-by {
       @include font(inter, regular);
       font-size: $font-18;
     }

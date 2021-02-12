@@ -134,6 +134,12 @@
   }
 }
 
-.dropdown-toggle {
+// dropdown-button
+.btn {
   color: $color-shipgray;
+  &:focus,
+  &:after {
+    outline: none !important;
+    box-shadow: none;
+  }
 }

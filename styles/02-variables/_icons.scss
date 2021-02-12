@@ -294,3 +294,18 @@ $oval-website: "\e920";
     color: #b3b1b7;
   }
 }
+
+// star-colors
+
+.oval-star-solid,
+.oval-star-half,
+.oval-star-outline {
+  font-size: 9px;
+}
+
+.gray {
+  color: $color-mischka;
+}
+.yellow {
+  color: $color-texasrose;
+}

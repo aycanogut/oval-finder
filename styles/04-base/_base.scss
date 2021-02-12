@@ -1,15 +1,19 @@
 // base
 
-body {
-  box-sizing: border-box;
+*:focus {
+  outline: none !important;
 }
 
-a {
-  text-decoration: none;
+body {
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
   color: $color-black;
+}
+
+a {
+  text-decoration: none;
 }
