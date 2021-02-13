@@ -33,8 +33,7 @@
 
   // homepage-find-job
   &--find-jobs-now {
-    display: inline;
-    padding: 23px 52px;
+    padding: 24px 45px 21px 44px;
     color: $color-white;
     background-color: $color-coral;
     img {
@@ -45,8 +44,8 @@
     @include transition($all);
     &:hover {
       @include transition($all);
-      color: $color-black;
-      background-color: $color-nebula;
+      color: $color-white;
+      background-color: $color-blazeorange;
       text-decoration: none;
     }
   }

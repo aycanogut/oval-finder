@@ -1,11 +1,13 @@
 // base
 
-*:focus {
-  outline: none !important;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
-  box-sizing: border-box;
+*:focus {
+  outline: none !important;
 }
 
 h1,

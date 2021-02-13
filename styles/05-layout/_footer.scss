@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   float: left;
+  white-space: nowrap;
   &__brand {
     img {
       color: $color-coral;
@@ -56,50 +57,53 @@
   }
 
   &--lg {
-    padding-top: 100px;
+    padding: 60px;
     &__brand {
       display: flex;
       flex-direction: column;
+      padding: 7px 0 0 1px;
       img {
         width: 81px;
         height: 24px;
       }
       span {
         padding-top: 32px;
+        color: $color-midgray;
       }
     }
     .footer__links {
-      padding-bottom: 23px;
+      padding-bottom: 40px;
     }
 
     .footer__list {
+      li {
+        padding: 5px 0;
+      }
+      p {
+        margin: 0;
+        padding-bottom: 10px;
+      }
       li > a {
         text-decoration: none;
         @include transition($all);
         &:hover {
           @include transition($all);
           color: $color-rangoongreen;
-          font-weight: $regular;
         }
-      }
-      li {
-        padding-bottom: 8px;
       }
     }
     &__bottom {
       display: flex;
+      padding-top: 19px;
       .footer__social-icons {
         a {
           text-decoration: none;
-          padding: 0 5px;
+          padding-right: 12px;
           img {
             margin: auto;
           }
         }
       }
-    }
-    &__bottom {
-      padding: 8px 0 12px 0;
     }
 
     &__bottom-links {
@@ -128,8 +132,10 @@
     .footer__language-bar {
       display: flex;
       margin-left: auto;
+      padding-right: 30px;
       p {
-        padding-right: 12px;
+        padding-top: 5px;
+        padding-right: 20px;
       }
       .dropdown-menu,
       button {

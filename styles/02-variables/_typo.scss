@@ -124,6 +124,7 @@ h4 {
     p {
       @include font(inter, regular);
       font-size: $font-14;
+      line-height: $font-24;
     }
   }
   &--srOne {
@@ -181,10 +182,10 @@ h4 {
     @include font(inter, semibold);
     font-size: $font-14;
   }
-  &--find-job {
+  &--find-jobs-now {
     @include font(poppins, semibold);
     font-size: $font-18;
-    font-weight: $light;
+    font-weight: $extralight;
   }
 
   &--recommendation {
@@ -326,6 +327,7 @@ h4 {
       @include font(inter, light);
       font-size: $font-14;
       font-weight: $light;
+      letter-spacing: 0.4px;
     }
   }
   &__language-bar {
@@ -352,20 +354,22 @@ h4 {
     font-size: $font-16;
     line-height: $font-26;
   }
-  &__trending__left {
-    p {
-      @include font(inter, regular);
-      font-size: $font-18;
+  &__trending {
+    &__left {
+      p {
+        @include font(inter, regular);
+        font-size: $font-18;
+      }
+      a {
+        @include font(inter, regular);
+        font-size: $font-14;
+        text-decoration: underline;
+      }
     }
-    a {
+    &__right {
       @include font(inter, regular);
       font-size: $font-14;
-      text-decoration: underline;
     }
-  }
-  &__trending__right {
-    @include font(inter, regular);
-    font-size: $font-14;
   }
   &__how-works {
     &__text {
@@ -432,6 +436,7 @@ h4 {
   }
   &__clients {
     &__post-job {
+      line-height: $font-26;
       p {
         @include font(inter, regular);
         font-size: $font-16;
@@ -447,11 +452,17 @@ h4 {
       font-size: $font-14;
     }
   }
-  &__find-job__title {
-    @include font(manrope, light);
-    line-height: 66px;
-    span {
-      font-weight: $extrabold;
+  &__find-job {
+    &__title {
+      @include font(manrope, light);
+      line-height: 66px;
+      font-weight: $extralight;
+      span > button {
+        font-size: $font-48;
+        font-weight: $extrabold;
+        letter-spacing: 1px;
+        text-decoration: underline;
+      }
     }
   }
 }

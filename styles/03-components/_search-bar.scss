@@ -17,6 +17,7 @@
       padding-bottom: 25px;
       @include transition($all);
 
+      // !:focus-within dene
       &:link {
         color: $color-shipgray;
         background-color: $color-white;
