@@ -1,6 +1,6 @@
 // mixin
 
-// transition
+// !transition
 $all: all 0.3s ease-in-out;
 
 @mixin transition($all) {
@@ -8,4 +8,13 @@ $all: all 0.3s ease-in-out;
   -moz-transition: $all;
   -o-transition: $all;
   transition: $all;
+}
+
+// !box-shadow
+// search-box
+$search-box: 0px 60px 75px -4px rgba(0, 0, 0, 0.1);
+@mixin box-shadow($search-box) {
+  -webkit-box-shadow: $search-box;
+  -moz-box-shadow: $search-box;
+  box-shadow: $search-box;
 }

@@ -1,13 +1,10 @@
 // search-bar
 
 .search-box {
-  display: flex;
   position: relative;
   background-color: $color-white;
-  z-index: 1;
-  box-shadow: 0px 60px 75px -4px rgba(0, 0, 0, 0.1); // !mixin ile yap
+  @include box-shadow($search-box);
   &__top {
-    position: absolute;
     &__btn {
       position: relative;
       top: -27px;
@@ -17,7 +14,7 @@
       padding-bottom: 25px;
       @include transition($all);
 
-      // !:focus-within dene
+      // !focus-within ile dene
       &:link {
         color: $color-shipgray;
         background-color: $color-white;
@@ -50,39 +47,54 @@
 
   &__searchInput {
     display: flex;
-    width: 100%;
-    padding: 0 12px 0 24px;
+    // padding-right: 12px;
+    .input {
+      i {
+        font-size: $font-24;
+        background-color: $color-white;
+        color: $color-spunpearl;
+        // padding-right: 5px;
+      }
+      .input-search {
+        outline: none;
+        border: none;
+      }
+      .input-search::-webkit-input-placeholder {
+        color: $color-midgray;
+        letter-spacing: 0.1px;
+      }
+    }
+    .search-btn {
+      // margin: auto 0 auto auto;
+    }
+    .left {
+      // position: relative;
+      // padding-left: 24px;
+    }
+
+    .right {
+      // margin-left: 130px;
+    }
+
+    // border-divider
+    // .left:after {
+    //   content: "";
+    //   height: 65%;
+    //   width: 1px;
+    //   position: absolute;
+    //   right: -90px;
+    //   top: 14px;
+    //   background-color: $color-bonjour;
+    // }
+    .wrapper {
+      // padding: 30px 0;
+    }
   }
 
-  .input-search {
-    border: none;
-    padding: 30px 0 27px 0;
-  }
-
-  .input-search::-webkit-input-placeholder {
-    color: $color-midgray;
-  }
-
-  .input i {
-    font-size: $font-22;
-    background-color: $color-white;
-    color: $color-spunpearl;
-  }
-
-  input {
-    outline: none;
-    text-indent: 15px;
-  }
-
-  .search-btn {
-    margin: auto 0 auto auto;
-  }
   &--homepage {
-    width: 847px;
-    min-height: 86px;
   }
   &--sm {
-    min-height: 80px;
+    // min-height: 80px;
   }
 }
 

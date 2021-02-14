@@ -1,10 +1,7 @@
 // footer
 
 .footer {
-  width: 100%;
-  height: auto;
-  float: left;
-  white-space: nowrap;
+  padding-bottom: 44px;
   &__brand {
     img {
       color: $color-coral;
@@ -19,6 +16,40 @@
 
   &__language-bar {
     color: $color-midgray;
+    display: flex;
+    margin-left: auto;
+    padding-right: 30px;
+    p {
+      padding-top: 5px;
+      padding-right: 20px;
+    }
+    .dropdown-menu,
+    button {
+      margin-top: -20px;
+      color: $color-midgray;
+      background-color: transparent;
+      border: 1px solid $color-bonjour;
+      border-radius: 10px;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color-white;
+      }
+      .dropdown-menu {
+        padding: 0;
+        margin-top: 16px;
+        background-color: $color-white;
+      }
+
+      .dropdown-item {
+        background-color: $color-white;
+        padding: 8px 0 5px 0;
+        width: 50px;
+        &:hover {
+          background-color: $color-geyser;
+        }
+      }
+    }
   }
 
   &__bottom-links ul li a {
@@ -31,8 +62,7 @@
     .row {
       display: flex;
     }
-    &__brand {
-    }
+
     &__bottom-links {
       margin-left: auto;
     }
@@ -57,7 +87,7 @@
   }
 
   &--lg {
-    padding: 60px;
+    // padding: 60px;
     &__brand {
       display: flex;
       flex-direction: column;
@@ -130,40 +160,6 @@
       }
     }
     .footer__language-bar {
-      display: flex;
-      margin-left: auto;
-      padding-right: 30px;
-      p {
-        padding-top: 5px;
-        padding-right: 20px;
-      }
-      .dropdown-menu,
-      button {
-        margin-top: -20px;
-        color: $color-midgray;
-        background-color: transparent;
-        border: 1px solid $color-bonjour;
-        border-radius: 10px;
-        &:hover,
-        &:focus,
-        &:active {
-          background-color: $color-white;
-        }
-        .dropdown-menu {
-          padding: 0;
-          margin-top: 16px;
-          background-color: $color-white;
-        }
-
-        .dropdown-item {
-          background-color: $color-white;
-          padding: 8px 0 5px 0;
-          width: 50px;
-          &:hover {
-            background-color: $color-geyser;
-          }
-        }
-      }
     }
   }
 }
