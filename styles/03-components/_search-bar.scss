@@ -1,20 +1,17 @@
 // search-bar
 
 .search-box {
-  position: relative;
+  display: flex;
   background-color: $color-white;
   @include box-shadow($search-box);
   &__top {
     &__btn {
-      position: relative;
-      top: -27px;
       color: $color-shipgray;
       text-transform: uppercase;
       text-decoration: none !important;
-      padding-bottom: 25px;
       @include transition($all);
 
-      // !focus-within ile dene
+      // TODO: active aksiyonu :focus-within ile dene
       &:link {
         color: $color-shipgray;
         background-color: $color-white;
@@ -47,13 +44,16 @@
 
   &__searchInput {
     display: flex;
-    // padding-right: 12px;
+    width: 100%;
+    padding-right: 12px;
     .input {
+      width: 100%;
+      padding: 0.5em 1em;
       i {
         font-size: $font-24;
         background-color: $color-white;
         color: $color-spunpearl;
-        // padding-right: 5px;
+        padding-right: 5px;
       }
       .input-search {
         outline: none;
@@ -65,10 +65,9 @@
       }
     }
     .search-btn {
-      // margin: auto 0 auto auto;
+      margin: auto 0 auto auto;
     }
     .left {
-      // position: relative;
       // padding-left: 24px;
     }
 
@@ -76,16 +75,15 @@
       // margin-left: 130px;
     }
 
-    // border-divider
-    // .left:after {
-    //   content: "";
-    //   height: 65%;
-    //   width: 1px;
-    //   position: absolute;
-    //   right: -90px;
-    //   top: 14px;
-    //   background-color: $color-bonjour;
-    // }
+    border-divider .left:after {
+      content: "";
+      height: 65%;
+      width: 1px;
+      position: absolute;
+      right: -90px;
+      top: 14px;
+      background-color: $color-bonjour;
+    }
     .wrapper {
       // padding: 30px 0;
     }
@@ -94,7 +92,7 @@
   &--homepage {
   }
   &--sm {
-    // min-height: 80px;
+    min-height: 80px;
   }
 }
 
@@ -108,4 +106,72 @@
 
 .filter {
   color: $color-mountainmist;
+}
+
+// !RESPONSIVE
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .search-box {
+    height: 185px;
+    width: 300px;
+    &__searchInput {
+      padding: 20px 10px 10px 10px;
+      .btn_def--search-box {
+        display: flex;
+        padding: 15px 106px;
+        justify-content: end;
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) and (max-width: 768px) {
+  // !components
+  .search-box {
+    &__searchInput {
+      .btn_def--search-box {
+        padding: 6px 6px;
+      }
+      input {
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .search-box {
+    height: 76px;
+    &__searchInput {
+      .btn_def--search-box {
+        padding: 15px 28px;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .search-box {
+    height: 86px;
+    button {
+      padding: 20px 38px;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
 }

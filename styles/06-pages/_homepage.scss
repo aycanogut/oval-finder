@@ -43,7 +43,7 @@
       padding: 0;
     }
     &__heading {
-      padding: 85px 0px 89px 0;
+      // padding: 85px 520px 89px 0;
       color: $color-white;
     }
     &__header {
@@ -109,7 +109,7 @@
   // !width ayarla
   &__how-works {
     height: 286px;
-    // padding: 139px 20px 116px 0;
+    padding: 139px 20px 116px 0;
     & > p {
       color: $color-mountainmist;
       padding-right: 103px;
@@ -130,12 +130,12 @@
     }
     .oval-right {
       color: $color-spunpearl;
-      // padding: 7px 32px 0 65px;
+      padding: 7px 32px 0 65px;
       font-size: $font-12;
     }
     .number {
       color: $color-blazeorange;
-      // padding-right: 26px;
+      padding-right: 26px;
       margin-top: -1px;
     }
   }
@@ -190,7 +190,7 @@
     }
   }
 
-  // !card placement
+  // TODO: card placement
   &__testimonial {
     position: relative;
     height: 818px;
@@ -199,20 +199,20 @@
     background-position: 0px 0px;
     background-repeat: no-repeat;
     &__image > img {
+      width: 100%;
       padding: 119px 0 157px 0;
     }
     &__blockquote-card {
       position: relative;
       width: 100%;
-      &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: -55px;
-        left: -65px;
-        background-color: $color-black;
-      }
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   top: -55px;
+      //   left: -65px;
+      // }
     }
 
     //testimonials-background-color
@@ -228,7 +228,7 @@
     }
   }
 
-  // !!width
+  // TODO: WIDTH TAŞMASI
   &__clients {
     height: 1087px;
     background-color: $color-aquahaze;

@@ -26,11 +26,15 @@ h4 {
   font-weight: $medium;
 }
 
+// ##########################################################
+
 // !font-families, font-size, font-weight / components, layout, pages
 
-// !components
+// !###############
+// components
+// !###############
 
-// cards
+// !cards
 .card {
   &__company-name {
     @include font(manrope, regular);
@@ -176,7 +180,7 @@ h4 {
   }
 }
 
-// buttons
+// !buttons
 .btn_def {
   &--nav {
     @include font(inter, semibold);
@@ -204,7 +208,7 @@ h4 {
   }
 }
 
-// search-box
+// !search-box
 .search-box {
   &__top {
     @include font(manrope, extrabold);
@@ -240,7 +244,7 @@ h4 {
   }
 }
 
-// forms
+// !forms
 .filter {
   &__header {
     @include font(manrope, bold);
@@ -266,7 +270,7 @@ h4 {
   }
 }
 
-// pager
+// !pager
 .pager {
   @include font(inter, regular);
   font-size: $font-14;
@@ -278,8 +282,11 @@ h4 {
   }
 }
 
-// !layout
-// nav
+// !###############
+// layout
+// !###############
+
+// !nav
 .navbar {
   font-size: $font-14;
   line-height: $font-17;
@@ -292,13 +299,13 @@ h4 {
   }
 }
 
-// header
+// !header
 .header {
 }
 
-// sidebar
+// !sidebar
 
-// footer
+// !footer
 .footer {
   &--sm {
     &__bottom-links {
@@ -346,7 +353,10 @@ h4 {
   }
 }
 
-// !pages
+// !###############
+// pages
+// !###############
+
 // homepage
 .homepage {
   &__text {
@@ -467,11 +477,11 @@ h4 {
   }
 }
 
-// search-jobsOne
+// !search-jobsOne
 .srjOne {
 }
 
-// search-jobsTwo
+// !search-jobsTwo
 .srjTwo {
   &__location {
     header {
@@ -486,7 +496,7 @@ h4 {
   }
 }
 
-// company
+// !company
 .company {
   &__ratings {
     .rating {
@@ -541,7 +551,7 @@ h4 {
   }
 }
 
-// pricing
+// !pricing
 .pricing {
   &__heading__text {
     @include font(aileron, regular);

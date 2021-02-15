@@ -1,8 +1,12 @@
 // breakpoints
 
+// !###################
+// Extra Small devices (phone, 320px and up)
+// !###################
+
 @media (min-width: 320px) and (max-width: 576px) {
   body {
-    background-color: rosybrown;
+    background-color: lemonchiffon;
   }
 
   h1 {
@@ -20,9 +24,8 @@
 
   // !pages
   .homepage {
-    &__header,
     &__heading {
-      padding: 0 20px;
+      padding: 0; //!----
     }
     &__text {
       font-size: $font-12;
@@ -51,10 +54,13 @@
   }
 }
 
+// !###################
 // Small devices (phone, 577px and up)
+// !###################
+
 @media (min-width: 577px) and (max-width: 768px) {
   body {
-    background-color: green;
+    background-color: darkslateblue;
   }
 
   h1 {
@@ -80,10 +86,13 @@
   }
 }
 
+// !###################
 // Medium devices (tablets, 768px and up)
+// !###################
+
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    background-color: limegreen;
+    background-color: cadetblue;
   }
 
   h1 {
@@ -91,12 +100,20 @@
     text-align: left;
   }
 
-  // !components
+  // components
+
   .search-box {
+    height: 76px;
+    button {
+      padding: 15px 28px;
+    }
   }
 
-  // !pages
+  // pages
   .homepage {
+    &__heading {
+      padding: 42px 80px 38px 34px;
+    }
     &__how-works {
     }
     &__daily__cards {
@@ -108,17 +125,50 @@
   }
 }
 
+// !###################
 // Large devices (desktops, 992px and up)
+// !###################
+
 @media (min-width: 992px) {
   body {
-    background-color: wheat;
+    // background-color: beige;
+  }
+  // components
+  .search-box {
+    height: 86px;
+    button {
+      // padding:
+    }
+  }
+
+  // pages
+  .homepage {
+    &__heading {
+      padding: 86px 490px 65px 0;
+    }
+    &__search-box {
+    }
+    &__how-works {
+    }
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+    }
   }
 }
 
+// !###################
 // X-Large devices (large desktops, 1200px and up)
+// !###################
+
 @media (min-width: 1200px) {
 }
 
+// !###################
 // XX-Large devices (larger desktops, 1400px and up)
+// !###################
+
 @media (min-width: 1400px) {
 }
