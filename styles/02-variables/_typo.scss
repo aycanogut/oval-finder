@@ -1,7 +1,7 @@
 // typo
 
 h1 {
-  @include font(manrope);
+  @include font(manrope, semibold);
   font-size: $font-64;
   font-weight: medium;
   line-height: 87px;
@@ -30,9 +30,9 @@ h4 {
 
 // !font-families, font-size, font-weight / components, layout, pages
 
-// !###############
-// components
-// !###############
+// ###############
+// !components
+// ###############
 
 // !cards
 .card {
@@ -282,9 +282,9 @@ h4 {
   }
 }
 
-// !###############
-// layout
-// !###############
+// ###############
+// !layout
+// ###############
 
 // !nav
 .navbar {
@@ -353,9 +353,9 @@ h4 {
   }
 }
 
-// !###############
-// pages
-// !###############
+// ###############
+// !pages
+// ###############
 
 // homepage
 .homepage {
@@ -606,80 +606,155 @@ h4 {
   font-size: $font-14;
 }
 
-// // !font-families - global classes
+// ###################
+// RESPONSIVE
+// ###################
 
-// // aileron-regular
-// .pricing h2 + p {
-//   @include font(aileron, regular);
-// }
+// Extra Small devices (phone, 320px and up)
 
-// // inter-regular
-// .company-name + aside,
-// .card__bottom,
-// .card__clients,
-// .search-box__searchInput,
-// .footer__copyright,
-// .footer__bottom,
-// .footer__list li a,
-// .footer__language-bar p,
-// .homepage__text,
-// .homepage__left p,
-// .homepage__left a,
-// .homepage__trending__right,
-// .homepage__daily__category p,
-// .homepage_-daily__explore p,
-// .homepage_-daily__explore a,
-// .homepage__clients__post-job p,
-// .homepage__clients__text   {
-//   @include font(inter, regular);
-// }
+@media (min-width: 320px) and (max-width: 576px) {
+  // homepage
+  .homepage {
+    &__text {
+      @include font(inter, regular);
+      font-size: $font-12;
+      line-height: $font-22;
+    }
+    &__trending {
+      &__left {
+        p {
+          @include font(inter, regular);
+          font-size: $font-18;
+        }
+        a {
+          @include font(inter, regular);
+          font-size: $font-14;
+          text-decoration: underline;
+        }
+      }
+      &__right {
+        @include font(inter, regular);
+        font-size: $font-14;
+      }
+    }
+    &__how-works {
+      &__text {
+        @include font(manrope, medium);
+        font-size: $font-26;
+        font-weight: $light;
+        line-height: $font-33;
+      }
+      .number {
+        @include font(manrope, extrabold);
+        font-size: $font-16;
+      }
+      .profile {
+        @include font(inter, medium);
+        font-size: $font-18;
+      }
+    }
+    &__daily__category {
+      .sort-by {
+        @include font(inter, regular);
+        font-size: $font-18;
+      }
+      .btn {
+        @include font(inter, medium);
+        font-size: $font-18;
+      }
+    }
+    &__daily__explore {
+      div {
+        @include font(manrope, extralight);
+        font-size: $font-72;
+      }
 
-// // inter-medium
-// .card .title,
-// .card--testimonial .title,
-// .navbar__menu-left,
-// .homepage__how-works .profile,
-// .homepage__daily__category .btn {
-//   @include font(inter, medium);
-// }
+      p {
+        @include font(inter, regular);
+        font-size: $font-18;
+      }
+      a {
+        @include font(inter, regular);
+        font-size: $font-18;
+      }
+      .sort-by {
+        display: inline-block;
+      }
+    }
+    &__daily__explore__category > a {
+      @include font(inter, regular);
+      font-size: $font-18;
+      text-decoration: underline;
+    }
+    &__testimonial {
+      .carousel-item h3 {
+        @include font(manrope, semibold);
+        font-size: $font-32;
+      }
+      h3 + aside.title {
+        @include font(inter, semibold);
+        font-size: $font-20;
+      }
+      aside .name {
+        @include font(inter, regular);
+        font-size: $font-20;
+      }
+    }
+    &__clients {
+      &__post-job {
+        line-height: $font-26;
+        p {
+          @include font(inter, regular);
+          font-size: $font-16;
+        }
+        a {
+          @include font(manrope, regular);
+          font-size: $font-18;
+        }
+      }
 
-// // inter-semibold
-// .card--testimonial .name,
-// .btn_def--nav {
-//   @include font(inter, semibold);
-// }
+      &__text {
+        @include font(inter, regular);
+        font-size: $font-14;
+      }
+    }
+    &__find-job {
+      &__title {
+        @include font(manrope, light);
+        line-height: 66px;
+        font-weight: $extralight;
+        span > button {
+          font-size: $font-48;
+          font-weight: $extrabold;
+          letter-spacing: 1px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 
-// // inter-bold
-// .search-box__top__btn {
-//   @include font(inter, medium);
-// }
+// Small devices (phone, 577px and up)
 
-// // manrope-extralight
-// .homepage__daily__explore div {
-//   @include font(manrope, extralight);
-// }
+@media (min-width: 577px) and (max-width: 768px) {
+}
 
-// // manrope-light
+// Medium devices (tablets, 768px and up)
 
-// // manrope-semibold
-// .homepage__how-works aside p,
-// .footer li p,
-// .filter__title {
-//   @include font(manrope, semibold);
-// }
+@media (min-width: 768px) and (max-width: 991px) {
+}
 
-// // manrope-bold
-// .card--daily .card-bottom a {
-//   @include font(manrope, bold);
-// }
+// Large devices (desktops, 992px and up)
 
-// // manrope-extrabold
-// .search-box__top,
-// .homepage__how-works .number,
-// .filter__header {
-//   @include font(manrope, extrabold);
-// }
+@media (min-width: 992px) {
+}
 
-// poppins-semibold
+// X-Large devices (large desktops, 1200px and up)
 
-// roboto-regular
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

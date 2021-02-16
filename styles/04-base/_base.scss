@@ -6,16 +6,9 @@
 
 // overflow'tespit etmek için outline-border
 * {
-  // outline: 1px solid red;
+  outline: 1px solid red;
   opacity: 1 !important;
   visibility: visible !important;
-}
-
-body {
-}
-
-h1 {
-  white-space: nowrap;
 }
 
 h1,
@@ -26,4 +19,72 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+// ###################
+// RESPONSIVE
+// ###################
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+    background-color: lemonchiffon;
+  }
+
+  h1 {
+    font-size: $font-34;
+    text-align: center;
+    line-height: 46px;
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    background-color: darkslateblue;
+  }
+
+  h1 {
+    font-size: $font-34;
+    text-align: center;
+    line-height: 46px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: cadetblue;
+  }
+
+  h1 {
+    font-size: $font-56;
+    line-height: 76px;
+    text-align: left;
+    white-space: nowrap;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  body {
+  }
+  h1 {
+    white-space: nowrap;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
 }

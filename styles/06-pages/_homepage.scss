@@ -28,13 +28,10 @@
     }
   }
 
-  .homepage__heading__image {
-    display: none;
+  .homepage__header__image {
     position: absolute;
-    top: 0;
+    top: 143px;
     right: 0;
-    z-index: 0;
-    padding-top: 144px;
   }
 
   // !hero
@@ -43,7 +40,6 @@
       padding: 0;
     }
     &__heading {
-      // padding: 85px 520px 89px 0;
       color: $color-white;
     }
     &__header {
@@ -304,4 +300,191 @@
 .jumbotron {
   padding: 0;
   background-color: $color-aquahaze;
+}
+
+// ###################
+// RESPONSIVE
+// ###################
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .header-homepage {
+    height: 808px;
+    padding: 0 10px;
+  }
+  .homepage {
+    &__heading {
+      margin: 30px 20px 26px 20px;
+    }
+    &__header__image {
+      padding: 0 10px;
+
+      img {
+        margin: 240px 0 0 0;
+        object-fit: cover;
+        width: 300px;
+        height: 236px;
+        overflow: hidden;
+      }
+    }
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+      .only-visible-md {
+        display: none;
+      }
+    }
+  }
+  .homepage {
+    &__heading {
+      padding: 0;
+    }
+    &__text {
+      font-size: $font-12;
+      text-align: center;
+      line-height: 22px;
+    }
+    &__trending {
+      &__left {
+        display: flex;
+      }
+      &__right {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+      .only-visible-md {
+        display: none;
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-homepage {
+    height: 808px;
+  }
+  .homepage {
+    &__heading {
+      padding: 22px 30px 200px 12px;
+    }
+    &__header__image {
+      img {
+        margin: 210px 30px 0 20px;
+        object-fit: cover;
+        width: 520px;
+        height: 300px;
+        overflow: hidden;
+      }
+    }
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+      .only-visible-md {
+        display: none;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-homepage {
+    height: 890px;
+  }
+  .homepage {
+    &__heading {
+      padding: 22px 180px 200px 24px;
+    }
+    &__header__image {
+      margin: 250px 20px 276px 50px;
+      img {
+        object-fit: cover;
+        width: 700px;
+        height: 396px;
+        overflow: hidden;
+      }
+    }
+    &__how-works {
+    }
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .homepage {
+    &__heading {
+      padding: 91px 0 65px 0;
+      padding-right: 37%;
+    }
+    &__header__image {
+      display: flex;
+      justify-content: end;
+
+      img {
+        width: 72%;
+        height: 72%;
+      }
+    }
+
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+  .homepage {
+    &__heading {
+      padding: 91px 0px 65px 0;
+      padding-right: 48%;
+    }
+    &__header__image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__search-box {
+    }
+    &__how-works {
+    }
+    &__daily__cards {
+      // homepage-daily cards // cards hidden on this resulotion
+      .only-visible-lg {
+        display: none;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
 }

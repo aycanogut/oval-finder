@@ -13,9 +13,38 @@
   background: url("../assets/img/bg-employee.svg");
   background-color: $color-bridesmaid;
   background-repeat: no-repeat;
+}
 
-  // nav {
-  //   background: url("/assets/img/bg-employee.svg");
-  //   background-color: $color-bridesmaid;
-  // }
+// ###################
+// RESPONSIVE
+// ###################
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 576px) {
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
 }
