@@ -69,6 +69,7 @@
 
     &__left {
       padding-right: 35px;
+
       p {
         margin: 0;
         padding-top: 14px;
@@ -80,6 +81,8 @@
         text-decoration: underline;
         text-underline-position: under;
         padding-bottom: 1px;
+        white-space: nowrap;
+
         &:hover {
           text-decoration: underline;
         }
@@ -308,7 +311,7 @@
 
 @media (min-width: 320px) and (max-width: 576px) {
   .header-homepage {
-    height: 858px;
+    height: 890px;
   }
   .homepage {
     &__heading {
@@ -361,7 +364,7 @@
 
 @media (min-width: 577px) and (max-width: 768px) {
   .header-homepage {
-    height: 808px;
+    height: 890px;
   }
   .homepage {
     &__heading {
@@ -435,7 +438,7 @@
 @media (min-width: 992px) {
   .homepage {
     &__heading {
-      padding: 91px 0 65px 0;
+      padding: 91px 0px 55px 0;
       padding-right: 37%;
     }
     &__header__image {
@@ -468,7 +471,6 @@
 @media (min-width: 1200px) {
   .homepage {
     &__heading {
-      padding: 91px 0px 65px 0;
       padding-right: 48%;
     }
     &__header__image {

@@ -5,30 +5,32 @@
   border: none;
   text-align: center;
   white-space: nowrap;
+  @include transition($all);
+  &:hover {
+    @include transition($all);
+  }
 
   // navigation
   &--nav {
     padding: 10px 22px 11px 19px;
     background-color: $color-white;
     color: $color-shipgray;
-    @include transition($all);
+
     &:hover {
       color: $color-haiti;
       background-color: $color-nebula;
-      @include transition($all);
+
       text-decoration: none;
     }
   }
 
   // homepage-search-box
   &--search-box {
-    padding: 19px 40px 16px 39px;
     background-color: $color-coral;
     color: $color-white;
-    @include transition($all);
+
     &:hover {
       background-color: $color-blazeorange;
-      @include transition($all);
     }
   }
 
@@ -42,9 +44,8 @@
       font-size: 20px;
       color: $color-white;
     }
-    @include transition($all);
+
     &:hover {
-      @include transition($all);
       color: $color-white;
       background-color: $color-blazeorange;
       text-decoration: none;
@@ -144,28 +145,45 @@
   }
 }
 
-// ###################
-// RESPONSIVE
-// ###################
-
+// * responsive
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) and (max-width: 576px) {
+  .btn_def {
+    &--search-box {
+      padding: 16px 100px;
+    }
+  }
 }
 
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .btn_def {
+    &--search-box {
+      padding: 16px 220px;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .btn_def {
+    &--search-box {
+      padding: 16px 28px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .btn_def {
+    &--search-box {
+      padding: 18px 38px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
