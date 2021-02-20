@@ -6,11 +6,13 @@
 
 // overflow'tespit etmek için outline-border
 * {
-  outline: 1px solid red;
-  opacity: 1 !important;
-  visibility: visible !important;
+  // outline: 1px solid red;
+  // opacity: 1 !important;
+  // visibility: visible !important;
 }
-
+body {
+  // overflow-x: hidden;
+}
 h1,
 h2,
 h3 {
@@ -21,9 +23,7 @@ a {
   text-decoration: none;
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
@@ -34,9 +34,10 @@ a {
   }
 
   h1 {
-    font-size: $font-34;
+    font-size: $font-28;
     text-align: center;
     line-height: 46px;
+    font-weight: $light;
   }
 }
 
@@ -48,9 +49,9 @@ a {
   }
 
   h1 {
-    font-size: $font-34;
+    font-size: $font-48;
     text-align: center;
-    line-height: 46px;
+    line-height: 75px;
   }
 }
 

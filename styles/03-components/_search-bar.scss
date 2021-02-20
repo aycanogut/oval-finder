@@ -2,8 +2,10 @@
 
 .search-box {
   display: flex;
+
   background-color: $color-white;
   @include box-shadow($search-box);
+
   &__top {
     &__btn {
       color: $color-shipgray;
@@ -65,7 +67,7 @@
       }
     }
     .search-btn {
-      margin: auto 0 auto auto;
+      margin: auto;
     }
     .left {
       // padding-left: 24px;
@@ -108,29 +110,33 @@
   color: $color-mountainmist;
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) and (max-width: 576px) {
   .search-box {
-    height: 218px;
-    width: 300px;
+    height: 185px;
+    margin: 0 10px;
+
+    &__top {
+      margin: 0 10px 9px 10px;
+    }
     &__searchInput {
-      display: block;
+      display: flex;
+      flex-direction: column;
       padding: 20px 10px 10px 10px;
+      justify-content: center;
+
       .btn_def--search-box {
         display: flex;
         padding: 15px 106px;
-        justify-content: end;
       }
     }
   }
   // search-box top ve search-box placement
   .homepage__search-box {
-    margin: 300px 0;
+    margin: 260px 0;
   }
 }
 
@@ -138,6 +144,9 @@
 
 @media (min-width: 577px) and (max-width: 768px) {
   .search-box {
+    &__top {
+      margin-bottom: 9px;
+    }
     &__searchInput {
       .btn_def--search-box {
         padding: 6px 6px;
@@ -148,7 +157,7 @@
   }
   // search-box top ve search-box placement
   .homepage__search-box {
-    margin: 111px 0;
+    margin: 121px 0;
   }
 }
 
@@ -157,6 +166,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .search-box {
     height: 76px;
+    &__top {
+      margin-bottom: 9px;
+    }
     &__searchInput {
       .btn_def--search-box {
         padding: 15px 28px;
@@ -165,7 +177,7 @@
   }
   // search-box top ve search-box placement
   .homepage__search-box {
-    margin: 255px 0;
+    margin: 435px 0;
   }
 }
 
@@ -174,6 +186,9 @@
 @media (min-width: 992px) {
   .search-box {
     height: 86px;
+    &__top {
+      margin-bottom: 10px;
+    }
     button {
       padding: 20px 38px;
     }

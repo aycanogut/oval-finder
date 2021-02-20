@@ -28,13 +28,11 @@ h4 {
 
 // ##########################################################
 
-// !font-families, font-size, font-weight / components, layout, pages
+// * font-families, font-size, font-weight / components, layout, pages
 
-// ###############
-// !components
-// ###############
+// * components
 
-// !cards
+// * cards
 .card {
   &__company-name {
     @include font(manrope, regular);
@@ -180,7 +178,7 @@ h4 {
   }
 }
 
-// !buttons
+// * buttons
 .btn_def {
   &--nav {
     @include font(inter, semibold);
@@ -208,7 +206,7 @@ h4 {
   }
 }
 
-// !search-box
+// * search-box
 .search-box {
   &__top {
     @include font(manrope, extrabold);
@@ -244,7 +242,7 @@ h4 {
   }
 }
 
-// !forms
+// * forms
 .filter {
   &__header {
     @include font(manrope, bold);
@@ -270,7 +268,7 @@ h4 {
   }
 }
 
-// !pager
+// * pager
 .pager {
   @include font(inter, regular);
   font-size: $font-14;
@@ -282,11 +280,9 @@ h4 {
   }
 }
 
-// ###############
-// !layout
-// ###############
+// * layout
 
-// !nav
+// * nav
 .navbar {
   font-size: $font-14;
   line-height: $font-17;
@@ -299,13 +295,13 @@ h4 {
   }
 }
 
-// !header
+// * header
 .header {
 }
 
-// !sidebar
+// * sidebar
 
-// !footer
+// * footer
 .footer {
   &--sm {
     &__bottom-links {
@@ -353,9 +349,7 @@ h4 {
   }
 }
 
-// ###############
-// !pages
-// ###############
+// * pages
 
 // homepage
 .homepage {
@@ -477,11 +471,11 @@ h4 {
   }
 }
 
-// !search-jobsOne
+// * search-jobsOne
 .srjOne {
 }
 
-// !search-jobsTwo
+// * search-jobsTwo
 .srjTwo {
   &__location {
     header {
@@ -496,7 +490,7 @@ h4 {
   }
 }
 
-// !company
+// * company
 .company {
   &__ratings {
     .rating {
@@ -551,7 +545,7 @@ h4 {
   }
 }
 
-// !pricing
+//  *pricing
 .pricing {
   &__heading__text {
     @include font(aileron, regular);
@@ -606,9 +600,7 @@ h4 {
   font-size: $font-14;
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
@@ -616,65 +608,53 @@ h4 {
   // homepage
   .homepage {
     &__text {
-      @include font(inter, regular);
-      font-size: $font-12;
-      line-height: $font-22;
+      font-size: $font-14;
+      line-height: $font-30;
     }
     &__trending {
       &__left {
         p {
-          @include font(inter, regular);
           font-size: $font-18;
         }
         a {
-          @include font(inter, regular);
           font-size: $font-14;
           text-decoration: underline;
         }
       }
       &__right {
-        @include font(inter, regular);
         font-size: $font-14;
       }
     }
     &__how-works {
       &__text {
-        @include font(manrope, medium);
         font-size: $font-26;
         font-weight: $light;
         line-height: $font-33;
       }
       .number {
-        @include font(manrope, extrabold);
         font-size: $font-16;
       }
       .profile {
-        @include font(inter, medium);
         font-size: $font-18;
       }
     }
     &__daily__category {
       .sort-by {
-        @include font(inter, regular);
         font-size: $font-18;
       }
       .btn {
-        @include font(inter, medium);
         font-size: $font-18;
       }
     }
     &__daily__explore {
       div {
-        @include font(manrope, extralight);
         font-size: $font-72;
       }
 
       p {
-        @include font(inter, regular);
         font-size: $font-18;
       }
       a {
-        @include font(inter, regular);
         font-size: $font-18;
       }
       .sort-by {
@@ -682,21 +662,17 @@ h4 {
       }
     }
     &__daily__explore__category > a {
-      @include font(inter, regular);
       font-size: $font-18;
       text-decoration: underline;
     }
     &__testimonial {
       .carousel-item h3 {
-        @include font(manrope, semibold);
         font-size: $font-32;
       }
       h3 + aside.title {
-        @include font(inter, semibold);
         font-size: $font-20;
       }
       aside .name {
-        @include font(inter, regular);
         font-size: $font-20;
       }
     }
@@ -704,23 +680,19 @@ h4 {
       &__post-job {
         line-height: $font-26;
         p {
-          @include font(inter, regular);
           font-size: $font-16;
         }
         a {
-          @include font(manrope, regular);
           font-size: $font-18;
         }
       }
 
       &__text {
-        @include font(inter, regular);
         font-size: $font-14;
       }
     }
     &__find-job {
       &__title {
-        @include font(manrope, light);
         line-height: 66px;
         font-weight: $extralight;
         span > button {
@@ -737,6 +709,105 @@ h4 {
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) and (max-width: 768px) {
+  // homepage
+  .homepage {
+    &__text {
+      font-size: $font-16;
+      line-height: $font-36;
+    }
+    &__trending {
+      &__left {
+        p {
+          font-size: $font-18;
+        }
+        a {
+          font-size: $font-14;
+          text-decoration: underline;
+        }
+      }
+      &__right {
+        font-size: $font-14;
+      }
+    }
+    &__how-works {
+      &__text {
+        font-size: $font-26;
+        font-weight: $light;
+        line-height: $font-33;
+      }
+      .number {
+        font-size: $font-16;
+      }
+      .profile {
+        font-size: $font-18;
+      }
+    }
+    &__daily__category {
+      .sort-by {
+        font-size: $font-18;
+      }
+      .btn {
+        font-size: $font-18;
+      }
+    }
+    &__daily__explore {
+      div {
+        font-size: $font-72;
+      }
+
+      p {
+        font-size: $font-18;
+      }
+      a {
+        font-size: $font-18;
+      }
+      .sort-by {
+        display: inline-block;
+      }
+    }
+    &__daily__explore__category > a {
+      font-size: $font-18;
+      text-decoration: underline;
+    }
+    &__testimonial {
+      .carousel-item h3 {
+        font-size: $font-32;
+      }
+      h3 + aside.title {
+        font-size: $font-20;
+      }
+      aside .name {
+        font-size: $font-20;
+      }
+    }
+    &__clients {
+      &__post-job {
+        line-height: $font-26;
+        p {
+          font-size: $font-16;
+        }
+        a {
+          font-size: $font-18;
+        }
+      }
+
+      &__text {
+        font-size: $font-14;
+      }
+    }
+    &__find-job {
+      &__title {
+        line-height: 66px;
+        font-weight: $extralight;
+        span > button {
+          font-size: $font-48;
+          font-weight: $extrabold;
+          letter-spacing: 1px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
