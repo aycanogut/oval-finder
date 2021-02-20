@@ -338,6 +338,26 @@
       padding: 0 20px;
       text-align: center;
     }
+    &__trending {
+      height: 198px;
+      padding: 22px 14px 22px 14px;
+
+      &__left {
+        display: flex;
+        padding: 0;
+        p {
+          padding: 0;
+        }
+        a {
+          margin-left: auto;
+        }
+      }
+      &__right {
+        display: flex;
+
+        padding: 0;
+      }
+    }
 
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
@@ -348,23 +368,14 @@
         display: none;
       }
     }
-    &__trending {
-      &__left {
-        display: flex;
-      }
-      &__right {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
   }
 }
 
 // Small devices (phone, 577px and up)
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 767px) {
   .header-homepage {
-    height: 890px;
+    height: 975px;
   }
   .homepage {
     &__heading {
@@ -386,6 +397,23 @@
     &__text {
       text-align: center;
     }
+
+    &__trending {
+      height: 198px;
+      padding: 36px 12px;
+      &__left {
+        display: flex;
+        width: 100%;
+        p {
+          padding: 0;
+        }
+        a {
+          margin-left: auto;
+        }
+      }
+      &__right {
+      }
+    }
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
       .only-visible-lg {
@@ -402,7 +430,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .header-homepage {
-    height: 890px;
+    height: 878px;
   }
   .homepage {
     &__heading {
@@ -413,13 +441,22 @@
       place-items: center;
       width: 100%;
       height: 100%;
-      margin-top: 198px;
+      margin-top: 178px;
 
       img {
         object-fit: cover;
         width: 720px;
         height: 396px;
         overflow: hidden;
+      }
+    }
+    &__trending {
+      height: 190px;
+      padding: 50px 0;
+      &__left {
+      }
+      &__right {
+        margin-left: 75px;
       }
     }
     &__how-works {
@@ -454,6 +491,14 @@
         width: 350px;
         height: 708px;
         overflow: hidden;
+      }
+    }
+
+    &__trending {
+      &__left {
+      }
+      &__right {
+        margin-left: 28px;
       }
     }
 
