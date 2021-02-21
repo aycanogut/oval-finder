@@ -69,29 +69,17 @@
     .search-btn {
       margin: auto;
     }
-
-    // .right {
-    //   margin-left: 80px;
-    // }
-
-    border-divider .left:after {
+    .left {
+      position: relative;
+    }
+    // border-divider
+    .left:after {
       content: "";
-      height: 65%;
-      width: 1px;
       position: absolute;
-      right: -90px;
-      top: 14px;
+      height: 60px;
+      width: 1px;
       background-color: $color-bonjour;
     }
-    .wrapper {
-      // padding: 30px 0;
-    }
-  }
-
-  &--homepage {
-  }
-  &--sm {
-    min-height: 80px;
   }
 }
 
@@ -131,6 +119,12 @@
           padding: 12px 0;
         }
       }
+      .left:after {
+        height: 1px;
+        width: 500px;
+        top: 64px;
+        left: 10px;
+      }
     }
   }
   // search-box top ve search-box placement
@@ -159,6 +153,12 @@
           padding: 12px 0;
         }
       }
+      .left:after {
+        height: 1px;
+        width: 500px;
+        top: 65px;
+        left: 10px;
+      }
     }
   }
   // search-box top ve search-box placement
@@ -180,6 +180,10 @@
         .input-search {
           padding: 16px 0;
         }
+      }
+      .left:after {
+        right: 20px;
+        top: 8px;
       }
     }
   }
@@ -203,6 +207,10 @@
           padding: 20px 0;
         }
       }
+      .left:after {
+        right: 14px;
+        top: 14px;
+      }
     }
   }
 }
@@ -210,6 +218,14 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .search-box {
+    &__searchInput {
+      .left:after {
+        right: 32px;
+        top: 14px;
+      }
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
