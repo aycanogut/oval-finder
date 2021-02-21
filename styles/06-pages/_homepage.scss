@@ -105,40 +105,46 @@
       }
     }
   }
-  // * width ayarla
+  // * how works
   &__how-works {
     height: 286px;
-    padding: 139px 20px 116px 0;
-    & > p {
+    width: 100%;
+    padding: 139px 0 116px 0;
+    &__text {
       color: $color-mountainmist;
-      padding-right: 103px;
       white-space: nowrap;
     }
     ul {
       display: flex;
+      margin-left: 10px;
       list-style: none;
     }
     &__item {
       display: flex;
       margin: 5px 0;
       white-space: nowrap;
-    }
-    .profile {
-      color: $color-black;
-      margin: auto 0;
-    }
-    .oval-right {
-      color: $color-spunpearl;
-      padding: 7px 32px 0 65px;
-      font-size: $font-12;
-    }
-    .number {
-      color: $color-blazeorange;
-      padding-right: 26px;
-      margin-top: -1px;
+      padding: 0 30px;
+      p {
+        padding-top: 5px;
+      }
+      .profile {
+        color: $color-black;
+      }
+      .oval-right {
+        margin-top: 5px;
+        padding-right: 20px;
+        font-size: $font-12;
+        color: $color-spunpearl;
+      }
+      .number {
+        margin-bottom: 5px;
+        padding: 0 25px 0 50px;
+        color: $color-blazeorange;
+      }
     }
   }
 
+  // * daily
   &__daily {
     height: 1181px;
     &__top {
@@ -189,6 +195,7 @@
     }
   }
 
+  // * testimonial
   // TODO: card placement
   &__testimonial {
     position: relative;
@@ -227,6 +234,7 @@
     }
   }
 
+  // * clients
   // TODO: WIDTH TAŞMASI
   &__clients {
     height: 1087px;
@@ -278,6 +286,7 @@
     }
   }
 
+  // * find job
   &__find-job {
     display: flex;
     height: 351px;
@@ -358,6 +367,31 @@
         padding: 0;
       }
     }
+    &__how-works {
+      height: 218px;
+      padding: 24px 0px 22px 24px;
+      &__text {
+        padding-bottom: 12px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      &__item {
+        padding: 0;
+        .number {
+          padding: 0;
+          padding-right: 30px;
+          margin: 0;
+        }
+        .oval-right {
+          position: absolute;
+          left: 225px;
+          margin-top: -30px;
+        }
+      }
+    }
 
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
@@ -397,13 +431,12 @@
     &__text {
       text-align: center;
     }
-
     &__trending {
-      height: 198px;
-      padding: 36px 12px;
+      height: 190px;
+      padding: 32px 20px;
       &__left {
         display: flex;
-        width: 100%;
+        padding: 0;
         p {
           padding: 0;
         }
@@ -412,6 +445,31 @@
         }
       }
       &__right {
+      }
+    }
+    &__how-works {
+      height: 218px;
+      padding: 24px 0px 22px 24px;
+      &__text {
+        padding-bottom: 12px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      &__item {
+        padding: 0;
+        .number {
+          padding: 0;
+          padding-right: 30px;
+          margin: 0;
+        }
+        .oval-right {
+          position: absolute;
+          left: 45%;
+          margin-top: -30px;
+        }
       }
     }
     &__daily__cards {
@@ -452,7 +510,7 @@
     }
     &__trending {
       height: 190px;
-      padding: 50px 0;
+      padding: 50px 20px;
       &__left {
       }
       &__right {
@@ -460,6 +518,26 @@
       }
     }
     &__how-works {
+      height: 201px;
+      padding: 40px 90px 46px 0px;
+      &__text {
+        padding-bottom: 40px;
+      }
+      ul {
+        padding: 0;
+      }
+      &__item {
+        padding: 0;
+        padding-right: 50px;
+        .number {
+          padding: 0;
+          margin: 5px 30px 0 0;
+        }
+        .oval-right {
+          margin: 10px 10px 0 0;
+          position: block;
+        }
+      }
     }
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
@@ -502,6 +580,27 @@
       }
     }
 
+    &__how-works {
+      height: 202px;
+      padding: 42px 90px 46px 0;
+      &__text {
+        padding-bottom: 40px;
+      }
+      ul {
+        padding: 0;
+      }
+      &__item {
+        padding: 0;
+        padding-right: 52px;
+        .number {
+          padding: 0 28px 0 8px;
+        }
+        .oval-right {
+          position: block;
+        }
+      }
+    }
+
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
       .only-visible-lg {
@@ -534,6 +633,24 @@
     &__search-box {
     }
     &__how-works {
+      height: 286px;
+      width: 100%;
+      padding: 139px 0 116px 0;
+      &__text {
+      }
+      ul {
+        padding-left: 125px;
+      }
+      &__item {
+        p {
+        }
+        .profile {
+        }
+        .oval-right {
+        }
+        .number {
+        }
+      }
     }
     &__daily__cards {
       // homepage-daily cards // cards hidden on this resulotion
@@ -547,4 +664,14 @@
 // XX-Large devices (larger desktops, 1400px and up)
 
 @media (min-width: 1400px) {
+  .homepage {
+    &__how-works {
+      ul {
+        padding-left: 20%;
+      }
+      &__item {
+        padding: 0 40px;
+      }
+    }
+  }
 }

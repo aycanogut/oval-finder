@@ -4,7 +4,7 @@
   outline: none !important;
 }
 
-// overflow'tespit etmek için outline-border
+// overflow'u tespit etmek için outline-border
 * {
   // outline: 1px solid red;
   // opacity: 1 !important;
@@ -23,14 +23,17 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) and (max-width: 576px) {
   body {
-    overflow-x: hidden;
-    background-color: lemonchiffon;
+    // overflow-x: hidden;
   }
 
   h1 {
@@ -45,7 +48,6 @@ a {
 
 @media (min-width: 577px) and (max-width: 768px) {
   body {
-    background-color: darkslateblue;
   }
 
   h1 {
@@ -59,7 +61,6 @@ a {
 
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    background-color: cadetblue;
   }
 
   h1 {
