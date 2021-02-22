@@ -42,6 +42,11 @@ p {
     line-height: 46px;
     font-weight: $light;
   }
+
+  h2 {
+    font-size: $font-24;
+    line-height: $font-33;
+  }
 }
 
 // Small devices (phone, 577px and up)
@@ -53,7 +58,12 @@ p {
   h1 {
     font-size: $font-48;
     text-align: center;
-    line-height: 75px;
+    line-height: $font-72;
+  }
+
+  h2 {
+    font-size: $font-32;
+    line-height: $font-33;
   }
 }
 
@@ -68,6 +78,11 @@ p {
     line-height: 76px;
     text-align: left;
     white-space: nowrap;
+  }
+
+  h2 {
+    font-size: $font-42;
+    line-height: $font-56;
   }
 }
 

@@ -116,7 +116,6 @@
     }
     ul {
       display: flex;
-      margin-left: 10px;
       list-style: none;
     }
     &__item {
@@ -147,10 +146,20 @@
   // * daily
   &__daily {
     height: 1181px;
+    width: 100%;
     &__top {
       display: flex;
-      width: auto;
+      width: 100%;
       padding: 116px 0 65px 0;
+      &__heading {
+        h2 {
+        }
+      }
+      &__category {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+      }
     }
     &__category {
       margin: auto 0 0 auto;
@@ -320,11 +329,11 @@
 
 @media (min-width: 320px) and (max-width: 576px) {
   .header-homepage {
-    height: 890px;
+    height: 830px;
   }
   .homepage {
     &__heading {
-      margin: 25px 0px 26px 0px;
+      margin-top: 30px;
     }
     &__header {
       padding: 0 14px;
@@ -334,7 +343,7 @@
       place-items: center;
       width: 100%;
       height: 100%;
-      margin-top: 145px;
+      margin-top: 120px;
 
       img {
         object-fit: cover;
@@ -344,7 +353,7 @@
       }
     }
     &__text {
-      padding: 0 20px;
+      padding: 0 12px;
       text-align: center;
     }
     &__trending {
@@ -363,7 +372,6 @@
       }
       &__right {
         display: flex;
-
         padding: 0;
       }
     }
@@ -393,13 +401,23 @@
       }
     }
 
-    &__daily__cards {
-      // homepage-daily cards // cards hidden on this resulotion
-      .only-visible-lg {
-        display: none;
+    &__daily {
+      &__top {
+        height: 147px;
+        padding: 20px 19px 24px 19px;
+        &__heading {
+          padding: 0 80px;
+          text-align: center;
+        }
       }
-      .only-visible-md {
-        display: none;
+      &__cards {
+        // homepage-daily cards // cards hidden on this resulotion
+        .only-visible-lg {
+          display: none;
+        }
+        .only-visible-md {
+          display: none;
+        }
       }
     }
   }
@@ -472,13 +490,21 @@
         }
       }
     }
-    &__daily__cards {
-      // homepage-daily cards // cards hidden on this resulotion
-      .only-visible-lg {
-        display: none;
+    &__daily {
+      &__top {
+        height: 147px;
+        padding: 20px 19px 24px 19px;
+        h2 {
+        }
       }
-      .only-visible-md {
-        display: none;
+      &__cards {
+        // homepage-daily cards // cards hidden on this resulotion
+        .only-visible-lg {
+          display: none;
+        }
+        .only-visible-md {
+          display: none;
+        }
       }
     }
   }
@@ -509,7 +535,7 @@
       }
     }
     &__trending {
-      height: 190px;
+      height: 200px;
       padding: 50px 20px;
       &__left {
       }
@@ -602,7 +628,7 @@
     }
 
     &__daily__cards {
-      // homepage-daily cards // cards hidden on this resulotion
+      // homepage-daily cards // cards hidden on this resolution
       .only-visible-lg {
         display: none;
       }
@@ -630,8 +656,7 @@
         overflow: hidden;
       }
     }
-    &__search-box {
-    }
+
     &__how-works {
       height: 286px;
       width: 100%;
@@ -666,11 +691,11 @@
 @media (min-width: 1400px) {
   .homepage {
     &__how-works {
-      ul {
-        padding-left: 20%;
-      }
       &__item {
-        padding: 0 40px;
+        padding: 0 20px;
+      }
+      ul {
+        padding-left: 135px;
       }
     }
   }

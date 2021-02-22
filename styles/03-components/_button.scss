@@ -5,9 +5,9 @@
   border: none;
   text-align: center;
   white-space: nowrap;
-  @include transition($all);
+  @include transition($btn);
   &:hover {
-    @include transition($all);
+    @include transition($btn);
   }
 
   // navigation
@@ -152,6 +152,7 @@
   .btn_def {
     &--search-box {
       padding: 16px 100px;
+      margin: 10px 0;
     }
   }
 }

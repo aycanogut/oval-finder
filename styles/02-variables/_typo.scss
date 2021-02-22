@@ -608,8 +608,8 @@ h4 {
   // homepage
   .homepage {
     &__text {
-      font-size: $font-14;
-      line-height: $font-30;
+      font-size: $font-12;
+      line-height: $font-24;
     }
     &__trending {
       &__left {
@@ -635,15 +635,15 @@ h4 {
         font-size: $font-16;
       }
       .profile {
-        font-size: $font-18;
+        font-size: $font-16;
       }
     }
-    &__daily__category {
+    &__daily__top__category {
       .sort-by {
-        font-size: $font-18;
+        font-size: $font-14;
       }
       .btn {
-        font-size: $font-18;
+        font-size: $font-14;
       }
     }
     &__daily__explore {

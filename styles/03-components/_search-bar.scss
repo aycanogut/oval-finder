@@ -101,18 +101,19 @@
 
 @media (min-width: 320px) and (max-width: 576px) {
   .search-box {
-    height: 225px;
     margin: 0 10px;
-
     &__top {
-      margin: 0 10px 9px 10px;
+      margin: 10px 0 10px 10px;
     }
     &__searchInput {
       display: flex;
       flex-direction: column;
       padding: 10px 10px 0px 10px;
-      justify-content: center;
-      .input {
+
+      .left,
+      .right {
+        padding: 0;
+
         .input-search {
           outline: none;
           border: none;
@@ -129,7 +130,7 @@
   }
   // search-box top ve search-box placement
   .homepage__search-box {
-    margin: 285px 0;
+    margin: 275px 0;
   }
 }
 
@@ -163,7 +164,7 @@
   }
   // search-box top ve search-box placement
   .homepage__search-box {
-    margin: 121px 0;
+    margin: 146px 0;
   }
 }
 
@@ -193,8 +194,6 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
-
 @media (min-width: 992px) {
   .search-box {
     height: 86px;
@@ -212,6 +211,10 @@
         top: 14px;
       }
     }
+  }
+  // search-box top ve search-box placement
+  .homepage__search-box {
+    margin: 16px 0;
   }
 }
 
