@@ -150,14 +150,16 @@
     &__top {
       display: flex;
       width: 100%;
-      padding: 116px 0 65px 0;
+      padding: 100px 0 65px 0;
       &__heading {
         h2 {
+          padding-right: 200px;
         }
       }
       &__category {
         display: flex;
         justify-content: end;
+        align-items: center;
         width: 100%;
       }
     }
@@ -170,6 +172,7 @@
         outline: none;
       }
       .sort-by {
+        padding-top: 20px;
         margin-bottom: 0;
       }
     }
@@ -377,7 +380,7 @@
     }
     &__how-works {
       height: 218px;
-      padding: 24px 0px 22px 24px;
+      padding: 24px 0px 22px 32px;
       &__text {
         padding-bottom: 12px;
       }
@@ -385,6 +388,7 @@
         display: flex;
         flex-direction: column;
         padding: 0;
+        padding-left: 18px;
       }
       &__item {
         padding: 0;
@@ -406,8 +410,18 @@
         height: 147px;
         padding: 20px 19px 24px 19px;
         &__heading {
-          padding: 0 80px;
+          padding: 0 40px;
           text-align: center;
+          h2 {
+            padding: 0;
+          }
+        }
+        &__category {
+          justify-content: center;
+          .sort-by {
+            white-space: nowrap;
+            padding-left: 30px;
+          }
         }
       }
       &__cards {
@@ -467,34 +481,35 @@
     }
     &__how-works {
       height: 218px;
-      padding: 24px 0px 22px 24px;
+      // padding: 24px 0px 22px 0px;
       &__text {
         padding-bottom: 12px;
       }
       ul {
         display: flex;
-        flex-direction: column;
-        padding: 0;
+        flex-direction: row;
+        padding: 0 0 0 0;
       }
       &__item {
         padding: 0;
         .number {
           padding: 0;
-          padding-right: 30px;
-          margin: 0;
+          // padding-right: 30px;
+          margin: 5px 0 0 0;
         }
         .oval-right {
-          position: absolute;
-          left: 45%;
-          margin-top: -30px;
+          // padding-left: 10px;
+          margin-top: 10px;
         }
       }
     }
+
     &__daily {
       &__top {
         height: 147px;
         padding: 20px 19px 24px 19px;
         h2 {
+          padding: 0;
         }
       }
       &__cards {
@@ -554,7 +569,7 @@
       }
       &__item {
         padding: 0;
-        padding-right: 50px;
+        padding-right: 42px;
         .number {
           padding: 0;
           margin: 5px 30px 0 0;
@@ -565,10 +580,17 @@
         }
       }
     }
-    &__daily__cards {
-      // homepage-daily cards // cards hidden on this resulotion
-      .only-visible-lg {
-        display: none;
+    &__daily {
+      &__top {
+        &__category {
+          padding-top: 100px;
+        }
+      }
+      &__cards {
+        // homepage-daily cards // cards hidden on this resulotion
+        .only-visible-lg {
+          display: none;
+        }
       }
     }
   }
@@ -607,17 +629,19 @@
     }
 
     &__how-works {
-      height: 202px;
-      padding: 42px 90px 46px 0;
+      padding: 127px 90px 46px 0;
       &__text {
         padding-bottom: 40px;
       }
       ul {
-        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-left: 10px;
       }
       &__item {
         padding: 0;
-        padding-right: 52px;
+        padding-right: 32px;
         .number {
           padding: 0 28px 0 8px;
         }
@@ -627,10 +651,21 @@
       }
     }
 
-    &__daily__cards {
-      // homepage-daily cards // cards hidden on this resolution
-      .only-visible-lg {
-        display: none;
+    &__daily {
+      &__top {
+        h2 {
+          padding-right: 120px;
+        }
+
+        &__category {
+          padding-top: 100px;
+        }
+      }
+      &__cards {
+        // homepage-daily cards // cards hidden on this resulotion
+        .only-visible-lg {
+          display: none;
+        }
       }
     }
   }
@@ -677,10 +712,17 @@
         }
       }
     }
-    &__daily__cards {
-      // homepage-daily cards // cards hidden on this resulotion
-      .only-visible-lg {
-        display: none;
+    &__daily {
+      &__top {
+        h2 {
+          padding-right: 140px;
+        }
+      }
+      &__cards {
+        // homepage-daily cards // cards hidden on this resulotion
+        .only-visible-lg {
+          display: none;
+        }
       }
     }
   }
