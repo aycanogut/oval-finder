@@ -67,6 +67,8 @@
 
   // homepage-trending
   &--trending {
+    display: inline-block;
+    white-space: normal;
     padding: 7px 15px 8px 15px;
     background-color: $color-white;
     color: $color-midgray;
@@ -172,7 +174,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .btn_def {
     &--search-box {
-      padding: 16px 28px;
+      padding: 13px 28px;
     }
   }
 }

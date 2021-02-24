@@ -71,7 +71,6 @@
       padding-right: 35px;
 
       p {
-        margin: 0;
         padding-top: 14px;
         color: $color-shipgray;
         white-space: nowrap;
@@ -89,10 +88,9 @@
       }
     }
 
-    // TODO butonları grid ile konumlandır
+    // how works-buttons
     &__right {
       display: flex;
-      padding: 0 0 0 6px;
       a {
         margin: 0px 8px 8px 0;
         color: $color-midgray;
@@ -361,16 +359,17 @@
     }
     &__trending {
       height: 198px;
-      padding: 22px 14px 22px 14px;
-
+      padding: 16px 14px 22px 12px;
       &__left {
         display: flex;
         padding: 0;
         p {
           padding: 0;
+          padding-bottom: 16px;
         }
         a {
           margin-left: auto;
+          padding-top: 2px;
         }
       }
       &__right {
@@ -380,7 +379,7 @@
     }
     &__how-works {
       height: 217px;
-      padding: 24px 0px 26px 24px;
+      padding: 24px 0px 26px 20px;
       &__text {
         padding-bottom: 10px;
       }
@@ -465,26 +464,34 @@
       text-align: center;
     }
     &__trending {
-      height: 190px;
-      padding: 32px 20px;
+      height: 168px;
+      padding: 12px 20px 0px 20px;
       &__left {
-        display: flex;
+        display: block;
         padding: 0;
+        padding-top: 50px;
+
         p {
-          padding: 0;
+          padding-bottom: 12px;
         }
+
         a {
           margin-left: auto;
+          padding: 12px 0 39px 0;
         }
       }
+
       &__right {
+        .row {
+          justify-content: end;
+        }
       }
     }
     &__how-works {
-      height: 218px;
+      height: 225px;
       padding: 24px 0px 22px 0px;
       &__text {
-        padding-bottom: 7px;
+        padding-bottom: 10px;
       }
       ul {
         display: flex;
@@ -552,12 +559,12 @@
       }
     }
     &__trending {
-      height: 200px;
-      padding: 50px 20px;
+      height: 190px;
+      padding: 65px 20px 20px 20px;
       &__left {
       }
       &__right {
-        margin-left: 75px;
+        padding-left: 75px;
       }
     }
     &__how-works {
@@ -626,7 +633,8 @@
       &__left {
       }
       &__right {
-        margin-left: 28px;
+        padding-left: 100px;
+        margin-right: 300px;
       }
     }
 
@@ -695,6 +703,12 @@
         width: 510px;
         height: 708px;
         overflow: hidden;
+      }
+    }
+
+    &__trending {
+      &__right {
+        margin-right: 450px;
       }
     }
 
