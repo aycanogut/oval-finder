@@ -206,6 +206,12 @@ h4 {
   }
 }
 
+// dropdown-btn
+.dropdown-item {
+  @include font(inter, light);
+  font-size: $font-16;
+}
+
 // * search-box
 .search-box {
   &__top {
@@ -703,6 +709,18 @@ h4 {
         }
       }
     }
+  }
+
+  // buttons
+  .btn_def {
+    &--search-box {
+      font-size: $font-16;
+    }
+  }
+  // dropdown-btn
+  .dropdown-item {
+    @include font(inter, light);
+    font-size: $font-12;
   }
 }
 

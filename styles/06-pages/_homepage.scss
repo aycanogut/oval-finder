@@ -61,6 +61,7 @@
 
 // * main
 .homepage {
+  // * trending
   &__trending {
     display: flex;
     height: 247px;
@@ -103,6 +104,7 @@
       }
     }
   }
+
   // * how works
   &__how-works {
     height: 286px;
@@ -296,6 +298,12 @@
     }
   }
 
+  // clients-bg
+  .jumbotron {
+    padding: 0;
+    background-color: $color-aquahaze;
+  }
+
   // * find job
   &__find-job {
     display: flex;
@@ -318,12 +326,6 @@
   }
 }
 
-// clients-bg
-.jumbotron {
-  padding: 0;
-  background-color: $color-aquahaze;
-}
-
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
@@ -336,9 +338,11 @@
     &__heading {
       margin-top: 30px;
     }
+
     &__header {
       padding: 0 14px;
     }
+
     &__header__image {
       display: grid;
       place-items: center;
@@ -353,10 +357,12 @@
         overflow: hidden;
       }
     }
+
     &__text {
       padding: 0 12px;
       text-align: center;
     }
+
     &__trending {
       height: 198px;
       padding: 16px 14px 22px 12px;
@@ -377,9 +383,10 @@
         padding: 0;
       }
     }
+
     &__how-works {
       height: 217px;
-      padding: 24px 0px 26px 20px;
+      padding: 24px 0 26px 20px;
       &__text {
         padding-bottom: 10px;
       }
@@ -406,9 +413,12 @@
     }
 
     &__daily {
+      .container {
+        padding: 0;
+      }
       &__top {
         height: 147px;
-        padding: 20px 19px 24px 19px;
+        padding: 18px 0 10px 0;
         &__heading {
           padding: 0 40px;
           text-align: center;
@@ -417,10 +427,13 @@
           }
         }
         &__category {
+          margin: 0 15px;
           justify-content: center;
           .sort-by {
             white-space: nowrap;
-            padding-left: 30px;
+          }
+          .dropdown-toggle {
+            padding-left: 3px;
           }
         }
       }
@@ -447,6 +460,7 @@
     &__heading {
       padding: 22px 0px 200px 0px;
     }
+
     &__header__image {
       display: grid;
       place-items: center;
@@ -460,9 +474,11 @@
         overflow: hidden;
       }
     }
+
     &__text {
       text-align: center;
     }
+
     &__trending {
       height: 168px;
       padding: 12px 20px 0px 20px;
@@ -487,6 +503,7 @@
         }
       }
     }
+
     &__how-works {
       height: 225px;
       padding: 24px 0px 22px 0px;
@@ -519,8 +536,15 @@
         padding: 20px 19px 24px 19px;
         h2 {
           padding: 0;
+          padding-left: 24px;
+          text-align: center;
+        }
+
+        &__category {
+          justify-content: center;
         }
       }
+
       &__cards {
         // homepage-daily cards // cards hidden on this resulotion
         .only-visible-lg {
@@ -575,6 +599,7 @@
       }
       ul {
         padding: 0;
+        padding-left: 16px;
       }
       &__item {
         padding: 0;
@@ -591,8 +616,16 @@
     }
     &__daily {
       &__top {
+        padding: 50px 40px;
+        &__heading {
+          h2 {
+            padding: 0;
+            padding-bottom: 10px;
+            text-align: center;
+          }
+        }
         &__category {
-          padding-top: 100px;
+          justify-content: center;
         }
       }
       &__cards {
