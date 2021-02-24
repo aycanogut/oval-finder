@@ -398,14 +398,6 @@ h4 {
     }
   }
   &__daily__category {
-    .sort-by {
-      @include font(inter, regular);
-      font-size: $font-18;
-    }
-    .btn {
-      @include font(inter, medium);
-      font-size: $font-18;
-    }
   }
   &__daily__explore {
     div {
@@ -551,7 +543,7 @@ h4 {
   }
 }
 
-//  *pricing
+// * pricing
 .pricing {
   &__heading__text {
     @include font(aileron, regular);
@@ -601,6 +593,21 @@ h4 {
   }
 }
 
+// * another components
+
+// dropdowns-left side
+.sort-by {
+  @include font(inter, light);
+  font-size: $font-18;
+}
+
+// dropdowns-right side
+.btn {
+  @include font(inter, medium);
+  font-size: $font-18;
+}
+
+// search-result showing
 .showing {
   @include font(inter, regular);
   font-size: $font-14;

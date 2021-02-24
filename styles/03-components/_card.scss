@@ -3,6 +3,7 @@
 .card {
   // homepage-daily-job-board
   &--daily {
+    min-width: 360px;
     min-height: 226px;
     margin-bottom: 30px;
     border: 1px solid rgba(232, 231, 232, 0.5);
