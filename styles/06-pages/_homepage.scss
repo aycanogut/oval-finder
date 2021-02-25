@@ -168,10 +168,10 @@
     }
 
     &__explore {
-      padding: 34px 55px 0 63px;
+      padding: 34px;
+      margin: auto;
       white-space: nowrap;
       div.number {
-        margin-left: 44px;
         padding-bottom: 15px;
         color: $color-haiti;
       }
@@ -179,6 +179,9 @@
         text-underline-position: under;
       }
       &__category {
+        .sort-by {
+          margin-left: 30px;
+        }
         a {
           padding-left: 5px;
           color: $color-shipgray;
@@ -238,7 +241,7 @@
   }
 
   // * clients
-  // TODO: WIDTH TAŞMASI
+  // TODO: WIDTH OVERFLOW
   &__clients {
     height: 1087px;
     background-color: $color-aquahaze;
@@ -418,8 +421,9 @@
           }
         }
         &__category {
-          margin: 0 15px;
+          display: flex;
           justify-content: center;
+          margin-left: 20px;
           .sort-by {
             white-space: nowrap;
           }
@@ -428,13 +432,19 @@
           }
         }
       }
-      &__cards {
-        // homepage-daily cards // cards hidden on this resulotion
-        .only-visible-lg {
-          display: none;
+      &__job-board {
+        .row {
+          margin: 0;
+          padding: 0;
         }
-        .only-visible-md {
-          display: none;
+      }
+      &__explore {
+        display: grid;
+        place-content: center;
+        padding: 20px 0 0 0;
+        div.number {
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -536,13 +546,18 @@
         }
       }
 
-      &__cards {
-        // homepage-daily cards // cards hidden on this resulotion
-        .only-visible-lg {
-          display: none;
+      &__explore {
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div.number {
+          margin: auto;
         }
-        .only-visible-md {
-          display: none;
+        &__bottom {
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -619,10 +634,14 @@
           justify-content: center;
         }
       }
-      &__cards {
-        // homepage-daily cards // cards hidden on this resulotion
-        .only-visible-lg {
-          display: none;
+      &__job-boards {
+      }
+      &__explore {
+        padding: 0 41px 0 0;
+        float: right;
+        margin-top: -125px;
+        div.number {
+          padding-left: 60px;
         }
       }
     }
@@ -701,10 +720,15 @@
           float: right;
         }
       }
-      &__cards {
-        // homepage-daily cards // cards hidden on this resulotion
-        .only-visible-lg {
-          display: none;
+      &__job-board {
+      }
+
+      &__explore {
+        float: right;
+        margin-top: -145px;
+        padding-right: 100px;
+        div.number {
+          margin-left: 62px;
         }
       }
     }
@@ -759,9 +783,10 @@
         }
       }
     }
+
     &__daily {
       &__top {
-        padding: 116px 140px 65px 165px;
+        padding: 116px 0 65px 15px;
 
         &__heading {
           h2 {
@@ -769,21 +794,18 @@
           }
         }
         &__category {
-          margin-left: 20px;
+          margin-right: -10px;
           float: right;
         }
       }
 
+      &__explore {
+        margin: 0;
+        padding: 32px 49px 0 0;
+        float: right;
+      }
+
       // cards-container
-      &__job-board {
-        padding: 0 150px;
-      }
-      &__cards {
-        // homepage-daily cards // cards hidden on this resulotion
-        .only-visible-lg {
-          display: none;
-        }
-      }
     }
   }
 }

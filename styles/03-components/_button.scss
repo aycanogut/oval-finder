@@ -154,7 +154,7 @@
 // * responsive
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) {
   .btn_def {
     &--search-box {
       padding: 16px 100px;
@@ -165,7 +165,7 @@
 
 // Small devices (phone, 577px and up)
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) {
   .btn_def {
     &--search-box {
       padding: 16px 220px;
@@ -175,7 +175,7 @@
 
 // Medium devices (tablets, 768px and up)
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .btn_def {
     &--search-box {
       padding: 13px 28px;

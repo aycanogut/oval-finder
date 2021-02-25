@@ -3,23 +3,17 @@
 .card {
   // homepage-daily-job-board
   &--daily {
-    min-width: 360px;
-    min-height: 226px;
-    margin-bottom: 30px;
     border: 1px solid rgba(232, 231, 232, 0.5);
 
     .card__topper {
       display: flex;
-      padding: 22px 22px 16px 24px;
       align-items: center;
-
       .card__image {
-        margin-top: 2px;
       }
 
       .card__company-name {
         margin-right: auto;
-        padding: 0 12px;
+        padding: 0 11px;
       }
       .card__time {
         display: flex;
@@ -28,18 +22,15 @@
     }
 
     .card__body {
-      padding: 0 36px 0 24px;
     }
 
     .card__description {
       display: flex;
       span {
-        padding-right: 24px;
       }
       i {
         align-items: center;
         font-size: $font-20;
-        padding-right: 4px;
       }
     }
 
@@ -47,12 +38,10 @@
       display: flex;
       position: absolute;
       bottom: 0;
-      padding: 24px 20px 22px 24px;
+
       &__apply {
         display: flex;
         p {
-          padding: 0 5px 0 2px;
-          margin-bottom: -5px;
         }
       }
     }
@@ -420,9 +409,7 @@
     }
   }
 
-  // #########
-  // !COLORS
-  // #########
+  // * colors
 
   &__company-name,
   &__title,
@@ -492,28 +479,131 @@
   }
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) {
+  .card {
+    &--daily {
+      min-width: 290px;
+      min-height: 226px;
+      margin-bottom: 10px;
+      .card__topper {
+        padding: 20px 28px 10px 20px;
+
+        .card__company-name {
+          margin-right: auto;
+          padding: 0 11px;
+        }
+        .card__time {
+          display: flex;
+          justify-content: end;
+          padding-top: 2px;
+        }
+      }
+      .card__body {
+        padding: 7px 12px 0 20px;
+      }
+      .card__description {
+        padding: 0 0 24px 18px;
+        span {
+          padding-right: 24px;
+        }
+        i {
+          padding-right: 6px;
+        }
+      }
+    }
+  }
+  // bigger-card (spotify)
+  .bigger-card {
+    min-height: 390px;
+
+    .card__body {
+      padding: 0 21px 0 20px;
+    }
+    .card__description {
+      padding: 0;
+      span {
+        padding: 0 16px 0 0;
+      }
+    }
+
+    .card__bottom {
+      padding: 22px 0 20px 20px;
+      &__apply {
+        span > img {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
 }
 
 // Small devices (phone, 577px and up)
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) {
 }
 
 // Medium devices (tablets, 768px and up)
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .card {
+    &--daily {
+      min-width: 360px;
+      min-height: 226px;
+      margin-bottom: 30px;
+
+      .card__topper {
+        display: flex;
+        padding: 21px 23px 16px 23px;
+        .card__image {
+          margin-top: 2px;
+        }
+        .card__time {
+          padding-top: 2px;
+        }
+      }
+
+      .card__body {
+        padding: 1px 35px 0 23px;
+      }
+
+      .card__description {
+        padding: 0;
+        span {
+          padding: 0 23px 1px 0;
+        }
+        i {
+          padding-right: 4px;
+        }
+      }
+
+      .card__bottom {
+        padding: 24px 20px 22px 24px;
+
+        &__apply {
+          p {
+            p {
+              padding: 0 5px 0 2px;
+              margin-bottom: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // bigger-card (spotify)
+  .bigger-card {
+    min-height: 408px;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

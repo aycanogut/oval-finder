@@ -51,6 +51,8 @@ h4 {
   &__description {
     @include font(inter, regular);
     font-size: $font-14;
+
+    letter-spacing: 0.1px;
   }
   &__descriptor {
     @include font(manrope, semibold);
@@ -78,6 +80,7 @@ h4 {
     @include font(inter, medium);
     font-size: $font-18;
     line-height: $font-26;
+    letter-spacing: 0.1px;
   }
 
   &__review {
@@ -274,11 +277,12 @@ h4 {
   }
 }
 
-// * pager
+// * pager and page-navigation
 .pager {
   @include font(inter, regular);
   font-size: $font-14;
 }
+
 .page-navigations {
   .page-item {
     @include font(inter, regular);
@@ -356,7 +360,6 @@ h4 {
 }
 
 // * pages
-
 // homepage
 .homepage {
   &__text {
@@ -718,6 +721,13 @@ h4 {
     }
   }
 
+  // cards
+  .card {
+    &__title {
+      font-size: $font-16;
+    }
+  }
+
   // buttons
   .btn_def {
     &--search-box {
@@ -733,7 +743,7 @@ h4 {
 
 // Small devices (phone, 577px and up)
 
-@media (min-width: 577px) and (max-width: 767px) {
+@media (min-width: 577px) {
   // homepage
   .homepage {
     &__text {
@@ -837,7 +847,7 @@ h4 {
 
 // Medium devices (tablets, 768px and up)
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .homepage {
     &__text {
       line-height: $font-26;
@@ -848,6 +858,11 @@ h4 {
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  h2 {
+    font-size: $font-48 !important;
+    font-weight: $regular;
+    line-height: 66px !important;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

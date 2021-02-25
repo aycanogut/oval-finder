@@ -6,11 +6,11 @@
 
 // overflow'u tespit etmek için outline-border
 * {
-  //   outline: 1px solid red;
-  //   opacity: 1 !important;
-  //   visibility: visible !important;
+  // outline: 1px solid red;
+  // opacity: 1 !important;
+  // visibility: visible !important;
 }
-\\ body {
+body {
   // overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ p {
 
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) {
   body {
     // overflow-x: hidden;
   }
@@ -56,7 +56,7 @@ p {
 
 // Small devices (phone, 577px and up)
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) {
   body {
   }
 
@@ -74,7 +74,7 @@ p {
 
 // Medium devices (tablets, 768px and up)
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   body {
   }
 
