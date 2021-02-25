@@ -330,7 +330,8 @@
   }
   .homepage {
     &__heading {
-      margin-top: 30px;
+      margin-top: 20px;
+      height: 200px;
     }
 
     &__header {
@@ -346,7 +347,8 @@
 
       img {
         object-fit: cover;
-        width: 300px;
+        min-width: 300px;
+        width: 90%;
         height: 236px;
         overflow: hidden;
       }
@@ -467,7 +469,7 @@
       place-items: center;
       width: 100%;
       height: 100%;
-      margin-top: 190px;
+      margin-top: 160px;
       img {
         object-fit: cover;
         width: 540px;
@@ -804,8 +806,6 @@
         padding: 32px 49px 0 0;
         float: right;
       }
-
-      // cards-container
     }
   }
 }
