@@ -108,7 +108,7 @@ h4 {
   }
   &--testimonial {
     figure {
-      @include font(manrope, medium);
+      @include font(manrope, semibold);
       font-size: $font-32;
       font-weight: $medium;
       line-height: 44px;
@@ -117,12 +117,6 @@ h4 {
       @include font(inter, medium);
       font-size: $font-20;
       font-weight: $extralight;
-
-      .card__name {
-        @include font(inter, semibold);
-        font-size: $font-20;
-        font-weight: $extralight;
-      }
     }
   }
   &--clients {
@@ -726,6 +720,15 @@ h4 {
     &__title {
       font-size: $font-16;
     }
+    &--testimonial {
+      figure {
+        font-size: $font-18;
+        line-height: 30px;
+      }
+      figcaption {
+        font-size: $font-14;
+      }
+    }
   }
 
   // buttons
@@ -843,11 +846,32 @@ h4 {
       }
     }
   }
+
+  // cards
+  .card {
+    &--testimonial {
+      figure {
+        font-size: $font-22;
+        line-height: 36px;
+      }
+      figcaption {
+        font-size: $font-18;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    &--testimonial {
+      blockquote {
+        font-size: $font-28;
+        line-height: 40px;
+      }
+    }
+  }
   .homepage {
     &__text {
       line-height: $font-26;
@@ -862,6 +886,22 @@ h4 {
     font-size: $font-48 !important;
     font-weight: $regular;
     line-height: 66px !important;
+  }
+
+  .card {
+    &--testimonial {
+      figure {
+        @include font(manrope, semibold);
+        font-size: $font-32;
+        font-weight: $medium;
+        line-height: 44px;
+      }
+      figcaption {
+        @include font(inter, medium);
+        font-size: $font-20;
+        font-weight: $extralight;
+      }
+    }
   }
 }
 

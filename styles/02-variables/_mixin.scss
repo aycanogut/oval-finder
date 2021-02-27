@@ -22,9 +22,16 @@ $btn: background-color 0.3s ease-in-out;
 
 // box-shadow
 // search-box
-$search-box: 0px 60px 75px -4px rgba(0, 0, 0, 0.1);
+$search-box: 0 60px 75px -4px rgba(0, 0, 0, 0.1);
 @mixin box-shadow($search-box) {
   -webkit-box-shadow: $search-box;
   -moz-box-shadow: $search-box;
   box-shadow: $search-box;
+}
+
+$card-testimonial: 0 1px 16px 1px rgba(0, 0, 0, 0.04);
+@mixin box-shadow($card-testimonial) {
+  -webkit-box-shadow: $card-testimonial;
+  -moz-box-shadow: $card-testimonial;
+  box-shadow: $card-testimonial;
 }

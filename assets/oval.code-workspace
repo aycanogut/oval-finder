@@ -5,6 +5,9 @@
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "knife_agency"
+    "liveServer.settings.multiRootWorkspaceName": "adsız klasör",
+    "files.exclude": {
+      ".vscode": true
+    }
   }
 }

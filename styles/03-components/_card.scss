@@ -49,10 +49,6 @@
 
   // homepage-testimonial
   &--testimonial {
-    width: 40%;
-    padding: 38px 56px 56px 56px;
-    min-width: 520px;
-    min-height: 522px;
     background-color: $color-white;
     .oval-quotation {
       font-size: 60px;
@@ -63,7 +59,6 @@
     }
     blockquote {
       color: $color-black;
-      padding: 7px 0 23px 0;
     }
     &__aside {
       color: $color-mountainmist;
@@ -515,6 +510,19 @@
         }
       }
     }
+
+    &--testimonial {
+      min-width: 300px;
+      min-height: 354px;
+      padding: 16px 24px 0 24px;
+      blockquote {
+        text-align: center;
+        padding: 20px 0 0 0;
+      }
+      &__aside {
+        text-align: center;
+      }
+    }
   }
   // bigger-card (spotify)
   .bigger-card {
@@ -544,11 +552,37 @@
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
+  .card {
+    &--testimonial {
+      min-width: 300px;
+      min-height: 354px;
+      padding: 20px;
+      blockquote {
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+      }
+      &__aside {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .card {
+    &--testimonial {
+      max-width: 626px;
+      min-height: 372px;
+      padding: 27px 25px 8px 36px;
+      // blockquote {
+      //   text-align: left;
+      // }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -598,6 +632,14 @@
         }
       }
     }
+    &--testimonial {
+      min-width: 520px;
+      min-height: 522px;
+      padding: 37px 56px 50px 56px;
+    }
+    // &__aside {
+    //   text-align: left;
+    // }
   }
 
   // bigger-card (spotify)
