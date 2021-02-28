@@ -62,6 +62,7 @@
 // * main
 .homepage {
   // * trending
+
   &__trending {
     display: flex;
     height: 247px;
@@ -106,6 +107,7 @@
   }
 
   // * how works
+
   &__how-works {
     height: 286px;
     width: 100%;
@@ -144,6 +146,7 @@
   }
 
   // * daily
+
   &__daily {
     height: 1181px;
     width: 100%;
@@ -202,7 +205,7 @@
   }
 
   // * testimonial
-  // TODO: card placement
+
   &__testimonial {
     height: 818px;
     position: relative;
@@ -212,7 +215,7 @@
 
     &__blockquote-card {
       #carousel-homepage {
-        background: url(/assets/img/testimonial-bg.png);
+        background: url(/assets/img/testimonial-dummy.png);
         background-repeat: no-repeat;
         padding: 55px;
         // carousel-card and background
@@ -266,80 +269,66 @@
   }
 
   // * clients
-  // TODO: WIDTH OVERFLOW
+
   &__clients {
-    height: 1087px;
+    background: url(/assets/img/clients-bg.jpg);
+    background-repeat: no-repeat;
     background-color: $color-aquahaze;
     &__heading {
-      padding: 95px 205px 68px 196px;
-      margin: 0 auto;
     }
     &__body {
-      display: flex;
-      position: relative;
-      padding-left: 4px;
     }
     &__post-job {
-      padding: 0 250px 0 61px;
       p {
         color: $color-shipgray;
-        margin-bottom: 24px;
       }
       a {
         color: $color-blazeorange;
-        padding-left: 1px;
       }
     }
     &__cards {
-      position: absolute;
-      top: 171px;
-      left: 293px;
     }
     &__text {
       color: $color-shipgray;
     }
     &__bottom {
-      padding: 100px 100px 0 45px;
       &--logos {
         ul {
           display: flex;
         }
         li {
           list-style: none;
-          padding: 0 31px;
-          margin: auto 0;
         }
       }
       p {
         text-align: center;
-        padding: 20px 0 0 57px;
       }
+    }
+
+    #carousel-clients {
     }
   }
 
-  // clients-bg
+  // clients-bg color
   .jumbotron {
     padding: 0;
     background-color: $color-aquahaze;
   }
 
   // * find job
+
   &__find-job {
     display: flex;
-    height: 351px;
-    padding: 95px 10px 124px 5px;
+
     &__title {
       button {
-        padding: 0;
-        margin-top: -5px;
         color: $color-black;
       }
     }
     &__btn {
       display: flex;
-      padding-top: 33px;
+
       a {
-        margin-left: auto;
       }
     }
   }
@@ -524,6 +513,76 @@
       .quote {
         display: grid;
         place-items: center;
+      }
+    }
+
+    &__clients {
+      height: 812px;
+      background-size: 92%;
+      background-position: 50% 34%;
+      &__heading {
+        padding: 20px 24px 0 24px;
+        margin: 0;
+        text-align: center;
+      }
+      &__body {
+        text-align: center;
+        padding: 0 20px;
+        margin-top: -20px;
+      }
+      &__post-job {
+        p {
+          margin-bottom: 12px;
+        }
+        a {
+        }
+      }
+      &__cards {
+      }
+      &__text {
+      }
+      &__bottom {
+        padding: 30px 30px 0 30px;
+        &--logos {
+          .row {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 10px 10px 10px 0;
+            &--bottom {
+              margin-left: -40px;
+            }
+          }
+
+          a {
+            display: grid;
+            place-items: center;
+          }
+          img {
+            width: 60%;
+          }
+        }
+        p {
+          padding-top: 18px;
+        }
+      }
+      #carousel-clients {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 220px;
+      }
+    }
+
+    &__find-job {
+      display: flex;
+      height: 184px;
+      padding: 0 54px;
+      margin-top: -20px;
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: -22px;
       }
     }
   }
@@ -821,6 +880,38 @@
         }
       }
     }
+
+    &__clients {
+      height: 1053px;
+      &__heading {
+      }
+      &__body {
+      }
+      &__post-job {
+        p {
+        }
+        a {
+        }
+      }
+      &__cards {
+      }
+      &__text {
+      }
+      &__bottom {
+        &--logos {
+          ul {
+          }
+          li {
+          }
+        }
+        p {
+        }
+      }
+    }
+
+    &__find-job {
+      height: 335px;
+    }
   }
 }
 
@@ -918,29 +1009,95 @@
           .carousel-inner {
             width: 60.5%;
             height: auto;
+          }
+          .carousel-item {
+          }
+        }
 
-            .carousel-item {
+        // carousel-indicators
+        .carousel-indicators {
+          width: 20%;
+          bottom: 113px;
+          left: 487px;
+        }
+
+        // carousel-control buttons
+        .controls {
+          .carousel-control-prev {
+            span {
             }
           }
-
-          // carousel-indicators
-          .carousel-indicators {
-            width: 20%;
-            bottom: 113px;
-            left: 487px;
-          }
-
-          // carousel-control buttons
-          .controls {
-            .carousel-control-prev {
-              span {
-              }
-            }
-            .carousel-control-next {
-              span {
-              }
+          .carousel-control-next {
+            span {
             }
           }
+        }
+      }
+    }
+
+    &__clients {
+      height: 1087px;
+      &__heading {
+        padding: 95px 205px 68px 196px;
+        margin: 0 auto;
+      }
+      &__body {
+        display: flex;
+        position: relative;
+        padding-left: 4px;
+      }
+      &__post-job {
+        padding: 0 250px 0 61px;
+        p {
+          color: $color-shipgray;
+          margin-bottom: 24px;
+        }
+        a {
+          color: $color-blazeorange;
+          padding-left: 1px;
+        }
+      }
+      &__cards {
+        position: absolute;
+        top: 171px;
+        left: 293px;
+      }
+      &__text {
+        color: $color-shipgray;
+      }
+      &__bottom {
+        padding: 100px 100px 0 45px;
+        &--logos {
+          ul {
+            display: flex;
+          }
+          li {
+            list-style: none;
+            padding: 0 31px;
+            margin: auto 0;
+          }
+        }
+        p {
+          text-align: center;
+          padding: 20px 0 0 57px;
+        }
+      }
+    }
+
+    &__find-job {
+      height: 351px;
+      padding: 95px 10px 124px 5px;
+      &__title {
+        button {
+          padding: 0;
+          margin-top: -5px;
+        }
+      }
+      &__btn {
+        display: flex;
+        padding-top: 33px;
+        a {
+          margin-left: auto;
         }
       }
     }

@@ -615,6 +615,12 @@ h4 {
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) and (max-width: 576px) {
+  h2 {
+    font-size: $font-20 !important;
+    font-weight: $light;
+    line-height: 27px !important;
+  }
+
   // homepage
   .homepage {
     &__text {
@@ -690,7 +696,7 @@ h4 {
       &__post-job {
         line-height: $font-26;
         p {
-          font-size: $font-16;
+          font-size: $font-14;
         }
         a {
           font-size: $font-18;
@@ -698,17 +704,14 @@ h4 {
       }
 
       &__text {
-        font-size: $font-14;
+        font-size: $font-12;
       }
     }
     &__find-job {
       &__title {
-        line-height: 66px;
-        font-weight: $extralight;
         span > button {
-          font-size: $font-48;
-          font-weight: $extrabold;
-          letter-spacing: 1px;
+          font-size: $font-20;
+          font-weight: $medium;
           text-decoration: underline;
         }
       }
@@ -735,6 +738,9 @@ h4 {
   .btn_def {
     &--search-box {
       font-size: $font-16;
+    }
+    &--find-jobs-now {
+      font-size: $font-14;
     }
   }
   // dropdown-btn
