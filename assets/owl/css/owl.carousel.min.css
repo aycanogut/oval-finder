@@ -31,6 +31,8 @@
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  width: 85vmin;
+  margin: 0 auto;
 }
 .owl-carousel .owl-item,
 .owl-carousel .owl-wrapper {
@@ -181,4 +183,10 @@
   z-index: 1;
   height: 100%;
   width: 100%;
+}
+
+@media (min-width: 577px) {
+  .owl-item {
+    margin: 0 15px;
+  }
 }

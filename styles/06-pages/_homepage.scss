@@ -514,7 +514,9 @@
 
     &__clients {
       background-size: 92%;
-      background-position: 50% 40%;
+      background-position: 50% 42%;
+      background-size: 95% auto;
+
       &__heading {
         padding: 20px 50px 20px 50px;
         margin: 0;
@@ -578,6 +580,30 @@
         display: flex;
         justify-content: center;
         margin-top: -22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 370px) and (max-width: 458px) {
+  .homepage {
+    &__clients {
+      background-position: 50%;
+      background-size: auto 300px;
+    }
+  }
+}
+
+@media (min-width: 459px) and (max-width: 576px) {
+  .homepage {
+    &__clients {
+      background-position: 50% 60%;
+      background-size: auto 280px;
+      .owl-carousel {
+        margin-top: 180px;
+        .owl-item {
+          width: 100%;
+        }
       }
     }
   }
@@ -772,6 +798,7 @@
       }
       &__bottom {
         padding: 30px 30px 0 30px;
+        margin-top: -190px;
         &--logos {
           .row {
             display: flex;
@@ -946,38 +973,65 @@
     }
 
     &__clients {
-      height: 1053px;
+      height: 903px;
+      padding: 0 124px 0 54px;
+      background-size: 97% 318px;
+      background-position: 0 286px, center;
+      position: relative;
+      z-index: 10;
       &__heading {
       }
       &__body {
+        height: 200px;
       }
       &__post-job {
         p {
+          padding: 28px 180px 23px 0;
         }
         a {
         }
       }
       &__cards {
-        .carousel {
-          display: none;
-        }
+        position: absolute;
+        bottom: -60px;
+        z-index: 0;
       }
       &__text {
       }
       &__bottom {
+        width: 85%;
+        position: absolute;
+        bottom: -29px;
         &--logos {
-          ul {
-          }
-          li {
+          z-index: 99;
+
+          .row {
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 0;
+
+            &--bottom {
+              padding-top: 28px;
+            }
           }
         }
         p {
+          padding-top: 36px;
         }
       }
     }
 
     &__find-job {
       height: 335px;
+      padding: 137px 120px;
+      &__title {
+        text-align: center;
+      }
+      &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+      }
     }
   }
 }

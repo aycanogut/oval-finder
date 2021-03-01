@@ -889,6 +889,20 @@ h4 {
     &__text {
       line-height: $font-26;
     }
+    &__find-job {
+      &__title {
+        font-size: $font-44;
+        span > button {
+          font-size: $font-44;
+        }
+      }
+    }
+  }
+
+  .btn_def {
+    &--find-jobs-now {
+      font-size: $font-18;
+    }
   }
 }
 

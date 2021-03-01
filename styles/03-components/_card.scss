@@ -523,13 +523,13 @@
 
     &--clients {
       width: 98%;
-      padding: 20px;
+      padding: 20px 30px 30px 30px;
       img {
         margin: 0 auto;
       }
       p {
         color: $color-midgray;
-        padding-top: 29px;
+        padding-top: 24px;
         margin: 0;
       }
     }
@@ -555,6 +555,15 @@
           padding-left: 10px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 459px) and (max-width: 576px) {
+  .card {
+    &--clients {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 }
@@ -596,7 +605,7 @@
     &--clients {
       min-width: 263px;
       min-height: 227px;
-      padding: 42px 20px 0 20px;
+      padding: 44px 34px;
     }
   }
 }
