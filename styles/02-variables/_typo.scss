@@ -841,11 +841,11 @@ h4 {
     }
     &__find-job {
       &__title {
-        line-height: 66px;
+        font-size: $font-26;
         font-weight: $extralight;
         span > button {
-          font-size: $font-48;
-          font-weight: $extrabold;
+          font-size: $font-26;
+          font-weight: $medium;
           letter-spacing: 1px;
           text-decoration: underline;
         }
@@ -863,6 +863,13 @@ h4 {
       figcaption {
         font-size: $font-18;
       }
+    }
+  }
+
+  // btn
+  .btn_def {
+    &--find-jobs-now {
+      font-size: $font-14;
     }
   }
 }

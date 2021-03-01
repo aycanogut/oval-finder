@@ -8,11 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Fontawesome CDN -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" href="assets/slick/slick.css">
-  <link rel="stylesheet" href="assets/slick/slick-theme.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="/assets/owl/css/owl.carousel.min.css ">
+  <link rel="stylesheet" href="/assets/owl/css/owl.theme.default.css">
   <!-- User CSS -->
   <link rel="stylesheet" href="styles/index.css">
+
+
 
 
 
@@ -461,15 +463,14 @@
               <h2>Companies we’ve helped to hire the best candidate</h2>
             </header>
             <section class="homepage__clients__body">
-              <img class="homepage__clients__image" src="./assets/img/img-clients.png" alt="">
+
               <aside class="homepage__clients__post-job">
                 <p>We have end-to-end solutions that can keep up with you and your standards.</p>
                 <a href="#">Post a Job</a>
               </aside>
-
-
               <div class="homepage__clients__cards">
-                <div id="carousel-clients" class="carousel slide" data-ride="carousel">
+                <!-- bootstrap-carousel only xs start -->
+                <!-- <div id="carousel-clients" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <a href="#">
@@ -496,8 +497,36 @@
                       </a>
                     </div>
                   </div>
+                </div> -->
+                <!-- bootstrap-carousel only xs end -->
+                <!-- owl-carousel start  -->
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <a href="#">
+                      <article class="card card--clients">
+                        <img src="./assets/img/uber.png" alt="">
+                        <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <article class="card card--clients">
+                        <img src="./assets/img/shopify.png" alt="">
+                        <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <article class="card card--clients">
+                        <img src="./assets/img/airbnb.png" alt="">
+                        <p>We have end-to-end solutions that can keep up with you and your standards.</p>
+                      </article>
+                    </a>
+                  </div>
+                  <!-- owl-carousel end -->
                 </div>
-              </div>
             </section>
             <section class="homepage__clients__bottom">
               <section class="homepage__clients__bottom--logos">
@@ -688,22 +717,18 @@
   <!-- footer end -->
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS, then Owlcarousel Js -->
+  <!-- jQuery first, then Owlcarousel, then Popper.js, then Bootstrap JS -->
   <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
-
+  <script src="/assets/owl/js/owl.carousel.min.js"></script>
+  <script src="/assets/owl/js/owlscript.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/slick.js" type="text/javascript"></script>
-
-
-
 
 
 </body>

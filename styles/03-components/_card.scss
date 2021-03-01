@@ -71,8 +71,6 @@
   // homepage-clients
   &--clients {
     text-align: center;
-    width: 100%;
-    height: 100%;
 
     border: none;
 
@@ -524,8 +522,7 @@
     }
 
     &--clients {
-      min-width: 264px;
-      min-height: 173px;
+      width: 98%;
       padding: 20px;
       img {
         margin: 0 auto;
@@ -581,6 +578,8 @@
       }
     }
     &--clients {
+      width: 100%;
+      min-height: 160px;
     }
   }
 }
