@@ -523,13 +523,13 @@
 
     &--clients {
       width: 98%;
-      padding: 20px 30px 30px 30px;
+      padding: 20px;
       img {
         margin: 0 auto;
       }
       p {
         color: $color-midgray;
-        padding-top: 24px;
+        padding-top: 29px;
         margin: 0;
       }
     }
@@ -559,14 +559,14 @@
   }
 }
 
-@media (min-width: 459px) and (max-width: 576px) {
-  .card {
-    &--clients {
-      width: 60%;
-      margin: 0 auto;
-    }
-  }
-}
+// @media (min-width: 459px) and (max-width: 576px) {
+//   .card {
+//     &--clients {
+//       width: 60%;
+//       margin: 0 auto;
+//     }
+//   }
+// }
 
 // Small devices (phone, 577px and up)
 
@@ -587,7 +587,7 @@
       }
     }
     &--clients {
-      width: 100%;
+      // width: 75%;
       min-height: 160px;
     }
   }
@@ -661,6 +661,11 @@
       min-width: 520px;
       min-height: 522px;
       padding: 37px 56px 50px 56px;
+    }
+    &--clients {
+      min-width: 0;
+      min-height: 0;
+      padding: 12px;
     }
   }
 

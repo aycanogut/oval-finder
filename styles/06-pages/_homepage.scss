@@ -824,6 +824,9 @@
       }
       .owl-carousel {
         margin-top: 420px;
+        .owl-item {
+          margin: 0 13px;
+        }
       }
     }
 
@@ -992,16 +995,23 @@
         }
       }
       &__cards {
+        width: 100%;
         position: absolute;
-        bottom: -60px;
+        left: 0;
+        bottom: 130px;
         z-index: 0;
+      }
+      .owl-carousel {
+        .owl-stage-outer {
+          width: 90%;
+        }
       }
       &__text {
       }
       &__bottom {
         width: 85%;
         position: absolute;
-        bottom: -29px;
+        bottom: -70px;
         &--logos {
           z-index: 99;
 
@@ -1097,6 +1107,7 @@
     }
 
     &__daily {
+      height: 1050px;
       &__top {
         padding: 50px 0;
         h2 {
@@ -1157,48 +1168,62 @@
     }
 
     &__clients {
-      height: 1087px;
+      background-position: left 297px;
+      background-size: 50%;
       &__heading {
-        padding: 95px 205px 68px 196px;
+        padding: 100px 100px 50px 100px;
         margin: 0 auto;
       }
       &__body {
         display: flex;
+        justify-content: end;
         position: relative;
-        padding-left: 4px;
+        width: 100%;
       }
       &__post-job {
-        padding: 0 250px 0 61px;
+        padding: 0 50px 0 550px;
         p {
-          color: $color-shipgray;
           margin-bottom: 24px;
         }
         a {
-          color: $color-blazeorange;
-          padding-left: 1px;
         }
       }
       &__cards {
         position: absolute;
         top: 171px;
-        left: 293px;
-        .carousel {
-          display: none;
+        left: 0;
+        width: 100%;
+        padding-left: 300px;
+        .owl-carousel {
+          width: 100%;
+          .owl-stage-outer {
+            width: 100%;
+          }
         }
       }
       &__text {
         color: $color-shipgray;
       }
       &__bottom {
-        padding: 100px 100px 0 45px;
+        padding: 100px 100px 100px 45px;
+        position: relative;
+        width: 100%;
+
         &--logos {
-          ul {
-            display: flex;
-          }
-          li {
-            list-style: none;
-            padding: 0 31px;
-            margin: auto 0;
+          display: flex;
+          position: absolute;
+          left: 0;
+          bottom: -170px;
+          width: 100%;
+          padding: 0 80px;
+
+          .row {
+            width: 100%;
+            &--top,
+            &--bottom {
+              display: flex;
+              justify-content: space-between;
+            }
           }
         }
         p {
@@ -1210,7 +1235,7 @@
 
     &__find-job {
       height: 351px;
-      padding: 95px 10px 124px 5px;
+      padding: 205px 10px 124px 5px;
       &__title {
         button {
           padding: 0;
@@ -1330,6 +1355,57 @@
               }
             }
           }
+        }
+      }
+    }
+
+    &__clients {
+      &__heading {
+        padding: 95px 205px 68px 196px;
+        margin: 0 auto;
+      }
+      &__body {
+        display: flex;
+        position: relative;
+        padding-left: 4px;
+      }
+      &__post-job {
+        padding: 0 250px 0 61px;
+        p {
+          color: $color-shipgray;
+          margin-bottom: 24px;
+        }
+        a {
+          color: $color-blazeorange;
+          padding-left: 1px;
+        }
+      }
+      &__cards {
+        position: absolute;
+        top: 171px;
+        left: 293px;
+        .carousel {
+          display: none;
+        }
+      }
+      &__text {
+        color: $color-shipgray;
+      }
+      &__bottom {
+        padding: 100px 100px 0 45px;
+        &--logos {
+          ul {
+            display: flex;
+          }
+          li {
+            list-style: none;
+            padding: 0 31px;
+            margin: auto 0;
+          }
+        }
+        p {
+          text-align: center;
+          padding: 20px 0 0 57px;
         }
       }
     }
