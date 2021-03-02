@@ -1,7 +1,7 @@
 // footer
 
 .footer {
-  padding-bottom: 44px;
+  // padding-bottom: 44px;
   &__brand {
     img {
       color: $color-coral;
@@ -87,7 +87,6 @@
   }
 
   &--lg {
-    // padding: 60px;
     &__brand {
       display: flex;
       flex-direction: column;
@@ -106,6 +105,7 @@
     }
 
     .footer__list {
+      white-space: nowrap;
       li {
         padding: 5px 0;
       }
@@ -159,7 +159,146 @@
         }
       }
     }
+
     .footer__language-bar {
     }
   }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) {
+  .footer {
+    margin: 0 10%;
+    &__links {
+      .row > div {
+        width: 50% !important;
+
+        padding-top: 10px;
+      }
+    }
+    &--lg {
+      .footer__list {
+        li {
+          padding: 0 5px;
+          a {
+            white-space: normal;
+          }
+        }
+      }
+      &__bottom-sm {
+        display: flex;
+        flex-direction: column;
+        .footer__social-icons-sm > a {
+          padding: 0 5px;
+        }
+        &-links {
+          padding-top: 16px;
+        }
+        &-links ul li {
+          padding: 0 2px;
+          a {
+            color: #64626a;
+          }
+        }
+        .footer__language-bar-sm {
+          margin-top: 12px;
+        }
+
+        .footer--lg__brand {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          padding: 0;
+          margin-bottom: 20px;
+          img {
+            float: left;
+          }
+          span {
+            margin: -20px 0 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) {
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 0 50px;
+    margin-top: 50px;
+    &__links {
+      .row > div {
+        padding: 0;
+        margin: 0 7px;
+        .md-margin {
+          width: 100%;
+          margin-left: 74%;
+          padding-top: 50px;
+        }
+      }
+    }
+
+    &__social-icons {
+      margin-left: -20px;
+    }
+
+    &--lg {
+      &__bottom {
+        padding-bottom: 22px;
+      }
+      &__bottom-links > ul {
+        li {
+          margin-left: -16px;
+          padding: 6px 20px;
+        }
+      }
+      .footer--lg__brand {
+        display: none;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 80px;
+    &__links {
+      .row > div {
+        padding: 0;
+        margin: 0;
+        .md-margin {
+          margin-left: 0;
+          padding-top: 0;
+        }
+      }
+    }
+    &__list li > a {
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: 93px;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
 }

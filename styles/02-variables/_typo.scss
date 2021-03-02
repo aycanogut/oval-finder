@@ -326,15 +326,16 @@ h4 {
   }
   &__list {
     li p {
-      @include font(manrope, regular);
+      @include font(manrope, extrabold);
       font-size: $font-14;
-      font-weight: $bold;
+      font-weight: $medium;
     }
     li a {
-      @include font(inter, light);
+      @include font(inter, regular);
       font-size: $font-14;
       font-weight: $light;
       letter-spacing: 0.4px;
+      line-height: 34px;
     }
   }
   &__language-bar {
@@ -718,6 +719,20 @@ h4 {
     }
   }
 
+  // layout
+  .footer {
+    &__list {
+      li p {
+        font-size: $font-12;
+      }
+      li a {
+        font-size: $font-12;
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+    }
+  }
+
   // cards
   .card {
     &__title {
@@ -853,6 +868,18 @@ h4 {
     }
   }
 
+  // footer
+  .footer {
+    &__links {
+      li > p {
+        line-height: 50px;
+      }
+      li > a {
+        line-height: 34px;
+      }
+    }
+  }
+
   // cards
   .card {
     &--testimonial {
@@ -915,6 +942,16 @@ h4 {
     line-height: 66px !important;
   }
 
+  .homepage {
+    &__find-job {
+      &__title {
+        span > button {
+          font-size: $font-48;
+        }
+      }
+    }
+  }
+
   .card {
     &--testimonial {
       figure {
@@ -935,6 +972,20 @@ h4 {
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .homepage {
+    &__find-job {
+      &__title {
+        span > button {
+          font-size: $font-48;
+        }
+      }
+    }
+  }
+  .btn_def {
+    &--find-jobs-now {
+      font-size: $font-18;
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

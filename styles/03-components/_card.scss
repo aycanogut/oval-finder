@@ -523,7 +523,7 @@
 
     &--clients {
       width: 98%;
-      padding: 20px;
+      padding: 20px 18px;
       img {
         margin: 0 auto;
       }
@@ -678,6 +678,11 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .card {
+    &--clients {
+      padding: 44px 36px;
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

@@ -11,7 +11,7 @@
   // visibility: visible !important;
 }
 body {
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -104,6 +104,10 @@ p {
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  h1 {
+    font-size: $font-64;
+    line-height: 87px;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
