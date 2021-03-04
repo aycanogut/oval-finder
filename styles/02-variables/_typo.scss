@@ -26,8 +26,6 @@ h4 {
   font-weight: $medium;
 }
 
-// ##########################################################
-
 // * font-families, font-size, font-weight / components, layout, pages
 
 // * components
@@ -912,6 +910,7 @@ h4 {
       }
     }
   }
+
   .homepage {
     &__text {
       line-height: $font-26;
@@ -929,6 +928,12 @@ h4 {
   .btn_def {
     &--find-jobs-now {
       font-size: $font-18;
+    }
+  }
+
+  .search-box {
+    &__searchInput {
+      font-size: $font-16;
     }
   }
 }

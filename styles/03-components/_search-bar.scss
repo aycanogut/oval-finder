@@ -2,10 +2,8 @@
 
 .search-box {
   display: flex;
-
   background-color: $color-white;
   @include box-shadow($search-box);
-
   &__top {
     &__btn {
       color: $color-shipgray;
@@ -13,7 +11,6 @@
       text-decoration: none !important;
       @include transition($all);
 
-      // TODO: active aksiyonu :focus-within ile dene
       &:link {
         color: $color-shipgray;
         background-color: $color-white;
@@ -41,6 +38,24 @@
     &__btn:last-child {
       padding: 6px 18px 11px 17px;
       margin-left: -4px;
+    }
+
+    &--lg {
+      .search-box__top__btn:link {
+        background-color: $color-white;
+      }
+      .search-box__top__btn:visited {
+        background-color: $color-white;
+      }
+      .search-box__top__btn:hover {
+        background-color: $color-mystic;
+      }
+      .search-box__top__btn:focus {
+        background-color: $color-mystic;
+      }
+      .search-box__top__btn:active {
+        background-color: $color-mystic;
+      }
     }
   }
 
@@ -242,6 +257,25 @@
       }
       .right {
         padding-left: 40px;
+      }
+    }
+
+    &--lg {
+      height: 80px !important;
+      .search-box__searchInput {
+        .input {
+          padding: 8px 50px;
+        }
+        .left {
+          padding-left: 26px;
+        }
+
+        // border-divider
+        .left:after {
+          height: 56px;
+          right: -27px;
+          top: 12px;
+        }
       }
     }
   }

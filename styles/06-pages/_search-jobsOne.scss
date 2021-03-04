@@ -1,12 +1,13 @@
 // search-jobs-one
 
+// header-top
 .header-srOne {
   width: auto;
   height: 241px;
   background: url("../assets/img/bg-searchone.svg");
   background-color: $color-nebula;
   background-repeat: no-repeat;
-
+  background-position: center right;
   .navbar {
     &__menu-left > a,
     &__menu-right > a {
@@ -15,13 +16,14 @@
   }
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .srjOne {
+    height: 3121px;
+  }
 }
 
 // Small devices (phone, 577px and up)
@@ -32,11 +34,39 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 58px;
+  }
+
+  .srjOne {
+    height: 2149px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 53px;
+  }
+
+  .srjOne {
+    height: 1939px;
+    margin-top: 100px;
+
+    // left-sidebar filter
+    .filter {
+    }
+
+    // right-main cards
+    &__result {
+      .border {
+        border: 1px solid rgba(232, 231, 232, 0.1);
+      }
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

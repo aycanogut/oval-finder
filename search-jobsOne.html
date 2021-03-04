@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!-- header start -->
   <header class="header-srOne">
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
@@ -45,39 +46,52 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <section class="search-box search-box--md">
-        <section class="search-box__top">
-          <a href="#" class="search-box__top__btn">Jobs</a>
-          <a href="#" class="search-box__top__btn">Employers</a>
-        </section>
-        <section class="search-box__searchInput">
-          <div class="row">
-            <div class="col-6">
-              <div class="input">
-                <i class="oval-search"></i>
-                <input type="text" class="input-search" size="31" placeholder="Job title or keyword">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="input">
-                <i class="oval-location"></i>
-                <input type="text" class="input-search" size="31" placeholder="City, state or zip">
-              </div>
-            </div>
-          </div>
-          <div class="search-btn">
-            <button class="btn_def btn_def--search-box button" type="submit">Find Job</button>
-          </div>
-        </section>
-      </section>
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-12 ">
+          <section class="search-jobsOne__search-box">
+            <section class="search-box__top search-box__top--lg">
+              <a href="#" class="search-box__top__btn">Jobs</a>
+              <a href="#" class="search-box__top__btn">Employers</a>
+            </section>
+            <section class="search-box search-box--lg">
+              <section class="search-box__searchInput">
+                <div class="row m-0 p-0 w-100">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                    <div class="input left">
+                      <div class="wrapper">
+                        <i class="oval-search"></i>
+                        <input type="text" class="input-search" size="12" placeholder="Job title or keyword">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                    <div class="input right">
+                      <div class="wrapper">
+                        <i class="oval-location"></i>
+                        <input type="text" class="input-search" size="12" placeholder="City, state or zip">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-btn search-btn">
+                  <button class="btn_def btn_def--search-box-sm button" type="submit">Find Job</button>
+                </div>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
     </div>
   </header>
+  <!-- header end -->
+  <!-- main start -->
   <main>
     <section class="srjOne">
-      <div class="container">
-        <div class="row">
-          <div class="col-3">
+      <div class="container p-0">
+        <div class="row p-0 m-0">
+          <!-- main left sidebar start -->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12 m-0 p-0">
             <aside class="filter">
               <header class="filter__header">Filter Jobs</header>
               <div id="accordianId" role="tablist" aria-multiselectable="true">
@@ -239,7 +253,9 @@
               </div>
             </aside>
           </div>
-          <div class="col-9">
+          <!-- main left sidebar end -->
+          <!-- main right cards start -->
+          <div class="col-xl-9 col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12 m-0 p-0">
             <section class="srjOne__result">
               <aside class="srjOne__result__top">
                 <span class="showing">Showing: 599 filtered jobs</span>
@@ -249,175 +265,177 @@
                   Relevance
                 </button>
               </aside>
-              <section class="srjOne__result__cards">
-                <article class="card card--srOne">
-                  <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/adobe.svg" alt="">
-                    <header class="card__company-name">Adobe</header>
-                    <aside class="card__time">3 days ago</aside>
-                  </section>
-                  <header>
-                    <a href="#" class="card__header">Sales Engineer, Application Modernization, Healthcare, Google
-                      Cloud</a>
-                  </header>
-                  <aside class="card__description">
-                    <span><i class="oval-business"></i>Internet & Technology</span>
-                    <span><i class="oval-location"></i>San Jose, CA</span>
-                    <span><i class="oval-time"></i>Fulltime</span>
-                  </aside>
-                  <section class=card__bottom>
-                    <ul>
-                      <li class="list-unstyled">
-                        <p class="card__descriptor">Qualifications :</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• 10 years of experience in one of the following: digital advertising
-                          sales,
-                          third party
-                          channel
-                          strategy, or governance experience in a technology/media company.</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
-                          idiomatically.</p>
-                      </li>
-                    </ul>
-                  </section>
-                </article>
-                <article class="card card--srOne">
-                  <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/mercedes.svg" alt="">
-                    <header class="card__company-name">Mercedes-Benz</header>
-                    <aside class="card__time">3 days ago</aside>
-                  </section>
-                  <header>
-                    <a href="#" class="card__header">Head of Third Party Strategy and Deals, Go-to-Market</a>
-                  </header>
-                  <aside class="card__description">
-                    <span><i class="oval-business"></i>Internet & Technology</span>
-                    <span><i class="oval-location"></i>San Jose, CA</span>
-                    <span><i class="oval-time"></i>Fulltime</span>
-                  </aside>
-                  <section class=card__bottom>
-                    <ul>
-                      <li class="list-unstyled">
-                        <p class="card__descriptor">Qualifications :</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• 10 years of experience in one of the following: digital advertising
-                          sales,
-                          third party
-                          channel
-                          strategy, or governance experience in a technology/media company.</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
-                          idiomatically.</p>
-                      </li>
-                    </ul>
-                  </section>
-                </article>
-                <article class="card card--srOne">
-                  <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/dropbox.svg" alt="">
-                    <header class="card__company-name">Dropbox</header>
-                    <aside class="card__time">3 days ago</aside>
-                  </section>
-                  <header>
-                    <a href="#" class="card__header">Marketing Associate Director - Consumer Experience</a>
-                  </header>
-                  <aside class="card__description">
-                    <span><i class="oval-business"></i>Internet & Technology</span>
-                    <span><i class="oval-location"></i>San Jose, CA</span>
-                    <span><i class="oval-time"></i>Fulltime</span>
-                  </aside>
-                  <section class=card__bottom>
-                    <ul>
-                      <li class="list-unstyled">
-                        <p class="card__descriptor">Qualifications :</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• 10 years of experience in one of the following: digital advertising
-                          sales,
-                          third party
-                          channel
-                          strategy, or governance experience in a technology/media company.</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
-                          idiomatically.</p>
-                      </li>
-                    </ul>
-                  </section>
-                </article>
-                <article class="card card--srOne">
-                  <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/microsoft.svg" alt="">
-                    <header class="card__company-name">Microsoft</header>
-                    <aside class="card__time">3 days ago</aside>
-                  </section>
-                  <header>
-                    <a href="#" class="card__header">G Suite Specialist, Google Cloud Customer Engineering</a>
-                  </header>
+              <div class="border">
+                <section class="srjOne__result__cards">
+                  <article class="card card--srOne">
+                    <section class="card__topper d-flex">
+                      <img class="card__image" src="./assets/img/adobe.png" alt="">
+                      <header class="card__company-name">Adobe</header>
+                      <aside class="card__time">3 days ago</aside>
+                    </section>
+                    <header>
+                      <a href="#" class="card__header">Sales Engineer, Application Modernization, Healthcare, Google
+                        Cloud</a>
+                    </header>
+                    <aside class="card__description">
+                      <span><i class="oval-business"></i>Internet & Technology</span>
+                      <span><i class="oval-location"></i>San Jose, CA</span>
+                      <span><i class="oval-time"></i>Fulltime</span>
+                    </aside>
+                    <section class=card__bottom>
+                      <ul>
+                        <li class="list-unstyled">
+                          <p class="card__descriptor">Qualifications :</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• 10 years of experience in one of the following: digital advertising
+                            sales,
+                            third party
+                            channel
+                            strategy, or governance experience in a technology/media company.</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
+                            idiomatically.</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                  <article class="card card--srOne">
+                    <section class="card__topper d-flex">
+                      <img class="card__image" src="./assets/img/mercedes.png" alt="">
+                      <header class="card__company-name">Mercedes-Benz</header>
+                      <aside class="card__time">3 days ago</aside>
+                    </section>
+                    <header>
+                      <a href="#" class="card__header">Head of Third Party Strategy and Deals, Go-to-Market</a>
+                    </header>
+                    <aside class="card__description">
+                      <span><i class="oval-business"></i>Internet & Technology</span>
+                      <span><i class="oval-location"></i>San Jose, CA</span>
+                      <span><i class="oval-time"></i>Fulltime</span>
+                    </aside>
+                    <section class=card__bottom>
+                      <ul>
+                        <li class="list-unstyled">
+                          <p class="card__descriptor">Qualifications :</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• 10 years of experience in one of the following: digital advertising
+                            sales,
+                            third party
+                            channel
+                            strategy, or governance experience in a technology/media company.</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
+                            idiomatically.</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                  <article class="card card--srOne">
+                    <section class="card__topper d-flex">
+                      <img class="card__image" src="./assets/img/dropbox.png" alt="">
+                      <header class="card__company-name">Dropbox</header>
+                      <aside class="card__time">3 days ago</aside>
+                    </section>
+                    <header>
+                      <a href="#" class="card__header">Marketing Associate Director - Consumer Experience</a>
+                    </header>
+                    <aside class="card__description">
+                      <span><i class="oval-business"></i>Internet & Technology</span>
+                      <span><i class="oval-location"></i>San Jose, CA</span>
+                      <span><i class="oval-time"></i>Fulltime</span>
+                    </aside>
+                    <section class=card__bottom>
+                      <ul>
+                        <li class="list-unstyled">
+                          <p class="card__descriptor">Qualifications :</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• 10 years of experience in one of the following: digital advertising
+                            sales,
+                            third party
+                            channel
+                            strategy, or governance experience in a technology/media company.</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
+                            idiomatically.</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                  <article class="card card--srOne">
+                    <section class="card__topper d-flex">
+                      <img class="card__image" src="./assets/img/microsoft.png" alt="">
+                      <header class="card__company-name">Microsoft</header>
+                      <aside class="card__time">3 days ago</aside>
+                    </section>
+                    <header>
+                      <a href="#" class="card__header">G Suite Specialist, Google Cloud Customer Engineering</a>
+                    </header>
 
-                  <aside class="card__description">
-                    <span><i class="oval-business"></i>Internet & Technology</span>
-                    <span><i class="oval-location"></i>Redmond, WA</span>
-                    <span><i class="oval-time"></i>Fulltime</span>
-                  </aside>
-                  <section class=card__bottom>
-                    <ul>
-                      <li class="list-unstyled">
-                        <p class="card__descriptor">Qualifications :</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• 10 years of experience in one of the following: digital advertising
-                          sales,
-                          third party
-                          channel
-                          strategy, or governance experience in a technology/media company.</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
-                          idiomatically.</p>
-                      </li>
-                    </ul>
-                  </section>
-                </article>
-                <article class="card card--srOne">
-                  <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/airbnb.svg" alt="">
-                    <header class="card__company-name">Airbnb</header>
-                    <aside class="card__time">3 days ago</aside>
-                  </section>
-                  <header>
-                    <a href="#" class="card__header">Brand Marketing Manager – Services Portfolio</a>
-                  </header>
-                  <aside class="card__description">
-                    <span><i class="oval-business"></i>Internet & Technology</span>
-                    <span><i class="oval-location"></i>Moline, IL</span>
-                    <span><i class="oval-time"></i>Fulltime</span>
-                  </aside>
-                  <section class=card__bottom>
-                    <ul>
-                      <li class="list-unstyled">
-                        <p class="card__descriptor">Qualifications :</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• 10 years of experience in one of the following: digital advertising
-                          sales,
-                          third party
-                          channel
-                          strategy, or governance experience in a technology/media company.</p>
-                      </li>
-                      <li>
-                        <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
-                          idiomatically.</p>
-                      </li>
-                    </ul>
-                  </section>
-                </article>
-              </section>
+                    <aside class="card__description">
+                      <span><i class="oval-business"></i>Internet & Technology</span>
+                      <span><i class="oval-location"></i>Redmond, WA</span>
+                      <span><i class="oval-time"></i>Fulltime</span>
+                    </aside>
+                    <section class=card__bottom>
+                      <ul>
+                        <li class="list-unstyled">
+                          <p class="card__descriptor">Qualifications :</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• 10 years of experience in one of the following: digital advertising
+                            sales,
+                            third party
+                            channel
+                            strategy, or governance experience in a technology/media company.</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
+                            idiomatically.</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                  <article class="card card--srOne">
+                    <section class="card__topper d-flex">
+                      <img class="card__image" src="./assets/img/airbnb-logo.png" alt="">
+                      <header class="card__company-name">Airbnb</header>
+                      <aside class="card__time">3 days ago</aside>
+                    </section>
+                    <header>
+                      <a href="#" class="card__header">Brand Marketing Manager – Services Portfolio</a>
+                    </header>
+                    <aside class="card__description">
+                      <span><i class="oval-business"></i>Internet & Technology</span>
+                      <span><i class="oval-location"></i>Moline, IL</span>
+                      <span><i class="oval-time"></i>Fulltime</span>
+                    </aside>
+                    <section class=card__bottom>
+                      <ul>
+                        <li class="list-unstyled">
+                          <p class="card__descriptor">Qualifications :</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• 10 years of experience in one of the following: digital advertising
+                            sales,
+                            third party
+                            channel
+                            strategy, or governance experience in a technology/media company.</p>
+                        </li>
+                        <li>
+                          <p class="card__text">• Ability to speak and write in English and Mandarin fluently and
+                            idiomatically.</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </article>
+                </section>
+              </div>
               <aside class="page-navigations d-flex">
                 <nav aria-label="...">
                   <ul class="pagination">
@@ -435,11 +453,14 @@
               </aside>
             </section>
           </div>
+          <!-- main right cards end -->
         </div>
       </div>
     </section>
   </main>
+  <!-- main end -->
   <hr>
+  <!-- footer start -->
   <footer class="footer footer--sm">
     <div class="container">
       <div class="row">
@@ -456,6 +477,8 @@
       </div>
     </div>
   </footer>
+  <!-- footer end -->
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
