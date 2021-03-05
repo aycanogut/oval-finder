@@ -29,6 +29,14 @@ $search-box: 0 60px 75px -4px rgba(0, 0, 0, 0.1);
   box-shadow: $search-box;
 }
 
+$search-box-md: 0px 10px 40px -15px rgba(0, 0, 0, 0.3);
+@mixin box-shadow($search-box-md) {
+  -webkit-box-shadow: $search-box-md;
+  -moz-box-shadow: $search-box-md;
+  box-shadow: $search-box-md;
+}
+
+// card-testimonial
 $card-testimonial: 0 1px 16px 1px rgba(0, 0, 0, 0.04);
 @mixin box-shadow($card-testimonial) {
   -webkit-box-shadow: $card-testimonial;

@@ -213,6 +213,7 @@
 @media (min-width: 768px) {
   .search-box {
     height: 76px;
+    @include box-shadow($search-box-md);
     &__top {
       margin-bottom: 9px;
     }
@@ -242,6 +243,8 @@
 @media (min-width: 992px) {
   .search-box {
     height: 86px;
+    @include box-shadow($search-box);
+
     &__top {
       margin-bottom: 10px;
     }

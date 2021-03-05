@@ -74,6 +74,11 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .filter {
+    &__header {
+      padding-bottom: 26px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)

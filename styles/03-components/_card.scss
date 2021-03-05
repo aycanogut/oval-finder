@@ -605,6 +605,60 @@
       min-height: 227px;
       padding: 44px 34px;
     }
+    &--srOne {
+      margin-bottom: 24px;
+      padding: 23px 32px 20px 31px;
+
+      ul,
+      p {
+        padding: 0 0 0 2px;
+        margin: 0;
+        list-style-type: none;
+      }
+      .card__topper {
+        padding-bottom: 16px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        .card__company-name {
+          margin: auto 0 auto 0;
+          padding: 0 0 3px 12px;
+        }
+        .card__time {
+          margin-left: auto;
+        }
+      }
+
+      header {
+        padding: 1px 20px 0 0;
+      }
+
+      .card__text {
+        line-height: 24px;
+        text-indent: 3px;
+      }
+      .card__description {
+        display: flex;
+
+        padding-top: 14px;
+        i {
+          padding-right: 6px;
+          font-size: 20px;
+        }
+        span {
+          display: flex;
+
+          height: 100%;
+          padding-right: 24px;
+        }
+        padding-bottom: 16px;
+      }
+      .card__descriptor {
+        padding: 15px 0 13px 0;
+        border-top: 1px solid $color-bonjour;
+      }
+    }
   }
 }
 
@@ -666,61 +720,6 @@
       min-width: 0;
       min-height: 0;
       padding: 12px;
-    }
-
-    &--srOne {
-      margin-bottom: 24px;
-      padding: 23px 32px 20px 31px;
-
-      ul,
-      p {
-        padding: 0 0 0 2px;
-        margin: 0;
-        list-style-type: none;
-      }
-      .card__topper {
-        padding-bottom: 16px;
-        img {
-          width: 32px;
-          height: 32px;
-        }
-        .card__company-name {
-          margin: auto 0 auto 0;
-          padding: 0 0 3px 12px;
-        }
-        .card__time {
-          margin-left: auto;
-        }
-      }
-
-      header {
-        padding: 1px 20px 0 0;
-      }
-
-      .card__text {
-        line-height: 24px;
-        text-indent: 3px;
-      }
-      .card__description {
-        display: flex;
-
-        padding-top: 14px;
-        i {
-          padding-right: 6px;
-          font-size: 20px;
-        }
-        span {
-          display: flex;
-
-          height: 100%;
-          padding-right: 24px;
-        }
-        padding-bottom: 16px;
-      }
-      .card__descriptor {
-        padding: 15px 0 13px 0;
-        border-top: 1px solid $color-bonjour;
-      }
     }
   }
 
