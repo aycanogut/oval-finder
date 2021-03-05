@@ -87,7 +87,8 @@
 
   // search-jobsOne- srjOne-result
   &--srOne {
-    padding: 24px 32px 32px 32px;
+    border: 1px solid rgba(232, 231, 232, 0.5);
+
     ul,
     p {
       padding: 0;
@@ -95,37 +96,26 @@
       list-style-type: none;
     }
     .card__topper {
-      padding-bottom: 16px;
       img {
         width: 32px;
         height: 32px;
       }
-      .card__company-name {
-        margin: auto 0 auto 0;
-        padding-left: 12px;
-      }
+
       .card__time {
         margin-left: auto;
       }
     }
-    h4 {
-      padding: 16px 0;
-    }
+
     .card__text {
       line-height: 24px;
     }
     .card__description {
-      padding-top: 16px;
       i {
-        padding-right: 6px;
       }
       span {
-        padding-right: 24px;
       }
-      padding-bottom: 16px;
     }
     .card__descriptor {
-      padding: 15px 0 13px 0;
       border-top: 1px solid $color-bonjour;
     }
   }
@@ -563,15 +553,6 @@
   }
 }
 
-// @media (min-width: 459px) and (max-width: 576px) {
-//   .card {
-//     &--clients {
-//       width: 60%;
-//       margin: 0 auto;
-//     }
-//   }
-// }
-
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
@@ -674,15 +655,72 @@
         }
       }
     }
+
     &--testimonial {
       min-width: 520px;
       min-height: 522px;
       padding: 37px 56px 50px 56px;
     }
+
     &--clients {
       min-width: 0;
       min-height: 0;
       padding: 12px;
+    }
+
+    &--srOne {
+      margin-bottom: 24px;
+      padding: 23px 32px 20px 31px;
+
+      ul,
+      p {
+        padding: 0 0 0 2px;
+        margin: 0;
+        list-style-type: none;
+      }
+      .card__topper {
+        padding-bottom: 16px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        .card__company-name {
+          margin: auto 0 auto 0;
+          padding: 0 0 3px 12px;
+        }
+        .card__time {
+          margin-left: auto;
+        }
+      }
+
+      header {
+        padding: 1px 20px 0 0;
+      }
+
+      .card__text {
+        line-height: 24px;
+        text-indent: 3px;
+      }
+      .card__description {
+        display: flex;
+
+        padding-top: 14px;
+        i {
+          padding-right: 6px;
+          font-size: 20px;
+        }
+        span {
+          display: flex;
+
+          height: 100%;
+          padding-right: 24px;
+        }
+        padding-bottom: 16px;
+      }
+      .card__descriptor {
+        padding: 15px 0 13px 0;
+        border-top: 1px solid $color-bonjour;
+      }
     }
   }
 

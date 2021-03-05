@@ -161,6 +161,10 @@
   }
 }
 
+.footer-sm-divider {
+  margin-top: 105px;
+}
+
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
@@ -283,7 +287,8 @@
 
 @media (min-width: 992px) {
   .footer {
-    margin-top: 80px;
+    margin: 0;
+
     &__links {
       .row > div {
         padding: 0;
@@ -294,6 +299,10 @@
         }
       }
     }
+
+    &--sm {
+    }
+
     &--lg {
       &__bottom-links > ul {
         li {

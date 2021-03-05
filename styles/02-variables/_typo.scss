@@ -42,9 +42,11 @@ h4 {
     font-size: $font-14;
   }
   &__header {
-    @include font(inter, regular);
+    @include font(inter, medium);
     font-size: $font-24;
-    font-weight: $light;
+    font-weight: $medium;
+    line-height: 34px;
+    letter-spacing: 0.2px;
   }
   &__description {
     @include font(inter, regular);
@@ -393,7 +395,12 @@ h4 {
       font-size: $font-18;
     }
   }
-  &__daily__category {
+  &__daily__top__category {
+    // dropdowns-right side
+    .btn {
+      @include font(inter, medium);
+      font-size: $font-18;
+    }
   }
   &__daily__explore {
     div {
@@ -467,6 +474,11 @@ h4 {
 
 // * search-jobsOne
 .srjOne {
+  // dropdowns-right side
+  .btn {
+    @include font(inter, medium);
+    font-size: $font-14;
+  }
 }
 
 // * search-jobsTwo
@@ -593,14 +605,9 @@ h4 {
 
 // dropdowns-left side
 .sort-by {
-  @include font(inter, light);
-  font-size: $font-18;
-}
-
-// dropdowns-right side
-.btn {
   @include font(inter, medium);
   font-size: $font-18;
+  font-weight: $regular;
 }
 
 // search-result showing
@@ -952,6 +959,17 @@ h4 {
       &__title {
         span > button {
           font-size: $font-48;
+        }
+      }
+    }
+  }
+
+  .srjOne {
+    &__result {
+      &__top {
+        .showing,
+        .sort-by {
+          font-size: $font-14 !important;
         }
       }
     }

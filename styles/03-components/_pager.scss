@@ -2,13 +2,11 @@
 
 .page-navigations {
   display: flex;
-  padding: 30px 0;
 
   .page-item > a {
     color: $color-mountainmist;
     border: none;
     padding: 0;
-    margin-right: 32px;
   }
   .page-item.active {
     color: $color-shipgray;
@@ -28,10 +26,8 @@
   }
 
   .pager {
-    margin-left: auto;
     .previous,
     .next {
-      padding-left: 36px;
     }
   }
 
@@ -46,9 +42,7 @@
   }
 }
 
-// ###################
-// RESPONSIVE
-// ###################
+// * responsive
 
 // Extra Small devices (phone, 320px and up)
 
@@ -68,6 +62,51 @@
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .page-navigations {
+    display: flex;
+    padding: 18px 0;
+
+    .page-item > a {
+      color: $color-mountainmist;
+      border: none;
+      padding: 0;
+      margin-right: 32px;
+    }
+    .page-item.active {
+      color: $color-shipgray;
+    }
+
+    .page-link {
+      @include transition($all);
+      &:hover {
+        @include transition($all);
+        color: $color-shipgray;
+        background-color: $color-white;
+        border: none;
+      }
+      &:focus {
+        box-shadow: $color-white;
+      }
+    }
+
+    .pager {
+      margin-left: auto;
+      .previous,
+      .next {
+        padding-left: 36px;
+      }
+    }
+
+    .pager > a {
+      color: $color-blazeorange;
+      text-decoration: none;
+      @include transition($all);
+      &:hover {
+        @include transition($all);
+        color: $color-shipgray;
+      }
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
