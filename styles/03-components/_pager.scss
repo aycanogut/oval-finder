@@ -41,6 +41,27 @@
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .page-navigations {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    .pagination {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .page-item {
+        margin: 0 16px;
+      }
+    }
+    .pager {
+      display: flex;
+      justify-content: center;
+      a {
+        padding: 0 18px;
+      }
+    }
+  }
 }
 
 // Small devices (phone, 577px and up)
@@ -52,14 +73,13 @@
 
 @media (min-width: 768px) {
   .page-navigations {
-    display: flex;
     padding: 18px 0;
+    flex-direction: row;
 
-    .page-item > a {
-      margin-right: 32px;
+    .pagination {
     }
-
     .pager {
+      display: flex;
       margin-left: auto;
       .previous,
       .next {
@@ -72,9 +92,6 @@
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
-  .page-navigations {
-    margin-bottom: 32px !important;
-  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

@@ -179,6 +179,12 @@
         padding-top: 10px;
       }
     }
+
+    &--sm {
+      display: flex;
+      flex-direction: column;
+    }
+
     &--lg {
       .footer__list {
         li {

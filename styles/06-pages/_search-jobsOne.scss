@@ -41,38 +41,91 @@
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .header-srOne {
+    height: 314px;
+  }
+
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 22px;
+
+    .search-btn {
+      margin: 6px auto 10px auto;
+    }
+  }
+
   .srjOne {
-    height: 3121px;
+    height: 2537px;
+    padding: 0 12px;
+    .filter {
+      margin-top: 35px;
+
+      &__header {
+        margin-bottom: 19px;
+      }
+      &__card-body {
+        .form-check {
+          margin: 2px 0;
+        }
+      }
+    }
+
+    &__result {
+      &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 17px;
+        .showing {
+        }
+        .btn-group {
+          align-items: center;
+        }
+      }
+    }
   }
 }
 
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
+  .srjOne {
+    height: 2330px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .header-srOne {
+    height: 245px;
+  }
+
   // search-box placement
   .search-jobsOne__search-box {
-    margin-top: 58px;
+    margin-top: 62px;
+    .search-btn {
+      margin: auto 0;
+    }
   }
 
   .srjOne {
-    height: 2000px;
+    height: 2146px;
     // left-sidebar filter
     .filter {
-      margin: 40px 0;
+      margin: 40px 0 16px 0;
       background-color: white;
     }
 
     // right-main cards
     &__result {
       &__top {
+        display: block;
         height: 100%;
-        align-items: center;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
+        .btn-group {
+          float: right;
+        }
       }
     }
   }
@@ -81,13 +134,16 @@
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .header-srOne {
+    height: 241px;
+  }
   // search-box placement
   .search-jobsOne__search-box {
     margin-top: 53px;
   }
 
   .srjOne {
-    height: 1732px;
+    height: 1868px;
     margin-top: 100px;
 
     // left-sidebar filter
@@ -101,15 +157,16 @@
       padding: 0 1px 0 6px;
 
       &__top {
-        display: flex;
+        display: block;
+        justify-content: center;
         height: 100%;
         padding-bottom: 20px;
         margin: 0;
         .showing {
         }
 
-        .sort-by {
-          margin-left: auto;
+        .btn-group {
+          float: right;
         }
         .btn {
           margin-top: -6px;

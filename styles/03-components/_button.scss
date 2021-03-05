@@ -32,6 +32,12 @@
     &:hover {
       background-color: $color-blazeorange;
     }
+
+    &-sm {
+      &:hover {
+        background-color: $color-blazeorange;
+      }
+    }
   }
 
   // homepage-find-job
@@ -160,6 +166,10 @@
     &--search-box {
       padding: 16px 100px;
       margin: 10px 0;
+
+      &-sm {
+        padding: 16px 106px;
+      }
     }
     &--find-jobs-now {
       padding: 12px 16px;
@@ -173,6 +183,9 @@
   .btn_def {
     &--search-box {
       padding: 16px 220px;
+      &-sm {
+        padding: 16px 206px;
+      }
     }
   }
 }
@@ -183,6 +196,9 @@
   .btn_def {
     &--search-box {
       padding: 13px 28px;
+      &-sm {
+        padding: 13px 28px;
+      }
     }
     &--find-jobs-now {
       padding: 19px 36px;

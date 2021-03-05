@@ -527,6 +527,38 @@
         margin: 0;
       }
     }
+
+    &--srOne {
+      padding: 15px;
+      .card__topper {
+        padding-bottom: 10px;
+        .card__company-name {
+          margin: auto 0;
+          padding-left: 10px;
+        }
+      }
+
+      .card__description {
+        padding: 21px 0 18px 0;
+        span:first-child {
+          display: flex;
+          padding-bottom: 8px;
+          margin-right: 10px;
+        }
+        span:last-child {
+          padding-left: 14px;
+        }
+        i {
+          font-size: 20px;
+          padding-right: 7px;
+        }
+      }
+      .card__bottom {
+        .card__descriptor {
+          padding: 18px 0 12px 0;
+        }
+      }
+    }
   }
   // bigger-card (spotify)
   .bigger-card {
