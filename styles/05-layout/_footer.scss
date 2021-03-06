@@ -63,15 +63,10 @@
       display: flex;
     }
 
-    &__bottom-links {
-      margin-left: auto;
-    }
     &__bottom-links > ul {
       display: flex;
       li {
-        padding-top: 6px;
         a {
-          padding-left: 48px;
           @include transition($all);
           &:hover {
             @include transition($all);
@@ -161,28 +156,44 @@
   }
 }
 
-.footer-sm-divider {
-  margin-top: 105px;
-}
-
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer {
     margin: 0 10%;
-    &__links {
-      .row > div {
-        width: 50% !important;
-
-        padding-top: 10px;
-      }
-    }
 
     &--sm {
-      display: flex;
-      flex-direction: column;
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8px;
+      }
+
+      &__brand {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2px 0 14px 0;
+      }
+      &__bottom-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        ul {
+          justify-content: space-between;
+        }
+        li {
+          white-space: nowrap;
+          margin: 0 6px;
+          a {
+            padding-left: 0;
+          }
+        }
+      }
     }
 
     &--lg {
@@ -235,21 +246,6 @@
   }
 }
 
-// Small devices (phone, 577px and up)
-
-@media (min-width: 577px) {
-  .footer {
-    &--lg {
-      .footer__list li p {
-        padding: 0;
-      }
-      &__bottom-sm {
-        padding-top: 16px;
-      }
-    }
-  }
-}
-
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
@@ -269,6 +265,22 @@
 
     &__social-icons {
       margin-left: -20px;
+    }
+
+    &--sm {
+      height: 64px;
+
+      &__bottom-links {
+        margin-left: auto;
+      }
+      &__bottom-links > ul {
+        li {
+          padding-top: 6px;
+          a {
+            padding-left: 48px;
+          }
+        }
+      }
     }
 
     &--lg {

@@ -55,7 +55,7 @@
   }
 
   .srjOne {
-    height: 2537px;
+    height: 2625px;
     padding: 0 12px;
     .filter {
       margin-top: 35px;
@@ -90,7 +90,7 @@
 
 @media (min-width: 577px) {
   .srjOne {
-    height: 2330px;
+    height: 2415px;
   }
 }
 
@@ -110,7 +110,7 @@
   }
 
   .srjOne {
-    height: 2146px;
+    height: 2105px;
     // left-sidebar filter
     .filter {
       margin: 40px 0 16px 0;
@@ -143,8 +143,8 @@
   }
 
   .srjOne {
-    height: 1868px;
-    margin-top: 100px;
+    height: 1960px;
+    margin-top: 95px;
 
     // left-sidebar filter
     .filter {
@@ -181,6 +181,9 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .srjOne {
+    height: 1890px;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
