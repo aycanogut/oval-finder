@@ -2,16 +2,35 @@
 
 // header-top
 .header-srOne {
-  width: auto;
-  height: 241px;
   background: url("../assets/img/bg-searchone.svg");
   background-color: $color-nebula;
   background-repeat: no-repeat;
   background-position: center right;
+
   .navbar {
-    &__menu-left > a,
-    &__menu-right > a {
-      color: $color-shipgray;
+    // nav-button hover state
+    .btn_def {
+      &--nav {
+        &:hover {
+          background-color: $color-mystic;
+        }
+      }
+    }
+  }
+
+  .search-box {
+    &__top {
+      &--lg {
+        .search-box__top__btn:hover {
+          background-color: $color-mystic;
+        }
+        .search-box__top__btn:focus {
+          background-color: $color-mystic;
+        }
+        .search-box__top__btn:active {
+          background-color: $color-mystic;
+        }
+      }
     }
   }
 }

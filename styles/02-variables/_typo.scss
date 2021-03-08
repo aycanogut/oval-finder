@@ -612,7 +612,8 @@ h4 {
 }
 
 // search-result showing
-.showing {
+.showing,
+.dropdown-toggle {
   @include font(inter, regular);
   font-size: $font-14;
 }

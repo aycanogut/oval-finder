@@ -12,7 +12,9 @@
 </head>
 
 <body>
+  <!-- header start -->
   <header class="header-search-employeers">
+    <!-- nav start -->
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <div class="navbar-brand">
@@ -42,39 +44,56 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <section class="search-box">
-        <section class="search-box__top">
-          <a href="#" class="search-box__top__btn">Jobs</a>
-          <a href="#" class="search-box__top__btn">Employers</a>
-        </section>
-        <section class="search-box__searchInput">
-          <div class="row">
-            <div class="col-6">
-              <div class="input">
-                <i class="oval-search"></i>
-                <input type="text" class="input-search" size="31" placeholder="Job title or keyword">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="input">
-                <i class="oval-location"></i>
-                <input type="text" class="input-search" size="31" placeholder="City, state or zip">
-              </div>
-            </div>
-          </div>
-          <div class="search-btn">
-            <button class="btn_def btn_def--search-box button" type="submit">Find Job</button>
-          </div>
-        </section>
-      </section>
+    <!-- nav end -->
+    <div class="container p-0">
+      <div class="row m-0 p-0">
+        <div class="col-12 m-0 p-0">
+          <!-- search-box start -->
+          <section class="search-jobsOne__search-box">
+            <section class="search-box__top search-box__top--lg">
+              <a href="#" class="search-box__top__btn">Jobs</a>
+              <a href="#" class="search-box__top__btn">Employers</a>
+            </section>
+            <section class="search-box search-box--lg">
+              <section class="search-box__searchInput">
+                <div class="row m-0 p-0 w-100">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                    <div class="input left">
+                      <div class="wrapper">
+                        <i class="oval-search"></i>
+                        <input type="text" class="input-search" size="12" placeholder="Job title or keyword">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                    <div class="input right">
+                      <div class="wrapper">
+                        <i class="oval-location"></i>
+                        <input type="text" class="input-search" size="12" placeholder="City, state or zip">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-btn">
+                  <button class="btn_def btn_def--search-box-sm button" type="submit">Find Job</button>
+                </div>
+              </section>
+            </section>
+          </section>
+          <!-- search-box end -->
+        </div>
+      </div>
     </div>
   </header>
+  <!-- header end -->
+  <!-- main start -->
   <main>
+    <!-- search-employeers start -->
     <section class="search-employeers">
-      <div class="container">
-        <div class="row">
-          <div class="col-3">
+      <div class="container p-0">
+        <div class="row p-0 m-0">
+          <!-- main-left-sidebar start -->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12 m-0 p-0">
             <aside class="filter">
               <header class="filter__header">Filter Employers</header>
               <div id="accordianId" role="tablist" aria-multiselectable="true">
@@ -95,46 +114,56 @@
                         aria-label="Search through site content" placeholder="Search sector">
                     </div>
                     <div class="filter__card-body">
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          Administrative
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            Administrative
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue" checked>
-                          Arts & Design
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue" checked>
+                            Arts & Design
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          Business
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            Business
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          Consulting
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            Consulting
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          Customer Services & Support
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            Customer Services & Support
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr>
-                <div class="card">
+                <div class="card pt-2">
                   <div class="filter__item" role="tab" id="section3HeaderId">
                     <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true"
                       aria-controls="section3ContentId" class="filter__title">
@@ -145,55 +174,69 @@
                     </a>
                   </div>
                   <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
-                    <div class="filter__card-body">
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          1 - 50
-                        </label>
+                    <div class="filter__card-body pt-3">
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            1 - 50
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          51 - 200
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            51 - 200
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          201 - 500
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            201 - 500
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          501 - 1000
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            501 - 1000
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          1001 - 5000
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            1001 - 5000
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          5001 - 10000
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            5001 - 10000
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <label class="form-check-label filter__text">
-                          <input type="checkbox" class="form-check-input filter__text" name="" id=""
-                            value="checkedValue">
-                          10000+
-                        </label>
+                      <div class="col-lg-6 col-md-2 col-sm-6 col-xs-6 col-6 p-0 m-0">
+                        <div class="form-check">
+                          <label class="form-check-label filter__text">
+                            <input type="checkbox" class="form-check-input filter__text" name="" id=""
+                              value="checkedValue">
+                            10000+
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -202,20 +245,31 @@
               </div>
             </aside>
           </div>
-          <div class="col-9">
+          <!-- main-left-sidebar end -->
+          <!-- main-right-cards start -->
+          <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 col-12 m-0 p-0">
             <section class="search-employeers__result">
               <aside class="search-employeers__result__top">
-                <div class="showing">Showing: 599 filtered jobs</div>
-                <p class="sort-by">Sort by : </p>
-                <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Relevance
-                </button>
+                <span class="showing">Showing: 599 filtered jobs</span>
+                <div class="btn-group">
+                  <p class="sort-by">Sort by : </p>
+                  <div class="dropdown open">
+                    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Relevance
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                      <button class="dropdown-item">Action</button>
+                      <button class="dropdown-item">Action</button>
+                      <button class="dropdown-item">Action</button>
+                    </div>
+                  </div>
+                </div>
               </aside>
               <section class="search-employeers__result__cards">
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/adobe.svg" alt="">
+                    <img class="card__image" src="./assets/img/adobe-small.svg" alt="">
                     <section class="card__topper-left">
                       <header class="card__company-name">Adobe</header>
                       <aside class="card__ratings">4.0 <span> <i class="oval-star-solid"></i>
@@ -244,7 +298,7 @@
                 </article>
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/nvidia.svg" alt="">
+                    <img class="card__image" src="./assets/img/nvidia-small.svg" alt="">
                     <section class="card__topper-left">
                       <header class="card__company-name">Nvidia</header>
                       <aside class="card__ratings">4.0 <span> <i class="oval-star-solid"></i>
@@ -274,7 +328,7 @@
                 </article>
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/microsoft.svg" alt="">
+                    <img class="card__image" src="./assets/img/microsoft-small.svg" alt="">
                     <section class="card__topper-left">
                       <header class="card__company-name">Microsoft</header>
                       <aside class="card__ratings">4.0 <span> <i class="oval-star-solid"></i>
@@ -303,7 +357,7 @@
                 </article>
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/cisco.svg" alt="">
+                    <img class="card__image" src="./assets/img/cisco-small.svg" alt="">
                     <section class="card__topper-left">
                       <header class="card__company-name">Cisco Systems</header>
                       <aside class="card__ratings">4.0 <span> <i class="oval-star-solid"></i>
@@ -334,7 +388,7 @@
                 </article>
                 <article class="card card--employee">
                   <section class="card__topper d-flex">
-                    <img class="card__image" src="./assets/img/deere.svg" alt="">
+                    <img class="card__image" src="./assets/img/john-small.svg" alt="">
                     <section class="card__topper-left">
                       <header class="card__company-name">John Deere</header>
                       <aside class="card__ratings">4.0 <span> <i class="oval-star-solid"></i>
@@ -382,24 +436,33 @@
               </aside>
             </section>
           </div>
+          <!-- main-right-cards end -->
         </div>
       </div>
     </section>
+    <!-- search-employeers end -->
   </main>
-  <footer class="footer footer-sm">
-    <div class="container-fluid">
-      <div class="footer-sm__brand">
-        <img src="/assets/img/oval.svg" alt="">
+  <!-- main end -->
+  <hr class="footer-sm-divider">
+  <!-- footer start -->
+  <footer class="footer footer--sm">
+    <div class="container">
+      <div class="row">
+        <div class="footer--sm__brand">
+          <img src="./assets/img/oval-gray.png" alt="">
+        </div>
+        <section class="footer--sm__bottom-links">
+          <ul class="list-unstyled">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Trust & Safety</a></li>
+          </ul>
+        </section>
       </div>
-      <section class="footer__bottom-links">
-        <ul class="list-unstyled">
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Trust & Safety</a></li>
-        </ul>
-      </section>
     </div>
   </footer>
+  <!-- footer end -->
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

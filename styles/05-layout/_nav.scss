@@ -10,20 +10,30 @@
   }
 
   &__list {
-    padding: 0 24px;
     li a {
       text-decoration: none;
     }
   }
 
   &__menu-left {
+    padding-left: 13px;
     .navbar__link {
-      padding: 0 24px;
+      padding-right: 36px;
     }
   }
   &__menu-right {
-    padding: 0 25px;
+    padding: 0 28px;
+  }
+
+  &__menu-left,
+  &__menu-right {
     .navbar__link {
+      color: $color-shipgray;
+      @include transition($all);
+      &:hover {
+        @include transition($all);
+        color: $color-black;
+      }
     }
   }
 }

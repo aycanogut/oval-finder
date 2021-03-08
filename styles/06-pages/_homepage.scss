@@ -218,7 +218,7 @@
       position: relative;
 
       #carousel-homepage {
-        background: url(/assets/img/testimonial-dummy.png);
+        background: url("../assets/img/testimonial-dummy.png");
         background-repeat: no-repeat;
         padding: 55px;
 
@@ -270,7 +270,7 @@
   // * clients
 
   &__clients {
-    background: url(/assets/img/clients-bg.jpg);
+    background: url("../assets/img/clients-bg.jpg");
     background-repeat: no-repeat;
     background-color: $color-aquahaze;
     &__heading {
@@ -302,9 +302,6 @@
       p {
         text-align: center;
       }
-    }
-
-    #carousel-clients {
     }
   }
 
