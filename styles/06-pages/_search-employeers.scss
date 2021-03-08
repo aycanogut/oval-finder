@@ -35,6 +35,13 @@
   }
 }
 
+.search-employeers {
+  &__result {
+    &__top {
+    }
+  }
+}
+
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
@@ -102,6 +109,12 @@
     .filter {
       margin: 40px 0 16px 0;
       background-color: white;
+      &__card-body {
+        display: flex;
+        .row {
+          flex-wrap: wrap;
+        }
+      }
     }
 
     // right-main cards
@@ -131,24 +144,30 @@
   }
 
   .search-employeers {
-    height: 1960px;
-    margin-top: 98px;
+    height: 1727px;
+    margin-top: 96px;
 
     // left-sidebar filter
     .filter {
-      margin: 0;
-      margin-right: 23px;
+      margin: 2px 23px 0 0;
 
       &__header {
         margin-bottom: 2px;
       }
 
       &__search {
+        display: flex;
+        align-items: center;
         margin-top: 24px;
         padding: 4px 0 4px 8px;
+        i {
+          padding-right: 6px;
+        }
       }
 
       &__card-body {
+        display: flex;
+        flex-direction: column;
         padding: 4px;
       }
 
@@ -162,13 +181,13 @@
 
     // right-main cards
     &__result {
-      padding: 0 1px 0 6px;
+      padding: 0 1px 0 8px;
 
       &__top {
         display: block;
         justify-content: center;
         height: 100%;
-        padding-bottom: 20px;
+        padding: 0;
         margin: 0;
         .showing {
         }
@@ -177,11 +196,15 @@
           float: right;
         }
         .btn {
-          margin-top: -6px;
+          margin-left: 2px;
           padding: 0 !important;
-          margin-left: 6px;
+          text-underline-offset: 2px;
         }
       }
+    }
+
+    .page-navigations {
+      margin-bottom: 101px;
     }
   }
 }

@@ -122,18 +122,16 @@
 
   // search-employeers-search-employeers-result
   &--employee {
-    padding: 24px 32px;
+    border: 1px solid rgba(232, 231, 232, 0.5);
+
     .card__topper {
       img {
-        width: 48px;
-        height: 48px;
         header + aside {
           display: block;
           margin-left: auto;
         }
       }
       .card__topper-left {
-        padding-left: 12px;
       }
       .card__topper-right {
         margin-left: auto;
@@ -149,17 +147,7 @@
       }
     }
     .card__description {
-      padding: 27px 0 16px 0;
       border-bottom: 1px solid $color-bonjour;
-      span {
-        padding-right: 10px;
-        i {
-          padding-right: 6px;
-        }
-      }
-    }
-    .card__descriptor {
-      padding: 15px 0 13px 0;
     }
   }
 
@@ -391,7 +379,7 @@
     }
   }
 
-  // * colors
+  // card coloring
 
   &__company-name,
   &__title,
@@ -458,6 +446,11 @@
       padding: 5px 0 0 1px;
       order: -1;
     }
+  }
+
+  // card-image-shadow
+  &__image {
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -691,6 +684,9 @@
         border-top: 1px solid $color-bonjour;
       }
     }
+    &--employee {
+      margin-top: 24px;
+    }
   }
 }
 
@@ -752,6 +748,65 @@
       min-width: 0;
       min-height: 0;
       padding: 12px;
+    }
+
+    &--employee {
+      padding: 21px 30px 18px 30px;
+      .card__topper {
+        .card__image {
+          width: 48px;
+          height: 48px;
+          margin-top: 2px;
+          header + aside {
+            display: block;
+            margin-left: auto;
+          }
+        }
+        .card__topper-left {
+          padding-left: 16px;
+          .card__company-name {
+            padding-top: 3px;
+          }
+        }
+        .card__topper-right {
+          display: flex;
+          flex-direction: row;
+          margin-left: auto;
+          padding-bottom: 4px;
+          text-align: right;
+          .card__review {
+            margin-left: auto;
+            padding-left: 32px;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+      .card__description {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 22px 0 16px 0;
+        border-bottom: 1px solid $color-bonjour;
+        span {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding-right: 24px;
+
+          i {
+            font-size: $font-20;
+            padding-right: 6px;
+          }
+        }
+      }
+      .card__bottom {
+        padding-right: 12px;
+      }
+      .card__descriptor {
+        padding: 15px 0 13px 0;
+      }
     }
   }
 
