@@ -5,6 +5,7 @@
   border: none;
   text-align: center;
   white-space: nowrap;
+  text-decoration: none;
   @include transition($btn);
   &:hover {
     @include transition($btn);
@@ -28,11 +29,14 @@
     color: $color-white;
 
     &:hover {
+      color: $color-white;
+
       background-color: $color-blazeorange;
     }
 
     &-sm {
       &:hover {
+        color: $color-white;
         background-color: $color-blazeorange;
       }
     }
@@ -193,9 +197,8 @@
 @media (min-width: 768px) {
   .btn_def {
     &--search-box {
-      padding: 13px 28px;
       &-sm {
-        padding: 13px 28px;
+        padding: 13px 34px;
       }
     }
     &--find-jobs-now {

@@ -1,8 +1,5 @@
 // search-employees
 
-.navbar {
-}
-
 .header-search-employeers {
   background: url("../assets/img/bg-employee.svg");
   background-color: $color-bridesmaid;
@@ -51,8 +48,15 @@
     height: 314px;
   }
 
+  .search-box {
+    &--lg {
+      .search-btn {
+        width: 100%;
+      }
+    }
+  }
+
   .search-employeers {
-    height: 2625px;
     padding: 0 12px;
     .filter {
       margin-top: 35px;
@@ -61,6 +65,10 @@
         margin-bottom: 19px;
       }
       &__card-body {
+        .row {
+          display: flex;
+          flex-direction: column;
+        }
         .form-check {
           margin: 2px 0;
         }
@@ -73,8 +81,7 @@
         flex-direction: column;
         align-items: center;
         padding: 17px;
-        .showing {
-        }
+
         .btn-group {
           align-items: center;
         }
@@ -95,6 +102,14 @@
     height: 245px;
   }
 
+  .search-box {
+    &--lg {
+      .search-btn {
+        width: auto;
+      }
+    }
+  }
+
   // search-box placement
   .search-employeers__search-box {
     margin-top: 62px;
@@ -104,16 +119,21 @@
   }
 
   .search-employeers {
-    height: 2105px;
     // left-sidebar filter
     .filter {
       margin: 40px 0 16px 0;
       background-color: white;
       &__card-body {
-        display: flex;
         .row {
+          flex-direction: row;
           flex-wrap: wrap;
         }
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
 
@@ -144,7 +164,6 @@
   }
 
   .search-employeers {
-    height: 1727px;
     margin-top: 96px;
 
     // left-sidebar filter

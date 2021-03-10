@@ -552,6 +552,53 @@
         }
       }
     }
+
+    &--employee {
+      padding: 12px 15px 34px 15px;
+      margin-bottom: 20px;
+      .card__topper {
+        .card__image {
+          width: 28px;
+          height: 28px;
+          margin-top: 3px;
+        }
+
+        .card__company-name {
+          white-space: nowrap;
+        }
+        &-left {
+          padding-left: 12px;
+        }
+        &-right {
+          .card__review {
+            padding-left: 17px;
+          }
+        }
+      }
+
+      .card__description {
+        padding: 24px 0 4px 0;
+
+        span {
+          display: inline-block;
+          padding: 0 0 11px 0;
+        }
+
+        i {
+          display: inline-block;
+          padding-right: 3px;
+          font-size: 19px;
+        }
+      }
+
+      .card__descriptor {
+        padding: 18px 0 12px 0;
+      }
+
+      .card__text {
+        text-align: left;
+      }
+    }
   }
   // bigger-card (spotify)
   .bigger-card {
@@ -625,11 +672,13 @@
         padding: 30px 0 0 0;
       }
     }
+
     &--clients {
       min-width: 263px;
       min-height: 227px;
       padding: 44px 34px;
     }
+
     &--srOne {
       margin-bottom: 24px;
       padding: 23px 32px 20px 31px;
@@ -684,8 +733,48 @@
         border-top: 1px solid $color-bonjour;
       }
     }
+
     &--employee {
-      margin-top: 24px;
+      padding: 24px 24px 20px 32px;
+      margin-bottom: 20px;
+      .card__topper {
+        .card__image {
+          width: 32px;
+          height: 32px;
+        }
+
+        &-left {
+          padding-left: 10px;
+        }
+        &-right {
+          .card__review {
+            padding-left: 17px;
+          }
+        }
+      }
+
+      .card__description {
+        padding-top: 9px;
+
+        span {
+          display: inline-block;
+          padding: 0 24px 11px 0;
+        }
+
+        i {
+          display: inline-block;
+          padding-right: 7px;
+          font-size: 19px;
+        }
+      }
+
+      .card__descriptor {
+        padding: 8px 0 12px 0;
+      }
+
+      .card__text {
+        text-align: left;
+      }
     }
   }
 }
