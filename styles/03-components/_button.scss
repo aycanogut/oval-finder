@@ -87,9 +87,12 @@
   // searchjobsTwo-location
   &--location {
     display: inline-block;
-    padding: 12px 78px;
     background-color: $color-coral;
     color: $color-white;
+    &:hover {
+      color: $color-white;
+      background-color: $color-blazeorange;
+    }
   }
 
   // company-reviews-cards
@@ -216,6 +219,10 @@
       &-sm {
         padding: 14px 39px;
       }
+    }
+
+    &--location {
+      padding: 13px 86px;
     }
   }
 }

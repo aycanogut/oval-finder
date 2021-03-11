@@ -480,30 +480,5 @@ $base-font-stack: (
   @return $src;
 }
 
-/// CSS declaration
-// h1 {
-//   @include font(helvetica, bold);
-// }
-
-// h1 .caption {
-//   @include font(helvetica, light-italic, weight style);
-// }
-
-// p {
-//   @include font(helvetica, regular);
-// }
-
-// p i {
-//   @include font(helvetica, regular-italic, style);
-// }
-
-// p b {
-//   @include font(helvetica, bold, weight);
-// }
-
-// blockquote {
-//   @include font(georgia);
-// }
-
 /// Import fonts
 @include import-fonts();

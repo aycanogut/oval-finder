@@ -37,33 +37,36 @@ h4 {
     @include font(inter, medium);
     font-size: $font-14;
   }
+
   &__text {
     @include font(inter, regular);
     font-size: $font-14;
     line-height: $font-24;
   }
+
   &__header {
     @include font(inter, medium);
-    font-size: $font-24;
-    font-weight: $medium;
     line-height: 34px;
     letter-spacing: 0.2px;
   }
+
   &__description {
     @include font(inter, regular);
     font-size: $font-14;
-
     letter-spacing: 0.1px;
   }
+
   &__descriptor {
     @include font(manrope, semibold);
     font-size: $font-14;
     font-weight: $light;
   }
+
   &__time {
     @include font(inter, regular);
     font-size: $font-14;
   }
+
   &__ratings {
     @include font(inter, light);
     font-size: $font-14;
@@ -77,6 +80,7 @@ h4 {
     @include font(inter, medium);
     font-size: $font-14;
   }
+
   &__title {
     @include font(inter, medium);
     font-size: $font-18;
@@ -108,6 +112,7 @@ h4 {
       }
     }
   }
+
   &--testimonial {
     figure {
       @include font(manrope, semibold);
@@ -121,6 +126,7 @@ h4 {
       font-weight: $extralight;
     }
   }
+
   &--clients {
     p {
       @include font(inter, regular);
@@ -140,6 +146,7 @@ h4 {
       }
     }
   }
+
   &--reviews {
     .card__name {
       @include font(manrope, extrabold);
@@ -162,6 +169,7 @@ h4 {
       font-size: $font-12;
     }
   }
+
   &--benefits {
     header {
       @include font(inter, medium);
@@ -181,6 +189,7 @@ h4 {
     font-size: $font-14;
     font-weight: $light;
   }
+
   &--find-jobs-now {
     @include font(poppins, semibold);
     font-size: $font-18;
@@ -191,15 +200,23 @@ h4 {
     @include font(inter, medium);
     font-size: $font-14;
   }
+
   &--helpful {
     @include font(inter, semibold);
     font-size: $font-14;
     font-weight: $regular;
   }
+
   &--pricing,
   &--pricing-gray {
     @include font(inter, medium);
     font-size: $font-14;
+  }
+
+  &--location {
+    @include font(inter, medium);
+    font-size: $font-14;
+    line-height: $font-22;
   }
 }
 
@@ -297,10 +314,6 @@ h4 {
     @include font(inter, semibold);
     font-weight: $extralight;
   }
-}
-
-//  header
-.header {
 }
 
 //  sidebar
@@ -485,13 +498,19 @@ h4 {
 .srjTwo {
   &__location {
     header {
-      @include font(manrope, regular);
+      @include font(manrope, medium);
       font-size: $font-14;
-      font-weight: $bold;
+      font-weight: $medium;
       .price {
         @include font(inter, medium);
         font-size: $font-14;
       }
+    }
+
+    &__price {
+      @include font(inter, medium);
+      font-size: $font-14;
+      font-weight: $medium;
     }
   }
 }
@@ -725,6 +744,29 @@ h4 {
     }
   }
 
+  .srjTwo {
+    &__location {
+      &__price {
+        font-weight: $bold;
+      }
+    }
+
+    .card--daily {
+      .card__company-name {
+        font-weight: $regular;
+      }
+
+      .card__title {
+        font-weight: $regular;
+        line-height: 26px;
+      }
+
+      .card__description {
+        font-weight: $bold;
+      }
+    }
+  }
+
   // * layout
   .footer {
     &__list {
@@ -759,9 +801,25 @@ h4 {
         font-size: $font-14;
       }
     }
+
     &--employee {
       .card__company-name {
         font-size: $font-14;
+      }
+    }
+
+    &--srjTwo {
+      .card__descriptor {
+        font-size: 14px;
+        font-weight: $regular;
+      }
+
+      .card__description {
+        font-weight: $bold;
+      }
+
+      .card__text {
+        font-weight: $bold;
       }
     }
   }
@@ -1013,6 +1071,23 @@ h4 {
         .sort-by {
           font-size: $font-14 !important;
         }
+      }
+    }
+  }
+
+  .srjTwo {
+    .card__descriptor {
+      font-size: $font-16;
+    }
+
+    .card__text {
+      line-height: 24px;
+    }
+
+    &__similiar-jobs {
+      &__header {
+        font-size: $font-24;
+        font-weight: $bold;
       }
     }
   }

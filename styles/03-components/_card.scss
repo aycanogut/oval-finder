@@ -8,8 +8,6 @@
     .card__topper {
       display: flex;
       align-items: center;
-      .card__image {
-      }
 
       .card__company-name {
         margin-right: auto;
@@ -17,17 +15,13 @@
       }
       .card__time {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
       }
-    }
-
-    .card__body {
     }
 
     .card__description {
       display: flex;
-      span {
-      }
+
       i {
         align-items: center;
         font-size: $font-20;
@@ -41,8 +35,6 @@
 
       &__apply {
         display: flex;
-        p {
-        }
       }
     }
   }
@@ -109,12 +101,7 @@
     .card__text {
       line-height: 24px;
     }
-    .card__description {
-      i {
-      }
-      span {
-      }
-    }
+
     .card__descriptor {
       border-top: 1px solid $color-bonjour;
     }
@@ -131,8 +118,7 @@
           margin-left: auto;
         }
       }
-      .card__topper-left {
-      }
+
       .card__topper-right {
         margin-left: auto;
         display: flex;
@@ -152,64 +138,23 @@
   }
 
   // search-jobsTwo - srjTwo-job-details
-  &--srTwo {
-    padding: 24px 32px 32px 32px;
-    .card__topper {
-      img {
-        width: 32px;
-        height: 32px;
-      }
-      .card__company-name {
-        margin: auto 0 auto 0;
-        padding: 0 10px;
-      }
-      .card__ratings {
-        margin: auto 0 auto 0;
-      }
-      .card__social {
-        margin: auto 0 auto auto;
-        i {
-          padding: 0 3px;
-        }
-        a {
-          padding: 0 16px;
-        }
-      }
-    }
-    header {
-      h4 {
-        padding-top: 23px;
+  &--srjTwo {
+    border: 1px solid rgba(232, 231, 232, 0.5);
+
+    .card__descriptor {
+      ul {
+        margin: 0;
       }
     }
     .card__description {
       display: flex;
       border-bottom: 1px solid $color-bonjour;
-      .card__time {
-        margin-left: auto;
-        padding: 0;
-      }
     }
     .card__body {
       padding-bottom: 32px;
-      .card__descriptor {
-        font-weight: $bold;
-        padding: 22px 0 14px 0;
-      }
-      ul {
-        padding: 0;
-        padding-left: 16px;
-      }
-      p {
-        margin: 0;
-        line-height: 26px;
-      }
     }
     .card__bottom {
       border-top: 1px solid $color-bonjour;
-      padding-top: 32px;
-      img {
-        padding: 50px 0 0 32px;
-      }
     }
   }
 
@@ -473,7 +418,7 @@
         }
         .card__time {
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
           padding-top: 2px;
         }
       }
@@ -895,6 +840,94 @@
       }
       .card__descriptor {
         padding: 15px 0 13px 0;
+      }
+    }
+
+    &--srjTwo {
+      padding: 24px 0 32px 30px;
+      .card__topper {
+        display: flex;
+        align-items: center;
+        padding-right: 23px;
+        .card__image {
+          padding-top: 1px;
+        }
+        .card__company-name {
+          padding: 0 11px 0 12px;
+          margin-bottom: 2px;
+        }
+        .card__ratings {
+          width: 100%;
+          margin-top: 1px;
+        }
+        .card__social {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          width: 100%;
+          margin-top: -12px;
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            i {
+              font-size: 16px;
+              padding-right: 7px;
+            }
+          }
+        }
+      }
+      header {
+        h4 {
+          padding-top: 17px;
+        }
+      }
+      .card__description {
+        padding: 6px 0 24px 0;
+        span {
+          display: flex;
+          align-items: center;
+          padding-right: 24px;
+        }
+        i {
+          font-size: 20px;
+          padding-right: 6px;
+        }
+        .card__time {
+          margin-left: auto;
+          padding-right: 38px;
+        }
+      }
+      .card__body {
+        padding: 0 44px 32px 0;
+
+        .card__descriptor {
+          padding: 27px 0 12px 0;
+        }
+
+        .descriptor-top {
+          padding: 21px 0 12px 0;
+        }
+
+        ul {
+          padding: 0;
+          padding-left: 16px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      .card__bottom {
+        padding-top: 30px;
+        .card__video {
+          padding: 40px 0 0 44px;
+        }
+
+        br + .card__text {
+          margin-top: -10px;
+        }
       }
     }
   }

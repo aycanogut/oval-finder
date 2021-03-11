@@ -656,7 +656,7 @@
       &__right {
         padding-top: 10px;
         .row {
-          justify-content: end;
+          justify-content: flex-end;
         }
       }
     }
@@ -1049,7 +1049,7 @@
     }
     &__header__image {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       position: relative;
 
       img {
@@ -1168,7 +1168,7 @@
       }
       &__body {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         position: relative;
         width: 100%;
       }
