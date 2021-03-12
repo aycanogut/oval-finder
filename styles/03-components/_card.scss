@@ -721,6 +721,94 @@
         text-align: left;
       }
     }
+
+    &--srjTwo {
+      padding: 24px 0 32px 30px;
+      .card__topper {
+        display: flex;
+        align-items: center;
+        padding-right: 23px;
+        .card__image {
+          padding-top: 1px;
+        }
+        .card__company-name {
+          padding: 0 11px 0 12px;
+          margin-bottom: 2px;
+        }
+        .card__ratings {
+          width: 100%;
+          margin-top: 1px;
+        }
+        .card__social {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          width: 100%;
+          margin-top: -12px;
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            i {
+              font-size: 16px;
+              padding-right: 7px;
+            }
+          }
+        }
+      }
+      header {
+        h4 {
+          padding-top: 17px;
+        }
+      }
+      .card__description {
+        padding: 6px 0 24px 0;
+        span {
+          display: flex;
+          align-items: center;
+          padding-right: 24px;
+        }
+        i {
+          font-size: 20px;
+          padding-right: 6px;
+        }
+        .card__time {
+          margin-left: auto;
+          padding-right: 38px;
+        }
+      }
+      .card__body {
+        padding: 0 44px 32px 0;
+
+        .card__descriptor {
+          padding: 27px 0 12px 0;
+        }
+
+        .descriptor-top {
+          padding: 21px 0 12px 0;
+        }
+
+        ul {
+          padding: 0;
+          padding-left: 16px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      .card__bottom {
+        padding-top: 30px;
+        .card__video {
+          padding: 40px 0 0 44px;
+        }
+
+        br + .card__text {
+          margin-top: -10px;
+        }
+      }
+    }
   }
 }
 
@@ -840,94 +928,6 @@
       }
       .card__descriptor {
         padding: 15px 0 13px 0;
-      }
-    }
-
-    &--srjTwo {
-      padding: 24px 0 32px 30px;
-      .card__topper {
-        display: flex;
-        align-items: center;
-        padding-right: 23px;
-        .card__image {
-          padding-top: 1px;
-        }
-        .card__company-name {
-          padding: 0 11px 0 12px;
-          margin-bottom: 2px;
-        }
-        .card__ratings {
-          width: 100%;
-          margin-top: 1px;
-        }
-        .card__social {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          width: 100%;
-          margin-top: -12px;
-
-          a {
-            display: flex;
-            align-items: center;
-            padding: 0 16px;
-            i {
-              font-size: 16px;
-              padding-right: 7px;
-            }
-          }
-        }
-      }
-      header {
-        h4 {
-          padding-top: 17px;
-        }
-      }
-      .card__description {
-        padding: 6px 0 24px 0;
-        span {
-          display: flex;
-          align-items: center;
-          padding-right: 24px;
-        }
-        i {
-          font-size: 20px;
-          padding-right: 6px;
-        }
-        .card__time {
-          margin-left: auto;
-          padding-right: 38px;
-        }
-      }
-      .card__body {
-        padding: 0 44px 32px 0;
-
-        .card__descriptor {
-          padding: 27px 0 12px 0;
-        }
-
-        .descriptor-top {
-          padding: 21px 0 12px 0;
-        }
-
-        ul {
-          padding: 0;
-          padding-left: 16px;
-        }
-        p {
-          margin: 0;
-        }
-      }
-
-      .card__bottom {
-        padding-top: 30px;
-        .card__video {
-          padding: 40px 0 0 44px;
-        }
-
-        br + .card__text {
-          margin-top: -10px;
-        }
       }
     }
   }

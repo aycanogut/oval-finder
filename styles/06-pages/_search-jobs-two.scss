@@ -38,6 +38,58 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .srjTwo {
+    &__job-details {
+      margin-top: 30px;
+    }
+
+    &__location {
+      height: 100%;
+      padding: 23px 14px 10px 10px;
+      margin-top: 20px;
+
+      header {
+        padding: 10px 0 18px 12px;
+      }
+
+      &__image {
+        height: 100%;
+        background: url("../assets/img/search-jobs-two-dummy-md.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin-right: 23px;
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 23px 0 0;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 11px;
+
+        i {
+          padding-right: 8px;
+          font-size: 20px;
+        }
+      }
+
+      &__btn {
+        padding-top: 2px;
+      }
+    }
+
+    &__similiar-jobs {
+      margin: 92px 0 55px 0;
+      header {
+        padding: 60px 0 20px 0;
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -55,7 +107,6 @@
 
       header {
         padding: 10px 0 18px 12px;
-        color: $color-black;
       }
 
       &__image {
@@ -65,6 +116,7 @@
       }
 
       &__bottom {
+        display: block;
         position: absolute;
         top: 220px;
       }
@@ -86,6 +138,16 @@
       margin-bottom: 70px;
       header {
         padding: 60px 0 20px 0;
+      }
+
+      // same cards with the homepage(card--daily) but size changes on the md size
+      .card--daily {
+        min-width: 80%;
+        min-height: 25vh;
+
+        .card__body {
+          padding: 1px 20px 0 23px;
+        }
       }
     }
   }

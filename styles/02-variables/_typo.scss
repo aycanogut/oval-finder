@@ -498,7 +498,7 @@ h4 {
 .srjTwo {
   &__location {
     header {
-      @include font(manrope, medium);
+      @include font(inter, medium);
       font-size: $font-14;
       font-weight: $medium;
       .price {

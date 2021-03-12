@@ -204,8 +204,13 @@
         padding: 13px 34px;
       }
     }
+
     &--find-jobs-now {
       padding: 19px 36px;
+    }
+
+    &--location {
+      padding: 8px 55px;
     }
   }
 }
@@ -222,7 +227,7 @@
     }
 
     &--location {
-      padding: 13px 86px;
+      padding: 13px 62px;
     }
   }
 }
@@ -233,6 +238,10 @@
   .btn_def {
     &--find-jobs-now {
       padding: 22px 44px;
+    }
+
+    &--location {
+      padding: 13px 86px;
     }
   }
 }
