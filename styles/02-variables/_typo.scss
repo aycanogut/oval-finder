@@ -819,7 +819,9 @@ h4 {
       }
 
       .card__text {
+        font-size: $font-12;
         font-weight: $bold;
+        line-height: $font-22;
       }
     }
   }

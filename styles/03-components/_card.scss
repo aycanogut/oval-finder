@@ -150,9 +150,7 @@
       display: flex;
       border-bottom: 1px solid $color-bonjour;
     }
-    .card__body {
-      padding-bottom: 32px;
-    }
+
     .card__bottom {
       border-top: 1px solid $color-bonjour;
     }
@@ -544,6 +542,89 @@
         text-align: left;
       }
     }
+
+    &--srjTwo {
+      padding: 13px 15px 24px 15px;
+      .card__topper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .card__image {
+          margin-right: 12px;
+        }
+
+        .card__social {
+          display: flex;
+          margin-left: auto;
+
+          a {
+            display: flex;
+            align-items: center;
+
+            i {
+              font-size: 16px;
+              padding: 0 7px;
+            }
+          }
+        }
+      }
+      header {
+        h4 {
+          padding: 16px 0;
+        }
+      }
+      .card__description {
+        display: grid;
+
+        span {
+          display: flex;
+          align-items: center;
+        }
+
+        span:first-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          padding-bottom: 10px;
+        }
+
+        i {
+          font-size: 20px;
+          padding-right: 6px;
+        }
+
+        .card__time {
+          width: 100%;
+          padding: 14px 0;
+        }
+      }
+      .card__body {
+        padding-bottom: 20px;
+        .card__descriptor {
+          padding: 20px 0 10px 0;
+        }
+
+        ul {
+          padding: 0 10px;
+        }
+        p {
+          padding-bottom: 6px;
+        }
+      }
+
+      .card__bottom {
+        article > .card__descriptor {
+          padding: 18px 0 16px 0;
+        }
+        .card__video {
+          display: flex;
+          justify-content: center;
+          padding-top: 12px;
+        }
+
+        br + .card__text {
+        }
+      }
+    }
   }
   // bigger-card (spotify)
   .bigger-card {
@@ -730,7 +811,14 @@
         padding-right: 23px;
         .card__image {
           padding-top: 1px;
+          margin: 0;
         }
+
+        .card__name-rating {
+          display: flex;
+          width: 100%;
+        }
+
         .card__company-name {
           padding: 0 11px 0 12px;
           margin-bottom: 2px;

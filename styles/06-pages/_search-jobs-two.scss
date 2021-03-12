@@ -28,6 +28,47 @@
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .navbar {
+    padding: 20px 8px 20px 24px;
+  }
+
+  .srjTwo {
+    padding: 0 10px;
+
+    &__location {
+      height: 275px;
+      padding: 27px 20px 15px 20px;
+
+      header {
+        padding-left: 10px;
+      }
+
+      &__image {
+        height: 100%;
+        background: url("../../assets/img/search-jobs-two-dummy-sm.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin-top: 14px;
+      }
+
+      &__bottom {
+        margin-top: 100px;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        i {
+          font-size: 19px;
+          padding-right: 7px;
+        }
+      }
+    }
+
+    &__similiar-jobs {
+    }
+  }
 }
 
 // Small devices (phone, 577px and up)
