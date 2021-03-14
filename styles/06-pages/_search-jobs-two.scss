@@ -6,7 +6,7 @@
     color: $color-shipgray;
   }
 
-  &__btn .btn_def {
+  .btn-outline .btn_def {
     border: 1px solid $color-mischka;
   }
 }
@@ -36,37 +36,71 @@
     padding: 0 10px;
 
     &__location {
-      height: 275px;
-      padding: 27px 20px 15px 20px;
+      height: 270px;
+      margin: 28px 0;
 
       header {
-        padding-left: 10px;
+        padding: 0 16px 14px 16px;
       }
 
       &__image {
-        height: 100%;
-        background: url("../../assets/img/search-jobs-two-dummy-sm.png");
+        height: 120px;
+        background: url("../../assets/img/search-jobs-two-dummy-md.png");
         background-repeat: no-repeat;
         background-position: center top;
-        margin-top: 14px;
-      }
-
-      &__bottom {
-        margin-top: 100px;
+        overflow: hidden;
+        margin: 0 16px;
       }
 
       &__price {
         display: flex;
         flex-direction: row;
         align-content: center;
+        margin: 16px 0 15px 28px;
+
         i {
           font-size: 19px;
           padding-right: 7px;
         }
       }
+
+      &__btn {
+        text-align: center;
+      }
     }
 
     &__similiar-jobs {
+      padding: 0;
+      margin: 0;
+
+      &__header {
+        padding-bottom: 10px;
+      }
+      // same cards with the homepage(card--daily) but size changes on the xs size
+      .card--daily {
+        margin: 15px -16px;
+        min-height: 193px;
+
+        .card__topper {
+          padding: 15px;
+        }
+
+        .card__body {
+          padding: 2px 15px;
+        }
+
+        .card__bottom {
+          .card__description {
+            padding: 16px;
+
+            span {
+              display: flex;
+              align-content: center;
+              height: 100%;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -98,7 +132,6 @@
         background: url("../assets/img/search-jobs-two-dummy-md.png");
         background-repeat: no-repeat;
         background-position: center right;
-        margin-right: 23px;
       }
 
       &__bottom {
@@ -125,7 +158,6 @@
     }
 
     &__similiar-jobs {
-      margin: 92px 0 55px 0;
       header {
         padding: 60px 0 20px 0;
       }
@@ -159,7 +191,7 @@
       &__bottom {
         display: block;
         position: absolute;
-        top: 220px;
+        top: 120px;
       }
 
       &__price {
