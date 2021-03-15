@@ -819,10 +819,10 @@
       .card__topper {
         display: flex;
         align-items: center;
-        padding-right: 23px;
+        padding-right: 17px;
         .card__image {
-          padding-top: 1px;
           margin: 0;
+          padding: 0;
         }
 
         .card__name-rating {
@@ -858,24 +858,27 @@
       }
       header {
         h4 {
-          padding-top: 17px;
+          margin: 0;
+          padding: 16px 0 14px 0;
         }
       }
       .card__description {
         display: flex;
-        padding: 6px 0 24px 0;
+        flex-direction: row;
+        padding-bottom: 7px;
         span {
           display: flex;
           align-items: center;
-          width: 100%;
+          padding-right: 24px;
         }
         i {
           font-size: 20px;
-          padding-right: 6px;
+          padding-right: 7px;
         }
         .card__time {
+          width: auto;
           margin-left: auto;
-          padding-right: 38px;
+          padding-right: 32px;
         }
       }
       .card__body {
@@ -899,13 +902,18 @@
       }
 
       .card__bottom {
-        padding-top: 30px;
-        .card__video {
-          padding: 40px 0 0 44px;
+        padding-top: 7px;
+
+        .card__text {
+          padding: 8px 30px 0 0;
+        }
+
+        .card__video-md {
+          padding: 40px 0 0 16px;
         }
 
         br + .card__text {
-          margin-top: -10px;
+          margin-top: -6px;
         }
       }
     }

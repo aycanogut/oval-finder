@@ -114,17 +114,17 @@
 
 @media (min-width: 768px) {
   .srjTwo {
+    margin: 0 24px;
     &__job-details {
       margin-top: 30px;
     }
 
     &__location {
       height: 100%;
-      padding: 23px 14px 10px 10px;
       margin-top: 20px;
 
       header {
-        padding: 10px 0 18px 12px;
+        padding: 10px 0 0 32px;
       }
 
       &__image {
@@ -137,14 +137,15 @@
       &__bottom {
         display: flex;
         justify-content: space-between;
-        padding: 12px 23px 0 0;
+        padding: 6px 10px 0 0;
       }
 
       &__price {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 11px;
+        margin: 0;
+        margin-left: 22px;
 
         i {
           padding-right: 8px;
@@ -153,13 +154,25 @@
       }
 
       &__btn {
-        padding-top: 2px;
+        padding-top: 8px;
       }
     }
 
     &__similiar-jobs {
+      margin-top: 88px;
       header {
         padding: 60px 0 20px 0;
+      }
+    }
+
+    // same cards with the homepage(card--daily) but size changes on the md size
+    .card--daily {
+      min-width: 300px;
+      min-height: 206px;
+      margin: 0;
+      margin-bottom: 24px;
+
+      .card__body {
       }
     }
   }
