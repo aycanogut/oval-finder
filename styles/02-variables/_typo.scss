@@ -1117,6 +1117,11 @@ h4 {
         font-size: $font-18;
       }
     }
+    &--srjTwo {
+      .card__text {
+        line-height: $font-24;
+      }
+    }
   }
 
   .search-box {

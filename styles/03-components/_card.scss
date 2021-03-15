@@ -637,6 +637,7 @@
       }
     }
   }
+
   // bigger-card (spotify)
   .bigger-card {
     min-height: 390px;
@@ -1040,23 +1041,49 @@
     }
 
     &--srjTwo {
+      padding: 24px 0 0 32px;
       header h4 {
-        padding: 16px 0 10px 0;
+        padding: 18px 0 12px 0;
+      }
+
+      .card__body {
+        padding: 0 39px 24px 0;
+
+        p {
+          padding: 0 0 1px 0;
+        }
       }
 
       .card__description {
         display: flex;
         padding: 0;
-        padding-bottom: 25px;
+        padding-bottom: 22px;
 
         span {
           display: flex;
         }
 
         .card__time {
-          padding: 0;
-          padding-right: 32px;
+          padding: 6px 32px 0 0;
           justify-content: flex-end;
+        }
+      }
+
+      .card__bottom {
+        padding: 0;
+        padding-bottom: 32px;
+
+        article > .card__descriptor {
+          padding-bottom: 18px;
+        }
+
+        .card__text {
+          padding: 0 40px 12px 0;
+        }
+
+        .card__video-lg {
+          padding: 6px 36px 0 0;
+          float: right;
         }
       }
     }
@@ -1074,6 +1101,24 @@
   .card {
     &--clients {
       padding: 44px 36px;
+    }
+
+    &--srjTwo {
+      .card__bottom {
+        padding-bottom: 32px;
+        article > .card__descriptor {
+          padding: 22px 0 16px 0;
+        }
+
+        .card__text {
+          padding: 0 40px 12px 0;
+        }
+
+        .card__video-lg {
+          padding: 2px 36px 0 0;
+          float: right;
+        }
+      }
     }
   }
 }

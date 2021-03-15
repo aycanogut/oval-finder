@@ -131,7 +131,7 @@
         height: 100%;
         background: url("../assets/img/search-jobs-two-dummy-md.png");
         background-repeat: no-repeat;
-        background-position: center right;
+        background-position: center;
       }
 
       &__bottom {
@@ -154,7 +154,7 @@
       }
 
       &__btn {
-        padding-top: 8px;
+        padding: 8px 12px 0 0;
       }
     }
 
@@ -171,9 +171,6 @@
       min-height: 206px;
       margin: 0;
       margin-bottom: 24px;
-
-      .card__body {
-      }
     }
   }
 }
@@ -187,52 +184,61 @@
     }
 
     &__location {
-      height: 100%;
-      padding: 23px 14px 10px 10px;
-      margin-top: 20px;
+      margin: 46px 0 10px 0;
 
       header {
-        padding: 10px 0 18px 12px;
+        padding: 10px 0 12px 20px;
       }
 
       &__image {
-        height: 100%;
+        max-height: 120px;
         background: url("../assets/img/search-jobs-two-dummy-lg.png");
         background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
       }
 
       &__bottom {
         display: block;
-        position: absolute;
-        top: 120px;
+        padding: 0;
       }
 
       &__price {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 6px 10px 14px 12px;
-        color: $color-midgray;
+        margin: 0;
+        padding: 14px 0 14px 12px;
         i {
           padding-right: 8px;
           font-size: 20px;
         }
       }
+
+      &__btn {
+        padding: 0;
+      }
     }
 
     &__similiar-jobs {
-      margin-bottom: 70px;
+      margin: 0;
       header {
         padding: 60px 0 20px 0;
       }
 
       // same cards with the homepage(card--daily) but size changes on the md size
       .card--daily {
-        min-width: 80%;
+        min-width: auto;
         min-height: 25vh;
 
         .card__body {
           padding: 1px 20px 0 23px;
+        }
+
+        .card__bottom {
+          .card__description {
+            padding: 0;
+          }
         }
       }
     }
@@ -242,6 +248,13 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .srjTwo {
+    &__location {
+      &__price {
+        padding: 14px 0 14px 24px;
+      }
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
