@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- nav start -->
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
       <div class="navbar-brand">
@@ -41,12 +42,21 @@
       </div>
     </div>
   </nav>
+  <!-- nav end -->
+  <!-- main start -->
   <main>
+    <!-- company start -->
     <section class="company">
       <div class="container">
+        <section class="company__buttons  d-lg-none">
+          <a class="btn_def btn_def--share"><i class="oval-share"></i>Share</a>
+          <a class="btn_def btn_def--review">+ Write a Review</a>
+        </section>
         <div class="row">
-          <div class="col-8">
+          <!-- company-left-cards start -->
+          <div class="col-lg-8 col-md-12">
             <div class="cover"></div>
+            <!-- company-topper-card start -->
             <section class="company__employeer-information">
               <article class="card card--company">
                 <section class="card__topper d-flex">
@@ -66,34 +76,30 @@
                 </section>
                 <section class="card__description__icons">
                   <div class="row">
-                    <div class="col-6">
-                      <aside class="card__description">
-                        <div class="card__description__item">
-                          <span><i class="oval-business"></i>Industry</span>
-                          <span>Computer Hardware & Software</span>
-                        </div>
-                        <div class="card__description__item">
-                          <span><i class="oval-location"></i>Headquarters</span>
-                          <span>San Jose, CA</span>
-                        </div>
-                        <div class="card__description__item">
-                          <span><i class="oval-salary"></i>Revenue</span>
-                          <span>$5 to $10 billion (USD) per year</span>
-                        </div>
-                      </aside>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="card__description__item">
+                        <span><i class="oval-business"></i>Industry</span>
+                        <span>Computer Hardware & Software</span>
+                      </div>
+                      <div class="card__description__item">
+                        <span><i class="oval-location"></i>Headquarters</span>
+                        <span>San Jose, CA</span>
+                      </div>
+                      <div class="card__description__item">
+                        <span><i class="oval-salary"></i>Revenue</span>
+                        <span>$5 to $10 billion (USD) per year</span>
+                      </div>
                     </div>
-                    <div class="col-6">
-                      <aside class="card__description">
-                        <div class="card__description__item">
-                          <span><i class="oval-website"></i>Website</span>
-                          <span>www.adobe.com</span> </div>
-                        <div class="card__description__item">
-                          <span><i class="oval-employees"></i>Company Size</span>
-                          <span>1000 + employees</span> </div>
-                        <div class="card__description__item">
-                          <span><i class="oval-flag"></i>Founded</span>
-                          <span>1982</span> </div>
-                      </aside>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="card__description__item">
+                        <span><i class="oval-website"></i>Website</span>
+                        <span>www.adobe.com</span> </div>
+                      <div class="card__description__item">
+                        <span><i class="oval-employees"></i>Company Size</span>
+                        <span>1000 + employees</span> </div>
+                      <div class="card__description__item">
+                        <span><i class="oval-flag"></i>Founded</span>
+                        <span>1982</span> </div>
                     </div>
                   </div>
                 </section>
@@ -109,13 +115,35 @@
                 </section>
               </article>
             </section>
+            <!-- company-topper-card end -->
+            <!-- company-job-vacancies start -->
             <section class="company__vacancies">
               <header class="card__descriptor">Job Vacancies</header>
-              <section class="search-box search-box-xs">
-                <section class="search-box__searchInput">
-                  <i class="oval-search"></i><input type="text" class="search" placeholder="Search job title">
-                  <i class="oval-location"></i><input type="text" class="search" placeholder="City, State or Zip">
-                  <button class="btn_def btn_def--xs button" type="submit">Search Job</button>
+              <section class="company__search-box">
+                <section class="search-box">
+                  <section class="search-box__searchInput">
+                    <div class="row m-0 p-0 w-100">
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                        <div class="input left">
+                          <div class="wrapper">
+                            <i class="oval-search"></i>
+                            <input type="text" class="input-search" size="12" placeholder="Job title or keyword">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 m-0 p-0">
+                        <div class="input right">
+                          <div class="wrapper">
+                            <i class="oval-location"></i>
+                            <input type="text" class="input-search" size="12" placeholder="City, state or zip">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-btn">
+                      <a href="#" class="btn_def btn_def--search-box button">Find Job</a>
+                    </div>
+                  </section>
                 </section>
                 <aside class="search-box__result">
                   <span class="showing">Showing: 34 jobs open</span>
@@ -124,7 +152,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Relevance
                   </button>
-                  <div class="filters">Filter Jobs</div>
+                  <div class="filter__header">Filter Jobs</div>
                 </aside>
               </section>
               <section class="company_job-boards">
@@ -225,6 +253,8 @@
                 </aside>
               </section>
             </section>
+            <!-- company-job-vacancies start -->
+            <!-- company-revievs start -->
             <section class="company__reviews">
               <aside class="company__reviews__top">
                 <header class="card__descriptor">Reviews</header>
@@ -248,7 +278,7 @@
                       aria-haspopup="true" aria-expanded="false">
                       Popular
                     </button>
-                    <span class="filter">Filter Review</span>
+                    <span class="filter__header">Filter Review</span>
                   </aside>
                 </section>
               </section>
@@ -529,6 +559,8 @@
                 </aside>
               </aside>
             </section>
+            <!-- company-revievs end -->
+            <!-- company-benefits start -->
             <section class="company__benefits">
               <section class="company__benefits__top">
                 <header>Company Benefits</header>
@@ -574,10 +606,13 @@
                 </div>
               </section>
             </section>
+            <!-- company-benefits end -->
           </div>
-          <div class="col-4">
+          <!-- company-left-cards end -->
+          <!-- company-right-sidebar start -->
+          <div class="col-lg-4 col-md-12">
             <section class="company__right">
-              <section class="company__buttons">
+              <section class="company__buttons d-none d-lg-block">
                 <a class="btn_def btn_def--share"><i class="oval-share"></i>Share</a>
                 <a class="btn_def btn_def--review">+ Write a Review</a>
               </section>
@@ -613,10 +648,14 @@
               </section>
             </section>
           </div>
+          <!-- company-right-sidebar end -->
         </div>
       </div>
     </section>
+    <!-- company end -->
   </main>
+  <!-- main end -->
+  <!-- footer start -->
   <footer class="footer footer-sm">
     <div class="container-fluid">
       <div class="footer-sm__brand">
@@ -631,6 +670,7 @@
       </section>
     </div>
   </footer>
+  <!-- footer-end -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
