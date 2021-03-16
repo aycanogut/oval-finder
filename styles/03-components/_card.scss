@@ -158,52 +158,15 @@
 
   // company - company-employeer-information
   &--company {
-    padding: 24px 30px 30px 30px;
+    border: 1px solid$color-bonjour;
+    margin-bottom: 10px;
     .card__topper {
-      img {
-        width: 72px;
-        height: 72px;
-      }
-      .card__topper-left {
-        padding-left: 12px;
-        display: flex;
-        flex-direction: column;
-        margin: auto 0 auto 0;
-      }
-      .card__topper-right {
-        margin-left: auto;
-        display: flex;
-        flex-direction: row;
-        text-align: right;
-        .card__review,
-        span {
-          display: block;
-        }
-      }
       border-bottom: 1px solid $color-bonjour;
     }
-    .card__description__icons {
-      padding-top: 32px;
-      span {
-        display: flex;
-        i {
-          padding-right: 6px;
-        }
-      }
-      span:nth-child(even) {
-        padding-left: 20px;
-      }
-      .card__description__item {
-        padding-bottom: 24px;
-      }
-    }
-    .card__description__text {
-      .card__descriptor {
-        font-weight: $bold;
-        padding-bottom: 14px;
-      }
-      p:nth-last-child(1) {
-        margin: 0;
+
+    .card__description__item {
+      i {
+        font-size: 20px;
       }
     }
   }
@@ -298,6 +261,7 @@
       }
     }
   }
+
   &--benefits {
     header {
       padding: 0 0 4px 0;
@@ -312,6 +276,7 @@
       color: $color-mountainmist;
     }
   }
+
   &--daily:hover,
   &--srOne:hover,
   &--employee:hover,
@@ -332,12 +297,15 @@
     color: $color-shipgray;
     text-decoration: none !important;
   }
+
   &__time {
     color: $color-spunpearl;
   }
+
   &__description {
     color: $color-midgray;
   }
+
   &__bottom {
     p {
       color: $color-shipgray;
@@ -346,33 +314,41 @@
       color: $color-blazeorange;
     }
   }
+
   &__header {
     color: $color-shipgray;
   }
+
   &__review {
     color: $color-coral;
     span {
       color: $color-mountainmist;
     }
   }
+
   &__descriptor {
     color: $color-black;
   }
+
   &__social {
     a {
       color: $color-midgray;
       text-decoration: none;
     }
   }
+
   &__text {
     color: $color-shipgray;
   }
+
   &__name {
     color: $color-shipgray;
   }
+
   &__comment {
     color: $color-shipgray;
   }
+
   &__ratings {
     display: flex;
     color: $color-mountainmist;
@@ -388,6 +364,15 @@
       float: left;
       padding: 5px 0 0 1px;
       order: -1;
+    }
+  }
+
+  &__description__item {
+    &__top {
+      color: $color-shipgray;
+    }
+    &__bottom {
+      color: $color-midgray;
     }
   }
 
@@ -633,6 +618,63 @@
               height: 100%;
             }
           }
+        }
+      }
+    }
+
+    &--company {
+      padding: 10px 15px 20px 15px;
+      border-bottom: 1px solid $color-bonjour;
+      .card__topper {
+        padding-bottom: 8px;
+        .card__image {
+          width: 36px;
+          height: 36px;
+          margin-top: 5px;
+        }
+        .card__topper-left {
+          padding-left: 10px;
+        }
+        .card__topper-right {
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          text-align: right;
+
+          .card__review,
+          span {
+            display: block;
+          }
+
+          .card__review:first-child {
+            padding-right: 14px;
+          }
+        }
+      }
+      .card__description__icons {
+        padding-top: 13px;
+        span {
+          display: flex;
+          i {
+            padding-right: 8px;
+          }
+        }
+        span:nth-child(even) {
+          padding-left: 27px;
+        }
+        .card__description__item {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          padding-bottom: 16px;
+        }
+      }
+      .card__description__text {
+        .card__descriptor {
+          padding-bottom: 14px;
+        }
+        p:nth-last-child(1) {
+          margin: 0;
         }
       }
     }
@@ -918,6 +960,57 @@
         }
       }
     }
+
+    &--company {
+      padding: 24px 30px 30px 30px;
+      .card__topper {
+        img {
+          width: 72px;
+          height: 72px;
+        }
+        .card__topper-left {
+          padding-left: 12px;
+          display: flex;
+          flex-direction: column;
+          margin: auto 0 auto 0;
+        }
+        .card__topper-right {
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          text-align: right;
+          .card__review,
+          span {
+            display: block;
+          }
+        }
+        border-bottom: 1px solid $color-bonjour;
+      }
+      .card__description__icons {
+        padding-top: 32px;
+        span {
+          display: flex;
+          i {
+            padding-right: 6px;
+          }
+        }
+        span:nth-child(even) {
+          padding-left: 20px;
+        }
+        .card__description__item {
+          padding-bottom: 24px;
+        }
+      }
+      .card__description__text {
+        .card__descriptor {
+          font-weight: $bold;
+          padding-bottom: 14px;
+        }
+        p:nth-last-child(1) {
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
@@ -1084,6 +1177,57 @@
         .card__video-lg {
           padding: 6px 36px 0 0;
           float: right;
+        }
+      }
+    }
+
+    &--company {
+      padding: 24px 30px 30px 30px;
+      .card__topper {
+        img {
+          width: 72px;
+          height: 72px;
+        }
+        .card__topper-left {
+          padding-left: 12px;
+          display: flex;
+          flex-direction: column;
+          margin: auto 0 auto 0;
+        }
+        .card__topper-right {
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          text-align: right;
+          .card__review,
+          span {
+            display: block;
+          }
+        }
+        border-bottom: 1px solid $color-bonjour;
+      }
+      .card__description__icons {
+        padding-top: 32px;
+        span {
+          display: flex;
+          i {
+            padding-right: 6px;
+          }
+        }
+        span:nth-child(even) {
+          padding-left: 20px;
+        }
+        .card__description__item {
+          padding-bottom: 24px;
+        }
+      }
+      .card__description__text {
+        .card__descriptor {
+          font-weight: $bold;
+          padding-bottom: 14px;
+        }
+        p:nth-last-child(1) {
+          margin: 0;
         }
       }
     }

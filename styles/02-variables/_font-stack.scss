@@ -81,7 +81,7 @@ $base-url: "/public/";
 $used-fonts: ();
 
 $base-font-stack: (
-  // !font-aileron
+  // * font-aileron
   aileron:
     (
       regular: (
@@ -100,7 +100,7 @@ $base-font-stack: (
         ),
       ),
     ),
-  // !font-inter
+  // * font-inter
   inter:
     (
       regular: (
@@ -164,7 +164,7 @@ $base-font-stack: (
         ),
       ),
     ),
-  // !font-manrope
+  // * font-manrope
   manrope:
     (
       extralight: (
@@ -260,7 +260,7 @@ $base-font-stack: (
       ),
     ),
   ),
-  // !font-roboto
+  // * font-roboto
   roboto:
     (
       regular: (

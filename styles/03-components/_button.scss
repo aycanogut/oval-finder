@@ -134,18 +134,24 @@
   // company-right
   &--share {
     display: inline-block;
-    padding: 16px 28px;
     color: $color-midgray;
     background-color: $color-white;
     i {
+      font-size: 17px;
       padding-right: 7px;
+    }
+    &:hover {
+      color: $color-midgray;
     }
   }
   &--review {
     display: inline-block;
-    padding: 16px 47px;
     color: $color-white;
-    background-color: $color-blazeorange;
+    background-color: $color-coral;
+    &:hover {
+      color: $color-white;
+      background-color: $color-blazeorange;
+    }
   }
 }
 
@@ -183,6 +189,16 @@
     &--location {
       padding: 14px 102px;
       width: 92%;
+    }
+
+    &--share {
+      padding: 10px 13px 14px 13px;
+      border-radius: 26px;
+    }
+
+    &--review {
+      padding: 13px 14px;
+      border-radius: 50px;
     }
   }
 }
@@ -234,6 +250,14 @@
     &--location {
       padding: 13px 70px;
       width: auto;
+    }
+
+    &--share {
+      padding: 16px 28px;
+    }
+
+    &--review {
+      padding: 16px 47px;
     }
   }
 }

@@ -218,6 +218,18 @@ h4 {
     font-size: $font-14;
     line-height: $font-22;
   }
+
+  &--share {
+    @include font(inter, medium);
+    font-size: $font-14;
+    line-height: 17px;
+  }
+  &--review {
+    @include font(inter, bold);
+    font-size: $font-14;
+    font-weight: $regular;
+    line-height: 17px;
+  }
 }
 
 // dropdown-btn
@@ -533,6 +545,7 @@ h4 {
       font-size: $font-12;
     }
   }
+
   &__benefits__top {
     header {
       @include font(manrope, semibold);
@@ -545,24 +558,15 @@ h4 {
       font-weight: $light;
     }
   }
+
   &__culture {
-    header {
-      @include font(manrope, bold);
-      font-size: $font-16;
-      font-weight: $light;
-    }
     p,
     a {
       @include font(inter, regular);
-      font-size: $font-14;
     }
   }
+
   &__contact {
-    header {
-      @include font(manrope, bold);
-      font-size: $font-16;
-      font-weight: $light;
-    }
     div {
       @include font(inter, regular);
       font-size: $font-14;
@@ -744,6 +748,16 @@ h4 {
     }
   }
 
+  .company {
+    &__culture {
+      p,
+      a {
+        font-size: $font-12;
+        line-height: $font-24;
+      }
+    }
+  }
+
   .srjTwo {
     &__location {
       &__price {
@@ -821,6 +835,38 @@ h4 {
       .card__text {
         font-size: $font-12;
         font-weight: $bold;
+        line-height: $font-22;
+      }
+    }
+
+    &--company {
+      .card__company-name {
+        font-size: $font-16;
+      }
+
+      .card__description__item {
+        .card__description__item {
+          &__top {
+            @include font(inter, medium);
+            font-size: $font-12;
+            font-weight: $medium;
+          }
+          &__bottom {
+            @include font(inter, regular);
+            font-size: $font-14;
+            font-weight: $extralight;
+          }
+        }
+      }
+
+      .card__descriptor {
+        @include font(manrope, semibold);
+        font-size: $font-14;
+        font-weight: $medium;
+      }
+
+      .card__text {
+        font-size: $font-12;
         line-height: $font-22;
       }
     }
@@ -954,6 +1000,16 @@ h4 {
     }
   }
 
+  .company {
+    &__culture {
+      p,
+      a {
+        font-size: $font-14;
+        line-height: $font-24;
+      }
+    }
+  }
+
   // layout
   .footer {
     &__links {
@@ -975,6 +1031,25 @@ h4 {
       }
       figcaption {
         font-size: $font-18;
+      }
+    }
+
+    &--company {
+      .card__company-name {
+        font-size: $font-18;
+      }
+
+      .card__description__item {
+        &__top {
+          @include font(inter, medium);
+          font-size: $font-14;
+          font-weight: $medium;
+        }
+        &__bottom {
+          @include font(inter, regular);
+          font-size: $font-14;
+          font-weight: $regular;
+        }
       }
     }
   }
@@ -1024,6 +1099,25 @@ h4 {
       blockquote {
         font-size: $font-28;
         line-height: 40px;
+      }
+    }
+
+    &--company {
+      .card__company-name {
+        font-size: $font-22;
+      }
+
+      .card__description__item {
+        &__top {
+          @include font(inter, medium);
+          font-size: $font-14;
+          font-weight: $medium;
+        }
+        &__bottom {
+          @include font(inter, regular);
+          font-size: $font-14;
+          font-weight: $regular;
+        }
       }
     }
   }
@@ -1099,6 +1193,7 @@ h4 {
     &__header {
       font-size: $font-24;
     }
+
     &--testimonial {
       figure {
         @include font(manrope, semibold);
@@ -1106,20 +1201,29 @@ h4 {
         font-weight: $medium;
         line-height: 44px;
       }
+
       figcaption {
         @include font(inter, medium);
         font-size: $font-20;
         font-weight: $extralight;
       }
     }
+
     &--employee {
       .card__company-name {
         font-size: $font-18;
       }
     }
+
     &--srjTwo {
       .card__text {
         line-height: $font-24;
+      }
+    }
+
+    &--company {
+      .card__company-name {
+        font-size: $font-24;
       }
     }
   }
