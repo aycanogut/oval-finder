@@ -29,9 +29,9 @@
   &__menu-right {
     .navbar__link {
       color: $color-shipgray;
-      @include transition($all);
+      @include transition(all 0.3s ease-in-out);
       &:hover {
-        @include transition($all);
+        @include transition(all 0.3s ease-in-out);
         color: $color-black;
       }
     }

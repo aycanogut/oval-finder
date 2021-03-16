@@ -67,9 +67,9 @@
       display: flex;
       li {
         a {
-          @include transition($all);
+          @include transition(all 0.3s ease-in-out);
           &:hover {
-            @include transition($all);
+            @include transition(all 0.3s ease-in-out);
             color: $color-rangoongreen;
             text-decoration: none;
           }
@@ -109,9 +109,9 @@
       }
       li > a {
         text-decoration: none;
-        @include transition($all);
+        @include transition(all 0.3s ease-in-out);
         &:hover {
-          @include transition($all);
+          @include transition(all 0.3s ease-in-out);
           color: $color-rangoongreen;
         }
       }
@@ -145,9 +145,9 @@
       li {
         padding: 6px 24px;
         a {
-          @include transition($all);
+          @include transition(all 0.3s ease-in-out);
           &:hover {
-            @include transition($all);
+            @include transition(all 0.3s ease-in-out);
             color: $color-rangoongreen;
           }
         }

@@ -6,9 +6,9 @@
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
-  @include transition($btn);
+  @include transition(background-color 0.3s ease-in-out);
   &:hover {
-    @include transition($btn);
+    @include transition(background-color 0.3s ease-in-out);
   }
 
   // navigation

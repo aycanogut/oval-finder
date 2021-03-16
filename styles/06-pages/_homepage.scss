@@ -19,9 +19,9 @@
     &__menu-right {
       .navbar__link {
         color: $color-white;
-        @include transition($all);
+        @include transition(all 0.3s ease-in-out);
         &:hover {
-          @include transition($all);
+          @include transition(all 0.3s ease-in-out);
           color: $color-rangoongreen;
         }
       }
@@ -97,7 +97,7 @@
         margin: 0px 8px 8px 0;
         color: $color-midgray;
         text-decoration: none;
-        @include transition($all);
+        @include transition(all 0.3s ease-in-out);
         &:hover {
           color: $color-white;
           background-color: $color-corduroy;
@@ -188,9 +188,9 @@
         a {
           padding-left: 5px;
           color: $color-shipgray;
-          @include transition($all);
+          @include transition(all 0.3s ease-in-out);
           &:hover {
-            @include transition($all);
+            @include transition(all 0.3s ease-in-out);
             color: $color-black;
           }
         }

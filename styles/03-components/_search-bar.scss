@@ -8,7 +8,7 @@
       color: $color-shipgray;
       text-transform: uppercase;
       text-decoration: none !important;
-      @include transition($all);
+      @include transition(all 0.3s ease-in-out);
 
       &:link {
         color: $color-shipgray;
@@ -120,7 +120,7 @@
 @media (min-width: 320px) and (max-width: 576px) {
   .search-box {
     margin: 0 10px;
-    @include box-shadow($search-box-md);
+    @include box-shadow(0px 10px 40px -15px rgba(0, 0, 0, 0.3));
 
     &__top {
       margin: 10px 0 10px 10px;
@@ -209,7 +209,7 @@
 @media (min-width: 768px) {
   .search-box {
     height: 76px;
-    @include box-shadow($search-box-md);
+    @include box-shadow(0px 10px 40px -15px rgba(0, 0, 0, 0.3));
     &__top {
       margin-bottom: 9px;
     }
@@ -239,7 +239,7 @@
 @media (min-width: 992px) {
   .search-box {
     height: 86px;
-    @include box-shadow($search-box);
+    @include box-shadow(0 60px 75px -4px rgba(0, 0, 0, 0.1));
 
     &__top {
       margin-bottom: 10px;

@@ -13,9 +13,9 @@
   }
 
   .page-link {
-    @include transition($all);
+    @include transition(all 0.3s ease-in-out);
     &:hover {
-      @include transition($all);
+      @include transition(all 0.3s ease-in-out);
       color: $color-shipgray;
       background-color: $color-white;
       border: none;
@@ -28,9 +28,9 @@
   .pager > a {
     color: $color-blazeorange;
     text-decoration: none;
-    @include transition($all);
+    @include transition(all 0.3s ease-in-out);
     &:hover {
-      @include transition($all);
+      @include transition(all 0.3s ease-in-out);
       color: $color-shipgray;
     }
   }
