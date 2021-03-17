@@ -319,7 +319,7 @@
                 <aside class="page-navigations d-flex">
                   <nav aria-label="...">
                     <ul class="pagination pagination">
-                      <li class="page-item disabled">
+                      <li class="page-item">
                         <a class="page-link" href="#" tabindex="-1">Page 1</a>
                       </li>
                       <li class="page-item"><a class="page-link" href="#">Page 2</a></li>
@@ -341,18 +341,16 @@
                 <header class="card__descriptor">Reviews</header>
                 <span class="card__time">Last update, Feb 12, 2020</span>
               </aside>
-              <section class="company__reviews__search">
-                <aside class="company__ratings">
-                  <span class="rating">4.8</span>
+
+              <aside class="company__reviews__ratings">
+                <span class="rating">4.8</span>
+                <div class="company__reviews__ratings__right">
                   <img src="./assets/icons/icon-svg/star-gold.svg" alt="">
-
-
-
-
                   <button class="btn  dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Exellent
                   </button>
+                  <div class="review">1,209 reviews</div>
                   <div class="dropdown-menu" aria-labelledby="triggerId">
                     <img src="./assets/icons/icon-svg/star-gold.svg" alt=""><button class="dropdown-item">Good</button>
                     <img src="./assets/icons/icon-svg/star-gold.svg" alt=""> <button
@@ -360,345 +358,342 @@
                     <img src="./assets/icons/icon-svg/star-gold.svg" alt=""> <button class="dropdown-item">Total
                       Waste</button>
                   </div>
-                  <div class="review">1,209 reviews</div>
-                </aside>
-                <section class="search-box search-box-xs">
-                  <section class="search-box__searchInput">
-                    <i class="oval-search"></i><input type="text" class="search" placeholder="Search job title">
-                    <button class="btn_def btn_def--search-company  button" type="submit">Search Review</button>
-                  </section>
-
+                </div>
+              </aside>
+              <section class="company__reviews__search"></section>
+              <section class="search-box search-box-xs">
+                <section class="search-box__searchInput">
+                  <i class="oval-search"></i><input type="text" class="search" placeholder="Search job title">
+                  <button class="btn_def btn_def--search-company  button" type="submit">Search Review</button>
                 </section>
               </section>
-              <section class="company__reviews__cards">
-                <article class="card card--reviews">
-                  <div class="row">
-                    <div class="col-10">
-                      <section class="card__topper">
-                        <img src="./assets/img/avatar.svg" alt="">
-                        <div class="card__user">
-                          <header class="card__name">Connor Byrd</header>
-                          <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-arrow-down"></i></span>
-                            <span>Former Employee - Consulting Management in Orem, UT</span>
-                          </aside>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="col-2">
-                      <section class="card__time">1 Jan 2020</section>
-                    </div>
-                  </div>
-                  <aside class="card__recommendation">
-                    <div class="btn_def btn_def--recommendation-green">
-                      <span><i class="oval-like"></i>Recommended</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><i class="oval-star-solid"></i>Top Review</span>
-                    </div>
-                  </aside>
-                  <section class="card__body">
-                    <header class="card__comment">"Adobe supports a work hard, play hard mentality."</header>
-                    <p class="card__text">Work life balance is possibly the best in the industry.</p>
-
-                    <p class="card__text"> Moderately competitive pay, hard to compete with FAANG numbers, but close.
-                    </p>
-                  </section>
-                  <section class="card__bottom">
-                    <aside class="card__social">
-                      <a href="#">
-                        <span class="report"><i class="oval-report"></i>Report</span>
-                      </a>
-                      <a href="#">
-                        <span class="share"><i class="oval-share"></i>Share</span>
-                      </a>
-                    </aside>
-                    <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
-                  </section>
-                </article>
-                <article class="card card--reviews">
-                  <div class="row">
-                    <div class="col-10">
-                      <section class="card__topper">
-                        <img src="./assets/img/avatar.svg" alt="">
-                        <div class="card__user">
-                          <header class="card__name">Lenora Davidson</header>
-                          <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-arrow-down"></i></span>
-                            <span>Current Employee - Software Engineer in San Francisco, CA</span>
-                          </aside>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="col-2">
-                      <section class="card__time">1 Jan 2020</section>
-                    </div>
-                  </div>
-                  <aside class="card__recommendation">
-                    <div class="btn_def btn_def--recommendation-green">
-                      <span><i class="oval-like"></i>Recommended</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><i class="oval-star-solid"></i>Top Review</span>
-                    </div>
-                  </aside>
-                  <section class="card__body">
-                    <header class="card__comment">"Great Place to work"</header>
-                    <p class="card__text">Work life balance is possibly the best in the industry.</p>
-
-                    <p class="card__text">I have been working at Adobe full-time for more than 3 years. Great work life
-                      balance and people. The cons is just takes a long time to make a decisions because everyone wants
-                      a say in the outcome.
-                    </p>
-                  </section>
-                  <section class="card__bottom">
-                    <aside class="card__social">
-                      <a href="#">
-                        <span class="report"><i class="oval-report"></i>Report</span>
-                      </a>
-                      <a href="#">
-                        <span class="share"><i class="oval-share"></i>Share</span>
-                      </a>
-                    </aside>
-                    <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
-                  </section>
-                </article>
-                <article class="card card--reviews">
-                  <div class="row">
-                    <div class="col-10">
-                      <section class="card__topper">
-                        <img src="./assets/img/avatar.svg" alt="">
-                        <div class="card__user">
-                          <header class="card__name">Stanley Hill</header>
-                          <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-arrow-down"></i></span>
-                            <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
-                          </aside>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="col-2">
-                      <section class="card__time">1 Jan 2020</section>
-                    </div>
-                  </div>
-                  <aside class="card__recommendation">
-                    <div class="btn_def btn_def--recommendation-green">
-                      <span><i class="oval-like"></i>Recommended</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
-                    </div>
-                  </aside>
-                  <section class="card__body">
-                    <header class="card__comment">"A breath of fresh air"</header>
-                    <p class="card__text">Amazing culture. My team has been so welcoming and helpful as I onboard. It is
-                      amazing to see so many women in the leadership roles. We are all equal here. Covid. It's been
-                      different to onboard during a time of a global pandemic. BUT Adobe has been amazing so no cons so
-                      far.
-                    </p>
-                  </section>
-                  <section class="card__bottom">
-                    <aside class="card__social">
-                      <a href="#">
-                        <span class="report"><i class="oval-report"></i>Report</span>
-                      </a>
-                      <a href="#">
-                        <span class="share"><i class="oval-share"></i>Share</span>
-                      </a>
-                    </aside>
-                    <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
-                  </section>
-                </article>
-                <article class="card card--reviews">
-                  <div class="row">
-                    <div class="col-10">
-                      <section class="card__topper">
-                        <img src="./assets/img/avatar.svg" alt="">
-                        <div class="card__user">
-                          <header class="card__name">Zachary Hansen</header>
-                          <aside class="card__ratings">5.0 <span> <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-arrow-down"></i></span>
-                            <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
-                          </aside>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="col-2">
-                      <section class="card__time">1 Jan 2020</section>
-                    </div>
-                  </div>
-                  <aside class="card__recommendation">
-                    <div class="btn_def btn_def--recommendation-green">
-                      <span><i class="oval-like"></i>Recommended</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
-                    </div>
-                  </aside>
-                  <section class="card__body">
-                    <header class="card__comment">"Excellent Experience"</header>
-                    <p class="card__text">I worked at Adobe full-time for more than 3 years.</p>
-                    <p class="card__text"> 1. Great on-boarding for new grads.</p>
-                    <p class="card__text"> 2. Many networking and social events.</p>
-                    <p class="card__text"> 3. Excellent work-life balance.</p>
-                    <p class="card__text"> 4. Perfect team and company culture.</p>
-                  </section>
-                  <section class="card__bottom">
-                    <aside class="card__social">
-                      <a href="#">
-                        <span class="report"><i class="oval-report"></i>Report</span>
-                      </a>
-                      <a href="#">
-                        <span class="share"><i class="oval-share"></i>Share</span>
-                      </a>
-                    </aside>
-                    <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
-                  </section>
-                </article>
-                <article class="card card--reviews">
-                  <div class="row">
-                    <div class="col-10">
-                      <section class="card__topper">
-                        <img src="./assets/img/avatar.svg" alt="">
-                        <div class="card__user">
-                          <header class="card__name">Zachary Hansen</header>
-                          <aside class="card__ratings">1.0 <span> <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-star-solid"></i>
-                              <i class="oval-arrow-down"></i></span>
-                            <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
-                          </aside>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="col-2">
-                      <section class="card__time">1 Jan 2020</section>
-                    </div>
-                  </div>
-                  <aside class="card__recommendation">
-                    <div class="btn_def btn_def--recommendation-red">
-                      <span><i class="oval-like"></i>Not Recommended</span>
-                    </div>
-                    <div class="btn_def btn_def--recommendation-gray">
-                      <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
-                    </div>
-                  </aside>
-                  <section class="card__body">
-                    <header class="card__comment">"Epic fail"</header>
-                    <p class="card__text">I worked at Adobe full-time for more than 3 years. </p>
-
-                    <p class="card__text">1. Great on-boarding for new grads.</p>
-                    <p class="card__text">2. Many networking and social events. </p>
-                    <p class="card__text">3. Excellent work-life balance.</p>
-                    <p class="card__text">4. Perfect team and company culture.</p>
-                  </section>
-                  <section class="card__bottom">
-                    <aside class="card__social">
-                      <a href="#">
-                        <span class="report"><i class="oval-report"></i>Report</span>
-                      </a>
-                      <a href="#">
-                        <span class="share"><i class="oval-share"></i>Share</span>
-                      </a>
-                    </aside>
-                    <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
-                  </section>
-                </article>
-              </section>
-              <aside class="page-navigations d-flex">
-                <nav aria-label="...">
-                  <ul class="pagination pagination">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1">Page 1</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">Page 2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Page 3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Page 23</a></li>
-                  </ul>
-                </nav>
-                <aside class="pager">
-                  <a href="#" class="previous"> Prev</a>
-                  <a href="#" class="next">Next </a>
-                </aside>
-              </aside>
             </section>
-            <!-- company-revievs end -->
-            <!-- company-benefits start -->
-            <section class="company__benefits">
-              <section class="company__benefits__top">
-                <header>Company Benefits</header>
-                <p>List based on reports from current and former employees. It may not be complete.</p>
-              </section>
-              <section class="company__benefits__cards">
+            <section class="company__reviews__cards">
+              <article class="card card--reviews">
                 <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Insurance, Health & Wellness
-                      </header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Family & Parenting</header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Perks & Discounts</header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
+                  <div class="col-10">
+                    <section class="card__topper">
+                      <img src="./assets/img/avatar.svg" alt="">
+                      <div class="card__user">
+                        <header class="card__name">Connor Byrd</header>
+                        <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-arrow-down"></i></span>
+                          <span>Former Employee - Consulting Management in Orem, UT</span>
+                        </aside>
+                      </div>
+                    </section>
                   </div>
-                  <div class="col-md-6 col-sm-12">
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Financial & Retirement</header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Vacation & Time Off</header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
-                    <article class="card card--benefits">
-                      <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Professional Support</header>
-                      <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
-                        Savings Account (HSA), Life Insurance etc</p>
-                    </article>
+                  <div class="col-2">
+                    <section class="card__time">1 Jan 2020</section>
                   </div>
                 </div>
-              </section>
+                <aside class="card__recommendation">
+                  <div class="btn_def btn_def--recommendation-green">
+                    <span><i class="oval-like"></i>Recommended</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><i class="oval-star-solid"></i>Top Review</span>
+                  </div>
+                </aside>
+                <section class="card__body">
+                  <header class="card__comment">"Adobe supports a work hard, play hard mentality."</header>
+                  <p class="card__text">Work life balance is possibly the best in the industry.</p>
+                  <p class="card__text"> Moderately competitive pay, hard to compete with FAANG numbers, but close.
+                  </p>
+                </section>
+                <section class="card__bottom">
+                  <aside class="card__social">
+                    <a href="#">
+                      <span class="report"><i class="oval-report"></i>Report</span>
+                    </a>
+                    <a href="#">
+                      <span class="share"><i class="oval-share"></i>Share</span>
+                    </a>
+                  </aside>
+                  <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
+                </section>
+              </article>
+              <article class="card card--reviews">
+                <div class="row">
+                  <div class="col-10">
+                    <section class="card__topper">
+                      <img src="./assets/img/avatar.svg" alt="">
+                      <div class="card__user">
+                        <header class="card__name">Lenora Davidson</header>
+                        <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-arrow-down"></i></span>
+                          <span>Current Employee - Software Engineer in San Francisco, CA</span>
+                        </aside>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-2">
+                    <section class="card__time">1 Jan 2020</section>
+                  </div>
+                </div>
+                <aside class="card__recommendation">
+                  <div class="btn_def btn_def--recommendation-green">
+                    <span><i class="oval-like"></i>Recommended</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><i class="oval-star-solid"></i>Top Review</span>
+                  </div>
+                </aside>
+                <section class="card__body">
+                  <header class="card__comment">"Great Place to work"</header>
+                  <p class="card__text">Work life balance is possibly the best in the industry.</p>
+
+                  <p class="card__text">I have been working at Adobe full-time for more than 3 years. Great work life
+                    balance and people. The cons is just takes a long time to make a decisions because everyone wants
+                    a say in the outcome.
+                  </p>
+                </section>
+                <section class="card__bottom">
+                  <aside class="card__social">
+                    <a href="#">
+                      <span class="report"><i class="oval-report"></i>Report</span>
+                    </a>
+                    <a href="#">
+                      <span class="share"><i class="oval-share"></i>Share</span>
+                    </a>
+                  </aside>
+                  <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
+                </section>
+              </article>
+              <article class="card card--reviews">
+                <div class="row">
+                  <div class="col-10">
+                    <section class="card__topper">
+                      <img src="./assets/img/avatar.svg" alt="">
+                      <div class="card__user">
+                        <header class="card__name">Stanley Hill</header>
+                        <aside class="card__ratings">4.8 <span> <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-arrow-down"></i></span>
+                          <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
+                        </aside>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-2">
+                    <section class="card__time">1 Jan 2020</section>
+                  </div>
+                </div>
+                <aside class="card__recommendation">
+                  <div class="btn_def btn_def--recommendation-green">
+                    <span><i class="oval-like"></i>Recommended</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
+                  </div>
+                </aside>
+                <section class="card__body">
+                  <header class="card__comment">"A breath of fresh air"</header>
+                  <p class="card__text">Amazing culture. My team has been so welcoming and helpful as I onboard. It is
+                    amazing to see so many women in the leadership roles. We are all equal here. Covid. It's been
+                    different to onboard during a time of a global pandemic. BUT Adobe has been amazing so no cons so
+                    far.
+                  </p>
+                </section>
+                <section class="card__bottom">
+                  <aside class="card__social">
+                    <a href="#">
+                      <span class="report"><i class="oval-report"></i>Report</span>
+                    </a>
+                    <a href="#">
+                      <span class="share"><i class="oval-share"></i>Share</span>
+                    </a>
+                  </aside>
+                  <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
+                </section>
+              </article>
+              <article class="card card--reviews">
+                <div class="row">
+                  <div class="col-10">
+                    <section class="card__topper">
+                      <img src="./assets/img/avatar.svg" alt="">
+                      <div class="card__user">
+                        <header class="card__name">Zachary Hansen</header>
+                        <aside class="card__ratings">5.0 <span> <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-arrow-down"></i></span>
+                          <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
+                        </aside>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-2">
+                    <section class="card__time">1 Jan 2020</section>
+                  </div>
+                </div>
+                <aside class="card__recommendation">
+                  <div class="btn_def btn_def--recommendation-green">
+                    <span><i class="oval-like"></i>Recommended</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
+                  </div>
+                </aside>
+                <section class="card__body">
+                  <header class="card__comment">"Excellent Experience"</header>
+                  <p class="card__text">I worked at Adobe full-time for more than 3 years.</p>
+                  <p class="card__text"> 1. Great on-boarding for new grads.</p>
+                  <p class="card__text"> 2. Many networking and social events.</p>
+                  <p class="card__text"> 3. Excellent work-life balance.</p>
+                  <p class="card__text"> 4. Perfect team and company culture.</p>
+                </section>
+                <section class="card__bottom">
+                  <aside class="card__social">
+                    <a href="#">
+                      <span class="report"><i class="oval-report"></i>Report</span>
+                    </a>
+                    <a href="#">
+                      <span class="share"><i class="oval-share"></i>Share</span>
+                    </a>
+                  </aside>
+                  <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
+                </section>
+              </article>
+              <article class="card card--reviews">
+                <div class="row">
+                  <div class="col-10">
+                    <section class="card__topper">
+                      <img src="./assets/img/avatar.svg" alt="">
+                      <div class="card__user">
+                        <header class="card__name">Zachary Hansen</header>
+                        <aside class="card__ratings">1.0 <span> <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-star-solid"></i>
+                            <i class="oval-arrow-down"></i></span>
+                          <span>Current Employee - Senior Solutions Consultant in Denver, CO</span>
+                        </aside>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-2">
+                    <section class="card__time">1 Jan 2020</section>
+                  </div>
+                </div>
+                <aside class="card__recommendation">
+                  <div class="btn_def btn_def--recommendation-red">
+                    <span><i class="oval-like"></i>Not Recommended</span>
+                  </div>
+                  <div class="btn_def btn_def--recommendation-gray">
+                    <span><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Approved review</span>
+                  </div>
+                </aside>
+                <section class="card__body">
+                  <header class="card__comment">"Epic fail"</header>
+                  <p class="card__text">I worked at Adobe full-time for more than 3 years. </p>
+
+                  <p class="card__text">1. Great on-boarding for new grads.</p>
+                  <p class="card__text">2. Many networking and social events. </p>
+                  <p class="card__text">3. Excellent work-life balance.</p>
+                  <p class="card__text">4. Perfect team and company culture.</p>
+                </section>
+                <section class="card__bottom">
+                  <aside class="card__social">
+                    <a href="#">
+                      <span class="report"><i class="oval-report"></i>Report</span>
+                    </a>
+                    <a href="#">
+                      <span class="share"><i class="oval-share"></i>Share</span>
+                    </a>
+                  </aside>
+                  <div class="btn__helpful"><a class="btn_def btn_def--helpful">Helpful (12)</a></div>
+                </section>
+              </article>
             </section>
-            <!-- company-benefits end -->
+            <aside class="page-navigations d-flex">
+              <nav aria-label="...">
+                <ul class="pagination pagination">
+                  <li class="page-item"><a class="page-link" href="#" tabindex="-1">Page 1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Page 2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Page 3</a></li>
+                  <li class="page-item d-none d-md-block"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item d-none d-md-block"><a class="page-link" href="#">Page 23</a></li>
+                </ul>
+              </nav>
+              <aside class="pager">
+                <a href="#" class="previous"> Prev</a>
+                <a href="#" class="next">Next </a>
+              </aside>
+            </aside>
+    </section>
+    <!-- company-revievs end -->
+    <!-- company-benefits start -->
+    <section class="company__benefits">
+      <section class="company__benefits__top">
+        <header>Company Benefits</header>
+        <p>List based on reports from current and former employees. It may not be complete.</p>
+      </section>
+      <section class="company__benefits__cards">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Insurance, Health & Wellness
+              </header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Family & Parenting</header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Perks & Discounts</header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
           </div>
-          <!-- company-search and bottom cards start -->
+          <div class="col-md-6 col-sm-12">
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Financial & Retirement</header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Vacation & Time Off</header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
+            <article class="card card--benefits">
+              <header><img src="./assets/icons/icon-svg/check-green.svg" alt=""> Professional Support</header>
+              <p>Health Insurance,Dental Insurance, Flexible Spending Account (FSA),Vision Insurance, Health
+                Savings Account (HSA), Life Insurance etc</p>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
+    </section>
+    <!-- company-benefits end -->
+    </div>
+    <!-- company-search and bottom cards start -->
+    </div>
+    </div>
     </section>
     <!-- company end -->
   </main>

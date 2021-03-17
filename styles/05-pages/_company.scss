@@ -65,6 +65,8 @@
   }
 
   &__reviews {
+    border: 1px solid $color-bonjour;
+    margin-top: 20px;
     &__top {
       display: flex;
 
@@ -176,7 +178,14 @@
       &__top {
       }
 
+      &__ratings {
+        display: flex;
+        padding-left: 50px;
+      }
+
       &__search {
+        .review {
+        }
       }
     }
 

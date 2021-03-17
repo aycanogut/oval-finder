@@ -794,22 +794,21 @@ h4 {
           line-height: 15px;
         }
       }
-    }
+      &__ratings {
+        .rating {
+          font-size: $font-46;
+          line-height: 56px;
+        }
 
-    &__ratings {
-      .rating {
-        font-size: $font-46;
-        line-height: 56px;
-      }
+        .sort {
+          font-size: $font-16;
+          line-height: 17px;
+        }
 
-      .sort {
-        font-size: $font-16;
-        line-height: 17px;
-      }
-
-      .review {
-        font-size: $font-12;
-        line-height: 15px;
+        .review {
+          font-size: $font-12;
+          line-height: 15px;
+        }
       }
     }
 
@@ -1096,22 +1095,22 @@ h4 {
           line-height: 17px;
         }
       }
-    }
 
-    &__ratings {
-      .rating {
-        font-size: $font-36;
-        line-height: 44px;
-      }
+      &__ratings {
+        .rating {
+          font-size: $font-36;
+          line-height: 44px;
+        }
 
-      .sort {
-        font-size: $font-14;
-        line-height: 17px;
-      }
+        .sort {
+          font-size: $font-14;
+          line-height: 17px;
+        }
 
-      .review {
-        font-size: $font-12;
-        line-height: 15px;
+        .review {
+          font-size: $font-12;
+          line-height: 15px;
+        }
       }
     }
 
