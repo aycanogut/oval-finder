@@ -1,7 +1,10 @@
 // company
 
 .navbar {
-  margin-bottom: 18px;
+  &--company {
+    margin-bottom: 18px;
+  }
+
   &__menu-left > a,
   &__menu-right > a {
     color: $color-shipgray;

@@ -1,17 +1,17 @@
 // global stylesheet
 
-// base
-@import "01-base/normalize";
-@import "01-base/bootstrap";
-@import "01-base/base";
-@import "01-base/typo";
-@import "01-base/font-stack";
-@import "01-base/font-face";
+// abstract
+@import "01-abstract/colors";
+@import "01-abstract/font-stack";
+@import "01-abstract/icons";
+@import "01-abstract/mixin";
 
-// variables
-@import "02-variables/colors";
-@import "02-variables/icons";
-@import "02-variables/mixin";
+// base
+@import "02-base/normalize";
+@import "02-base/bootstrap";
+@import "02-base/base";
+@import "02-base/font-face";
+@import "02-base/typo";
 
 // components
 @import "03-components/button";
@@ -27,9 +27,9 @@
 @import "04-layout/footer";
 
 // pages
-@import "06-pages/homepage";
-@import "06-pages/search-jobs-one";
-@import "06-pages/search-employeers";
-@import "06-pages/search-jobs-two";
-@import "06-pages/company";
-@import "06-pages/pricing";
+@import "05-pages/homepage";
+@import "05-pages/search-jobs-one";
+@import "05-pages/search-employeers";
+@import "05-pages/search-jobs-two";
+@import "05-pages/company";
+@import "05-pages/pricing";
