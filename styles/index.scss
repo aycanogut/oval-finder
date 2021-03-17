@@ -1,16 +1,17 @@
 // global stylesheet
 
-// tools
-@import "01-tools/normalize";
-@import "01-tools/bootstrap";
+// base
+@import "01-base/normalize";
+@import "01-base/bootstrap";
+@import "01-base/base";
+@import "01-base/typo";
+@import "01-base/font-stack";
+@import "01-base/font-face";
 
 // variables
 @import "02-variables/colors";
 @import "02-variables/icons";
-@import "02-variables/font-stack";
-@import "02-variables/font-face";
 @import "02-variables/mixin";
-@import "02-variables/typo";
 
 // components
 @import "03-components/button";
@@ -19,14 +20,11 @@
 @import "03-components/form";
 @import "03-components/pager";
 
-// base
-@import "04-base/base";
-
 // layout
-@import "05-layout/nav";
-@import "05-layout/header";
-@import "05-layout/sidebar";
-@import "05-layout/footer";
+@import "04-layout/nav";
+@import "04-layout/header";
+@import "04-layout/sidebar";
+@import "04-layout/footer";
 
 // pages
 @import "06-pages/homepage";
