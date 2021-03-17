@@ -58,6 +58,27 @@
       }
     }
   }
+
+  // I reused the same component from search-employeers page
+  .search-employeers__result__top {
+    border-bottom: 1px solid $color-bonjour;
+  }
+
+  &__reviews {
+    &__top {
+      display: flex;
+
+      .card__time {
+        margin-left: auto;
+      }
+    }
+
+    &__search {
+      .review {
+        color: $color-mountainmist;
+      }
+    }
+  }
 }
 
 // * responsive
@@ -99,17 +120,15 @@
 
       &__video {
         position: relative;
-        padding-bottom: 56.25%; /*16:9*/
-        height: 0;
+        height: 150px;
         overflow: hidden;
-        margin: 15px 15px 0 15px;
+        margin: 15px 15px 15px 15px;
 
         iframe {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
-          height: 150px;
         }
       }
     }
@@ -125,6 +144,57 @@
       &__social-icons {
         float: right;
         padding: 10px 15px 0 0;
+      }
+    }
+
+    &__vacancies {
+      border: 1px solid $color-bonjour;
+
+      .card__descriptor {
+        padding: 15px;
+      }
+    }
+
+    &__search-box {
+      .input-search {
+        color: $color-spunpearl;
+      }
+    }
+
+    // I reused the same component from search-employeers page
+    .search-employeers__result__top {
+      text-align: center;
+
+      .filter__header {
+        padding-top: 6px;
+      }
+    }
+
+    &__reviews {
+      padding: 15px 15px 20px 15px;
+
+      &__top {
+      }
+
+      &__search {
+      }
+    }
+
+    &__benefits {
+      border: 1px solid $color-bonjour;
+      padding: 15px 15px 9px 15px;
+
+      &__top {
+        header {
+          padding-bottom: 6px;
+        }
+
+        p {
+          padding-bottom: 14px;
+        }
+      }
+
+      &__cards {
       }
     }
   }

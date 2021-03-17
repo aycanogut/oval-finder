@@ -14,3 +14,15 @@
   -moz-box-shadow: $args;
   box-shadow: $args;
 }
+
+// card-description on xs grid alignment
+@mixin card-description-grid {
+  display: grid;
+  width: 100%;
+
+  span:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-bottom: 10px;
+  }
+}

@@ -173,11 +173,9 @@ h4 {
   &--benefits {
     header {
       @include font(inter, medium);
-      font-size: $font-14;
     }
     p {
       @include font(inter, regular);
-      font-size: $font-12;
     }
   }
 }
@@ -532,17 +530,14 @@ h4 {
   &__ratings {
     .rating {
       @include font(inter, medium);
-      font-size: $font-36;
     }
 
     .sort {
       @include font(inter, medium);
-      font-size: $font-34;
     }
 
     .review {
       @include font(inter, regular);
-      font-size: $font-12;
     }
   }
 
@@ -748,16 +743,6 @@ h4 {
     }
   }
 
-  .company {
-    &__culture {
-      p,
-      a {
-        font-size: $font-12;
-        line-height: $font-24;
-      }
-    }
-  }
-
   .srjTwo {
     &__location {
       &__price {
@@ -777,6 +762,69 @@ h4 {
 
       .card__description {
         font-weight: $bold;
+      }
+    }
+  }
+
+  .company {
+    &__culture {
+      p,
+      a {
+        font-size: $font-12;
+        line-height: $font-24;
+      }
+    }
+
+    .search-box {
+      .input-search {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+    }
+
+    &__reviews {
+      &__top {
+        .card__descriptor {
+          font-size: $font-16;
+          line-height: 22px;
+        }
+
+        .card__time {
+          font-size: $font-12;
+          line-height: 15px;
+        }
+      }
+    }
+
+    &__ratings {
+      .rating {
+        font-size: $font-46;
+        line-height: 56px;
+      }
+
+      .sort {
+        font-size: $font-16;
+        line-height: 17px;
+      }
+
+      .review {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+    }
+
+    &__benefits {
+      &__top {
+        header {
+          font-size: $font-14;
+          line-height: 19px;
+        }
+
+        p {
+          @include font(inter, regular);
+          font-size: $font-12;
+          line-height: 18px;
+        }
       }
     }
   }
@@ -870,11 +918,43 @@ h4 {
         line-height: $font-22;
       }
     }
+
+    &--boards {
+      .card__company-name {
+        font-size: $font-12;
+        line-height: 16px;
+      }
+      .card__time {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+
+      .card__title {
+        font-size: $font-14;
+        line-height: 20px;
+      }
+    }
+
+    &--benefits {
+      header {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+
+      p {
+        font-size: $font-12;
+        line-height: 20px;
+      }
+    }
   }
 
   .btn_def {
     &--search-box {
       font-size: $font-16;
+
+      &-xs {
+        font-size: $font-12;
+      }
     }
     &--find-jobs-now {
       font-size: $font-14;
@@ -1008,6 +1088,45 @@ h4 {
         line-height: $font-24;
       }
     }
+
+    &__reviews {
+      &__top {
+        .card__time {
+          font-size: $font-14;
+          line-height: 17px;
+        }
+      }
+    }
+
+    &__ratings {
+      .rating {
+        font-size: $font-36;
+        line-height: 44px;
+      }
+
+      .sort {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+
+      .review {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+    }
+
+    &__benefits {
+      &__top {
+        header {
+          font-size: $font-16;
+          line-height: 22px;
+        }
+
+        p {
+          line-height: 24px;
+        }
+      }
+    }
   }
 
   // layout
@@ -1052,9 +1171,31 @@ h4 {
         }
       }
     }
+
+    &--boards {
+      .card__company-name {
+        font-size: $font-14;
+        line-height: 26px;
+      }
+      .card__time {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+
+      .card__title {
+        font-size: $font-18;
+        line-height: 22px;
+      }
+    }
   }
 
   .btn_def {
+    &--search-box {
+      &-xs {
+        font-size: $font-14;
+        line-height: 15px;
+      }
+    }
     &--find-jobs-now {
       font-size: $font-14;
     }

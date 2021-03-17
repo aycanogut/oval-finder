@@ -34,7 +34,8 @@
       background-color: $color-blazeorange;
     }
 
-    &-sm {
+    &-sm,
+    &-xs {
       &:hover {
         color: $color-white;
         background-color: $color-blazeorange;
@@ -62,7 +63,6 @@
 
   // company-vacancies
   &--search-box-xs {
-    padding: 10px 17px;
     background-color: $color-coral;
     color: $color-white;
   }
@@ -179,6 +179,10 @@
       margin: 10px 0;
       &-sm {
         padding: 16px 106px;
+      }
+      &-xs {
+        padding: 9px 0;
+        width: 100%;
       }
     }
 
