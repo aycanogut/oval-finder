@@ -75,10 +75,11 @@
       }
     }
 
+    .review {
+      color: $color-mountainmist;
+    }
+
     &__search {
-      .review {
-        color: $color-mountainmist;
-      }
     }
   }
 }
@@ -173,19 +174,32 @@
     }
 
     &__reviews {
-      padding: 15px 15px 20px 15px;
+      padding: 12px 15px 20px 15px;
 
       &__top {
+        .card__time {
+          padding-top: 5px;
+        }
       }
 
       &__ratings {
         display: flex;
-        padding-left: 50px;
+        padding: 20px 0 0 50px;
+
+        &__right {
+          padding-left: 10px;
+
+          button {
+            padding: 0;
+            text-decoration: none;
+          }
+          .review {
+            padding: 4px 0 0 2px;
+          }
+        }
       }
 
       &__search {
-        .review {
-        }
       }
     }
 

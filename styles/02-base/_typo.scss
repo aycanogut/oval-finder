@@ -527,17 +527,19 @@ h4 {
 
 //  company
 .company {
-  &__ratings {
-    .rating {
-      @include font(inter, medium);
-    }
+  &__reviews {
+    &__ratings {
+      .rating {
+        @include font(inter, medium);
+      }
 
-    .sort {
-      @include font(inter, medium);
-    }
+      .sort {
+        @include font(inter, medium);
+      }
 
-    .review {
-      @include font(inter, regular);
+      .review {
+        @include font(inter, regular);
+      }
     }
   }
 

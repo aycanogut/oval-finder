@@ -169,6 +169,24 @@
   text-decoration: underline;
 }
 
+.dropdown-item {
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    display: flex;
+  }
+  img {
+    width: 11px;
+    height: 11px;
+    margin: 4px 8px 0 8px;
+  }
+}
+
 // * responsive
 // Extra Small devices (phone, 320px and up)
 
