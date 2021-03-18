@@ -777,13 +777,6 @@ h4 {
       }
     }
 
-    .search-box {
-      .input-search {
-        font-size: $font-12;
-        line-height: 15px;
-      }
-    }
-
     &__reviews {
       &__top {
         .card__descriptor {
@@ -796,6 +789,7 @@ h4 {
           line-height: 15px;
         }
       }
+
       &__ratings {
         .rating {
           font-size: $font-46;
@@ -810,6 +804,15 @@ h4 {
         .review {
           font-size: $font-12;
           line-height: 15px;
+        }
+      }
+
+      .search-box {
+        &__searchInput {
+          input {
+            font-size: $font-12;
+            line-height: 15px;
+          }
         }
       }
     }
@@ -1112,6 +1115,15 @@ h4 {
         .review {
           font-size: $font-12;
           line-height: 15px;
+        }
+      }
+
+      .search-box {
+        &__searchInput {
+          input {
+            font-size: $font-14;
+            line-height: 17px;
+          }
         }
       }
     }

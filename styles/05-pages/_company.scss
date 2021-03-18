@@ -187,7 +187,7 @@
         padding: 20px 0 0 50px;
 
         &__right {
-          padding-left: 10px;
+          padding: 3px 0 0 10px;
 
           button {
             padding: 0;
@@ -199,7 +199,30 @@
         }
       }
 
-      &__search {
+      .search-box {
+        margin: 0;
+        padding-top: 20px;
+        box-shadow: none;
+        &__searchInput {
+          padding: 0;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+
+            input {
+              border: none;
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
 
