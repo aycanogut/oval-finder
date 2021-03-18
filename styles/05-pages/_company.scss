@@ -59,11 +59,6 @@
     }
   }
 
-  // I reused the same component from search-employeers page
-  .search-employeers__result__top {
-    border-bottom: 1px solid $color-bonjour;
-  }
-
   &__reviews {
     border: 1px solid $color-bonjour;
     margin-top: 20px;
@@ -80,6 +75,16 @@
     }
 
     &__search {
+    }
+
+    &__cards {
+      border: 1px solid $color-bonjour;
+    }
+  }
+
+  &__vacancies {
+    .search-employeers__result__top {
+      border-bottom: 1px solid $color-bonjour;
     }
   }
 }
@@ -174,7 +179,7 @@
     }
 
     &__reviews {
-      padding: 12px 15px 20px 15px;
+      padding: 12px 15px 0px 15px;
 
       &__top {
         .card__time {
@@ -223,6 +228,10 @@
             }
           }
         }
+      }
+
+      &__cards {
+        margin: 18px 16p;
       }
     }
 

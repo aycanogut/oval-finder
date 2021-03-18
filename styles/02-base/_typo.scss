@@ -98,6 +98,10 @@ h4 {
     }
   }
 
+  &__position {
+    @include font(roboto, regular);
+  }
+
   &--daily {
     .card__bottom__apply {
       line-height: $font-26;
@@ -150,23 +154,18 @@ h4 {
   &--reviews {
     .card__name {
       @include font(manrope, extrabold);
-      font-size: $font-14;
-      font-weight: $regular;
     }
 
     .card__comment {
       @include font(inter, semibold);
-      font-size: $font-16;
-      font-weight: $regular;
     }
 
     .share {
       @include font(inter, medium);
-      font-size: $font-14;
     }
+
     .report {
       @include font(inter, regular);
-      font-size: $font-12;
     }
   }
 
@@ -196,12 +195,10 @@ h4 {
 
   &--recommendation {
     @include font(inter, medium);
-    font-size: $font-14;
   }
 
   &--helpful {
     @include font(inter, semibold);
-    font-size: $font-14;
     font-weight: $regular;
   }
 
@@ -222,6 +219,7 @@ h4 {
     font-size: $font-14;
     line-height: 17px;
   }
+
   &--review {
     @include font(inter, bold);
     font-size: $font-14;
@@ -849,15 +847,6 @@ h4 {
 
   // * components
   .card {
-    &__title {
-      font-size: $font-16;
-    }
-
-    &__header {
-      font-size: $font-16;
-      line-height: 28px;
-    }
-
     &--testimonial {
       figure {
         font-size: $font-18;
@@ -950,6 +939,55 @@ h4 {
         line-height: 20px;
       }
     }
+
+    &--reviews {
+      .card__name {
+        font-size: $font-14;
+        font-weight: $regular;
+        line-height: 19px;
+      }
+
+      .card__time {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+
+      .card__comment {
+        font-size: $font-14;
+        font-weight: $regular;
+        line-height: 22px;
+      }
+
+      .card__text {
+        font-size: $font-12;
+        line-height: 22px;
+      }
+
+      .share,
+      .report {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+    }
+
+    &--reviews {
+      .card__comment {
+      }
+    }
+
+    &__title {
+      font-size: $font-16;
+    }
+
+    &__header {
+      font-size: $font-16;
+      line-height: 28px;
+    }
+
+    &__position {
+      font-size: $font-12;
+      line-height: 17px;
+    }
   }
 
   .btn_def {
@@ -960,8 +998,23 @@ h4 {
         font-size: $font-12;
       }
     }
+
     &--find-jobs-now {
       font-size: $font-14;
+    }
+
+    &--recommendation-green,
+    &--recommendation-gray,
+    &--recommendation-red {
+      span {
+        font-size: $font-12;
+        line-height: 15px;
+      }
+    }
+
+    &--helpful {
+      font-size: $font-12;
+      line-height: 15px;
     }
   }
 
@@ -1200,6 +1253,18 @@ h4 {
         line-height: 22px;
       }
     }
+
+    &--reviews {
+      .card__time {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+    }
+
+    &__position {
+      font-size: $font-14;
+      line-height: 16px;
+    }
   }
 
   .btn_def {
@@ -1209,8 +1274,23 @@ h4 {
         line-height: 15px;
       }
     }
+
     &--find-jobs-now {
       font-size: $font-14;
+    }
+
+    &--recommendation-green,
+    &--recommendation-gray,
+    &--recommendation-red {
+      span {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+    }
+
+    &--helpful {
+      font-size: $font-14;
+      line-height: 17px;
     }
   }
 
@@ -1245,10 +1325,6 @@ h4 {
 
   // components
   .card {
-    &__header {
-      font-size: $font-22;
-      line-height: 34px;
-    }
     &--testimonial {
       blockquote {
         font-size: $font-28;
@@ -1273,6 +1349,18 @@ h4 {
           font-weight: $regular;
         }
       }
+    }
+
+    &--reviews {
+      .card__time {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+    }
+
+    &__header {
+      font-size: $font-22;
+      line-height: 34px;
     }
   }
 

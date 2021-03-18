@@ -98,7 +98,6 @@
   // company-reviews-cards
   &--helpful {
     display: inline-block;
-    padding: 10px 12px;
     background-color: transparent;
     color: $color-coral;
     border: 1px solid $color-coral;
@@ -180,10 +179,17 @@
   li {
     display: flex;
   }
-  img {
-    width: 11px;
-    height: 11px;
-    margin: 4px 8px 0 8px;
+
+  .option {
+    margin-left: 6px;
+    img {
+      width: 11px;
+      height: 11px;
+      margin-top: 4px;
+    }
+    a {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -222,6 +228,10 @@
       padding: 13px 14px;
       border-radius: 50px;
     }
+
+    &--helpful {
+      padding: 8px 9px;
+    }
   }
 }
 
@@ -234,6 +244,10 @@
       &-sm {
         padding: 16px 206px;
       }
+    }
+
+    &--helpful {
+      padding: 10px 12px;
     }
   }
 }
