@@ -733,13 +733,6 @@
           grid-column-end: 3;
           width: 50%;
         }
-
-        .btn_def {
-          // padding-right: 8px;
-          i {
-            // padding: 0 4px;
-          }
-        }
       }
 
       // recommendation buttons block position
@@ -756,6 +749,7 @@
           margin: 0;
         }
       }
+
       .card__bottom {
         display: flex;
         align-items: center;

@@ -235,23 +235,26 @@
     }
 
     &--recommendation-green {
-      padding: 3px 13px 3px 6px;
-      margin-right: 8px;
-      i {
-        font-size: 14px;
-        padding-right: 5px;
-      }
-    }
-    &--recommendation-red {
-      padding: 3px 13px 3px 6px;
+      padding: 3px 13px 6px 6px;
+      margin: 0 8px 8px 0;
 
       i {
         font-size: 14px;
         padding-right: 5px;
       }
     }
+    &--recommendation-red {
+      width: 55%;
+      padding: 3px 6px 6px 6px;
+      margin-bottom: 8px;
+      i {
+        font-size: 14px;
+        padding-right: 5px;
+      }
+    }
     &--recommendation-gray {
-      padding: 3px 13px 3px 6px;
+      padding: 3px 13px 6px 6px;
+      margin: 0 8px 8px 0;
     }
   }
 }
