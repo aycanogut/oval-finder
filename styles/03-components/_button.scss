@@ -31,7 +31,6 @@
 
     &:hover {
       color: $color-white;
-
       background-color: $color-blazeorange;
     }
 
@@ -102,6 +101,9 @@
     background-color: transparent;
     color: $color-coral;
     border: 1px solid $color-coral;
+    &:hover {
+      color: $color-blazeorange;
+    }
   }
 
   // company-reviews-cards

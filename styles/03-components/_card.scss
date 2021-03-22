@@ -213,12 +213,6 @@
     }
     .card__bottom {
       display: flex;
-      i {
-      }
-      .report {
-      }
-      .share {
-      }
     }
   }
 
@@ -271,9 +265,6 @@
     p {
       color: $color-shipgray;
     }
-    a {
-      color: $color-blazeorange;
-    }
   }
 
   &__header {
@@ -292,8 +283,10 @@
   }
 
   &__social {
-    a {
+    .report,
+    .share {
       color: $color-midgray;
+
       text-decoration: none;
     }
   }
@@ -349,7 +342,7 @@
 
 // * responsive
 
-// Extra Small devices (phone, 320px and up)
+//  Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
   .card {
@@ -681,19 +674,8 @@
       }
     }
 
-    &--benefits {
-      img {
-        margin-right: 6px;
-      }
-
-      p {
-        margin: 0 0 9px 2px;
-      }
-    }
-
     &--reviews {
-      padding: 10px 0;
-      border-bottom: 1px solid $color-bonjour;
+      padding: 25px 0 20px 0;
       .card__topper {
         display: flex;
 
@@ -751,25 +733,50 @@
       }
 
       .card__bottom {
-        display: flex;
-        align-items: center;
+        padding-top: 17px;
         .card__social {
           display: flex;
+          align-items: center;
           width: 100%;
-          .report {
-            margin-right: auto;
-            i {
-              padding-right: 6px;
+
+          .left {
+            .report {
+              margin-right: auto;
+
+              i {
+                font-size: 14px;
+                padding-right: 6px;
+              }
             }
           }
-          .share {
-            margin-left: auto;
-          }
 
-          .btn__helpful {
-            float: right;
+          .right {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            .share {
+              margin-right: 12px;
+              i {
+                font-size: 12px;
+                margin-right: 8px;
+              }
+            }
+
+            .btn__helpful {
+              float: right;
+            }
           }
         }
+      }
+    }
+
+    &--benefits {
+      img {
+        margin-right: 6px;
+      }
+
+      p {
+        margin: 0 0 12px 2px;
       }
     }
   }
@@ -833,6 +840,28 @@
         .card__image {
           width: 48px;
           height: 48px;
+        }
+      }
+    }
+
+    &--boards {
+      .card__description {
+        display: flex;
+        align-items: center;
+
+        span {
+          display: flex;
+          align-items: center;
+          padding-right: 22px;
+        }
+
+        span:first-of-type {
+          padding-bottom: 0;
+        }
+
+        i {
+          font-size: 19px;
+          padding-right: 4px;
         }
       }
     }

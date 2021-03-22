@@ -153,11 +153,12 @@ h4 {
 
   &--reviews {
     .card__name {
-      @include font(manrope, extrabold);
+      @include font(manrope, bold);
     }
 
     .card__comment {
-      @include font(inter, semibold);
+      @include font(inter, regular);
+      font-weight: $bold;
     }
 
     .share {
@@ -198,8 +199,7 @@ h4 {
   }
 
   &--helpful {
-    @include font(inter, semibold);
-    font-weight: $regular;
+    @include font(inter, regular);
   }
 
   &--pricing,
@@ -1266,6 +1266,16 @@ h4 {
       .card__ratings {
         font-size: $font-14;
         line-height: 17px;
+      }
+    }
+
+    &--reviews {
+      .card__name {
+        font-weight: $light;
+      }
+
+      .card__comment {
+        font-weight: $bold;
       }
     }
 

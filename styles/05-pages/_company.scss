@@ -90,6 +90,10 @@
       border-bottom: 1px solid $color-bonjour;
     }
   }
+
+  &__benefits {
+    border: 1px solid $color-bonjour;
+  }
 }
 
 // * responsive
@@ -177,7 +181,7 @@
       text-align: center;
 
       .filter__header {
-        padding-top: 6px;
+        padding-top: 10px;
       }
     }
 
@@ -192,7 +196,8 @@
 
       &__ratings {
         display: flex;
-        padding: 20px 0 0 50px;
+        justify-content: center;
+        padding-top: 20px;
 
         &__right {
           padding: 3px 0 0 10px;
@@ -234,17 +239,18 @@
       }
 
       &__cards {
-        padding: 18px 16px;
+        padding: 0 14px;
       }
     }
 
     &__benefits {
       border: 1px solid $color-bonjour;
+      margin: 20px 10px 35px 10px;
       padding: 15px 15px 9px 15px;
 
       &__top {
         header {
-          padding-bottom: 6px;
+          padding-bottom: 8px;
         }
 
         p {
@@ -261,6 +267,11 @@
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
+  .company {
+    &__benefits {
+      margin: 20px 0 35px 0;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
