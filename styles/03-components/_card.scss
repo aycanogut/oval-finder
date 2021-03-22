@@ -692,27 +692,48 @@
     }
 
     &--reviews {
+      padding: 10px 0;
       border-bottom: 1px solid $color-bonjour;
       .card__topper {
         display: flex;
+
+        .card__image {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+        }
+
         .card__user {
-          // padding-left: 12px;
+          width: 100%;
+          padding-left: 10px;
+
           .card__ratings {
-            i {
-              // font-size: 10px;
-            }
-            i:nth-last-child(1) {
-              // font-size: 16px;
+            display: flex;
+
+            .card__time {
+              margin-left: auto;
+              margin-top: -11px;
             }
           }
         }
-        .card__time {
-          // margin-left: auto;
-        }
       }
-      .card__recommendation {
-        display: flex;
-        // padding-left: 60px;
+
+      // this class is only visible on small breakpoints
+      .card__position {
+        padding: 8px 0 10px 0;
+      }
+
+      // three recommendation buttons placement
+      .three-badge {
+        display: grid;
+        width: 100%;
+
+        div:last-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          width: 50%;
+        }
+
         .btn_def {
           // padding-right: 8px;
           i {
@@ -720,10 +741,16 @@
           }
         }
       }
+
+      // recommendation buttons block position
+      .block-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+
       .card__body {
-        // padding: 14px 23px 16px 65px;
         .card__comment {
-          // padding-bottom: 9px;
+          padding: 12px 0 4px 0;
         }
         .card__text {
           margin: 0;
@@ -731,16 +758,23 @@
       }
       .card__bottom {
         display: flex;
-        // padding: 0px 23px 0 65px;
-        i {
-          // padding: 0 8px;
-        }
-        .report {
-          // margin: auto 0;
-        }
-        .share {
-          // margin: auto 0 auto auto;
-          // padding: 0 32px;
+        align-items: center;
+        .card__social {
+          display: flex;
+          width: 100%;
+          .report {
+            margin-right: auto;
+            i {
+              padding-right: 6px;
+            }
+          }
+          .share {
+            margin-left: auto;
+          }
+
+          .btn__helpful {
+            float: right;
+          }
         }
       }
     }
@@ -794,9 +828,19 @@
         place-items: start;
       }
     }
+
     &--clients {
       // width: 75%;
       min-height: 160px;
+    }
+
+    &--reviews {
+      .card__topper {
+        .card__image {
+          width: 48px;
+          height: 48px;
+        }
+      }
     }
   }
 }

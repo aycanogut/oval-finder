@@ -75,6 +75,9 @@
     }
 
     &__search {
+      input {
+        color: $color-spunpearl;
+      }
     }
 
     &__cards {
@@ -231,7 +234,7 @@
       }
 
       &__cards {
-        margin: 18px 16p;
+        padding: 18px 16px;
       }
     }
 
