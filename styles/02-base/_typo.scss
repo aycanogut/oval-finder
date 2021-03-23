@@ -562,9 +562,8 @@ h4 {
   }
 
   &__contact {
-    div {
+    p {
       @include font(inter, regular);
-      font-size: $font-14;
     }
   }
 }
@@ -687,6 +686,7 @@ h4 {
         font-size: $font-14;
       }
     }
+
     &__daily__explore {
       div {
         font-size: $font-72;
@@ -772,6 +772,12 @@ h4 {
       a {
         font-size: $font-12;
         line-height: $font-24;
+      }
+    }
+
+    &__contact {
+      .help {
+        font-size: $font-12;
       }
     }
 
@@ -1046,6 +1052,7 @@ h4 {
       font-size: $font-16;
       line-height: $font-36;
     }
+
     &__trending {
       &__left {
         p {
@@ -1060,6 +1067,7 @@ h4 {
         font-size: $font-14;
       }
     }
+
     &__how-works {
       &__text {
         font-size: $font-26;
@@ -1073,6 +1081,7 @@ h4 {
         font-size: $font-18;
       }
     }
+
     &__daily__category {
       .sort-by {
         font-size: $font-14;
@@ -1081,6 +1090,7 @@ h4 {
         font-size: $font-18;
       }
     }
+
     &__daily__explore {
       div {
         font-size: $font-72;
@@ -1096,10 +1106,12 @@ h4 {
         display: inline-block;
       }
     }
+
     &__daily__explore__category > a {
       font-size: $font-18;
       text-decoration: underline;
     }
+
     &__testimonial {
       .carousel-item h3 {
         font-size: $font-32;
@@ -1111,6 +1123,7 @@ h4 {
         font-size: $font-20;
       }
     }
+
     &__clients {
       &__post-job {
         line-height: $font-26;
@@ -1126,6 +1139,7 @@ h4 {
         font-size: $font-14;
       }
     }
+
     &__find-job {
       &__title {
         font-size: $font-26;
@@ -1146,6 +1160,12 @@ h4 {
       a {
         font-size: $font-14;
         line-height: $font-24;
+      }
+    }
+
+    &__contact {
+      .help {
+        font-size: $font-14;
       }
     }
 

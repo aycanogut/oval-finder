@@ -48,7 +48,8 @@
 
   &__contact {
     border: 1px solid $color-bonjour;
-    header + div {
+
+    .help {
       color: $color-midgray;
     }
     &__social-icons {

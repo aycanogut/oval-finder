@@ -246,19 +246,32 @@
       }
     }
     &--recommendation-red {
-      width: 55%;
       padding: 3px 6px 6px 6px;
       margin-bottom: 8px;
+      span {
+      }
       i {
         font-size: 14px;
         padding-right: 5px;
+      }
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+      &--fixed-width {
+        width: 26vh;
       }
     }
     &--recommendation-gray {
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+      &--fixed-width {
+        width: 23vh;
+      }
     }
   }
+
+  // this class is created because
 }
 
 // Small devices (phone, 577px and up)
