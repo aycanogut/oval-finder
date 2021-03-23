@@ -12,8 +12,7 @@
 }
 
 .company {
-  background: url("/assets/img/company-dummy.png");
-  background-repeat: no-repeat;
+  background: no-repeat url("../assets/img/company-dummy.png");
 
   &__ratings > span {
     color: $color-shipgray;
@@ -109,7 +108,7 @@
       justify-content: flex-end;
       padding: 12px 0 0 0;
       .btn_def--review {
-        margin-right: 12;
+        margin-right: 12px;
       }
     }
 
@@ -186,7 +185,7 @@
     }
 
     &__reviews {
-      padding: 12px 15px 0px 15px;
+      padding: 12px 15px 0 15px;
 
       &__top {
         .card__time {

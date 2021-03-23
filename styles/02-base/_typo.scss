@@ -4,7 +4,7 @@
 h1 {
   @include font(manrope, semibold);
   font-size: $font-64;
-  font-weight: medium;
+  font-weight: $medium;
   line-height: 87px;
   letter-spacing: 3px;
 }
@@ -989,7 +989,7 @@ h4 {
     &__position {
       font-size: $font-12;
       line-height: 17px;
-      letter-spacing: 0px;
+      letter-spacing: 0;
     }
   }
 

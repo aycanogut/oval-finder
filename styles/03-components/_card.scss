@@ -336,7 +336,7 @@
 
   // card-image-shadow
   &__image {
-    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1069,8 +1069,7 @@
         }
 
         ul {
-          padding: 0;
-          padding-left: 16px;
+          padding: 0 0 0 16px;
         }
         p {
           margin: 0;
@@ -1186,7 +1185,7 @@
       }
       .card__bottom {
         display: flex;
-        padding: 0px 23px 0 65px;
+        padding: 0 23px 0 65px;
         i {
           padding: 0 8px;
         }
@@ -1337,8 +1336,7 @@
 
       .card__description {
         display: flex;
-        padding: 0;
-        padding-bottom: 22px;
+        padding: 0 0 22px 0;
 
         span {
           display: flex;
@@ -1351,8 +1349,7 @@
       }
 
       .card__bottom {
-        padding: 0;
-        padding-bottom: 32px;
+        padding: 0 0 32px 0;
 
         article > .card__descriptor {
           padding-bottom: 18px;
@@ -1461,7 +1458,7 @@
       }
       .card__bottom {
         display: flex;
-        padding: 0px 23px 0 65px;
+        padding: 0 23px 0 65px;
         i {
           padding: 0 8px;
         }

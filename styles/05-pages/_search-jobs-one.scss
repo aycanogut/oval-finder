@@ -2,10 +2,8 @@
 
 // header-top
 .header-srOne {
-  background: url("../assets/img/bg-searchone.svg");
-  background-color: $color-nebula;
-  background-repeat: no-repeat;
-  background-position: center right;
+  background: $color-nebula no-repeat center right url("../assets/img/bg-searchone.svg");
+
 
   .navbar {
     // nav-button hover state
@@ -163,8 +161,7 @@
 
     // left-sidebar filter
     .filter {
-      margin: 0;
-      margin-right: 23px;
+      margin: 0 23px 0 0;
     }
 
     // right-main cards

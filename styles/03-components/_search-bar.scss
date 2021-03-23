@@ -26,7 +26,6 @@
         background-color: $color-dustygray;
       }
       &:active {
-        background-color: $color-white;
         background-color: $color-dustygray;
       }
     }
@@ -128,7 +127,7 @@
     &__searchInput {
       display: flex;
       flex-direction: column;
-      padding: 10px 10px 0px 14px;
+      padding: 10px 10px 0 14px;
       .input {
         i {
           font-size: 20px;
@@ -156,7 +155,7 @@
       .left:after {
         height: 1px;
         width: 91%;
-        bottom: 0px;
+        bottom: 0;
         left: 10px;
       }
     }
@@ -201,7 +200,7 @@
     &__searchInput {
       display: flex;
       flex-direction: column;
-      padding: 0px 10px 0px 10px;
+      padding: 0 10px 0 10px;
       margin-bottom: 10px;
       justify-content: center;
       .input {
@@ -320,8 +319,7 @@
     }
   }
   .homepage__search-box {
-    margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 0 0;
   }
 }
 // XX-Large devices (larger desktops, 1400px and up)

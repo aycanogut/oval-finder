@@ -1,10 +1,8 @@
 // search-employees
 
 .header-search-employeers {
-  background: url("../assets/img/bg-employee.svg");
-  background-color: $color-bridesmaid;
-  background-repeat: no-repeat;
-  background-position: right center;
+  background: $color-bridesmaid no-repeat right center url("../assets/img/bg-employee.svg");
+
 
   // nav-button hover state
   .btn_def {

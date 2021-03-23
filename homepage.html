@@ -79,7 +79,9 @@
                       <div class="input left">
                         <div class="wrapper">
                           <i class="oval-search"></i>
+                          <label>
                           <input type="text" class="input-search" size="12" placeholder="Job title or keyword">
+                          </label>
                         </div>
                       </div>
                     </div>
@@ -87,7 +89,9 @@
                       <div class="input right">
                         <div class="wrapper">
                           <i class="oval-location"></i>
+                          <label>
                           <input type="text" class="input-search" size="12" placeholder="City, state or zip">
+                          </label>
                         </div>
                       </div>
                     </div>
@@ -176,7 +180,7 @@
                 <div class="homepage__daily__top__category btn-group ">
                   <p class="sort-by">Jobs Category : </p>
                   <div class="dropdown open">
-                    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    <button class="btn  dropdown-toggle" type="button" id="triggerId2" data-toggle="dropdown"
                       aria-haspopup="true" aria-expanded="false">
                       Internet & Technology
                     </button>
@@ -239,7 +243,7 @@
                     </section>
                     <section class="card__bottom">
                       <div class="card__bottom__apply">
-                        <p>5 jobs openings,&nbsp;</p> <a href="#">Apply Now <span><img src="./assets/img/icon-right.svg"
+                        <p>5 jobs openings,&nbsp;</p> <a href="#">Apply Now <img src="./assets/img/icon-right.svg"
                               alt=""></a>
                       </div>
                     </section>
@@ -284,7 +288,7 @@
                     <section class="card__topper">
                       <img class="card__image" src="./assets/img/ebay-small.svg" alt="">
                       <header class="card__company-name">Ebay</header>
-                      <aside6 class="card__time">3 days ago<asidee>
+                      <aside> class="card__time">3 days ago</aside>
                     </section>
                     <section class=card__body>
                       <a href="#" class="card__title">Sales Engineer, Application Modernization, Healthcare, Google
@@ -487,6 +491,7 @@
                     </a>
                   </div>
                 </div>
+              </div>
                 <!-- owl-carousel end -->
             </section>
             <section class="homepage__clients__bottom">
@@ -530,10 +535,10 @@
                         aria-haspopup="true" aria-expanded="false">
                         Indonesia
                       </button>
-                      <div class="dropdown-menu" aria-labelledby="triggerId">
-                        <button class="dropdown-item" href="#">Action</button>
-                        <button class="dropdown-item disabled" href="#">Disabled action</button>
-                      </div>
+                      <span class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                      </span>
                     </span>
                   </h2>
                 </section>
@@ -637,8 +642,8 @@
           </div>
           <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-3 d-sm-block d-md-none">
             <ul class="footer__list list-unstyled md-margin">
-              <section class="footer--lg__bottom-sm">
-                <section class="footer__social-icons-sm">
+              <li class="footer--lg__bottom-sm">
+                <div class="footer__social-icons-sm">
                   <a href="#">
                     <img src="./assets/icons/icon-svg/twitter.svg" alt="">
                   </a>
@@ -648,14 +653,14 @@
                   <a href="#">
                     <img src="./assets/icons/icon-svg/linkedin.svg" alt="">
                   </a>
-                </section>
-                <section class="footer--lg__bottom-sm-links ">
+                </div>
+                <div class="footer--lg__bottom-sm-links ">
                   <ul class="list-unstyled">
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Trust & Safety</a></li>
                   </ul>
-                </section>
+                </div>
                 <aside class="footer__language-bar-sm">
                   <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -667,7 +672,7 @@
                     <a class="dropdown-item" href="#">FR</a>
                   </div>
                 </aside>
-              </section>
+              </li>
             </ul>
           </div>
         </div>
