@@ -301,6 +301,28 @@
         margin: 0;
       }
     }
+
+    &__culture {
+      margin: 30px 0 20px 0;
+      padding: 0 2px 5px 2px;
+      header {
+      }
+      p {
+      }
+      a {
+      }
+    }
+
+    &__contact {
+      padding: 16px 16px 10px 20px;
+      &__social-icons {
+        padding-top: 7px;
+
+        a {
+          padding: 0 4px;
+        }
+      }
+    }
   }
 }
 
