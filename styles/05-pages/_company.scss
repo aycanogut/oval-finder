@@ -295,7 +295,6 @@
 
   .company {
     background: no-repeat url("../assets/img/company-dummy-md.png") top center;
-
     .container {
       padding: 0 20px;
     }
@@ -329,10 +328,12 @@
     }
 
     &__vacancies {
+      margin: 10px 0 30px 0;
+
       padding: 20px 30px 19px 30px;
 
       .card__descriptor {
-        padding: 0 0 24px 0;
+        padding: 0 0 18px 0;
       }
     }
 

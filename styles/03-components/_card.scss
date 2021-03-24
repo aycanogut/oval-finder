@@ -631,7 +631,8 @@
     }
 
     &--boards {
-      padding: 30px 15px 15px 15px;
+      margin-top: 15px;
+      padding: 15px;
       .card__topper {
         display: flex;
         height: 100%;
@@ -835,15 +836,6 @@
       min-height: 160px;
     }
 
-    &--reviews {
-      .card__topper {
-        .card__image {
-          width: 48px;
-          height: 48px;
-        }
-      }
-    }
-
     &--boards {
       .card__description {
         display: flex;
@@ -862,6 +854,15 @@
         i {
           font-size: 19px;
           padding-right: 4px;
+        }
+      }
+    }
+
+    &--reviews {
+      .card__topper {
+        .card__image {
+          width: 48px;
+          height: 48px;
         }
       }
     }
@@ -1152,6 +1153,54 @@
         }
         p:nth-last-child(1) {
           margin: 0;
+        }
+      }
+    }
+
+    &--boards {
+      margin-top: 2px;
+      padding: 18px 0 10px 0;
+
+      .card__topper {
+        padding-bottom: 4px;
+        .card__image {
+          width: 24px;
+          height: 24px;
+        }
+
+        .card__company-name {
+          padding: 2px 0 0 12px;
+        }
+
+        span {
+          margin: 0 18px 0 auto;
+        }
+      }
+
+      .card__body {
+        .card__title {
+          padding: 8;
+        }
+      }
+
+      .card__description {
+        span {
+          width: 100%;
+          padding: 0;
+        }
+
+        span:last-of-type {
+          margin-left: -60px;
+        }
+
+        i {
+          padding-right: 6px;
+        }
+
+        .card__time {
+          text-align: right;
+          width: 50%;
+          padding-right: 20px;
         }
       }
     }

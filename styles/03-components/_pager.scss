@@ -75,6 +75,29 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .company {
+    .page-navigations {
+      padding: 21px 0 4px 0;
+      margin: 0;
+
+      .page-item {
+        margin: 0 32px 0 0;
+      }
+
+      .pager {
+        padding: 0;
+        .previous,
+        .next {
+          padding: 0;
+        }
+
+        .next {
+          padding-left: 33px;
+        }
+      }
+    }
+  }
+
   .page-navigations {
     padding: 18px 0;
     flex-direction: row;
