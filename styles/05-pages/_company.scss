@@ -1,10 +1,6 @@
 // company
 
 .navbar {
-  &--company {
-    margin-bottom: 18px;
-  }
-
   &__menu-left > a,
   &__menu-right > a {
     color: $color-shipgray;
@@ -12,8 +8,6 @@
 }
 
 .company {
-  background: no-repeat url("../assets/img/company-dummy.png");
-
   &__ratings > span {
     color: $color-shipgray;
   }
@@ -101,7 +95,13 @@
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .navbar {
+    &--company {
+      margin-bottom: 12px;
+    }
+  }
   .company {
+    background: no-repeat url("../assets/img/company-dummy.png");
     margin: 0 10px;
 
     &__buttons {
@@ -267,23 +267,48 @@
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
-  .company {
-    &__benefits {
-      margin: 20px 0 35px 0;
+  .navbar {
+    .company {
+      &__benefits {
+        margin: 20px 0 35px 0;
+      }
     }
+  }
+
+  .company {
+    background: no-repeat url("../assets/img/company-dummy-sm.png") top center;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  &--company {
+    margin-bottom: 28px;
+  }
+
   .company {
+    .container {
+      padding: 0 20px;
+    }
+    background: no-repeat url("../assets/img/company-dummy-md.png") top center;
   }
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .navbar {
+    &--company {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .company {
+    background: no-repeat url("../assets/img/company-dummy-lg.png");
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
