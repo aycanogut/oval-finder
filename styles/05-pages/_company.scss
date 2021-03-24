@@ -53,6 +53,22 @@
     }
   }
 
+  &__vacancies {
+    .search-employeers__result__top {
+      border-bottom: 1px solid $color-bonjour;
+    }
+  }
+
+  &__search-box {
+    .input-search {
+      color: $color-spunpearl;
+    }
+
+    .left:after {
+      display: none;
+    }
+  }
+
   &__reviews {
     border: 1px solid $color-bonjour;
     margin-top: 20px;
@@ -76,12 +92,6 @@
 
     &__cards {
       border: 1px solid $color-bonjour;
-    }
-  }
-
-  &__vacancies {
-    .search-employeers__result__top {
-      border-bottom: 1px solid $color-bonjour;
     }
   }
 
@@ -167,12 +177,6 @@
 
       .card__descriptor {
         padding: 15px;
-      }
-    }
-
-    &__search-box {
-      .input-search {
-        color: $color-spunpearl;
       }
     }
 
@@ -321,6 +325,14 @@
         a {
           padding: 0 4px;
         }
+      }
+    }
+
+    &__vacancies {
+      padding: 20px 30px 19px 30px;
+
+      .card__descriptor {
+        padding: 0;
       }
     }
   }

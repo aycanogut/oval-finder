@@ -1361,6 +1361,14 @@ h4 {
     }
   }
 
+  .company {
+    &__contact {
+      .help {
+        font-weight: $extralight;
+      }
+    }
+  }
+
   // components
   .card {
     &--testimonial {

@@ -51,7 +51,6 @@
   &__searchInput {
     display: flex;
     width: 100%;
-    padding-right: 12px;
     .input {
       display: flex;
       flex-direction: column;
@@ -254,6 +253,48 @@
   // search-box top ve search-box placement
   .homepage__search-box {
     margin: 428px 0;
+  }
+
+  .company__search-box {
+    .search-box {
+      box-shadow: none;
+
+      .input {
+        padding: 0;
+
+        .wrapper {
+          display: flex;
+          align-items: center;
+          padding: 6px 9px;
+
+          .input-search,
+          .oval-location,
+          .oval-search {
+            padding: 0;
+          }
+
+          label {
+            margin: 0;
+          }
+        }
+      }
+
+      .left .wrapper {
+        border: 1px solid $color-bonjour;
+        border-right: none;
+      }
+
+      .right .wrapper {
+        border: 1px solid $color-bonjour;
+        border-right: none;
+      }
+
+      .oval-search,
+      .oval-location {
+        font-size: 14px;
+        margin-right: 9px;
+      }
+    }
   }
 }
 
