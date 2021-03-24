@@ -1367,6 +1367,12 @@ h4 {
         font-weight: $extralight;
       }
     }
+
+    &__reviews {
+      .card__descriptor {
+        font-size: $font-16;
+      }
+    }
   }
 
   // components

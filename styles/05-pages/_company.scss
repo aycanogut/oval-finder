@@ -350,6 +350,23 @@
         padding: 0 11px 0 4px;
       }
     }
+
+    &__reviews {
+      &__top {
+        display: flex;
+        padding: 4px 8px 26px 0;
+      }
+
+      &__ratings {
+        justify-content: flex-start;
+        float: left;
+        width: 30%;
+      }
+
+      &__search {
+        width: 70%;
+      }
+    }
   }
 }
 
