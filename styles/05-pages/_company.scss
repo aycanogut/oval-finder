@@ -332,7 +332,21 @@
       padding: 20px 30px 19px 30px;
 
       .card__descriptor {
-        padding: 0;
+        padding: 0 0 24px 0;
+      }
+    }
+
+    // I reused the same component from search-employeers page
+    .search-employeers__result__top {
+      text-align: left;
+      padding: 16px 0 14px 0;
+
+      .filter__header {
+        padding: 0px;
+      }
+
+      button {
+        padding: 0 11px 0 4px;
       }
     }
   }
