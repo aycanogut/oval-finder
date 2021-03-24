@@ -283,15 +283,24 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
-  &--company {
-    margin-bottom: 28px;
+  .navbar {
+    &--company {
+      margin-bottom: 28px;
+    }
   }
 
   .company {
+    background: no-repeat url("../assets/img/company-dummy-md.png") top center;
+
     .container {
       padding: 0 20px;
     }
-    background: no-repeat url("../assets/img/company-dummy-md.png") top center;
+
+    &__buttons {
+      .btn_def--review {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -300,7 +309,7 @@
 @media (min-width: 992px) {
   .navbar {
     &--company {
-      position: fixed;
+      position: absolute;
       top: 0;
       width: 100%;
       margin-bottom: 24px;
