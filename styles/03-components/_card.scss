@@ -1205,23 +1205,22 @@
     }
 
     &--reviews {
-      padding: 24px 0 34px 0;
+      padding: 24px 22px 24px 0;
       border-bottom: 1px solid $color-bonjour;
       .card__topper {
         display: flex;
         .card__user {
-          padding-left: 12px;
           .card__ratings {
-            i {
-              font-size: 10px;
-            }
-            i:nth-last-child(1) {
-              font-size: 16px;
+            line-height: 34px;
+
+            .card__time {
+              margin: -22px 0 0 auto;
             }
           }
         }
-        .card__time {
-          margin-left: auto;
+
+        .card__position {
+          padding-left: 12px;
         }
       }
       .card__recommendation {
@@ -1234,18 +1233,31 @@
           }
         }
       }
+
+      // three recommendation buttons placement
+      .three-badge {
+        display: flex;
+        padding: 4px 0 0 60px;
+
+        div:last-child {
+          grid-column-start: 1;
+          grid-column-end: 1;
+          width: 26%;
+        }
+      }
+
       .card__body {
-        padding: 14px 23px 16px 65px;
+        padding: 0 30px 0 60px;
+
         .card__comment {
-          padding-bottom: 9px;
+          padding: 12px 0 6px 0;
         }
         .card__text {
           margin: 0;
         }
       }
       .card__bottom {
-        display: flex;
-        padding: 0 23px 0 65px;
+        padding: 18px 23px 0 50px;
         i {
           padding: 0 8px;
         }

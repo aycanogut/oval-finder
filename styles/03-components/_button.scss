@@ -248,8 +248,7 @@
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
       margin-bottom: 8px;
-      span {
-      }
+
       i {
         font-size: 14px;
         padding-right: 5px;
@@ -321,6 +320,39 @@
     &--review {
       padding: 13px 34px;
       border-radius: 0px;
+    }
+
+    &--recommendation-green {
+      padding: 3px 13px 6px 6px;
+      margin: 0 8px 8px 0;
+
+      i {
+        font-size: 14px;
+        padding-right: 7px;
+      }
+    }
+    &--recommendation-red {
+      padding: 3px 6px 6px 6px;
+      margin-bottom: 8px;
+
+      i {
+        font-size: 14px;
+        padding-right: 7px;
+      }
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+      &--fixed-width {
+        width: 16vh;
+      }
+    }
+    &--recommendation-gray {
+      padding: 3px 13px 6px 6px;
+      margin: 0 8px 8px 0;
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+      &--fixed-width {
+        width: 14vh;
+      }
     }
   }
 }
