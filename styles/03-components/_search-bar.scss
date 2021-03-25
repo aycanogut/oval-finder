@@ -164,25 +164,56 @@
     margin: 290px 0;
   }
 
-  .company__search-box {
-    .search-box {
-      box-shadow: none;
-      margin: 0;
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
+        margin: 0;
 
-      &__searchInput {
-        padding: 0 15px;
-      }
-
-      .wrapper {
-        padding: 0;
-        border: 1px solid $color-bonjour;
-        i {
-          font-size: 15px;
-          padding: 11px 9px;
+        &__searchInput {
+          padding: 0 15px;
         }
 
-        .input-search {
+        .wrapper {
           padding: 0;
+          border: 1px solid $color-bonjour;
+          i {
+            font-size: 15px;
+            padding: 11px 9px;
+          }
+
+          .input-search {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        margin: 0;
+        padding-top: 20px;
+        box-shadow: none;
+        &__searchInput {
+          padding: 0;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+
+            input {
+              border: none;
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
         }
       }
     }
@@ -254,44 +285,80 @@
     margin: 428px 0;
   }
 
-  .company__search-box {
-    .search-box {
-      box-shadow: none;
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
 
-      .input {
-        padding: 0;
+        .input {
+          padding: 0;
 
-        .wrapper {
-          display: flex;
-          align-items: center;
-          padding: 6px 9px;
+          .wrapper {
+            display: flex;
+            align-items: center;
+            padding: 6px 9px;
 
-          .input-search,
-          .oval-location,
-          .oval-search {
-            padding: 0;
-          }
+            .input-search,
+            .oval-location,
+            .oval-search {
+              padding: 0;
+            }
 
-          label {
-            margin: 0;
+            label {
+              margin: 0;
+            }
           }
         }
-      }
 
-      .left .wrapper {
-        border: 1px solid $color-bonjour;
-        border-right: none;
-      }
+        .left .wrapper {
+          border: 1px solid $color-bonjour;
+          border-right: none;
+        }
 
-      .right .wrapper {
-        border: 1px solid $color-bonjour;
-        border-right: none;
-      }
+        .right .wrapper {
+          border: 1px solid $color-bonjour;
+          border-right: none;
+        }
 
-      .oval-search,
-      .oval-location {
-        font-size: 14px;
-        margin-right: 9px;
+        .oval-search,
+        .oval-location {
+          font-size: 14px;
+          margin-right: 9px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        padding: 0;
+        margin: 10px 0;
+        &__searchInput {
+          padding: 0;
+          justify-content: flex-end;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+            width: 62%;
+
+            label {
+              padding: 0;
+              margin: 4px 0 0 0;
+              input {
+                border: none;
+              }
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }
