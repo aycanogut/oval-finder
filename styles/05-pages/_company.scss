@@ -236,9 +236,6 @@
           padding-bottom: 14px;
         }
       }
-
-      &__cards {
-      }
     }
   }
 }
@@ -365,6 +362,11 @@
       button {
         padding: 0 11px 0 4px;
       }
+    }
+
+    &__benefits {
+      margin: 30px 5px 62px 5px;
+      padding: 15px 15px 0 15px;
     }
   }
 }

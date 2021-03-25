@@ -820,21 +820,6 @@ h4 {
         }
       }
     }
-
-    &__benefits {
-      &__top {
-        header {
-          font-size: $font-14;
-          line-height: 19px;
-        }
-
-        p {
-          @include font(inter, regular);
-          font-size: $font-12;
-          line-height: 18px;
-        }
-      }
-    }
   }
 
   // * layout
@@ -958,6 +943,11 @@ h4 {
         line-height: 15px;
       }
 
+      .card__ratings {
+        font-size: $font-12;
+        line-height: 22px;
+      }
+
       .card__comment {
         font-size: $font-14;
         font-weight: $regular;
@@ -973,13 +963,6 @@ h4 {
       .report {
         font-size: $font-12;
         line-height: 15px;
-      }
-    }
-
-    &--reviews {
-      .card__ratings {
-        font-size: $font-12;
-        line-height: 22px;
       }
     }
 
@@ -1407,6 +1390,18 @@ h4 {
       .card__time {
         font-size: $font-14;
         line-height: 17px;
+      }
+    }
+
+    &--benefits {
+      header {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+
+      p {
+        font-size: $font-12;
+        line-height: 20px;
       }
     }
 

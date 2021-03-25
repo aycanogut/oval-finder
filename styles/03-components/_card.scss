@@ -772,6 +772,8 @@
     }
 
     &--benefits {
+      padding: 15px 15px 9px 15px;
+
       img {
         margin-right: 6px;
       }
@@ -1267,6 +1269,20 @@
         .share {
           margin: auto 0 auto auto;
           padding: 0 32px;
+        }
+      }
+    }
+
+    &--benefits {
+      padding: 15px 15px 9px 15px;
+
+      &__top {
+        header {
+          padding-bottom: 8px;
+        }
+
+        p {
+          padding-bottom: 14px;
         }
       }
     }
