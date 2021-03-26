@@ -138,8 +138,7 @@
       header {
         padding: 15px 0 9px 0;
       }
-      p {
-      }
+
       a {
         padding-bottom: 16px;
       }
@@ -280,12 +279,6 @@
     &__culture {
       margin: 30px 0 20px 0;
       padding: 0 2px 5px 2px;
-      header {
-      }
-      p {
-      }
-      a {
-      }
     }
 
     &__contact {
@@ -382,8 +375,10 @@
       margin-bottom: 24px;
     }
   }
+
   .company {
-    background: no-repeat url("../assets/img/company-dummy-lg.png");
+    background: no-repeat url("../assets/img/company-dummy-lg.png") 50% 3%;
+    padding-top: 100px;
   }
 }
 
