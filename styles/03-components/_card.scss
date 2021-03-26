@@ -1455,7 +1455,7 @@
     }
 
     &--company {
-      padding: 24px 30px 30px 30px;
+      // padding: 24px 30px 30px 30px;
       .card__topper {
         .card__image {
           width: 72px;
@@ -1481,19 +1481,24 @@
       }
       .card__description__icons {
         padding-top: 32px;
+
         span {
           display: flex;
+
           i {
             padding-right: 6px;
           }
         }
+
         span:nth-child(even) {
           padding-left: 20px;
         }
+
         .card__description__item {
           padding-bottom: 24px;
         }
       }
+
       .card__description__text {
         .card__descriptor {
           font-weight: $bold;
