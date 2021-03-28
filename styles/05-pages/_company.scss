@@ -379,6 +379,10 @@
   .company {
     background: no-repeat url("../assets/img/company-dummy-lg.png") 52.2% 3%;
     padding-top: 157px;
+
+    &__buttons {
+      padding: 24px 0 0 8px;
+    }
   }
 }
 

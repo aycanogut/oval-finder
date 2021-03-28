@@ -133,11 +133,12 @@
     color: $color-midgray;
   }
 
-  // company-right
+  // company-right-block
   &--share {
     display: inline-block;
     color: $color-midgray;
     background-color: $color-white;
+
     i {
       font-size: 17px;
       padding-right: 7px;
@@ -374,11 +375,11 @@
     }
 
     &--share {
-      padding: 16px 28px;
+      padding: 14px 26px;
     }
 
     &--review {
-      padding: 16px 47px;
+      padding: 16px 49px;
     }
   }
 }

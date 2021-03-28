@@ -1515,6 +1515,18 @@ h4 {
         font-size: $font-24;
       }
     }
+
+    &--benefits {
+      header {
+        font-size: $font-14;
+        line-height: 17px;
+      }
+
+      p {
+        font-size: $font-12;
+        line-height: 20px;
+      }
+    }
   }
 
   .search-box {
