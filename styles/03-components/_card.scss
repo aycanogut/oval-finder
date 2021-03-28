@@ -1455,57 +1455,54 @@
     }
 
     &--company {
-      // padding: 24px 30px 30px 30px;
+      padding: 23px 0 32px 32px;
+      margin: 0 0 20px 0;
       .card__topper {
         .card__image {
           width: 72px;
           height: 72px;
         }
         .card__topper-left {
-          padding-left: 12px;
-          display: flex;
-          flex-direction: column;
-          margin: auto 0 auto 0;
+          padding: 0 20px 0 26px;
+          margin: 0;
+
+          .card__company-name {
+            margin: 6px 0 0 0;
+          }
+
+          .card__ratings {
+            margin-top: -2px;
+          }
         }
         .card__topper-right {
           margin-left: auto;
-          display: flex;
-          flex-direction: row;
-          text-align: right;
-          .card__review,
-          span {
-            display: block;
+          padding-right: 32px;
+          margin-top: -6px;
+
+          .card__review:first-child {
+            padding-right: 32px;
           }
         }
-        border-bottom: 1px solid $color-bonjour;
       }
       .card__description__icons {
-        padding-top: 32px;
-
-        span {
-          display: flex;
-
-          i {
-            padding-right: 6px;
-          }
-        }
-
-        span:nth-child(even) {
-          padding-left: 20px;
-        }
+        padding-top: 37px;
 
         .card__description__item {
-          padding-bottom: 24px;
+          padding-bottom: 20px;
+
+          &__top {
+            padding-bottom: 2px;
+          }
         }
       }
 
       .card__description__text {
         .card__descriptor {
-          font-weight: $bold;
-          padding-bottom: 14px;
+          padding: 22px 0 14px 0;
         }
-        p:nth-last-child(1) {
-          margin: 0;
+
+        .card__text {
+          padding-right: 80px;
         }
       }
     }

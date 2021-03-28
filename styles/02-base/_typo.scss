@@ -147,6 +147,7 @@ h4 {
       span {
         @include font(inter, regular);
         font-size: $font-12;
+        font-weight: $light;
       }
     }
   }
@@ -1474,6 +1475,12 @@ h4 {
         font-size: $font-24;
         font-weight: $bold;
       }
+    }
+  }
+
+  .company {
+    .card__descriptor {
+      font-size: $font-16;
     }
   }
 
