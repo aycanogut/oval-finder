@@ -386,6 +386,18 @@
         margin: -4px 0 0 -4px;
       }
     }
+
+    &__vacancies {
+      padding: 22px 34px;
+
+      .card__descriptor {
+        padding: 0 0 34px 0;
+      }
+
+      .card--boards:first-child {
+        margin-top: 15px;
+      }
+    }
   }
 }
 
