@@ -382,6 +382,9 @@
 
     &__buttons {
       padding: 24px 0 0 8px;
+      .btn_def--review {
+        margin: -4px 0 0 -4px;
+      }
     }
   }
 }
