@@ -412,6 +412,71 @@
   .homepage__search-box {
     margin: 38px 0;
   }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        height: auto;
+        .input {
+          .wrapper {
+            // display: flex;
+            // align-items: center;
+            // padding: 6px 9px;
+
+            .input-search,
+            .oval-location,
+            .oval-search {
+              // padding: 0;
+            }
+
+            label {
+              // margin: 0;
+            }
+          }
+        }
+
+        .oval-search,
+        .oval-location {
+          // font-size: 14px;
+          // margin-right: 9px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        // padding: 0;
+        // margin: 10px 0;
+        &__searchInput {
+          // padding: 0;
+          // justify-content: flex-end;
+
+          .input {
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: flex-start;
+            // padding: 0;
+            // border: 1px solid $color-bonjour;
+            // width: 62%;
+
+            // label {
+            //   padding: 0;
+            //   margin: 4px 0 0 0;
+            //   input {
+            //     border: none;
+            //   }
+            // }
+
+            .oval-search {
+              // padding: 9px 11px;
+              // font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

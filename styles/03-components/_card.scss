@@ -158,7 +158,7 @@
 
   // company - company-employeer-information
   &--company {
-    border: 1px solid $color-bonjour;
+    border: 1px solid rgba($color-bonjour, 0.5);
     .card__topper {
       border-bottom: 1px solid $color-bonjour;
     }

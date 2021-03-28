@@ -26,7 +26,7 @@
   }
 
   &__culture {
-    border: 1px solid $color-bonjour;
+    border: 1px solid rgba($color-bonjour, 0.5);
 
     header {
       color: $color-black;
@@ -41,8 +41,7 @@
   }
 
   &__contact {
-    border: 1px solid $color-bonjour;
-
+    border: 1px solid rgba($color-bonjour, 0.5);
     .help {
       color: $color-midgray;
     }
@@ -70,7 +69,7 @@
   }
 
   &__reviews {
-    border: 1px solid $color-bonjour;
+    border: 1px solid rgba($color-bonjour, 0.5);
     margin-top: 20px;
     &__top {
       display: flex;
@@ -91,12 +90,12 @@
     }
 
     &__cards {
-      border: 1px solid $color-bonjour;
+      border: 1px solid rgba($color-bonjour, 0.5);
     }
   }
 
   &__benefits {
-    border: 1px solid $color-bonjour;
+    border: 1px solid rgba($color-bonjour, 0.5);
   }
 }
 
@@ -173,8 +172,7 @@
     }
 
     &__vacancies {
-      border: 1px solid $color-bonjour;
-
+      border: 1px solid rgba($color-bonjour, 0.5);
       .card__descriptor {
         padding: 15px;
       }
@@ -222,7 +220,7 @@
     }
 
     &__benefits {
-      border: 1px solid $color-bonjour;
+      border: 1px solid rgba($color-bonjour, 0.5);
       margin: 20px 10px 35px 10px;
       padding: 15px 15px 9px 15px;
 
@@ -377,10 +375,11 @@
   }
 
   .company {
-    background: no-repeat url("../assets/img/company-dummy-lg.png") 52.2% 3%;
+    background: no-repeat url("../assets/img/company-dummy-lg.png") 52.2% 2.9%;
     padding-top: 157px;
 
     &__buttons {
+      margin-left: 24px;
       padding: 26px 0 0 5px;
       .btn_def--review {
         margin: -4px 0 0 -4px;
@@ -397,6 +396,27 @@
       .card--boards:first-child {
         margin-top: 15px;
       }
+    }
+
+    &__culture {
+      margin: 61px 0 32px 30px;
+      padding-left: 7px;
+
+      header {
+        padding-bottom: 14px;
+      }
+
+      &__video {
+        height: 190px;
+        iframe {
+          height: 100%;
+        }
+      }
+    }
+
+    &__contact {
+      padding: 20px 24px 21px 24px;
+      margin: 0 0 0 30px;
     }
   }
 }
