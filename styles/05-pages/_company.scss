@@ -379,10 +379,10 @@
     padding-top: 157px;
 
     &__buttons {
-      margin-left: 24px;
       padding: 26px 0 0 5px;
+      margin-left: -6px;
       .btn_def--review {
-        margin: -4px 0 0 -4px;
+        margin: 0 0 0 -4px;
       }
     }
 
@@ -398,12 +398,31 @@
       }
     }
 
-    &__culture {
-      margin: 61px 0 32px 30px;
-      padding-left: 7px;
+    &__right {
+      margin-left: 30px;
+      width: 95%;
+    }
 
-      header {
-        padding-bottom: 14px;
+    &__culture {
+      margin: 56px 0 32px 0;
+      padding: 20px 24px 24px 22px;
+
+      header,
+      p,
+      a,
+      &__video {
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        padding: 14px 0 5px 0;
+      }
+
+      a {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 8px;
       }
 
       &__video {
@@ -416,7 +435,10 @@
 
     &__contact {
       padding: 20px 24px 21px 24px;
-      margin: 0 0 0 30px;
+
+      &__social-icons {
+        padding: 11px 11px 12px 0;
+      }
     }
   }
 }

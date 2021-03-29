@@ -45,7 +45,8 @@
 
       &__image {
         height: 120px;
-        background: no-repeat center top url("../../assets/img/search-jobs-two-dummy-md.png");
+        background: no-repeat center top
+          url("../assets/img/search-jobs-two-dummy-md.png");
         overflow: hidden;
         margin: 0 16px;
       }
@@ -127,8 +128,8 @@
 
       &__image {
         height: 100%;
-        background: no-repeat center url("../assets/img/search-jobs-two-dummy-md.png");
-
+        background: no-repeat center
+          url("../assets/img/search-jobs-two-dummy-md.png");
       }
 
       &__bottom {
@@ -187,7 +188,8 @@
 
       &__image {
         max-height: 120px;
-        background: no-repeat center url("../assets/img/search-jobs-two-dummy-lg.png");
+        background: no-repeat center
+          url("../assets/img/search-jobs-two-dummy-lg.png");
         margin: 0;
       }
 
