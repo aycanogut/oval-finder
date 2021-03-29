@@ -387,10 +387,11 @@
     }
 
     &__vacancies {
-      padding: 22px 34px;
+      padding: 20px 32px;
+      margin-top: -18px;
 
       .card__descriptor {
-        padding: 0 0 34px 0;
+        padding: 0 0 32px 0;
       }
 
       .card--boards:first-child {
@@ -416,13 +417,13 @@
       }
 
       p {
-        padding: 14px 0 5px 0;
+        padding-top: 14px 0 5px 0;
       }
 
       a {
         display: flex;
         justify-content: flex-end;
-        padding-bottom: 8px;
+        padding-bottom: 5px;
       }
 
       &__video {
@@ -438,6 +439,17 @@
 
       &__social-icons {
         padding: 11px 11px 12px 0;
+      }
+    }
+
+    .search-employeers__result__top {
+      padding: 0 0 23px 0;
+      .showing {
+        padding-top: 4px;
+      }
+
+      .filter__header {
+        padding: 0 4px 0 30px;
       }
     }
   }

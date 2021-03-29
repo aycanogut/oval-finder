@@ -364,8 +364,13 @@
   .btn_def {
     &--search-box {
       padding: 18px 38px;
+
       &-sm {
         padding: 14px 39px;
+      }
+
+      &-xs {
+        padding: 9px 20px 11px 20px;
       }
     }
 

@@ -312,12 +312,12 @@
         }
 
         .left .wrapper {
-          border: 1px solid $color-bonjour;
+          border: 1px solid rgba($color-bonjour, 0.5);
           border-right: none;
         }
 
         .right .wrapper {
-          border: 1px solid $color-bonjour;
+          border: 1px solid rgba($color-bonjour, 0.5);
           border-right: none;
         }
 
@@ -422,12 +422,15 @@
           .wrapper {
             // display: flex;
             // align-items: center;
-            // padding: 6px 9px;
+            padding: 3px 0 4px 8px;
 
             .input-search,
             .oval-location,
             .oval-search {
-              // padding: 0;
+            }
+
+            ::placeholder {
+              color: $color-spunpearl;
             }
 
             label {
@@ -438,8 +441,8 @@
 
         .oval-search,
         .oval-location {
-          // font-size: 14px;
-          // margin-right: 9px;
+          font-size: 16px;
+          margin-right: 9px;
         }
       }
     }
