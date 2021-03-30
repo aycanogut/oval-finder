@@ -188,6 +188,15 @@
           }
         }
       }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        text-align: center;
+
+        .filter__header {
+          padding-top: 10px;
+        }
+      }
     }
 
     &__reviews__search {
@@ -327,6 +336,23 @@
           margin-right: 9px;
         }
       }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        padding: 0 0 20px 0;
+        margin: 20px 0 0 0;
+        .btn-group-top {
+          display: flex;
+          justify-content: space-between;
+        }
+        .filter__header {
+          padding: 0 0 0 14px;
+        }
+
+        button {
+          padding: 0 11px 0 4px;
+        }
+      }
     }
 
     &__reviews__search {
@@ -443,6 +469,17 @@
         .oval-location {
           font-size: 16px;
           margin-right: 9px;
+        }
+      }
+
+      .search-employeers__result__top {
+        padding: 0 0 23px 0;
+        .showing {
+          padding-top: 4px;
+        }
+
+        .filter__header {
+          padding: 0 4px 0 30px;
         }
       }
     }

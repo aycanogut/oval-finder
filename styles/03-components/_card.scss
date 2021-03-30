@@ -657,6 +657,7 @@
       }
       .card__description {
         @include card-description-grid;
+
         span {
           display: flex;
           align-items: center;
@@ -1122,6 +1123,7 @@
           .card__review:first-child {
             padding-right: 22px;
           }
+
           .card__review,
           span {
             display: block;
@@ -1503,6 +1505,55 @@
 
         .card__text {
           padding-right: 80px;
+        }
+      }
+    }
+
+    &--boards {
+      padding: 23px 0 23px 2px;
+      .card__topper {
+        .card__image {
+        }
+
+        .card__company-name {
+          padding: 0 0 0 12px;
+        }
+
+        span {
+          margin: 0 0 0 auto;
+        }
+      }
+
+      .card__body {
+        .card__title {
+          padding: 14px 0 13px 0;
+        }
+      }
+
+      .card__description {
+        span,
+        span:first-of-type,
+        span:first-child,
+        span:last-of-type {
+          margin: 0;
+          padding: 0;
+        }
+
+        span:first-child {
+          width: 80%;
+          padding-right: 19px;
+        }
+
+        span:nth-child(2) {
+          width: 60%;
+        }
+
+        i {
+          font-size: 20px;
+        }
+
+        .card__time {
+          padding: 0;
         }
       }
     }
