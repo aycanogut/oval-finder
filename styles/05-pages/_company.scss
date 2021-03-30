@@ -435,7 +435,11 @@
     }
 
     &__contact {
-      padding: 20px 24px 21px 24px;
+      padding: 19px 22px 21px 23px;
+
+      header {
+        padding-bottom: 3px;
+      }
 
       &__social-icons {
         padding: 11px 11px 12px 0;
