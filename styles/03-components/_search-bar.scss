@@ -458,10 +458,6 @@
             ::placeholder {
               color: $color-spunpearl;
             }
-
-            label {
-              // margin: 0;
-            }
           }
         }
 
@@ -485,32 +481,21 @@
     }
 
     &__reviews__search {
+      text-align: center;
       .search-box {
-        // padding: 0;
-        // margin: 10px 0;
+        box-shadow: none;
+        height: 36px;
+
         &__searchInput {
-          // padding: 0;
-          // justify-content: flex-end;
-
           .input {
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: flex-start;
-            // padding: 0;
-            // border: 1px solid $color-bonjour;
-            // width: 62%;
-
-            // label {
-            //   padding: 0;
-            //   margin: 4px 0 0 0;
-            //   input {
-            //     border: none;
-            //   }
-            // }
-
             .oval-search {
-              // padding: 9px 11px;
-              // font-size: 16px;
+              padding: 11px 9px;
+              font-size: 16px;
+              height: 10px;
+            }
+
+            ::placeholder {
+              color: $color-spunpearl;
             }
           }
         }

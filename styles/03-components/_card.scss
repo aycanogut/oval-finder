@@ -664,6 +664,10 @@
           padding-right: 2px;
         }
 
+        span:last-of-type {
+          margin-left: -22px;
+        }
+
         i {
           font-size: 19px;
           padding-right: 4px;
@@ -1559,6 +1563,7 @@
     }
 
     &--reviews {
+      margin: 0;
       padding: 24px 0 34px 0;
       border-bottom: 1px solid $color-bonjour;
       .card__topper {
