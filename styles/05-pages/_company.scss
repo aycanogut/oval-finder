@@ -454,10 +454,18 @@
       }
 
       &__search {
+        width: 72%;
         .search-box__searchInput {
           .input {
             width: 64.6%;
           }
+        }
+      }
+
+      &__ratings__right {
+        padding: 5px 0 0 7px;
+        .review {
+          padding: 0 0 0 2px;
         }
       }
 
@@ -466,13 +474,9 @@
 
         .btn-group-top {
           .filter__header {
-            padding: 0 8px 0 24px;
+            padding: 0 6px 4px 28px;
             margin-left: auto;
           }
-        }
-
-        .filter__header {
-          padding: 0 4px 0 30px;
         }
       }
     }
