@@ -1275,6 +1275,8 @@ h4 {
 
     &--reviews {
       .card__name {
+        font-size: $font-14;
+        line-height: 19px;
         font-weight: $light;
       }
 

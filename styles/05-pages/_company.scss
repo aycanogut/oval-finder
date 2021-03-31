@@ -391,7 +391,7 @@
       }
 
       .card--boards:first-child {
-        margin-top: 17px;
+        margin-top: 16px;
       }
     }
 
@@ -439,10 +439,14 @@
     }
 
     &__reviews {
-      padding: 29px 32px 29px 34px;
+      padding: 29px 32px 8px 34px;
 
       &__top {
         padding: 0 0 12px 0;
+
+        .card__time {
+          padding-top: 7px;
+        }
       }
 
       &__body {
@@ -458,13 +462,12 @@
       }
 
       .search-employeers__result__top {
-        margin-top: 36px;
+        margin-top: 18px;
 
         .btn-group-top {
-          text-align: left;
-
           .filter__header {
             padding: 0 8px 0 24px;
+            margin-left: auto;
           }
         }
 
