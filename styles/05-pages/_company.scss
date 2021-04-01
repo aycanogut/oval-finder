@@ -54,7 +54,7 @@
 
   &__vacancies {
     .search-employeers__result__top {
-      border-bottom: 1px solid rgba ($color-bonjour, 0.5);
+      border-bottom: 1px solid rgba($color-bonjour, 0.5);
     }
   }
 
@@ -220,7 +220,7 @@
 
     &__benefits {
       border: 1px solid rgba($color-bonjour, 0.5);
-      margin: 20px 10px 35px 10px;
+      margin: 20px 10px 20px 10px;
       padding: 15px 15px 9px 15px;
 
       &__top {
@@ -352,8 +352,8 @@
     }
 
     &__benefits {
-      margin: 30px 5px 62px 5px;
-      padding: 15px 15px 0 15px;
+      margin: 30px 5px 47px 5px;
+      padding: 15px 17px 0 30px;
     }
   }
 }
@@ -486,7 +486,7 @@
     }
 
     &__benefits {
-      margin-top: 32px;
+      margin: 32px 0 82px 0;
       padding: 0;
       &__top {
         padding: 30px 32px 0 32px;

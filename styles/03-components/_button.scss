@@ -334,9 +334,10 @@
         padding-right: 7px;
       }
     }
+
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
-      margin-bottom: 8px;
+      margin: 0 8px 8px 0;
 
       i {
         font-size: 14px;
@@ -348,6 +349,7 @@
         width: 16vh;
       }
     }
+
     &--recommendation-gray {
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;

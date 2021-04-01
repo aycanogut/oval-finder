@@ -779,7 +779,7 @@
     }
 
     &--benefits {
-      padding: 15px 15px 9px 15px;
+      padding: 0 15px 0 15px;
 
       img {
         margin-right: 6px;
@@ -1215,7 +1215,7 @@
     }
 
     &--reviews {
-      padding: 24px 22px 24px 0;
+      padding: 24px 0;
       border-bottom: 1px solid $color-bonjour;
       .card__topper {
         display: flex;
