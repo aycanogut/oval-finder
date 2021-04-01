@@ -248,28 +248,22 @@
         padding-right: 5px;
       }
     }
+
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
       margin-bottom: 8px;
+      width: 146px;
 
       i {
         font-size: 14px;
         padding-right: 5px;
       }
-
-      // I used this class to fix the button width when switching to a sm breakpoint
-      &--fixed-width {
-        width: 26vh;
-      }
     }
+
     &--recommendation-gray {
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;
-
-      // I used this class to fix the button width when switching to a sm breakpoint
-      &--fixed-width {
-        width: 23vh;
-      }
+      width: 133px;
     }
   }
 
@@ -338,26 +332,18 @@
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
       margin: 0 8px 8px 0;
+      width: 165px;
 
       i {
         font-size: 14px;
         padding-right: 7px;
       }
-
-      // I used this class to fix the button width when switching to a sm breakpoint
-      &--fixed-width {
-        width: 16vh;
-      }
     }
 
     &--recommendation-gray {
+      width: 149px;
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;
-
-      // I used this class to fix the button width when switching to a sm breakpoint
-      &--fixed-width {
-        width: 14vh;
-      }
     }
   }
 }
@@ -408,11 +394,6 @@
       i {
         font-size: 14px;
         padding-right: 7px;
-      }
-
-      // I used this class to fix the button width when switching to a sm breakpoint
-      &--fixed-width {
-        width: 18.5vh;
       }
     }
 
