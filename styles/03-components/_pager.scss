@@ -119,7 +119,8 @@
 
 @media (min-width: 992px) {
   .company {
-    &__vacancies__job-boards {
+    &__vacancies__job-boards,
+    &__reviews__cards {
       .page-navigations {
         padding: 22px 4px 10px 2px;
 

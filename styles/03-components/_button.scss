@@ -401,7 +401,7 @@
 
     &--recommendation-red {
       padding: 2px 6px 2px 6px;
-      margin-bottom: 8px;
+      margin: 0 8px 8px 0;
 
       i {
         font-size: 14px;
@@ -416,7 +416,6 @@
 
     &--recommendation-gray {
       padding: 2px 13px 2px 6px;
-      margin: 0 8px 8px 12px;
 
       // I used this class to fix the button width when switching to a sm breakpoint
     }

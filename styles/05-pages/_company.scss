@@ -383,7 +383,7 @@
     }
 
     &__vacancies {
-      padding: 20px 32px 20px 32px;
+      padding: 20px 32px 20px 30px;
       margin: -38px 0 32px;
 
       .card__descriptor {
@@ -439,7 +439,7 @@
     }
 
     &__reviews {
-      padding: 29px 32px 8px 34px;
+      padding: 29px 32px 8px 32px;
 
       &__top {
         padding: 0 0 12px 0;
@@ -482,6 +482,21 @@
 
       &__cards {
         padding: 21px 32px;
+      }
+    }
+
+    &__benefits {
+      margin-top: 32px;
+      padding: 0;
+      &__top {
+        padding: 30px 32px 0 32px;
+        header {
+          padding-bottom: 10px;
+        }
+      }
+
+      &__cards {
+        padding: 18px 32px 32px 32px;
       }
     }
   }

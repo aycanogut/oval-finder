@@ -1493,6 +1493,14 @@ h4 {
     .card__descriptor {
       font-size: $font-16;
     }
+
+    &__benefits {
+      &__top {
+        p {
+          letter-spacing: 0.3px;
+        }
+      }
+    }
   }
 
   // * components

@@ -1286,15 +1286,11 @@
     }
 
     &--benefits {
-      padding: 15px 15px 9px 15px;
+      padding: 15px 15px 23px 15px;
 
       &__top {
         header {
           padding-bottom: 8px;
-        }
-
-        p {
-          padding-bottom: 14px;
         }
       }
     }
@@ -1666,8 +1662,14 @@
     }
 
     &--benefits {
+      padding: 0 0 0 14px;
+
+      header {
+        padding-bottom: 4px;
+      }
+
       p {
-        padding: 0 0 0 24px;
+        padding: 0 0 13px 24px;
       }
     }
   }
