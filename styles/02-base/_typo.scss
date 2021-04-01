@@ -33,85 +33,6 @@ h4 {
 
 //  cards
 .card {
-  &--daily {
-    .card__bottom__apply {
-      line-height: $font-26;
-      p {
-        @include font(manrope, medium);
-        font-size: $font-14;
-        font-weight: $medium;
-      }
-      a {
-        @include font(manrope, bold);
-        font-size: $font-14;
-      }
-    }
-  }
-
-  &--testimonial {
-    figure {
-      @include font(manrope, semibold);
-      font-size: $font-32;
-      font-weight: $medium;
-      line-height: 44px;
-    }
-    figcaption {
-      @include font(inter, medium);
-      font-size: $font-20;
-      font-weight: $extralight;
-    }
-  }
-
-  &--clients {
-    p {
-      @include font(inter, regular);
-      font-size: $font-14;
-      line-height: $font-24;
-    }
-  }
-
-  &--company {
-    .card__reviews {
-      @include font(inter, semibold);
-      font-size: $font-14;
-      font-weight: $light;
-      span {
-        @include font(inter, regular);
-        font-size: $font-12;
-        font-weight: $light;
-      }
-    }
-  }
-
-  &--reviews {
-    .card__name {
-      @include font(manrope, bold);
-    }
-
-    .card__comment {
-      @include font(inter, bold);
-    }
-
-    .share {
-      @include font(inter, medium);
-    }
-
-    .report {
-      @include font(inter, regular);
-    }
-  }
-
-  &--benefits {
-    header {
-      @include font(inter, medium);
-    }
-    p {
-      @include font(inter, regular);
-    }
-  }
-
-  // * mutual classes on cards
-
   &__company-name {
     @include font(inter, medium);
     font-size: $font-14;
@@ -179,6 +100,84 @@ h4 {
 
   &__position {
     @include font(roboto, regular);
+  }
+
+  &--daily {
+    .card__bottom__apply {
+      line-height: $font-26;
+      p {
+        @include font(manrope, medium);
+        font-size: $font-14;
+        font-weight: $medium;
+      }
+      a {
+        @include font(manrope, bold);
+        font-size: $font-14;
+      }
+    }
+  }
+
+  &--testimonial {
+    figure {
+      @include font(manrope, semibold);
+      font-size: $font-32;
+      font-weight: $medium;
+      line-height: 44px;
+    }
+    figcaption {
+      @include font(inter, medium);
+      font-size: $font-20;
+      font-weight: $extralight;
+    }
+  }
+
+  &--clients {
+    p {
+      @include font(inter, regular);
+      font-size: $font-14;
+      line-height: $font-24;
+    }
+  }
+
+  &--company {
+    .card__reviews {
+      @include font(inter, semibold);
+      font-size: $font-14;
+      font-weight: $light;
+      span {
+        @include font(inter, regular);
+        font-size: $font-12;
+        font-weight: $light;
+      }
+    }
+  }
+
+  &--reviews {
+    .card__name {
+      @include font(manrope, bold);
+    }
+
+    .card__comment {
+      @include font(inter, bold);
+    }
+
+    .share {
+      @include font(inter, medium);
+    }
+
+    .report {
+      @include font(inter, regular);
+      font-size: $font-12;
+    }
+  }
+
+  &--benefits {
+    header {
+      @include font(inter, medium);
+    }
+    p {
+      @include font(inter, regular);
+    }
   }
 }
 
@@ -952,7 +951,7 @@ h4 {
 
       .card__comment {
         font-size: $font-14;
-        font-weight: $bold;
+        font-weight: $regular;
         line-height: 22px;
       }
 
@@ -1263,26 +1262,27 @@ h4 {
     }
 
     &--reviews {
+      .card__name {
+        font-size: $font-14;
+        font-weight: $light;
+      }
+
       .card__time {
         font-size: $font-14;
         line-height: 17px;
+      }
+
+      .card__comment {
+        font-weight: $bold;
       }
 
       .card__ratings {
         font-size: $font-14;
         line-height: 17px;
       }
-    }
 
-    &--reviews {
-      .card__name {
+      .share {
         font-size: $font-14;
-        line-height: 19px;
-        font-weight: $light;
-      }
-
-      .card__comment {
-        font-weight: $bold;
       }
     }
 
@@ -1333,7 +1333,7 @@ h4 {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) and (max-width: 991px) {
-  // * pages
+  // pages
   .homepage {
     &__text {
       line-height: $font-26;
@@ -1362,7 +1362,7 @@ h4 {
     }
   }
 
-  // * components
+  // components
   .card {
     &--testimonial {
       blockquote {
@@ -1391,9 +1391,17 @@ h4 {
     }
 
     &--reviews {
+      .card__name {
+        font-size: $font-14;
+      }
+
       .card__time {
         font-size: $font-14;
         line-height: 17px;
+      }
+
+      .share {
+        font-size: $font-14;
       }
     }
 

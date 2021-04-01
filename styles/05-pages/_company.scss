@@ -54,7 +54,7 @@
 
   &__vacancies {
     .search-employeers__result__top {
-      border-bottom: 1px solid $color-bonjour;
+      border-bottom: 1px solid rgba ($color-bonjour, 0.5);
     }
   }
 
@@ -478,6 +478,10 @@
             margin-left: auto;
           }
         }
+      }
+
+      &__cards {
+        padding: 21px 32px;
       }
     }
   }

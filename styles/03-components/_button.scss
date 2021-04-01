@@ -112,13 +112,15 @@
     color: $color-chateaugreen;
     background-color: rgba(57, 177, 99, 0.1);
   }
+
   &--recommendation-red {
     color: $color-bittersweet;
     background-color: rgba(255, 97, 97, 0.1);
   }
+
   &--recommendation-gray {
     color: $color-midgray;
-    background-color: rgba(100, 98, 106, 0.1);
+    background-color: $color-athensgray;
   }
 
   // pricing-price
@@ -385,6 +387,43 @@
 
     &--review {
       padding: 17px 46px 14px 51px;
+    }
+
+    &--recommendation-green {
+      padding: 2px 13px 2px 6px;
+      margin: 0 8px 8px 0;
+
+      i {
+        font-size: 16px;
+        padding-right: 7px;
+      }
+    }
+
+    &--recommendation-red {
+      padding: 2px 6px 2px 6px;
+      margin-bottom: 8px;
+
+      i {
+        font-size: 14px;
+        padding-right: 7px;
+      }
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+      &--fixed-width {
+        width: 18.5vh;
+      }
+    }
+
+    &--recommendation-gray {
+      padding: 2px 13px 2px 6px;
+      margin: 0 8px 8px 12px;
+
+      // I used this class to fix the button width when switching to a sm breakpoint
+    }
+
+    &--helpful {
+      width: 103px;
+      padding: 8px 16px;
     }
   }
 }
