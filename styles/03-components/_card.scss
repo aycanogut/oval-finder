@@ -1464,7 +1464,7 @@
 
     &--company {
       padding: 23px 0 32px 32px;
-      margin: 0 0 20px 0;
+
       .card__topper {
         .card__image {
           width: 72px;
@@ -1543,15 +1543,17 @@
         span:last-of-type {
           margin: 0;
           padding: 0;
+          width: 70%;
         }
 
         span:first-child {
-          width: 80%;
-          padding-right: 19px;
+          width: 110%;
         }
 
         span:nth-child(2) {
-          width: 60%;
+        }
+
+        span:last-of-type {
         }
 
         i {
