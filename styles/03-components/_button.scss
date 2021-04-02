@@ -251,7 +251,7 @@
 
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
-      margin-bottom: 8px;
+      margin: 0 8px 8px 0;
       width: 146px;
 
       i {
@@ -266,8 +266,6 @@
       width: 133px;
     }
   }
-
-  // this class is created because
 }
 
 // Small devices (phone, 577px and up)
@@ -406,10 +404,6 @@
 
     &--recommendation-gray {
       padding: 2px 13px 2px 6px;
-      margin-right: 16px;
-      width: 165px;
-
-      // I used this class to fix the button width when switching to a sm breakpoint
     }
 
     &--helpful {

@@ -723,7 +723,7 @@
       // recommendation buttons block position
       .block-buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
       }
 
       .card__body {
@@ -1634,7 +1634,7 @@
         div:last-child {
           grid-column-start: 1;
           grid-column-end: 1;
-          width: 23.5%;
+          width: 29%;
         }
       }
 
