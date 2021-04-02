@@ -788,7 +788,7 @@
       }
 
       p {
-        margin: 0 0 12px 2px;
+        margin: 0 0 18px 2px;
       }
     }
   }
@@ -1308,12 +1308,20 @@
     }
 
     &--benefits {
-      padding: 15px 15px 23px 15px;
+      padding: 5px 15px 23px 15px;
 
       &__top {
         header {
           padding-bottom: 8px;
         }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      p {
+        margin: 0;
       }
     }
   }
@@ -1672,13 +1680,18 @@
 
     &--benefits {
       padding: 0 0 0 14px;
+      &__top {
+        header {
+          padding-bottom: 4px;
+        }
 
-      header {
-        padding-bottom: 4px;
+        p {
+          padding: 0 0 13px 24px;
+        }
       }
 
       p {
-        padding: 0 0 13px 24px;
+        margin: 0 0 24px 0;
       }
     }
   }
