@@ -10,9 +10,6 @@
   // opacity: 1 !important;
   // visibility: visible !important;
 }
-body {
-  // overflow-x: hidden;
-}
 
 h1 {
   letter-spacing: 0;
@@ -37,15 +34,15 @@ p {
   margin: 0;
 }
 
+label {
+  margin: 0;
+}
+
 // * responsive
 
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
-  body {
-    // overflow-x: hidden;
-  }
-
   h1 {
     font-size: $font-28;
     text-align: center;
@@ -62,9 +59,6 @@ p {
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
-  body {
-  }
-
   h1 {
     font-size: $font-48;
     text-align: center;
@@ -80,9 +74,6 @@ p {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
-  body {
-  }
-
   h1 {
     font-size: $font-56;
     line-height: 76px;
@@ -99,8 +90,6 @@ p {
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
-  body {
-  }
   h1 {
     white-space: nowrap;
   }

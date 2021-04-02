@@ -1031,7 +1031,7 @@ h4 {
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
-  // pages
+  // * pages
   .homepage {
     &__text {
       font-size: $font-16;
@@ -1203,7 +1203,7 @@ h4 {
     }
   }
 
-  // layout
+  // * layout
   .footer {
     &__links {
       li > p {
@@ -1215,7 +1215,7 @@ h4 {
     }
   }
 
-  // components
+  // * components
   .card {
     &--testimonial {
       figure {
@@ -1287,6 +1287,18 @@ h4 {
       }
     }
 
+    &--benefits {
+      header {
+        font-size: $font-14 !important;
+        line-height: 17px;
+      }
+
+      p {
+        font-size: $font-12;
+        line-height: 20px;
+      }
+    }
+
     &__position {
       font-size: $font-14;
       line-height: 16px;
@@ -1334,7 +1346,7 @@ h4 {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) and (max-width: 991px) {
-  // pages
+  // * pages
   .homepage {
     &__text {
       line-height: $font-26;
@@ -1363,7 +1375,7 @@ h4 {
     }
   }
 
-  // components
+  // * components
   .card {
     &--testimonial {
       blockquote {

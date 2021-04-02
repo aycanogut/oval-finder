@@ -229,7 +229,7 @@
         }
 
         p {
-          padding-bottom: 14px;
+          padding-bottom: 18px;
         }
       }
     }
@@ -249,6 +249,20 @@
 
   .company {
     background: no-repeat url("../assets/img/company-dummy-sm.png") top center;
+
+    &__reviews {
+      .search-employeers__result__top {
+        .btn-group-top {
+          .showing {
+            padding-right: 22px;
+          }
+        }
+      }
+    }
+
+    &__benefits {
+      margin: 24px 0;
+    }
   }
 }
 
@@ -490,10 +504,16 @@
     &__benefits {
       margin: 32px 0 82px 0;
       padding: 0;
+
       &__top {
         padding: 30px 32px 0 32px;
+
         header {
           padding-bottom: 10px;
+        }
+
+        p {
+          padding-bottom: 8px;
         }
       }
 
@@ -507,9 +527,15 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .company {
+    background: no-repeat url("../assets/img/company-dummy-lg.png") 52.5% 2.9%;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 
 @media (min-width: 1400px) {
+  .company {
+    background: no-repeat url("../assets/img/company-dummy-lg.png") 50.32% 2.9%;
+  }
 }

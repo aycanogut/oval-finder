@@ -284,6 +284,15 @@
     &--helpful {
       padding: 10px 12px;
     }
+
+    &--recommendation-red {
+      width: 165px;
+      margin-right: 8px;
+    }
+
+    &--recommendation-gray {
+      width: 149px;
+    }
   }
 }
 
@@ -332,7 +341,6 @@
     &--recommendation-red {
       padding: 3px 6px 6px 6px;
       margin: 0 8px 8px 0;
-      width: 165px;
 
       i {
         font-size: 14px;
@@ -341,7 +349,6 @@
     }
 
     &--recommendation-gray {
-      width: 149px;
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;
     }

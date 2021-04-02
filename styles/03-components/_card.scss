@@ -195,22 +195,11 @@
           }
         }
       }
-      .card__time {
-      }
     }
     .card__recommendation {
       display: flex;
-      .btn_def {
-        i {
-        }
-      }
     }
-    .card__body {
-      .card__comment {
-      }
-      .card__text {
-      }
-    }
+
     .card__bottom {
       display: flex;
       .card__social,
@@ -656,11 +645,13 @@
           padding-right: 10px;
         }
       }
+
       .card__body {
         .card__title {
           padding: 12px 0;
         }
       }
+
       .card__description {
         @include card-description-grid;
 
@@ -714,7 +705,7 @@
 
       // this class is only visible on small breakpoints
       .card__position {
-        padding: 8px 0 10px 0;
+        padding: 10px 0 13px 0;
       }
 
       // three recommendation buttons placement
@@ -737,7 +728,7 @@
 
       .card__body {
         .card__comment {
-          padding: 12px 0 4px 0;
+          padding: 7px 0 4px 0;
         }
         .card__text {
           margin: 0;
@@ -752,6 +743,17 @@
           width: 100%;
 
           .left {
+            a span {
+              display: none;
+              display: flex;
+              align-content: center;
+              padding-top: 2px;
+            }
+
+            i {
+              padding: 0 4px 0 0;
+            }
+
             .report {
               margin-right: auto;
             }
@@ -849,6 +851,7 @@
       .card__description {
         display: flex;
         align-items: center;
+        padding-bottom: 6px;
 
         span {
           display: flex;
@@ -858,6 +861,10 @@
 
         span:first-of-type {
           padding-bottom: 0;
+        }
+
+        span:last-of-type {
+          padding-left: 22px;
         }
 
         i {
@@ -872,6 +879,20 @@
         .card__image {
           width: 48px;
           height: 48px;
+        }
+      }
+
+      .card__recommendation {
+        flex-direction: row;
+      }
+
+      .card__bottom {
+        .card__social {
+          .left {
+            i {
+              padding: 1px 4px 0 0;
+            }
+          }
         }
       }
     }
@@ -1193,6 +1214,7 @@
       }
 
       .card__description {
+        padding: 0;
         span {
           width: 100%;
           padding: 0;
@@ -1270,14 +1292,14 @@
           margin: 0;
         }
       }
+
       .card__bottom {
         padding: 18px 23px 0 50px;
-        i {
-          padding: 0 8px;
-        }
+
         .report {
           margin: auto 0;
         }
+
         .share {
           margin: auto 0 auto auto;
           padding: 0 32px;
@@ -1518,9 +1540,6 @@
     &--boards {
       padding: 23px 0 23px 2px;
       .card__topper {
-        .card__image {
-        }
-
         .card__company-name {
           padding: 0 0 0 12px;
         }
@@ -1550,12 +1569,6 @@
           width: 110%;
         }
 
-        span:nth-child(2) {
-        }
-
-        span:last-of-type {
-        }
-
         i {
           font-size: 20px;
         }
@@ -1570,6 +1583,7 @@
       margin: 0;
       padding: 23px 0 23px 0;
       border-bottom: 1px solid $color-bonjour;
+
       .card__topper {
         display: flex;
 
@@ -1639,16 +1653,6 @@
       .card__bottom {
         display: flex;
         padding: 0 0 0 53px;
-
-        .left a span {
-          display: flex;
-          align-content: center;
-          padding-top: 2px;
-        }
-
-        i {
-          padding: 0 4px 0 8px;
-        }
 
         .share {
           margin: auto 0 auto auto;

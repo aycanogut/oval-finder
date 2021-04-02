@@ -184,7 +184,7 @@
           }
 
           .input-search {
-            padding: 0;
+            padding: 10px 0 0 0;
           }
         }
       }
@@ -204,6 +204,7 @@
         margin: 0;
         padding-top: 20px;
         box-shadow: none;
+
         &__searchInput {
           padding: 0;
 
@@ -216,6 +217,10 @@
 
             input {
               border: none;
+            }
+
+            .search {
+              padding-top: 9px;
             }
 
             .oval-search {
@@ -275,6 +280,10 @@
 
         &__searchInput {
           padding: 0 15px;
+
+          .input {
+            padding: 0;
+          }
         }
 
         .wrapper {
@@ -295,6 +304,9 @@
       .search-employeers__result__top {
         text-align: center;
 
+        .showing {
+          padding-right: 22px;
+        }
         .filter__header {
           padding-top: 10px;
         }
@@ -306,6 +318,7 @@
         margin: 0;
         padding-top: 20px;
         box-shadow: none;
+
         &__searchInput {
           padding: 0;
 
