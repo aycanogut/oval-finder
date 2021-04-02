@@ -260,9 +260,74 @@
       }
     }
   }
+
   // search-box top ve search-box placement
   .homepage__search-box {
     margin: 120px 0;
+  }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
+        margin: 0;
+
+        &__searchInput {
+          padding: 0 15px;
+        }
+
+        .wrapper {
+          padding: 0;
+          border: 1px solid $color-bonjour;
+          i {
+            font-size: 15px;
+            padding: 11px 9px;
+          }
+
+          .input-search {
+            padding: 0;
+          }
+        }
+      }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        text-align: center;
+
+        .filter__header {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        margin: 0;
+        padding-top: 20px;
+        box-shadow: none;
+        &__searchInput {
+          padding: 0;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+
+            input {
+              border: none;
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

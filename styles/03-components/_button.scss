@@ -374,7 +374,7 @@
     }
 
     &--review {
-      padding: 17px 46px 14px 51px;
+      padding: 17px 30px 14px 30px;
     }
 
     &--recommendation-green {
@@ -420,6 +420,10 @@
 
     &--location {
       padding: 13px 86px;
+    }
+
+    &--review {
+      padding: 17px 46px 14px 51px;
     }
   }
 }

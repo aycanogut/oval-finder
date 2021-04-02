@@ -337,12 +337,13 @@
 
       .search-employeers__result__top {
         padding: 17px 0 17px 0;
+
+        .btn-group {
+          margin-top: -2px;
+        }
+
         .btn-group-top {
           text-align: left;
-
-          .filter__header {
-            padding: 0 0 0 24px;
-          }
         }
 
         .filter__header {
@@ -377,6 +378,7 @@
     &__buttons {
       padding: 26px 0 0 5px;
       margin-left: -6px;
+
       .btn_def--review {
         margin: 0 0 0 -4px;
       }
@@ -474,7 +476,7 @@
 
         .btn-group-top {
           .filter__header {
-            padding: 0 6px 4px 28px;
+            padding: 5px 6px 4px 28px;
             margin-left: auto;
           }
         }

@@ -1572,27 +1572,30 @@
       border-bottom: 1px solid $color-bonjour;
       .card__topper {
         display: flex;
+
         .card__user {
-          padding-left: 14px;
+          padding-left: 12px;
 
           .card__name {
             padding: 5px 0 0 0;
           }
-          .card__ratings {
-            margin-top: -4px;
 
+          .card__ratings {
             button {
               padding-left: 3px;
             }
 
             .card__position {
               padding: 10px 0 0 16px;
+              white-space: nowrap;
             }
           }
         }
+
         .card__time {
           margin-left: auto;
           padding-top: 8px;
+          white-space: nowrap;
         }
       }
 

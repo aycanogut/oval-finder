@@ -158,7 +158,8 @@ h4 {
     }
 
     .card__comment {
-      @include font(inter, bold);
+      @include font(poppins, bold);
+      font-weight: 100;
     }
 
     .share {
@@ -1553,6 +1554,14 @@ h4 {
         line-height: 20px;
       }
     }
+
+    &--reviews {
+      .card__topper {
+        .card__position {
+          font-size: $font-12;
+        }
+      }
+    }
   }
 
   .search-box {
@@ -1565,7 +1574,7 @@ h4 {
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
-  // pages
+  // * pages
   .homepage {
     &__find-job {
       &__title {
@@ -1576,10 +1585,20 @@ h4 {
     }
   }
 
-  // components
+  // * components
   .btn_def {
     &--find-jobs-now {
       font-size: $font-18;
+    }
+  }
+
+  .card {
+    &--reviews {
+      .card__topper {
+        .card__position {
+          font-size: $font-14;
+        }
+      }
     }
   }
 }
