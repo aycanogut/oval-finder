@@ -11,6 +11,7 @@
   &__heading__text {
     color: $color-midgray;
   }
+
   &__plans__form {
     .selection {
       color: $color-shipgray;
@@ -19,28 +20,41 @@
       color: $color-coral;
     }
   }
+
+  &__background {
+    background: url("/assets/img/pricing-dummy.jpg") no-repeat;
+    margin: 0 auto;
+  }
+
   &__text {
     color: $color-mountainmist;
   }
+
   &__stacks__title {
     color: $color-spunpearl;
   }
+
   &__stacks__text {
     color: $color-shipgray;
   }
+
   &__old-price {
     color: $color-spunpearl;
     text-decoration: line-through;
   }
+
   &__traits__option {
     color: $color-spunpearl;
   }
+
   &__traits__option--marked {
     color: $color-shipgray;
   }
+
   .oval-check-filled {
     color: $color-carbbeangreen;
   }
+
   &__button {
     a {
       text-decoration: none;
@@ -48,13 +62,17 @@
   }
 }
 
-
 // * responsive
-
 
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) {
+  .pricing {
+    &__background {
+      width: 100%;
+      height: 240px;
+    }
+  }
 }
 
 // Small devices (phone, 577px and up)
@@ -65,11 +83,23 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  .pricing {
+    &__background {
+      width: 100%;
+      height: 260px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .pricing {
+    &__background {
+      width: 1140px;
+      height: 450px;
+    }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
