@@ -79,6 +79,9 @@
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
+  .pricing {
+    padding: 0;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -98,7 +101,6 @@
   .pricing {
     padding: 0;
     &__background {
-      background-position: 0px 100px;
       width: 1140px;
       height: 450px;
     }
