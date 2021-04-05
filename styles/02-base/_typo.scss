@@ -11,9 +11,6 @@ h1 {
 
 h2 {
   @include font(manrope, semibold);
-  font-size: $font-48;
-  font-weight: $regular;
-  line-height: 66px;
 }
 
 h3 {
@@ -574,49 +571,44 @@ h4 {
 .pricing {
   &__heading__text {
     @include font(aileron, regular);
-    font-size: $font-16;
   }
-  .selection {
-    @include font(inter, medium);
-    font-size: $font-18;
+
+  &__plans__form {
+    .selection {
+      @include font(inter, medium);
+    }
+
+    .selection + span {
+      @include font(inter, medium);
+    }
   }
-  .selection + span {
-    @include font(inter, semibold);
-    font-size: $font-12;
-    font-weight: $regular;
-  }
-  &__text {
-    @include font(inter, regular);
-    font-size: $font-14;
-  }
+
   &__old-price {
     @include font(inter, regular);
-    font-size: $font-14;
   }
+
   &__price {
     @include font(manrope, extrabold);
-    font-size: $font-48;
   }
-  &__stacks-title {
+
+  &__text {
+    @include font(inter, medium);
+  }
+
+  &__stacks__title {
     @include font(inter, bold);
-    font-size: $font-12;
     font-weight: $regular;
     text-transform: uppercase;
   }
-  &__stacks-text {
+
+  &__stacks__text {
     @include font(inter, regular);
-    font-size: $font-16;
   }
+
   &__traits__option,
   &__traits__option--marked {
     @include font(inter, regular);
-    font-size: $font-14;
     font-weight: $bold;
-  }
-
-  &__option {
-    @include font(inter, regular);
-    font-size: $font-14;
   }
 }
 
@@ -641,10 +633,11 @@ h4 {
 // Extra Small devices (phone, 320px and up)
 
 @media (min-width: 320px) and (max-width: 576px) {
+  // * base
   h2 {
-    font-size: $font-20 !important;
+    font-size: $font-20;
     font-weight: $light;
-    line-height: 27px !important;
+    line-height: 27px;
   }
 
   // * pages
@@ -821,6 +814,52 @@ h4 {
           line-height: 15px;
         }
       }
+    }
+  }
+
+  .pricing {
+    h2,
+    &__plans header h2 {
+      font-size: $font-24;
+      line-height: $font-36;
+    }
+
+    &__heading__text {
+      font-size: $font-12;
+      line-height: $font-22;
+    }
+
+    &__plans__form {
+      .selection {
+        font-size: $font-13;
+        line-height: $font-16;
+      }
+
+      .selection + span {
+        font-size: $font-12;
+        line-height: $font-15;
+      }
+    }
+
+    &__old-price {
+      font-size: $font-14;
+      line-height: $font-17;
+    }
+
+    &__price {
+      font-size: $font-32;
+      line-height: $font-44;
+    }
+
+    &__text {
+      font-size: $font-14;
+      line-height: $font-21;
+    }
+
+    &__traits__option,
+    &__traits__option--marked {
+      font-size: $font-12;
+      line-height: $font-15;
     }
   }
 
@@ -1031,6 +1070,13 @@ h4 {
 // Small devices (phone, 577px and up)
 
 @media (min-width: 577px) {
+  // * base {
+  h2 {
+    font-size: $font-20;
+    font-weight: $light;
+    line-height: 27px;
+  }
+
   // * pages
   .homepage {
     &__text {
@@ -1203,6 +1249,47 @@ h4 {
     }
   }
 
+  .pricing {
+    h2,
+    &__plans header h2 {
+      font-size: $font-24;
+      line-height: $font-36;
+    }
+
+    &__plans__form {
+      .selection {
+        font-size: $font-13;
+        line-height: $font-16;
+      }
+
+      .selection + span {
+        font-size: $font-12;
+        line-height: $font-15;
+      }
+    }
+
+    &__old-price {
+      font-size: $font-14;
+      line-height: $font-17;
+    }
+
+    &__price {
+      font-size: $font-32;
+      line-height: $font-44;
+    }
+
+    &__text {
+      font-size: $font-14;
+      line-height: $font-21;
+    }
+
+    &__traits__option,
+    &__traits__option--marked {
+      font-size: $font-12;
+      line-height: $font-15;
+    }
+  }
+
   // * layout
   .footer {
     &__links {
@@ -1346,6 +1433,12 @@ h4 {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) and (max-width: 991px) {
+  // * base
+  h2 {
+    font-size: $font-42;
+    line-height: $font-57;
+  }
+
   // * pages
   .homepage {
     &__text {
@@ -1372,6 +1465,52 @@ h4 {
       .card__descriptor {
         font-size: $font-16;
       }
+    }
+  }
+
+  .pricing {
+    h2,
+    &__plans header h2 {
+      font-size: $font-36;
+      line-height: $font-50;
+    }
+
+    &__heading__text {
+      font-size: $font-16;
+      line-height: $font-24;
+    }
+
+    &__plans__form {
+      .selection {
+        font-size: $font-16;
+        line-height: $font-19;
+      }
+
+      .selection + span {
+        font-size: $font-12;
+        line-height: $font-15;
+      }
+    }
+
+    &__old-price {
+      font-size: $font-14;
+      line-height: $font-17;
+    }
+
+    &__price {
+      font-size: $font-32;
+      line-height: $font-44;
+    }
+
+    &__text {
+      font-size: $font-14;
+      line-height: $font-21;
+    }
+
+    &__traits__option,
+    &__traits__option--marked {
+      font-size: $font-14;
+      line-height: $font-17;
     }
   }
 
@@ -1458,9 +1597,9 @@ h4 {
 @media (min-width: 992px) {
   // * base
   h2 {
-    font-size: $font-48 !important;
+    font-size: $font-48;
     font-weight: $regular;
-    line-height: 66px !important;
+    line-height: 66px;
   }
 
   // * pages
@@ -1513,6 +1652,63 @@ h4 {
           letter-spacing: 0.3px;
         }
       }
+    }
+  }
+
+  .pricing {
+    h2,
+    &__plans header h2 {
+      font-size: $font-48;
+      line-height: $font-66;
+    }
+
+    &__heading__text {
+      font-size: $font-16;
+      line-height: $font-26;
+    }
+
+    &__plans__form {
+      .selection {
+        font-size: $font-18;
+        line-height: $font-30;
+      }
+
+      .selection + span {
+        font-size: $font-12;
+        line-height: $font-15;
+      }
+    }
+
+    &__old-price {
+      font-size: $font-14;
+      line-height: $font-17;
+    }
+
+    &__price {
+      font-size: $font-48;
+      line-height: $font-66;
+    }
+
+    &__text {
+      font-size: $font-14;
+      line-height: $font-21;
+    }
+
+    &__stacks__title {
+      font-size: $font-12;
+      font-weight: $regular;
+      line-height: $font-15;
+    }
+
+    &__stacks__text {
+      font-size: $font-16;
+      line-height: $font-21;
+    }
+
+    &__traits__option,
+    &__traits__option--marked {
+      font-size: $font-14;
+      line-height: $font-17;
     }
   }
 

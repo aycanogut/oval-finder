@@ -1,6 +1,6 @@
 // font-stack
 
-// font-family
+// * font-family
 
 // aileron
 $font-aileron: "Aileron";
@@ -24,7 +24,7 @@ $font-poppins: "Poppins SemiBold";
 // roboto
 $font-roboto: "Roboto";
 
-// font-weight
+// * font-weights
 $extralight: 200;
 $light: 300;
 $regular: 400;
@@ -33,15 +33,19 @@ $semibold: 600;
 $bold: 700;
 $extrabold: 800;
 
-// font-size
+// * font-sizes
 $font-9: 9px;
 $font-12: 12px;
 $font-13: 13px;
 $font-14: 14px;
+$font-15: 15px;
 $font-16: 16px;
 $font-17: 17px;
 $font-18: 18px;
+$font-19: 19px;
 $font-20: 20px;
+$font-20: 21px;
+$font-21: 21px;
 $font-22: 22px;
 $font-24: 24px;
 $font-26: 26px;
@@ -55,14 +59,17 @@ $font-42: 42px;
 $font-44: 44px;
 $font-46: 46px;
 $font-48: 48px;
+$font-50: 50px;
 $font-56: 56px;
+$font-57: 57px;
 $font-64: 64px;
+$font-66: 66px;
 $font-72: 72px;
 
-// font-path
+// * font-path
 $font-path: "../assets/fonts" !default;
 
-// font-file-names
+// * font-file-names
 $font-file-aileron: "Aileron-Regular";
 $font-file-inter-regular: "Inter-Regular";
 $font-file-inter-medium: "Inter-Medium";
@@ -76,7 +83,7 @@ $font-file-manrope-extrabold: "Manrope-ExtraBold";
 $font-file-poppins: "Poppins-SemiBold";
 $font-file-roboto: "Roboto-Regular";
 
-// font-stack
+// * font-stack
 $base-url: "/public/";
 $used-fonts: ();
 
@@ -462,10 +469,10 @@ $base-font-stack: (
   $src: ();
 
   $formats-map: (
-    eot: "#{$file-path}.eot?#iefix" ,
+    eot: "#{$file-path}.eot?#iefix",
     woff2: "#{$file-path}.woff2",
-    woff: "#{$file-path}.woff" ,
-    ttf: "#{$file-path}.ttf" ,
+    woff: "#{$file-path}.woff",
+    ttf: "#{$file-path}.ttf",
     svg: "#{$file-path}.svg##{$font-family}",
   );
 
