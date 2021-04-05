@@ -96,8 +96,9 @@
 
 @media (min-width: 992px) {
   .pricing {
+    padding: 0;
     &__background {
-      background-position: center;
+      background-position: 0px 100px;
       width: 1140px;
       height: 450px;
     }
