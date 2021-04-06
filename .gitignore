@@ -1,41 +1,41 @@
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
+# ### macOS ###
+# # General
+# .DS_Store
+# .AppleDouble
+# .LSOverride
 
-# Icon must end with two \r
-Icon
+# # Icon must end with two \r
+# Icon
 
-# Thumbnails
-._*
+# # Thumbnails
+# ._*
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+# # Files that might appear in the root of a volume
+# .DocumentRevisions-V100
+# .fseventsd
+# .Spotlight-V100
+# .TemporaryItems
+# .Trashes
+# .VolumeIcon.icns
+# .com.apple.timemachine.donotpresent
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# # Directories potentially created on remote AFP share
+# .AppleDB
+# .AppleDesktop
+# Network Trash Folder
+# Temporary Items
+# .apdisk
 
-### vscode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# ### vscode ###
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# *.code-workspace
 
-### Images ###
-*.jpg
-*.jpeg
-*.png
-*.svg
+# ### Images ###
+# *.jpg
+# *.jpeg
+# *.png
+# *.svg
