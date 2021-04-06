@@ -1,5 +1,19 @@
-# vs-code
-.idea
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# assets
-/assets
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### Images ###
+*.jpg
+*.jpeg
+*.png
+*.svg
