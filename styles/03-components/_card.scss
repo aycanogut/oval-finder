@@ -3,7 +3,7 @@
 .card {
   // homepage-daily-job-board
   &--daily {
-    border: 1px solid rgba(232, 231, 232, 0.5);
+    border: 1px solid rgba($color-bonjour, 0.5);
 
     .card__topper {
       display: flex;
@@ -79,7 +79,7 @@
 
   // search-jobsOne- srjOne-result
   &--srOne {
-    border: 1px solid rgba(232, 231, 232, 0.5);
+    border: 1px solid rgba($color-bonjour, 0.5);
 
     ul,
     p {
@@ -109,7 +109,7 @@
 
   // search-employeers-search-employeers-result
   &--employee {
-    border: 1px solid rgba(232, 231, 232, 0.5);
+    border: 1px solid rgba($color-bonjour, 0.5);
 
     .card__topper {
       img {
@@ -139,7 +139,7 @@
 
   // search-jobsTwo - srjTwo-job-details
   &--srjTwo {
-    border: 1px solid rgba(232, 231, 232, 0.5);
+    border: 1px solid rgba($color-bonjour, 0.5);
 
     .card__descriptor {
       ul {
@@ -222,6 +222,34 @@
     p {
       padding: 0 10px 0 24px;
       color: $color-mountainmist;
+    }
+  }
+
+  // pricing - pricing-card
+  &--pricing {
+    .pricing__prices {
+      .pricing__old-price {
+      }
+
+      .pricing__price {
+      }
+
+      .pricing_-text {
+      }
+    }
+
+    .pricing__traits {
+      &__option {
+      }
+
+      &__option--marked {
+      }
+    }
+
+    .pricing__options {
+    }
+
+    .pricing__button {
     }
   }
 
@@ -789,6 +817,67 @@
 
       p {
         margin: 0 0 18px 2px;
+      }
+    }
+
+    &--pricing {
+      padding: 15px 15px 20px 15px;
+      margin: 9px 0;
+      border: 1px solid rgba($color-bonjour, 0.5);
+      text-align: center;
+
+      .pricing__prices {
+        .pricing__old-price {
+        }
+
+        .pricing__price {
+          padding: 2px 0 12px 0;
+        }
+
+        .pricing__texts {
+          display: flex;
+          justify-content: center;
+          .pricing__text {
+            padding: 0 2px;
+          }
+        }
+      }
+
+      .pricing__traits {
+        padding: 16px 0 11px 0;
+
+        &__option,
+        &__option--marked {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2px 0 11px 0;
+
+          img {
+            padding-right: 4px;
+          }
+        }
+
+        &__option--marked {
+        }
+      }
+
+      .pricing__options {
+        // first item have a more space on bottom
+        .pricing__option:first-child {
+          padding-bottom: 17px;
+        }
+
+        .pricing__option:not(:first-child) {
+          padding: 11px 0 10px 0;
+          border-bottom: 1px solid $color-bonjour;
+        }
+
+        .pricing__option:last-child {
+        }
+      }
+
+      .pricing__button {
       }
     }
   }

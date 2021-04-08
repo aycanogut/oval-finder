@@ -119,6 +119,16 @@
         }
       }
     }
+
+    &__payment {
+      padding: 0 5px;
+
+      .pricing__button {
+        margin-top: 22px;
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }
 

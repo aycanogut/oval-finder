@@ -592,7 +592,7 @@ h4 {
   }
 
   &__text {
-    @include font(inter, medium);
+    @include font(inter, regular);
   }
 
   &__stacks__title {

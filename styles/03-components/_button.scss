@@ -125,12 +125,11 @@
 
   // pricing-price
   &--pricing {
-    padding: 16px 20px;
     background-color: $color-coral;
     color: $color-white;
   }
+
   &--pricing-gray {
-    padding: 16px 20px;
     background-color: $color-athensgray;
     color: $color-midgray;
   }
@@ -264,6 +263,11 @@
       padding: 3px 13px 6px 6px;
       margin: 0 8px 8px 0;
       width: 133px;
+    }
+
+    &--pricing,
+    &--pricing-gray {
+      padding: 10px 25px;
     }
   }
 }
