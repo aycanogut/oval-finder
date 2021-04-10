@@ -1825,6 +1825,47 @@
         margin: 0 0 24px 0;
       }
     }
+
+    &--pricing {
+      .pricing__options {
+        .pricing__option {
+          &:first-child {
+            padding: 36px 0 56px 0;
+          }
+
+          &:not(:first-child) {
+            padding: 13px 0 16px 0;
+          }
+
+          img {
+            margin-top: -5px;
+          }
+        }
+      }
+
+      &--only-text {
+        padding-top: 144px;
+        text-align: left;
+
+        .pricing__text {
+          padding: 30px 95px 0 0;
+        }
+
+        .pricing__stacks__title {
+          padding: 32px 0 9px 0;
+        }
+
+        .pricing__options {
+          .pricing__option {
+            color: $color-shipgray;
+
+            &:first-child {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
   // bigger-card (spotify)
@@ -1855,6 +1896,16 @@
         .card__video-lg {
           padding: 2px 36px 0 0;
           float: right;
+        }
+      }
+    }
+
+    &--pricing {
+      &--only-text {
+        padding-top: 145px;
+
+        .pricing__text {
+          padding: 30px 130px 0 0;
         }
       }
     }
