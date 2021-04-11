@@ -858,7 +858,6 @@
 
       .pricing__options {
         // first item have a more space on bottom
-
         .pricing__option {
           &:first-child {
             padding-bottom: 17px;
@@ -1835,33 +1834,34 @@
 
           &:not(:first-child) {
             padding: 13px 0 16px 0;
+            border: none;
           }
 
           img {
             margin-top: -5px;
           }
-        }
-      }
 
-      &--only-text {
-        padding-top: 144px;
-        text-align: left;
+          // below selectors are horizontal borders between pricing-option-items for lg and xl breakpoints. I used this method because margins between cards were causing spacing trouble on big resolution
+          &:after {
+            content: "";
+            position: absolute;
+            left: -41px;
+            bottom: 251px;
+            width: 245px;
+            height: 1px;
+            background-color: $color-bonjour;
+          }
 
-        .pricing__text {
-          padding: 30px 95px 0 0;
-        }
+          &:first-child:after {
+            bottom: 197px;
+          }
 
-        .pricing__stacks__title {
-          padding: 32px 0 9px 0;
-        }
+          &:nth-child(2):after {
+            bottom: 144px;
+          }
 
-        .pricing__options {
-          .pricing__option {
-            color: $color-shipgray;
-
-            &:first-child {
-              padding: 0;
-            }
+          &:nth-child(3):after {
+            bottom: 89px;
           }
         }
       }
@@ -1901,11 +1901,41 @@
     }
 
     &--pricing {
+      // this component is visible only on xl and contains only text. i used the pricing-card but hide the topper elements to get same alignment with the other cards
       &--only-text {
-        padding-top: 145px;
+        text-align: left;
+        white-space: nowrap;
+        z-index: 1;
+
+        .pricing__prices,
+        .pricing__button {
+          visibility: hidden;
+        }
 
         .pricing__text {
-          padding: 30px 130px 0 0;
+          white-space: normal;
+          padding-right: 45px;
+          line-height: -0.05;
+        }
+
+        .pricing__option {
+          color: $color-shipgray;
+        }
+
+        // JOB BOARD
+        .pricing__options:before {
+          content: "job board";
+          position: absolute;
+          top: 285px;
+          left: 0;
+        }
+
+        // MANAGED RECRUITING
+        .pricing__options:after {
+          content: "managed recruiting";
+          position: absolute;
+          bottom: 315px;
+          left: 0;
         }
       }
     }

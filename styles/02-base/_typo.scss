@@ -595,9 +595,9 @@ h4 {
     @include font(inter, regular);
   }
 
-  &__stacks__title {
-    @include font(inter, bold);
-    font-weight: $regular;
+  &__options:before,
+  &__options:after {
+    @include font(inter, medium);
     text-transform: uppercase;
   }
 
@@ -1698,10 +1698,12 @@ h4 {
       line-height: $font-21;
     }
 
-    &__stacks__title {
+    &__options:before,
+    &__options:after {
       font-size: $font-12;
       font-weight: $regular;
       line-height: $font-15;
+      letter-spacing: 0.86px;
     }
 
     &__stacks__text {

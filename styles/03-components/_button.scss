@@ -414,6 +414,11 @@
       width: 103px;
       padding: 8px 16px;
     }
+
+    &--pricing,
+    &--pricing-gray {
+      padding: 10px 36px;
+    }
   }
 }
 
@@ -431,6 +436,11 @@
 
     &--review {
       padding: 17px 46px 14px 51px;
+    }
+
+    &--pricing,
+    &--pricing-gray {
+      padding: 10px 36px;
     }
   }
 }

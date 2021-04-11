@@ -33,7 +33,8 @@
     color: $color-mountainmist;
   }
 
-  &__stacks__title {
+  &__options:before,
+  &__options:after {
     color: $color-spunpearl;
   }
 
@@ -225,6 +226,12 @@
 
     &__stacks {
       padding: 135px 0 0 0;
+    }
+
+    &__payment {
+      .pricing__button {
+        margin-top: 32px;
+      }
     }
   }
 }
