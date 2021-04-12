@@ -143,6 +143,11 @@
     &__payment {
       padding: 0 5px;
 
+      .card--pricing:last-child {
+        border: none;
+        margin-bottom: 105px;
+      }
+
       .pricing__button {
         margin-top: 22px;
         display: flex;
@@ -183,7 +188,7 @@
 
     &__plans {
       header h2 {
-        padding: 35px 140px 11px 140px;
+        padding: 35px 140px 16px 140px;
         text-align: center;
       }
 

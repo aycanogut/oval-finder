@@ -132,6 +132,7 @@
   &--pricing-gray {
     background-color: $color-athensgray;
     color: $color-midgray;
+    border: 1px solid $color-bonjour;
   }
 
   // company-right-block
@@ -148,6 +149,7 @@
       color: $color-midgray;
     }
   }
+
   &--review {
     display: inline-block;
     color: $color-white;
