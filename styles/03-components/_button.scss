@@ -127,12 +127,22 @@
   &--pricing {
     background-color: $color-coral;
     color: $color-white;
+
+    &:hover {
+      background-color: $color-blazeorange;
+      color: $color-white;
+    }
   }
 
   &--pricing-gray {
     background-color: $color-athensgray;
     color: $color-midgray;
     border: 1px solid $color-bonjour;
+
+    &:hover {
+      background-color: $color-bonjour;
+      color: $color-midgray;
+    }
   }
 
   // company-right-block
