@@ -73,50 +73,69 @@
 @media (min-width: 320px) {
   .pricing {
     padding: 0 20px;
+
+    &__heading {
+      text-align: center;
+
+      &__header {
+        padding-bottom: 9px;
+      }
+      &__text {
+        padding-bottom: 19px;
+      }
+    }
+
     &__background {
       width: 100%;
       height: 240px;
     }
 
-    &__plans__form {
-      padding: 11px 0;
-      margin: 0 5px;
-      text-align: center;
+    &__plans {
+      header h2 {
+        padding: 28px 0 11px 0;
+        text-align: center;
+      }
 
-      form {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: 100%;
-        height: 100%;
+      &__form {
+        padding: 11px 0;
+        margin: 8px 5px 15px 5px;
+        text-align: center;
 
-        .left,
-        .right {
+        form {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          position: relative;
           width: 100%;
           height: 100%;
-          padding: 6px 0;
 
-          .text {
+          .left,
+          .right {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding: 6px 0;
 
-            .selection {
-              padding: 12px 0 4px 0;
+            .text {
+              display: flex;
+              flex-direction: column;
+
+              .selection {
+                padding: 12px 0 4px 0;
+              }
             }
           }
-        }
 
-        .left::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 50%;
-          background-color: $color-bonjour;
-          width: 1px;
-          height: 75px;
+          .left::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background-color: $color-bonjour;
+            width: 1px;
+            height: 75px;
+          }
         }
       }
     }
@@ -145,44 +164,63 @@
 
 @media (min-width: 768px) {
   .pricing {
+    &__heading {
+      text-align: center;
+
+      &__header {
+        padding: 10px 100px 6px 100px;
+      }
+      &__text {
+        padding: 0 100px 24px 100px;
+      }
+    }
+
     &__background {
       width: 100%;
       height: 260px;
+      margin-top: 16px;
     }
 
-    &__plans__form {
-      margin: 0 87px;
-      padding: 9px 0;
+    &__plans {
+      header h2 {
+        padding: 35px 140px 11px 140px;
+        text-align: center;
+      }
 
-      form {
-        align-items: center;
+      &__form {
+        margin: 0 102px 17px 102px;
+        padding: 9px 0;
 
-        .left,
-        .right {
-          flex-direction: row;
-          justify-content: flex-start;
-          padding: 6px 0 6px 24px;
+        form {
+          align-items: center;
 
-          .text {
-            .selection {
-              padding: 0 0 6px 16px;
-            }
+          .left,
+          .right {
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 6px 0 6px 24px;
 
-            span {
-              padding-left: 16px;
-              text-align: left;
+            .text {
+              .selection {
+                padding: 0 0 6px 16px;
+              }
+
+              span {
+                padding-left: 16px;
+                text-align: left;
+              }
             }
           }
-        }
 
-        .left::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 50%;
-          background-color: $color-bonjour;
-          width: 1px;
-          height: 46px;
+          .left::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background-color: $color-bonjour;
+            width: 1px;
+            height: 46px;
+          }
         }
       }
     }
@@ -202,24 +240,26 @@
       height: 450px;
     }
 
-    &__plans__form {
-      margin: 0 24.9%;
-      padding: 14px 0 17px 0;
+    &__plans {
+      &__form {
+        margin: 0 24.9%;
+        padding: 14px 0 17px 0;
 
-      form {
-        .left,
-        .right {
-          padding: 4px 0 4px 24px;
+        form {
+          .left,
+          .right {
+            padding: 4px 0 4px 24px;
 
-          .text {
-            .selection {
-              padding: 0 0 0 16px;
+            .text {
+              .selection {
+                padding: 0 0 0 16px;
+              }
             }
           }
-        }
 
-        .left::after {
-          height: 60px;
+          .left::after {
+            height: 60px;
+          }
         }
       }
     }

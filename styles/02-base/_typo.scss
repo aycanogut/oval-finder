@@ -1484,6 +1484,12 @@ h4 {
       line-height: $font-24;
     }
 
+    &__plans {
+      header h2 {
+        font-size: $font-32;
+      }
+    }
+
     &__plans__form {
       .selection {
         font-size: $font-16;
