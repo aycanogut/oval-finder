@@ -1600,6 +1600,15 @@ h4 {
   .sort-by {
     font-size: $font-14;
   }
+
+  // * layout
+  .footer {
+    &__links {
+      li > a {
+        line-height: 18px;
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -1787,6 +1796,15 @@ h4 {
   .search-box {
     input {
       font-size: $font-18;
+    }
+  }
+
+  // * layout
+  .footer {
+    &__links {
+      li > a {
+        line-height: 16px;
+      }
     }
   }
 }
