@@ -101,12 +101,15 @@
 
     .footer__list {
       white-space: nowrap;
+
       li {
-        padding: 5px 0;
+        padding: 5px;
       }
+
       p {
         margin: 0;
       }
+
       li > a {
         text-decoration: none;
         @include transition(all 0.3s ease-in-out);
@@ -200,8 +203,7 @@
     &--lg {
       .footer__list {
         li {
-          padding: 0 5px;
-
+          padding: 0 12px;
           a {
             white-space: nowrap;
           }
@@ -217,15 +219,16 @@
         flex-direction: column;
 
         .footer__social-icons-sm > a {
-          padding: 0 5px;
+          padding: 0 5px 0 0;
         }
 
         &-links {
-          padding-top: 16px;
+          padding: 16px 0 0 0;
         }
 
         &-links ul li {
           padding: 0 2px;
+
           a {
             color: #64626a;
           }
@@ -242,12 +245,36 @@
           width: 100%;
           padding: 0;
           margin-bottom: 20px;
+
           img {
             float: left;
           }
+
           span {
             margin-left: auto;
           }
+        }
+
+        .list-unstyled li {
+          padding: 0;
+        }
+      }
+
+      .border-footer-wrapper {
+        background: #4b4b4b;
+        color: #868686;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        .border-footer {
+          content: "";
+          position: absolute;
+          left: -20px;
+          display: block;
+          width: 320px;
+          background-color: $color-bonjour;
+          height: 1px;
         }
       }
     }

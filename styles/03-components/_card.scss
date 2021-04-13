@@ -227,30 +227,6 @@
 
   // pricing - pricing-card
   &--pricing {
-    .pricing__prices {
-      .pricing__old-price {
-      }
-
-      .pricing__price {
-      }
-
-      .pricing_-text {
-      }
-    }
-
-    .pricing__traits {
-      &__option {
-      }
-
-      &__option--marked {
-      }
-    }
-
-    .pricing__options {
-    }
-
-    .pricing__button {
-    }
   }
 
   &--daily:hover,
@@ -442,19 +418,23 @@
 
       .card__description {
         padding: 21px 0 18px 0;
+
         span:first-child {
           display: flex;
           padding-bottom: 8px;
           margin-right: 10px;
         }
+
         span:last-child {
           padding-left: 14px;
         }
+
         i {
           font-size: 20px;
           padding-right: 7px;
         }
       }
+
       .card__bottom {
         .card__descriptor {
           padding: 18px 0 12px 0;
@@ -625,6 +605,7 @@
           }
         }
       }
+
       .card__description__icons {
         padding-top: 13px;
         span {
@@ -647,6 +628,7 @@
         .card__descriptor {
           padding-bottom: 14px;
         }
+
         p:nth-last-child(1) {
           margin: 0;
         }
@@ -1258,9 +1240,11 @@
       }
       .card__description__text {
         padding-right: 50px;
+
         .card__descriptor {
           padding-bottom: 12px;
         }
+
         p:nth-last-child(1) {
           margin: 0;
         }
@@ -1826,6 +1810,12 @@
     }
 
     &--pricing {
+      .pricing__prices {
+        .pricing__texts {
+          padding-bottom: 6px;
+        }
+      }
+
       .pricing__options {
         .pricing__option {
           &:first-child {
@@ -1901,7 +1891,13 @@
     }
 
     &--pricing {
+      .pricing__prices {
+        .pricing__texts {
+          padding-bottom: 15px;
+        }
+      }
       // this component is visible only on xl and contains only text. i used the pricing-card but hide the topper elements to get same alignment with the other cards
+
       &--only-text {
         text-align: left;
         white-space: nowrap;
@@ -1914,8 +1910,12 @@
 
         .pricing__text {
           white-space: normal;
-          padding-right: 45px;
+          padding: 2px 40px 0 0;
           line-height: -0.05;
+        }
+
+        .pricing__options {
+          padding-top: 15px;
         }
 
         .pricing__option {
@@ -1926,7 +1926,7 @@
         .pricing__options:before {
           content: "job board";
           position: absolute;
-          top: 285px;
+          top: 298px;
           left: 0;
         }
 
