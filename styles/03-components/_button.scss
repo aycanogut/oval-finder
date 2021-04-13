@@ -334,12 +334,12 @@
 
     &--share {
       padding: 12px 17px;
-      border-radius: 0px;
+      border-radius: 0;
     }
 
     &--review {
       padding: 13px 34px;
-      border-radius: 0px;
+      border-radius: 0;
     }
 
     &--recommendation-green {
@@ -452,7 +452,7 @@
 
     &--pricing,
     &--pricing-gray {
-      padding: 10px 36px;
+      padding: 14px 36px;
     }
   }
 }

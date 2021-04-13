@@ -261,18 +261,16 @@
       }
 
       .border-footer-wrapper {
-        background: #4b4b4b;
         color: #868686;
-        padding: 0;
         position: relative;
-        width: 100%;
         margin-bottom: 20px;
+
         .border-footer {
           content: "";
-          position: absolute;
-          left: -20px;
           display: block;
-          width: 320px;
+          position: absolute;
+          left: -6.5%;
+          width: 110.5%;
           background-color: $color-bonjour;
           height: 1px;
         }
@@ -331,6 +329,22 @@
       .footer--lg__brand-sm {
         display: none;
       }
+
+      .border-footer-wrapper {
+        color: #868686;
+        position: relative;
+        margin-bottom: 20px;
+
+        .border-footer {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -6.5%;
+          width: 111%;
+          background-color: $color-bonjour;
+          height: 1px;
+        }
+      }
     }
   }
 }
@@ -339,7 +353,7 @@
 
 @media (min-width: 992px) {
   .footer {
-    margin: 0;
+    margin: 0 0 44px 0;
 
     &__links {
       .row > div {
@@ -364,6 +378,10 @@
       }
       &__bottom {
         padding: 10px 0 0 0;
+      }
+
+      .border-footer-wrapper {
+        margin-bottom: 24px;
       }
     }
   }
