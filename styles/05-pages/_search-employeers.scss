@@ -1,8 +1,8 @@
 // search-employees
 
 .header-search-employeers {
-  background: $color-bridesmaid no-repeat right center url("../assets/img/bg-employee.svg");
-
+  background: $color-bridesmaid no-repeat right center
+    url("../assets/img/bg-employee.svg");
 
   // nav-button hover state
   .btn_def {
@@ -192,7 +192,7 @@
       }
 
       &__text {
-        padding: 9px 0 0 8px;
+        padding: 6px 0 0 7px;
       }
     }
 
