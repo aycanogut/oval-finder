@@ -3,9 +3,9 @@
 // * base
 h1 {
   @include font(manrope, semibold);
-  font-size: $font-64;
+  font-size: clamp($font-44, $font-56, $font-64);
   font-weight: $medium;
-  line-height: 87px;
+  line-height: clamp(0, 76px, 87px);
   letter-spacing: 3px;
 }
 
