@@ -314,9 +314,11 @@ h4 {
 .navbar {
   font-size: $font-14;
   line-height: $font-17;
+
   &__menu-left {
     @include font(inter, regular);
   }
+
   &__menu-right {
     @include font(inter, semibold);
     font-weight: $extralight;
@@ -868,6 +870,20 @@ h4 {
   }
 
   // * layout
+
+  .navbar {
+    &__menu,
+    &__btn {
+      font-size: $font-16;
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
+
+    .sign-in {
+      font-weight: normal;
+    }
+  }
+
   .footer {
     &__list {
       li p {
@@ -1295,6 +1311,15 @@ h4 {
   }
 
   // * layout
+  .navbar {
+    &__menu,
+    &__btn {
+      font-size: $font-15;
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
+  }
+
   .footer {
     &__links {
       li > p {
@@ -1602,6 +1627,20 @@ h4 {
   }
 
   // * layout
+  .navbar {
+    &__menu,
+    &__btn {
+      font-size: $font-14;
+      line-height: $font-17;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+
+    .sign-in {
+      line-height: 38px;
+    }
+  }
+
   .footer {
     &__links {
       li > a {
@@ -1800,6 +1839,20 @@ h4 {
   }
 
   // * layout
+  .navbar {
+    &__menu,
+    &__btn {
+      font-size: $font-14;
+      line-height: $font-17;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+
+    .sign-in {
+      line-height: 38px;
+    }
+  }
+
   .footer {
     &__links {
       li > a {

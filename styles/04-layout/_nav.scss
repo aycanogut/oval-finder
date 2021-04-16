@@ -21,6 +21,7 @@
       padding-right: 36px;
     }
   }
+
   &__menu-right {
     padding: 0 28px;
   }
@@ -42,19 +43,80 @@
 
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    z-index: 999;
+    &-collapse {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      height: 21vh;
+      padding-top: 12px;
+      text-align: center;
+      box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      background-color: rgba($color-white, 0.9);
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in;
+    }
+
+    .burger-toggler {
+      display: block;
+      cursor: pointer;
+      margin-right: 12px;
+
+      div {
+        width: 24px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+      }
+    }
+
+    &__menu {
+      padding: 24px 0;
+    }
+
+    &__menu-left,
+    &__menu-right {
+      .navbar__link {
+        padding: 0;
+      }
+    }
+
+    .btn-outline .btn_def {
+      padding: 14px 0;
+      border: none !important;
+    }
+  }
 }
 
-// Small devices (phone, 577px and up)
+.nav-active {
+  transform: translateX(0%);
+}
 
-@media (min-width: 577px) {
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
-  .navbar__list {
-    padding: 0 20px;
+  .navbar {
+    .navbar__list {
+      padding: 0 20px;
+      white-space: nowrap;
+    }
   }
 }
 

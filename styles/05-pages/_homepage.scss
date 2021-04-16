@@ -4,7 +4,8 @@
 .header-homepage {
   width: auto;
   height: 603px;
-  background: $color-corduroy no-repeat 100% 0 url("../assets/img/bg-homepage.svg");
+  background: $color-corduroy no-repeat 100% 0
+    url("../assets/img/bg-homepage.svg");
 
   // * nav
   .navbar {
@@ -22,6 +23,10 @@
           color: $color-rangoongreen;
         }
       }
+    }
+
+    .burger-toggler div {
+      background-color: #fff;
     }
   }
 
@@ -206,7 +211,6 @@
     height: 818px;
     position: relative;
     background: no-repeat 0 0 url("../assets/img/bg-testimonial.svg");
-
 
     &__blockquote-card {
       position: relative;
