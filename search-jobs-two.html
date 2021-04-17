@@ -13,32 +13,33 @@
 
 <body>
   <!-- nav start -->
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light navbar--company">
     <div class="container-fluid">
       <div class="navbar-brand">
         <img src="./assets/img/oval-black.svg" alt="">
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-default justify-content-between" id="navbarNav">
-        <ul class="navbar__list navbar-nav d-md-none d-lg-flex">
-          <li class="navbar__menu-left">
+      <div class="burger-toggler">
+        <div class="link-1"></div>
+        <div class="link-2"></div>
+        <div class="link-3"></div>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="navbar__list navbar-nav">
+          <li class="navbar__menu navbar__menu-left">
             <a class="navbar__link" href="#">For Job Seekers</a>
           </li>
-          <li class="navbar__menu-left">
+          <li class="navbar__menu  navbar__menu-left">
             <a class="navbar__link" href="#">For Employers</a>
           </li>
         </ul>
         <ul class="navbar__list navbar-nav ml-auto">
-          <li class="navbar__menu-right">
-            <a class="navbar__link" href="#">Sign In</a>
+          <li class="navbar__menu  navbar__menu-right">
+            <a class="navbar__link sign-in" href="#">Sign In</a>
+          </li>
+          <li class="navbar__btn navbar__list btn-outline">
+            <a href="#" class="btn_def btn_def--nav">Post a Job</a>
           </li>
         </ul>
-        <div class="navbar__btn btn-outline">
-          <a href="#" class="btn_def btn_def--nav">Post a Job</a>
-        </div>
       </div>
     </div>
   </nav>
@@ -348,6 +349,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="./assets/js/nav.js"></script>
+
 </body>
 
 </html>
