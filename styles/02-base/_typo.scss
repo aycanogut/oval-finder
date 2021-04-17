@@ -872,15 +872,11 @@ h4 {
   // * layout
 
   .navbar {
-    &__menu,
-    &__btn {
+    &__menu {
+      @include font(inter, regular);
       font-size: $font-16;
       font-weight: $bold;
       text-transform: uppercase;
-    }
-
-    .sign-in {
-      font-weight: normal;
     }
   }
 
