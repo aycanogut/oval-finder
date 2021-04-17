@@ -1083,8 +1083,9 @@
 
   .homepage {
     &__heading {
-      padding: 86px 37% 60px 0;
+      padding: 165px 37% 60px 0;
     }
+
     &__header__image {
       display: flex;
       justify-content: flex-end;
@@ -1092,7 +1093,7 @@
 
       img {
         position: absolute;
-        top: -82px;
+        top: 0px;
         right: 0;
         object-fit: cover;
         width: 350px;
@@ -1308,7 +1309,6 @@
 
       img {
         position: absolute;
-        top: -82px;
         right: 0;
         object-fit: cover;
         width: 510px;
@@ -1473,6 +1473,15 @@
       .oval-right {
         padding: 0 12px 0 0;
       }
+    }
+  }
+}
+
+// For 21:9 and bigger screens
+@media (min-width: 1600px) {
+  .homepage {
+    &__header__image {
+      display: none;
     }
   }
 }
