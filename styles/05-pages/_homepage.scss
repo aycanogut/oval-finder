@@ -13,6 +13,10 @@
       color: $color-white;
     }
 
+    &-collapse {
+      background-color: $color-corduroy;
+    }
+
     &__menu-left,
     &__menu-right {
       .navbar__link {
@@ -330,7 +334,20 @@
 @media (min-width: 320px) and (max-width: 576px) {
   .header-homepage {
     height: 850px;
+
+    .navbar {
+      &-collapse {
+        @include box-shadow(-1px 21px 63px -9px rgba(0, 0, 0, 0.61));
+      }
+
+      .btn_def {
+        &--nav {
+          color: $color-white;
+        }
+      }
+    }
   }
+
   .homepage {
     &__heading {
       margin-top: 20px;
@@ -569,7 +586,15 @@
 }
 
 @media (min-width: 370px) and (max-width: 458px) {
-  .homepage {
+  .header-homepage {
+    .navbar {
+      .btn_def {
+        &--nav {
+          color: $color-white;
+        }
+      }
+    }
+
     &__clients {
       background-position: 50%;
       background-size: auto 300px;
@@ -602,7 +627,16 @@
 @media (min-width: 577px) and (max-width: 767px) {
   .header-homepage {
     height: 975px;
+
+    .navbar {
+      .btn_def {
+        &--nav {
+          color: $color-white;
+        }
+      }
+    }
   }
+
   .homepage {
     &__heading {
       padding: 22px 0 200px 0;
@@ -829,7 +863,16 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .header-homepage {
     height: 878px;
+
+    .navbar {
+      .btn_def {
+        &--nav {
+          color: $color-white;
+        }
+      }
+    }
   }
+
   .homepage {
     &__heading {
       padding: 40px 200px 0 0;
@@ -1026,6 +1069,18 @@
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+  .header-homepage {
+    height: 878px;
+
+    .navbar {
+      .btn_def {
+        &--nav {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
   .homepage {
     &__heading {
       padding: 86px 37% 60px 0;

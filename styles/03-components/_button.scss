@@ -16,7 +16,6 @@
   &--nav {
     padding: 10px 22px 11px 19px;
     background-color: $color-white;
-    color: $color-shipgray;
 
     &:hover {
       color: $color-haiti;
@@ -221,6 +220,7 @@
       padding: 0;
       border: none;
       background-color: transparent;
+      color: $color-shipgray;
     }
 
     &--search-box {
@@ -323,6 +323,7 @@
 @media (min-width: 768px) {
   .btn_def {
     &--nav {
+      color: $color-shipgray;
       padding: 10px 22px 11px 19px;
     }
 

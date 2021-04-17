@@ -53,19 +53,18 @@
 
     &-collapse {
       position: absolute;
-      top: 60px;
+      top: 80px;
       right: 0;
       width: 100%;
       height: 26vh;
       padding-top: 12px;
       text-align: center;
       border-radius: 4px;
-      box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
-      -webkit-box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: -1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+
+      @include box-shadow(1px 71px 193px 7px rgba(0, 0, 0, 0.1));
       background-color: rgba($color-white, 0.96);
       transform: translateX(100%);
-      transition: transform 0.4s ease-in;
+      transition: transform 0.3s ease-in;
     }
 
     .burger-toggler {
