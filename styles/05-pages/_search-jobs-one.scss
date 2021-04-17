@@ -2,8 +2,8 @@
 
 // header-top
 .header-srOne {
-  background: $color-nebula no-repeat center right url("../assets/img/bg-searchone.svg");
-
+  background: $color-nebula no-repeat center right
+    url("../assets/img/bg-searchone.svg");
 
   .navbar {
     // nav-button hover state
@@ -118,7 +118,8 @@
 
   // search-box placement
   .search-jobsOne__search-box {
-    margin-top: 62px;
+    margin-top: 32px;
+
     .search-btn {
       margin: auto 0;
     }
@@ -153,7 +154,7 @@
   }
   // search-box placement
   .search-jobsOne__search-box {
-    margin-top: 53px;
+    margin-top: 133px;
   }
 
   .srjOne {

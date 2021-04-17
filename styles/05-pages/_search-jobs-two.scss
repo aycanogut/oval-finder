@@ -114,9 +114,6 @@
 @media (min-width: 768px) {
   .srjTwo {
     margin: 0 24px;
-    &__job-details {
-      margin-top: 30px;
-    }
 
     &__location {
       height: 100%;
@@ -176,11 +173,11 @@
 @media (min-width: 992px) {
   .srjTwo {
     &__job-details {
-      margin-top: 30px;
+      margin-top: 125px;
     }
 
     &__location {
-      margin: 46px 0 10px 0;
+      margin: 130px 0 10px 0;
 
       header {
         padding: 10px 0 12px 20px;

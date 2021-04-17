@@ -240,7 +240,7 @@
 
 @media (min-width: 577px) {
   .navbar {
-    .company {
+    &--company {
       &__benefits {
         margin: 20px 0 35px 0;
       }
