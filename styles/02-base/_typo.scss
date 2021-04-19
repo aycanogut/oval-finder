@@ -580,7 +580,7 @@ h4 {
       @include font(inter, medium);
     }
 
-    .selection + span {
+    .left .text {
       @include font(inter, medium);
     }
   }
@@ -841,7 +841,7 @@ h4 {
         line-height: $font-16;
       }
 
-      .selection + span {
+      .text {
         font-size: $font-12;
         line-height: $font-15;
       }
@@ -1278,7 +1278,7 @@ h4 {
         line-height: $font-16;
       }
 
-      .selection + span {
+      .text {
         font-size: $font-12;
         line-height: $font-15;
       }
@@ -1517,7 +1517,7 @@ h4 {
         line-height: $font-19;
       }
 
-      .selection + span {
+      .text {
         font-size: $font-12;
         line-height: $font-15;
       }
@@ -1725,11 +1725,6 @@ h4 {
       .selection {
         font-size: $font-18;
         line-height: $font-30;
-      }
-
-      .selection + span {
-        font-size: $font-12;
-        line-height: $font-15;
       }
     }
 

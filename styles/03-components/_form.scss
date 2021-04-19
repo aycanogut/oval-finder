@@ -61,6 +61,7 @@
 }
 
 form {
+  // checkboxes styles
   .checkbox {
     display: inline-flex;
     cursor: pointer;
@@ -98,6 +99,69 @@ form {
       }
     }
   }
+
+  // radio-buttons styles
+  .left,
+  .right {
+    margin: 0.5rem;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+
+      + .selection {
+        &:before {
+          content: "";
+          background: $color-white;
+          border-radius: 100%;
+          border: 1px solid $color-spunpearl;
+          display: inline-block;
+          position: relative;
+          margin-right: 1em;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 250ms ease;
+        }
+      }
+
+      &:checked {
+        + .selection {
+          &:before {
+            background-color: $color-coral;
+            box-shadow: inset 0 0 0 3px $color-white;
+            border: 1px solid $color-coral;
+          }
+        }
+      }
+
+      &:focus {
+        + .selection {
+          &:before {
+            outline: none;
+            border: 1px solid $color-coral;
+          }
+        }
+      }
+
+      &:disabled {
+        + .selection {
+          &:before {
+            background-color: $color-coral;
+            box-shadow: inset 0 0 0 3px $color-white;
+          }
+        }
+      }
+
+      + .selection {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 // * responsive
@@ -114,6 +178,20 @@ form {
         }
       }
     }
+
+    // radio-buttons
+    .left,
+    .right {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            width: 18px;
+            height: 18px;
+            top: -0.8em;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -125,6 +203,35 @@ form {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+  form {
+    // radio-buttons
+    .left {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            width: 24px;
+            height: 24px;
+            top: 0.65em;
+            left: -1.7em;
+          }
+        }
+      }
+    }
+
+    .right {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            width: 24px;
+            height: 24px;
+            top: -0.1em;
+            left: -1.2em;
+          }
+        }
+      }
+    }
+  }
+
   .filter {
     &__header {
       padding-bottom: 26px;
@@ -160,12 +267,56 @@ form {
         }
       }
     }
+
+    // radio-buttons
+    .left {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            left: -1em;
+          }
+        }
+      }
+    }
+
+    .right {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            top: 0.1em;
+          }
+        }
+      }
+    }
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  form {
+    .left {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            top: 0.65em;
+            left: -1.7em;
+          }
+        }
+      }
+    }
+
+    .right {
+      input[type="radio"] {
+        + .selection {
+          &:before {
+            top: 0.1em;
+            left: -1.2em;
+          }
+        }
+      }
+    }
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

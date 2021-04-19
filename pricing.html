@@ -73,7 +73,7 @@
         <!-- pricing-background end -->
         <!-- pricing-plans start -->
         <section class="pricing__plans">
-          <div class="container p-md-0">
+          <div class="container p-0">
             <header>
               <h2>Choose the plan that’s right for your business</h2>
             </header>
@@ -81,16 +81,18 @@
             <section class="pricing__plans__form">
               <form action="">
                 <div class="left">
-                  <input class="radio-box" type="radio" id="quarterly" name="plan" value="quarterly" checked>
-                  <div class="text">
+                  <div class="checkbox-item">
+                    <input class="radio-box" id="quarterly" name="radio" type="radio" checked>
                     <label for="quarterly" class="selection">Quarterly Plans</label>
-                    <span>Save up to 13%</span>
                   </div>
+                  <span class="text">Save up to 13%</span>
                 </div>
                 <div class="right">
-                  <input type="radio" id="monthly" name="plan" value="monthly">
-                  <div class="text">
-                    <label for="monthly" class="selection">Monthly Plans</label></div>
+                  <div class="checkbox-item">
+                    <input class="radio-box" id="monthly" name="radio" type="radio" checked>
+                    <label for="monthly" class="selection">Monthly Plans</label>
+                  </div>
+                  <span class="text invisible">Save up to 13%</span>
                 </div>
               </form>
             </section>
