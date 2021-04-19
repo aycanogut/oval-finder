@@ -1070,7 +1070,7 @@
 
 @media (min-width: 992px) {
   .header-homepage {
-    height: 878px;
+    height: 622px;
 
     .navbar {
       .btn_def {
@@ -1295,6 +1295,10 @@
 // X-Large devices (large desktops, 1200px and up)
 
 @media (min-width: 1200px) {
+  .header-homepage {
+    height: 602px;
+  }
+
   .homepage {
     &__heading {
       padding-right: 48%;
@@ -1458,6 +1462,7 @@
     }
   }
 }
+
 // XX-Large devices (larger desktops, 1400px and up)
 
 @media (min-width: 1400px) {
