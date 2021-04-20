@@ -154,51 +154,7 @@
       }
 
       &__form {
-        // margin: 0 87px 17px 87px;
-        // padding: 0;
-
-        form {
-          align-items: center;
-
-          .left,
-          .right {
-            flex-direction: column;
-            justify-content: flex-start;
-            padding: 0;
-            margin-left: -25px;
-            margin: 2px 0;
-
-            .checkbox-item {
-              input,
-              label {
-                flex-direction: row;
-                padding: 0;
-              }
-            }
-
-            .text {
-              margin-left: -10px;
-              text-align: left;
-            }
-          }
-
-          // border
-          .left::after {
-            content: "";
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            background-color: $color-bonjour;
-            width: 1px;
-            height: 46px;
-          }
-
-          .right {
-            label {
-              margin-top: 22px;
-            }
-          }
-        }
+        margin: 0 86px;
       }
     }
 

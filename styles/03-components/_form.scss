@@ -176,20 +176,6 @@ form {
         }
       }
     }
-
-    // radio-buttons
-    // .left,
-    // .right {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         width: 18px;
-    //         height: 18px;
-    //         top: -0.8em;
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   form.radio-buttons {
@@ -270,33 +256,60 @@ form {
     }
   }
 
-  form {
-    // // radio-buttons
-    // .left {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         width: 24px;
-    //         height: 24px;
-    //         top: 0.65em;
-    //         left: -1.7em;
-    //       }
-    //     }
-    //   }
-    // }
+  form.radio-buttons {
+    .radio-item {
+      padding: 0;
+      // placement and size of custom radio-buttons
+      input[id="monthly"] {
+        + .selection {
+          flex-direction: row;
+          margin-left: -56px;
 
-    // .right {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         width: 24px;
-    //         height: 24px;
-    //         top: -0.1em;
-    //         left: -1.2em;
-    //       }
-    //     }
-    //   }
-    // }
+          &:before {
+            width: 24px;
+            height: 24px;
+            right: -2px;
+            top: 1px;
+          }
+        }
+      }
+
+      // i gave different spacings to the label elements below because left side element have an extra item which orange-text and spacing was broken with the same spacing values
+      input[id="quarterly"] {
+        + .selection {
+          flex-direction: row;
+          margin-left: -56px;
+          margin-top: -23px;
+
+          &:before {
+            width: 24px;
+            height: 24px;
+            right: -2px;
+            top: 11px;
+          }
+        }
+      }
+
+      // orange 'save-up' text below left form label (Quarterly Plans)
+      label[for="quarterly"]:after {
+        bottom: -20px;
+        left: -14px;
+        white-space: nowrap;
+      }
+
+      // divider border between form elements
+      label[for="monthly"]:after {
+        top: 12px;
+        height: 46px;
+      }
+    }
+
+    label[for="quarterly"] {
+    }
+
+    label[for="monthly"] {
+      padding: 23px 0 25px 0;
+    }
   }
 }
 
