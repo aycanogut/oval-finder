@@ -100,14 +100,12 @@ form {
     }
   }
 
-  // radio-buttons styles
-  .left,
-  .right {
-    margin: 0.5rem;
-
+  //radio-buttons styles
+  .radio-item {
     input[type="radio"] {
       position: absolute;
       opacity: 0;
+      right: 10px;
 
       + .selection {
         &:before {
@@ -180,16 +178,79 @@ form {
     }
 
     // radio-buttons
-    .left,
-    .right {
+    // .left,
+    // .right {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         width: 18px;
+    //         height: 18px;
+    //         top: -0.8em;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  form.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .radio-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 0 37px 0;
+
+      // placement and size of custom radio-buttons
       input[type="radio"] {
         + .selection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           &:before {
             width: 18px;
             height: 18px;
-            top: -0.8em;
+            right: -4px;
+            top: -8px;
           }
         }
+      }
+
+      // this class wraps the left radio-box class and positions the orange 'save-up' text below.
+      // I used this method to give position value from the start of the label-text(Quarterly Plans).  it wasn't behave properly on responsive when position from grandparent.
+      .fix-position-relative {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      // orange 'save-up' text below left form label (Quarterly Plans)
+      label[for="quarterly"]:after {
+        content: "Save up to 13%";
+        position: absolute;
+        bottom: -20px;
+        left: 5px;
+        @include font(inter, medium);
+        font-size: $font-12;
+        line-height: $font-15;
+        color: $color-coral;
+      }
+
+      // divider border between form elements
+      label[for="monthly"]:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 50%;
+        background-color: $color-bonjour;
+        width: 1px;
+        height: 75px;
       }
     }
   }
@@ -203,39 +264,39 @@ form {
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
-  form {
-    // radio-buttons
-    .left {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            width: 24px;
-            height: 24px;
-            top: 0.65em;
-            left: -1.7em;
-          }
-        }
-      }
-    }
-
-    .right {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            width: 24px;
-            height: 24px;
-            top: -0.1em;
-            left: -1.2em;
-          }
-        }
-      }
-    }
-  }
-
   .filter {
     &__header {
       padding-bottom: 26px;
     }
+  }
+
+  form {
+    // // radio-buttons
+    // .left {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         width: 24px;
+    //         height: 24px;
+    //         top: 0.65em;
+    //         left: -1.7em;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // .right {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         width: 24px;
+    //         height: 24px;
+    //         top: -0.1em;
+    //         left: -1.2em;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -269,25 +330,25 @@ form {
     }
 
     // radio-buttons
-    .left {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            left: -1em;
-          }
-        }
-      }
-    }
+    // .left {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         left: -1em;
+    //       }
+    //     }
+    //   }
+    // }
 
-    .right {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            top: 0.1em;
-          }
-        }
-      }
-    }
+    // .right {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         top: 0.1em;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -295,27 +356,27 @@ form {
 
 @media (min-width: 1200px) {
   form {
-    .left {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            top: 0.65em;
-            left: -1.7em;
-          }
-        }
-      }
-    }
+    // .left {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         top: 0.65em;
+    //         left: -1.7em;
+    //       }
+    //     }
+    //   }
+    // }
 
-    .right {
-      input[type="radio"] {
-        + .selection {
-          &:before {
-            top: 0.1em;
-            left: -1.2em;
-          }
-        }
-      }
-    }
+    // .right {
+    //   input[type="radio"] {
+    //     + .selection {
+    //       &:before {
+    //         top: 0.1em;
+    //         left: -1.2em;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 

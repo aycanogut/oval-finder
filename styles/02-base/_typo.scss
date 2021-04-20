@@ -579,10 +579,6 @@ h4 {
     .selection {
       @include font(inter, medium);
     }
-
-    .left .text {
-      @include font(inter, medium);
-    }
   }
 
   &__old-price {
@@ -839,11 +835,6 @@ h4 {
       .selection {
         font-size: $font-13;
         line-height: $font-16;
-      }
-
-      .text {
-        font-size: $font-12;
-        line-height: $font-15;
       }
     }
 
@@ -1277,11 +1268,6 @@ h4 {
         font-size: $font-13;
         line-height: $font-16;
       }
-
-      .text {
-        font-size: $font-12;
-        line-height: $font-15;
-      }
     }
 
     &__old-price {
@@ -1515,11 +1501,6 @@ h4 {
       .selection {
         font-size: $font-16;
         line-height: $font-19;
-      }
-
-      .text {
-        font-size: $font-12;
-        line-height: $font-15;
       }
     }
 
