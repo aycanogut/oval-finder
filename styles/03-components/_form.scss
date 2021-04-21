@@ -259,6 +259,7 @@ form {
   form.radio-buttons {
     .radio-item {
       padding: 0;
+
       // placement and size of custom radio-buttons
       input[id="monthly"] {
         + .selection {
@@ -304,11 +305,8 @@ form {
       }
     }
 
-    label[for="quarterly"] {
-    }
-
     label[for="monthly"] {
-      padding: 23px 0 25px 0;
+      padding: 22px 0 25px 0;
     }
   }
 }
@@ -341,27 +339,19 @@ form {
         }
       }
     }
+  }
 
-    // radio-buttons
-    // .left {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         left: -1em;
-    //       }
-    //     }
-    //   }
-    // }
+  form.radio-buttons {
+    .radio-item {
+      // divider border between form elements
+      label[for="monthly"]:after {
+        height: 60px;
+      }
+    }
 
-    // .right {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         top: 0.1em;
-    //       }
-    //     }
-    //   }
-    // }
+    label[for="monthly"] {
+      padding: 26px 0 28px 0;
+    }
   }
 }
 

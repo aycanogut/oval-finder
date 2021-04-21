@@ -195,32 +195,7 @@
       }
 
       &__form {
-        margin: 0 25% 60px 25%;
-
-        form {
-          .left,
-          .right {
-            padding: 4px 0 4px 24px;
-
-            .text {
-              margin-left: -26px;
-              .selection {
-                padding: 0 0 0 16px;
-              }
-            }
-          }
-
-          .left::after {
-            top: 12px;
-            height: 60px;
-          }
-
-          .right {
-            label {
-              margin-top: 20px;
-            }
-          }
-        }
+        margin: 0 20.5% 60px 20.5%;
       }
     }
 
@@ -245,10 +220,12 @@
     margin-bottom: 278px;
 
     &__plans {
-      margin: 161px 0 0 0;
-
       header h2 {
         padding: 35px 220px 34px 220px;
+      }
+
+      &__form {
+        margin: 0 24.9% 60px 24.9%;
       }
     }
   }
