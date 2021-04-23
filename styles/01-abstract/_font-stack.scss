@@ -78,6 +78,7 @@ $font-72: 72px;
 $font-path: "../assets/fonts" !default;
 
 // * font-file-names
+
 $font-file-aileron: "Aileron-Regular";
 $font-file-inter-regular: "Inter-Regular";
 $font-file-inter-medium: "Inter-Medium";
@@ -296,6 +297,8 @@ $base-font-stack: (
       ),
     )
 );
+
+// maps
 
 /// Fetch nested keys
 ///

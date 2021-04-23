@@ -1,16 +1,16 @@
 // typo
 
-// * base
+// * headings
+
 h1 {
-  @include font(manrope, semibold);
+  @include font(inter, medium);
   font-size: clamp($font-44, $font-56, $font-64);
-  font-weight: $medium;
   line-height: clamp(0, 76px, 87px);
   letter-spacing: 3px;
 }
 
 h2 {
-  @include font(manrope, semibold);
+  @include font(inter, medium);
 }
 
 h3 {
@@ -116,11 +116,10 @@ h4 {
 
   &--testimonial {
     figure {
-      @include font(manrope, semibold);
-      font-size: $font-32;
-      font-weight: $medium;
+      @include font(inter, regular);
       line-height: 44px;
     }
+
     figcaption {
       @include font(inter, medium);
       font-size: $font-20;
@@ -335,23 +334,26 @@ h4 {
       font-size: $font-12;
     }
   }
+
   &--lg {
     &__bottom-links {
       @include font(inter, regular);
       font-size: $font-12;
     }
   }
+
   &__copyright,
   &__bottom {
     @include font(inter, regular);
     font-size: $font-12;
   }
+
   &__list {
     li p {
-      @include font(manrope, extrabold);
+      @include font(manrope, semibold);
       font-size: $font-14;
-      font-weight: $medium;
     }
+
     li a {
       @include font(inter, regular);
       font-size: $font-14;
@@ -360,6 +362,7 @@ h4 {
       line-height: 34px;
     }
   }
+
   &__language-bar {
     p {
       @include font(inter, regular);
@@ -891,6 +894,7 @@ h4 {
         font-size: $font-18;
         line-height: 30px;
       }
+
       figcaption {
         font-size: $font-14;
       }
@@ -1320,6 +1324,7 @@ h4 {
         font-size: $font-22;
         line-height: 36px;
       }
+
       figcaption {
         font-size: $font-18;
       }
@@ -1752,7 +1757,6 @@ h4 {
 
     &--testimonial {
       figure {
-        @include font(manrope, semibold);
         font-size: $font-32;
         font-weight: $medium;
         line-height: 44px;
