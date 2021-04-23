@@ -1,10 +1,11 @@
 // cards
 
 .card {
+  @include transition(box-shadow 0.3s);
+
   // homepage-daily-job-board
   &--daily {
     border: 1px solid rgba($color-bonjour, 0.5);
-
     .card__topper {
       display: flex;
       align-items: center;
@@ -37,21 +38,29 @@
         display: flex;
       }
     }
+
+    &:hover {
+      @include card-hover-shadow;
+    }
   }
 
   // homepage-testimonial
   &--testimonial {
     background-color: $color-white;
+
     .oval-quotation {
       font-size: 60px;
       border: 1px solid rgba(255, 203, 132, 0.4);
     }
+
     figure {
       margin: 0;
     }
+
     blockquote {
       color: $color-black;
     }
+
     &__aside {
       color: $color-mountainmist;
       span {
@@ -105,6 +114,10 @@
     .card__descriptor {
       border-top: 1px solid $color-bonjour;
     }
+
+    &:hover {
+      @include card-hover-shadow;
+    }
   }
 
   // search-employeers-search-employeers-result
@@ -132,8 +145,13 @@
         }
       }
     }
+
     .card__description {
       border-bottom: 1px solid $color-bonjour;
+    }
+
+    &:hover {
+      @include card-hover-shadow;
     }
   }
 
@@ -146,6 +164,7 @@
         margin: 0;
       }
     }
+
     .card__description {
       display: flex;
       border-bottom: 1px solid $color-bonjour;
@@ -168,6 +187,10 @@
         font-size: 20px;
       }
     }
+
+    &:hover {
+      @include card-hover-shadow;
+    }
   }
 
   // company - company-job-boards
@@ -185,6 +208,7 @@
   // company - company-reviews-cards
   &--reviews {
     border-bottom: 1px solid $color-bonjour;
+
     .card__topper {
       display: flex;
 
@@ -196,6 +220,7 @@
         }
       }
     }
+
     .card__recommendation {
       display: flex;
     }
@@ -215,10 +240,12 @@
       padding: 0 0 4px 0;
       color: $color-shipgray;
     }
+
     i {
       padding: 1px 8px 0 1px;
       color: $color-chateaugreen;
     }
+
     p {
       padding: 0 10px 0 24px;
       color: $color-mountainmist;
