@@ -1,17 +1,20 @@
-// font-stack
+/// font-stack
 
 // * font-family
 
 // aileron
+
 $font-aileron: "Aileron";
 
 // inter
+
 $font-inter-regular: "Inter Regular";
 $font-inter-medium: "Inter Medium";
 $font-inter-semibold: "Inter SemiBold";
 $font-inter-bold: "Inter Bold";
 
 // manrope
+
 $font-manrope-extralight: "Manrope ExtraLight";
 $font-manrope-light: "Manrope Light";
 $font-manrope-semibold: "Manrope SemiBold";
@@ -19,12 +22,15 @@ $font-manrope-bold: "Manrope Bold";
 $font-manrope-extrabold: "Manrope ExtraBold";
 
 // poppins
+
 $font-poppins: "Poppins SemiBold";
 
 // roboto
+
 $font-roboto: "Roboto";
 
 // * font-weights
+
 $extralight: 200;
 $light: 300;
 $regular: 400;
@@ -34,6 +40,7 @@ $bold: 700;
 $extrabold: 800;
 
 // * font-sizes
+
 $font-9: 9px;
 $font-12: 12px;
 $font-13: 13px;
@@ -42,7 +49,7 @@ $font-15: 15px;
 $font-16: 16px;
 $font-17: 17px;
 $font-18: 18px;
-$font-19: 19px; 
+$font-19: 19px;
 $font-20: 20px;
 $font-20: 21px;
 $font-21: 21px;
@@ -67,6 +74,7 @@ $font-66: 66px;
 $font-72: 72px;
 
 // * font-path
+
 $font-path: "../assets/fonts" !default;
 
 // * font-file-names
@@ -84,6 +92,7 @@ $font-file-poppins: "Poppins-SemiBold";
 $font-file-roboto: "Roboto-Regular";
 
 // * font-stack
+
 $base-url: "/public/";
 $used-fonts: ();
 

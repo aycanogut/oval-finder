@@ -208,15 +208,16 @@ form {
         }
       }
 
-      // this class wraps the left radio-box class and positions the orange 'save-up' text below.
-      // I used this method to give position value from the start of the label-text(Quarterly Plans).  it wasn't behave properly on responsive when position from grandparent.
+      /* this class wraps the left radio-box class and positions the orange 'save-up' /*!/ text below.
+      I used this method to give position value from the start of the label-text(Quarterly Plans).
+      it wasn't behave properly on responsive when take position from grandparent. */
       .fix-position-relative {
         position: relative;
         display: flex;
         flex-direction: column;
       }
 
-      // orange 'save-up' text below left form label (Quarterly Plans)
+      // orange 'save-up' text below left form label (Quarterly Plans) /*!/
       label[for="quarterly"]:after {
         content: "Save up to 13%";
         position: absolute;
@@ -275,7 +276,8 @@ form {
         }
       }
 
-      // i gave different spacings to the label elements below because left side element have an extra item which orange-text and spacing was broken with the same spacing values
+      /* i gave different spacings to the label elements below because left side element have
+      an extra item which orange-text and spacing was broken with the same spacing values */
       input[id="quarterly"] {
         + .selection {
           flex-direction: row;
@@ -359,27 +361,6 @@ form {
 
 @media (min-width: 1200px) {
   form {
-    // .left {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         top: 0.65em;
-    //         left: -1.7em;
-    //       }
-    //     }
-    //   }
-    // }
-
-    // .right {
-    //   input[type="radio"] {
-    //     + .selection {
-    //       &:before {
-    //         top: 0.1em;
-    //         left: -1.2em;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 

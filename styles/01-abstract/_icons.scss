@@ -1,6 +1,6 @@
-// icons
+/// icons
 
-// !icon-variables
+// * icon-variables
 
 $icomoon-font-family: "oval-job-finder" !default;
 $icomoon-font-path: "../assets/fonts" !default;
@@ -42,7 +42,7 @@ $oval-twitter-path1: "\e91e";
 $oval-twitter-path2: "\e91f";
 $oval-website: "\e920";
 
-// !font-face
+// * icon font-face
 
 @font-face {
   font-family: "#{$icomoon-font-family}";
@@ -295,7 +295,7 @@ $oval-website: "\e920";
   }
 }
 
-// star-colors
+// * star-colors
 
 .oval-star-solid,
 .oval-star-half,
