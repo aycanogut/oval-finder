@@ -5,14 +5,15 @@
   "repository": "https://github.com/aycanogut/oval-finder.git",
   "author": "Aycan ÖĞÜT <aycanonfire@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "parcel *.html",
-    "build": "parcel build *.html"
-  },
   "dependencies": {
+    "parcel": "^2.0.0-beta.2",
     "sass": "^1.32.11"
   },
+  "scripts": {
+    "dev": "rm -rf ./.cache && parcel *.html",
+    "build": "parcel build *.html "
+  },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@parcel/transformer-sass": "2.0.0-beta.2"
   }
 }

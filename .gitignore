@@ -43,6 +43,7 @@ Icon
 # Parcel related files
 dist/
 .cache/
+.parcel-cache/
 
 # Logs
 logs
