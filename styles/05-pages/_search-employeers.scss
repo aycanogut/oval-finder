@@ -1,0 +1,237 @@
+// search-employees
+
+.header-search-employeers {
+  background: $color-bridesmaid no-repeat right center
+    url("../assets/img/bg-employee.svg");
+
+  // nav-button hover state
+  .btn_def {
+    &--nav {
+      &:hover {
+        background-color: $color-provincial-pink;
+      }
+    }
+  }
+
+  .search-box {
+    &__top {
+      &--lg {
+        .search-box__top__btn:hover {
+          background-color: $color-provincial-pink;
+        }
+        .search-box__top__btn:focus {
+          background-color: $color-provincial-pink;
+        }
+        .search-box__top__btn:active {
+          background-color: $color-provincial-pink;
+        }
+      }
+    }
+  }
+}
+
+.search-employeers {
+  &__result {
+    &__top {
+    }
+  }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) {
+  .header-search-employeers {
+    height: 314px;
+  }
+
+  .search-box {
+    &--lg {
+      .search-btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .search-employeers {
+    padding: 0 12px;
+    .filter {
+      margin-top: 35px;
+
+      &__header {
+        margin-bottom: 19px;
+      }
+      &__card-body {
+        .row {
+          display: flex;
+          flex-direction: column;
+        }
+        .form-check {
+          margin: 2px 0;
+        }
+      }
+    }
+
+    &__result {
+      &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 17px;
+
+        .btn-group {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) {
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .header-search-employeers {
+    height: 245px;
+  }
+
+  .search-box {
+    &--lg {
+      .search-btn {
+        width: auto;
+      }
+    }
+  }
+
+  // search-box placement
+  .search-employeers__search-box {
+    margin-top: 62px;
+    .search-btn {
+      margin: auto 0;
+    }
+  }
+
+  .search-employeers {
+    // left-sidebar filter
+    .filter {
+      margin: 40px 0 16px 0;
+      background-color: white;
+      &__card-body {
+        .row {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    // right-main cards
+    &__result {
+      &__top {
+        display: block;
+        height: 100%;
+        margin-bottom: 5px;
+        .btn-group {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .header-search-employeers {
+    height: 241px;
+  }
+
+  // search-box placement
+  .search-employeers__search-box {
+    margin-top: 53px;
+  }
+
+  .search-employeers {
+    margin-top: 96px;
+
+    // left-sidebar filter
+    .filter {
+      margin: 2px 23px 0 0;
+
+      &__header {
+        margin-bottom: 2px;
+      }
+
+      &__search {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        padding: 4px 0 4px 8px;
+        i {
+          padding-right: 6px;
+        }
+      }
+
+      &__card-body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+      }
+
+      &__title {
+      }
+
+      &__text {
+        padding: 6px 0 0 7px;
+      }
+    }
+
+    // right-main cards
+    &__result {
+      padding: 0 1px 0 8px;
+
+      &__top {
+        display: block;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        .showing {
+        }
+
+        .btn-group {
+          float: right;
+        }
+        .btn {
+          margin-left: 2px;
+          padding: 0 !important;
+          text-underline-offset: 2px;
+        }
+      }
+    }
+
+    .page-navigations {
+      margin-bottom: 101px;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

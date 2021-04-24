@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "adsız klasör",
+    "files.exclude": {
+      ".vscode": true
+    }
+  }
+}

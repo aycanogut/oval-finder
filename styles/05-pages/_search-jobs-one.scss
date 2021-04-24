@@ -1,0 +1,203 @@
+// search-jobs-one
+
+// header-top
+.header-srOne {
+  background: $color-nebula no-repeat center right
+    url("../assets/img/bg-searchone.svg");
+
+  .navbar {
+    // nav-button hover state
+    .btn_def {
+      &--nav {
+        &:hover {
+          background-color: $color-mystic;
+        }
+      }
+    }
+  }
+
+  .search-box {
+    &__top {
+      &--lg {
+        .search-box__top__btn:hover {
+          background-color: $color-mystic;
+        }
+        .search-box__top__btn:focus {
+          background-color: $color-mystic;
+        }
+        .search-box__top__btn:active {
+          background-color: $color-mystic;
+        }
+      }
+    }
+  }
+}
+
+.srjOne {
+  .filter {
+  }
+
+  &__result {
+    &__top {
+      display: flex;
+      height: 100%;
+      .showing {
+      }
+
+      .sort-by {
+        margin-left: auto;
+      }
+      .btn {
+      }
+    }
+  }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) {
+  .header-srOne {
+    height: 314px;
+  }
+
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 22px;
+
+    .search-btn {
+      margin: 6px auto 10px auto;
+    }
+  }
+
+  .srjOne {
+    padding: 0 12px;
+    .filter {
+      margin-top: 35px;
+
+      &__header {
+        margin-bottom: 19px;
+      }
+      &__card-body {
+        .form-check {
+          margin: 2px 0;
+        }
+      }
+    }
+
+    &__result {
+      &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 17px;
+        .showing {
+        }
+        .btn-group {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) {
+  .srjOne {
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .header-srOne {
+    height: 245px;
+  }
+
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 32px;
+
+    .search-btn {
+      margin: auto 0;
+    }
+  }
+
+  .srjOne {
+    // left-sidebar filter
+    .filter {
+      margin: 40px 0 16px 0;
+      background-color: white;
+    }
+
+    // right-main cards
+    &__result {
+      &__top {
+        display: block;
+        height: 100%;
+        margin-bottom: 5px;
+        .btn-group {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .header-srOne {
+    height: 241px;
+  }
+  // search-box placement
+  .search-jobsOne__search-box {
+    margin-top: 133px;
+  }
+
+  .srjOne {
+    margin-top: 95px;
+
+    // left-sidebar filter
+    .filter {
+      margin: 0 23px 0 0;
+    }
+
+    // right-main cards
+    &__result {
+      padding: 0 1px 0 6px;
+
+      &__top {
+        display: block;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 20px;
+        margin: 0;
+
+        .btn-group {
+          float: right;
+        }
+        .btn {
+          margin-top: -6px;
+          padding: 0 !important;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+  .srjOne {
+    height: 1890px;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

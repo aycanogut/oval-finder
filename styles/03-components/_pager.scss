@@ -1,0 +1,149 @@
+// pager
+
+.page-navigations {
+  display: flex;
+
+  .page-item > a {
+    color: $color-mountainmist;
+    border: none;
+    padding: 0;
+  }
+  .page-item.active {
+    color: $color-shipgray;
+  }
+
+  .page-link {
+    @include transition(all 0.3s ease-in-out);
+    &:hover,
+    &:focus,
+    &:active {
+      @include transition(all 0.3s ease-in-out);
+      color: $color-shipgray;
+      background-color: $color-white;
+      border: none;
+    }
+    &:focus {
+      box-shadow: $color-white;
+    }
+  }
+
+  .pager > a {
+    color: $color-blazeorange;
+    text-decoration: none;
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+      @include transition(all 0.3s ease-in-out);
+      color: $color-shipgray;
+    }
+  }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) {
+  .page-navigations {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+    .pagination {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .page-item {
+        margin: 0 15px;
+      }
+    }
+    .pager {
+      display: flex;
+      justify-content: center;
+      padding-top: 19px;
+      a {
+        padding: 0 18px;
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) {
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .company {
+    .page-navigations {
+      padding: 21px 0 4px 0;
+      margin: 0;
+
+      .page-item {
+        margin: 0 32px 0 0;
+      }
+
+      .pager {
+        padding: 0;
+        .previous,
+        .next {
+          padding: 0;
+        }
+
+        .next {
+          padding-left: 33px;
+        }
+      }
+    }
+  }
+
+  .page-navigations {
+    padding: 18px 0;
+    flex-direction: row;
+
+    .pagination {
+    }
+    .pager {
+      display: flex;
+      margin-left: auto;
+      .previous,
+      .next {
+        padding-left: 36px;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .company {
+    &__vacancies__job-boards,
+    &__reviews__cards {
+      .page-navigations {
+        padding: 22px 4px 10px 2px;
+
+        .page-item {
+          padding-top: 3px;
+        }
+
+        .pager {
+          .next {
+            padding: 0 0 0 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

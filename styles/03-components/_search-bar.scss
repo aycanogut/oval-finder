@@ -1,0 +1,607 @@
+// search-bar
+
+.search-box {
+  display: flex;
+  background-color: $color-white;
+  &__top {
+    &__btn {
+      color: $color-shipgray;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      @include transition(all 0.3s ease-in-out);
+
+      &:link {
+        color: $color-shipgray;
+        background-color: $color-white;
+      }
+      &:visited {
+        color: $color-shipgray;
+        background-color: $color-white;
+      }
+      &:hover {
+        color: $color-shipgray;
+      }
+      &:focus {
+        color: $color-shipgray;
+        background-color: $color-dustygray;
+      }
+      &:active {
+        background-color: $color-dustygray;
+      }
+    }
+
+    &__btn:first-child {
+      padding: 6px 52px 11px 18px;
+    }
+    &__btn:last-child {
+      padding: 6px 18px 11px 17px;
+      margin-left: -4px;
+    }
+
+    &--lg {
+      .search-box__top__btn:link {
+        background-color: $color-white;
+      }
+      .search-box__top__btn:visited {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &__searchInput {
+    display: flex;
+    width: 100%;
+    .input {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 11px 24px;
+
+      i {
+        font-size: $font-24;
+        background-color: $color-white;
+        color: $color-spunpearl;
+        padding: 20px 12px 0 0;
+      }
+      .input-search {
+        width: 100%;
+        outline: none;
+        border: none;
+      }
+      .input-search::-webkit-input-placeholder {
+        color: $color-midgray;
+        letter-spacing: 0.1px;
+      }
+    }
+    .search-btn {
+      margin: auto;
+    }
+
+    .left,
+    .right {
+      .wrapper {
+        height: 100%;
+        display: flex;
+      }
+    }
+    .left {
+      position: relative;
+    }
+    // border-divider
+    .left:after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 1px;
+      background-color: $color-bonjour;
+    }
+  }
+}
+
+.showing {
+  color: $color-mountainmist;
+}
+
+.sort-by {
+  color: $color-mountainmist;
+}
+
+.filter {
+  color: $color-mountainmist;
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .search-box {
+    margin: 0 10px;
+    @include box-shadow(0px 10px 40px -15px rgba(0, 0, 0, 0.3));
+
+    &__top {
+      margin: 10px 0 10px 10px;
+    }
+    &__searchInput {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px 0 14px;
+      .input {
+        i {
+          font-size: 20px;
+        }
+      }
+      .left,
+      .right {
+        padding: 0;
+
+        .wrapper {
+          height: 100%;
+          display: flex;
+          padding: 4px;
+        }
+        .wrapper > i {
+          padding: 14px 18px 0 0;
+        }
+
+        .input-search {
+          outline: none;
+          border: none;
+          padding: 14px 0;
+        }
+      }
+      .left:after {
+        height: 1px;
+        width: 91%;
+        bottom: 0;
+        left: 10px;
+      }
+    }
+  }
+  // search-box top ve search-box placement
+  .homepage__search-box {
+    margin: 290px 0;
+  }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
+        margin: 0;
+
+        &__searchInput {
+          padding: 0 15px;
+        }
+
+        .wrapper {
+          padding: 0;
+          border: 1px solid $color-bonjour;
+          i {
+            font-size: 15px;
+            padding: 11px 9px;
+          }
+
+          .input-search {
+            padding: 10px 0 0 0;
+          }
+        }
+      }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        text-align: center;
+
+        .filter__header {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        margin: 0;
+        padding-top: 20px;
+        box-shadow: none;
+
+        &__searchInput {
+          padding: 0;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+
+            input {
+              border: none;
+            }
+
+            .search {
+              padding-top: 9px;
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .search-box {
+    &__top {
+      margin-bottom: 9px;
+    }
+    &__searchInput {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px 0 10px;
+      margin-bottom: 10px;
+      justify-content: center;
+      .input {
+        .input-search {
+          outline: none;
+          border: none;
+          padding: 12px 0;
+        }
+        .wrapper > i {
+          padding: 14px 18px 0 0;
+        }
+      }
+      .left:after {
+        height: 1px;
+        width: 500px;
+        top: 75px;
+        left: 10px;
+      }
+    }
+  }
+
+  // search-box top ve search-box placement
+  .homepage__search-box {
+    margin: 120px 0;
+  }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
+        margin: 0;
+
+        &__searchInput {
+          padding: 0 15px;
+
+          .input {
+            padding: 0;
+          }
+        }
+
+        .wrapper {
+          padding: 0;
+          border: 1px solid $color-bonjour;
+          i {
+            font-size: 15px;
+            padding: 11px 9px;
+          }
+
+          .input-search {
+            padding: 0;
+          }
+        }
+      }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        text-align: center;
+
+        .showing {
+          padding-right: 22px;
+        }
+        .filter__header {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        margin: 0;
+        padding-top: 20px;
+        box-shadow: none;
+
+        &__searchInput {
+          padding: 0;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+
+            input {
+              border: none;
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .search-box {
+    @include box-shadow(0px 10px 40px -15px rgba(0, 0, 0, 0.3));
+
+    &__top {
+      margin-bottom: 9px;
+    }
+
+    &__searchInput {
+      .input {
+        .input-search {
+          padding: 16px 0;
+        }
+      }
+      .left:after {
+        right: -8px;
+        top: 8px;
+      }
+      .right {
+        padding-left: 40px;
+      }
+    }
+  }
+  // search-box top ve search-box placement
+  .homepage__search-box {
+    margin: 428px 0;
+  }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        box-shadow: none;
+
+        .input {
+          padding: 0;
+
+          .wrapper {
+            display: flex;
+            align-items: center;
+            padding: 6px 9px;
+
+            .input-search,
+            .oval-location,
+            .oval-search {
+              padding: 0;
+            }
+
+            label {
+              margin: 0;
+            }
+          }
+        }
+
+        .left .wrapper {
+          border: 1px solid rgba($color-bonjour, 0.5);
+          border-right: none;
+        }
+
+        .right .wrapper {
+          border: 1px solid rgba($color-bonjour, 0.5);
+          border-right: none;
+        }
+
+        .oval-search,
+        .oval-location {
+          font-size: 14px;
+          margin-right: 9px;
+        }
+      }
+
+      // I reused the same component from search-employeers page
+      .search-employeers__result__top {
+        padding: 0 0 20px 0;
+        margin: 20px 0 0 0;
+        .btn-group-top {
+          display: flex;
+          justify-content: space-between;
+        }
+        .filter__header {
+          padding: 0 0 0 14px;
+        }
+
+        button {
+          padding: 0 11px 0 4px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      .search-box {
+        padding: 0;
+        margin: 10px 0;
+        &__searchInput {
+          padding: 0;
+          justify-content: flex-end;
+
+          .input {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            border: 1px solid $color-bonjour;
+            width: 62%;
+
+            label {
+              padding: 0;
+              margin: 4px 0 0 0;
+              input {
+                border: none;
+              }
+            }
+
+            .oval-search {
+              padding: 9px 11px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .search-box {
+    height: 86px;
+    @include box-shadow(0 60px 75px -4px rgba(0, 0, 0, 0.1));
+
+    &__top {
+      margin-bottom: 10px;
+    }
+    &__searchInput {
+      .input {
+        .input-search {
+          padding: 20px 0;
+        }
+      }
+      .left:after {
+        right: -10px;
+        top: 14px;
+      }
+      .right {
+        padding-left: 40px;
+      }
+    }
+
+    &--lg {
+      height: 80px !important;
+      .search-box__searchInput {
+        .input {
+          padding: 8px 50px;
+        }
+        .left {
+          padding-left: 26px;
+        }
+
+        // border-divider
+        .left:after {
+          height: 56px;
+          right: -27px;
+          top: 12px;
+        }
+      }
+    }
+  }
+  // search-box top ve search-box placement
+  .homepage__search-box {
+    margin: 38px 0;
+  }
+
+  .company {
+    // vacancies-search-box
+    &__search-box {
+      .search-box {
+        height: auto;
+        .input {
+          .wrapper {
+            // display: flex;
+            // align-items: center;
+            padding: 3px 0 4px 8px;
+
+            .input-search,
+            .oval-location,
+            .oval-search {
+            }
+
+            ::placeholder {
+              color: $color-spunpearl;
+            }
+          }
+        }
+
+        .oval-search,
+        .oval-location {
+          font-size: 16px;
+          margin-right: 9px;
+        }
+      }
+
+      .search-employeers__result__top {
+        margin: 21px 0 0 0;
+        padding: 0 0 23px 0;
+
+        .showing {
+          padding-top: 4px;
+        }
+
+        .filter__header {
+          padding: 0 4px 0 30px;
+        }
+      }
+    }
+
+    &__reviews__search {
+      text-align: center;
+      .search-box {
+        box-shadow: none;
+        height: 36px;
+
+        &__searchInput {
+          .input {
+            .oval-search {
+              padding: 11px 9px;
+              font-size: 16px;
+              height: 10px;
+            }
+
+            ::placeholder {
+              color: $color-spunpearl;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+  .search-box {
+    &__searchInput {
+      .left:after {
+        right: -18px;
+        top: 14px;
+      }
+    }
+  }
+  .homepage__search-box {
+    margin: 16px 0 0 0;
+  }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,128 @@
+// nav
+
+.navbar {
+  height: 80px;
+  padding: 16px 22px;
+
+  &__brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    li a {
+      text-decoration: none;
+    }
+  }
+
+  &__menu-left {
+    padding-left: 13px;
+    .navbar__link {
+      padding-right: 36px;
+    }
+  }
+
+  &__menu-right {
+    padding: 0 28px;
+  }
+
+  &__menu-left,
+  &__menu-right {
+    .navbar__link {
+      color: $color-shipgray;
+      @include transition(all 0.3s ease-in-out);
+      &:hover {
+        @include transition(all 0.3s ease-in-out);
+        color: $color-black;
+      }
+    }
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    z-index: 999;
+
+    &-collapse {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 60vh;
+      padding-top: 12px;
+      text-align: center;
+      border-radius: 4px;
+
+      @include box-shadow(1px 71px 193px 7px rgba(0, 0, 0, 0.1));
+      background-color: rgba($color-white, 0.96);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+
+    .burger-toggler {
+      display: block;
+      cursor: pointer;
+      margin-right: 12px;
+
+      div {
+        width: 24px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+      }
+    }
+
+    &__menu {
+      padding: 28px 0;
+    }
+
+    &__menu-left,
+    &__menu-right {
+      .navbar__link,
+      .btn_def,
+      .btn-outline {
+        padding: 0;
+      }
+    }
+
+    .btn-outline .btn_def {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 24px 100px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .navbar {
+    .navbar__list {
+      padding: 0 20px;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}

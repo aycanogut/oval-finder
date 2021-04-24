@@ -1,0 +1,255 @@
+// search-jobs-two
+
+.navbar {
+  &__menu-left > a,
+  &__menu-right > a {
+    color: $color-shipgray;
+  }
+
+  .btn-outline .btn_def {
+    border: 1px solid $color-mischka;
+  }
+}
+
+.srjTwo {
+  &__location {
+    header {
+      color: $color-black;
+    }
+
+    &__price {
+      color: $color-midgray;
+    }
+  }
+}
+
+// * responsive
+
+// Extra Small devices (phone, 320px and up)
+
+@media (min-width: 320px) {
+  .navbar {
+    padding: 20px 8px 20px 24px;
+  }
+
+  .srjTwo {
+    padding: 0 10px;
+
+    &__location {
+      height: 270px;
+      margin: 28px 0;
+
+      header {
+        padding: 0 16px 14px 16px;
+      }
+
+      &__image {
+        height: 120px;
+        background: no-repeat center top
+          url("../assets/img/search-jobs-two-dummy-md.png");
+        overflow: hidden;
+        margin: 0 16px;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin: 16px 0 15px 28px;
+
+        i {
+          font-size: 19px;
+          padding-right: 7px;
+        }
+      }
+
+      &__btn {
+        text-align: center;
+      }
+    }
+
+    &__similiar-jobs {
+      padding: 0;
+      margin: 0;
+
+      &__header {
+        padding-bottom: 10px;
+      }
+      // same cards with the homepage(card--daily) but size changes on the xs size
+      .card--daily {
+        margin: 15px -16px;
+        min-height: 193px;
+
+        .card__topper {
+          padding: 15px;
+        }
+
+        .card__body {
+          padding: 2px 15px;
+        }
+
+        .card__bottom {
+          .card__description {
+            padding: 16px;
+
+            span {
+              display: flex;
+              align-content: center;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (phone, 577px and up)
+
+@media (min-width: 577px) {
+}
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 768px) {
+  .srjTwo {
+    margin: 0 24px;
+
+    &__location {
+      height: 100%;
+      margin-top: 20px;
+
+      header {
+        padding: 10px 0 0 32px;
+      }
+
+      &__image {
+        height: 100%;
+        background: no-repeat center
+          url("../assets/img/search-jobs-two-dummy-md.png");
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 10px 0 0;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 0 22px;
+
+        i {
+          padding-right: 8px;
+          font-size: 20px;
+        }
+      }
+
+      &__btn {
+        padding: 8px 12px 0 0;
+      }
+    }
+
+    &__similiar-jobs {
+      margin-top: 88px;
+      header {
+        padding: 60px 0 20px 0;
+      }
+    }
+
+    // same cards with the homepage(card--daily) but size changes on the md size
+    .card--daily {
+      min-width: 300px;
+      min-height: 206px;
+      margin: 0 0 24px 0;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+
+@media (min-width: 992px) {
+  .srjTwo {
+    &__job-details {
+      margin-top: 125px;
+    }
+
+    &__location {
+      margin: 130px 0 10px 0;
+
+      header {
+        padding: 10px 0 12px 20px;
+      }
+
+      &__image {
+        max-height: 120px;
+        background: no-repeat center
+          url("../assets/img/search-jobs-two-dummy-lg.png");
+        margin: 0;
+      }
+
+      &__bottom {
+        display: block;
+        padding: 0;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 14px 0 14px 12px;
+        i {
+          padding-right: 8px;
+          font-size: 20px;
+        }
+      }
+
+      &__btn {
+        padding: 0;
+      }
+    }
+
+    &__similiar-jobs {
+      margin: 0;
+      header {
+        padding: 60px 0 20px 0;
+      }
+
+      // same cards with the homepage(card--daily) but size changes on the md size
+      .card--daily {
+        min-width: auto;
+        min-height: 25vh;
+
+        .card__body {
+          padding: 1px 20px 0 23px;
+        }
+
+        .card__bottom {
+          .card__description {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+
+@media (min-width: 1200px) {
+  .srjTwo {
+    &__location {
+      &__price {
+        padding: 14px 0 14px 24px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@media (min-width: 1400px) {
+}
