@@ -25,16 +25,18 @@
     }
     .dropdown-menu,
     button {
-      margin-top: -20px;
+      // margin-top: -20px;
       color: $color-midgray;
       background-color: transparent;
       border: 1px solid $color-bonjour;
       border-radius: 10px;
+
       &:hover,
       &:focus,
       &:active {
         background-color: $color-white;
       }
+
       .dropdown-menu {
         padding: 0;
         margin-top: 16px;
@@ -187,12 +189,15 @@
         justify-content: center;
         width: 100%;
         margin: 0;
+
         ul {
           justify-content: space-between;
         }
+
         li {
           white-space: nowrap;
           margin: 0 6px;
+
           a {
             padding-left: 0;
           }
@@ -204,6 +209,7 @@
       .footer__list {
         li {
           padding: 0 12px;
+
           a {
             white-space: nowrap;
           }
@@ -284,10 +290,12 @@
 @media (min-width: 768px) {
   .footer {
     margin: 0;
+
     &__links {
       .row > div {
         padding: 0;
         margin: 0 7px;
+
         .md-margin {
           width: 100%;
           margin-left: 74%;
@@ -306,6 +314,7 @@
       &__bottom-links {
         margin-left: auto;
       }
+
       &__bottom-links > ul {
         li {
           padding-top: 6px;
@@ -320,12 +329,14 @@
       &__bottom {
         padding-bottom: 22px;
       }
+
       &__bottom-links > ul {
         li {
           margin-left: -16px;
           padding: 6px 20px;
         }
       }
+
       .footer--lg__brand-sm {
         display: none;
       }
@@ -376,6 +387,7 @@
           padding-right: 25px;
         }
       }
+
       &__bottom {
         padding: 10px 0 0 0;
       }
