@@ -44,19 +44,19 @@
 .env
 
 # Parcel related files
-dist/
-.cache/
+# dist/
+# .cache/
 
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-yarn.lock*
-package-lock.json
-Cargo.lock
+# logs
+# *.log
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# yarn.lock*
+# package-lock.json
+# Cargo.lock
 
-# Dependency directories
-node_modules/
-jspm_packages/
+# # Dependency directories
+# node_modules/
+# jspm_packages/
