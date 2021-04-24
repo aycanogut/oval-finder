@@ -10,8 +10,7 @@
     "sass": "^1.32.11"
   },
   "scripts": {
-    "dev": "rm -rf ./.cache && parcel *.html",
-    "build": "parcel build *.js"
+    "dev": "rm -rf ./.cache && parcel *.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-beta.2"
