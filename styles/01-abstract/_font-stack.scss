@@ -112,7 +112,7 @@ $base-font-stack: (
           family: Aileron,
           path: "../assets/fonts/Aileron-Regular",
           formats: (
-            woff2 woff ttf,
+            woff2 woff ttf otf,
           ),
         ),
       ),
@@ -146,7 +146,7 @@ $base-font-stack: (
           family: Inter Medium,
           path: "../assets/fonts/Inter-Medium",
           formats: (
-            woff2 woff ttf,
+            woff2 woff otf,
           ),
         ),
       ),

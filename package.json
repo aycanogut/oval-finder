@@ -1,0 +1,8 @@
+{
+  "name": "oval-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aycanogut/oval-finder.git",
+  "author": "Aycan ÖĞÜT <aycanonfire@gmail.com>",
+  "license": "MIT"
+}
