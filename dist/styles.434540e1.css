@@ -18338,6 +18338,9 @@ header.header-homepage .navbar {
   color: #3b3a40;
 }
 
+.company {
+  background-color: red;
+}
 .company__ratings > span {
   color: #3b3a40;
 }
