@@ -9965,7 +9965,10 @@ h4 {
     font-size: 12px;
     line-height: 15px; }
   .dropdown-item {
-    font-size: 12px; }
+    font-family: Inter Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; }
   .search-box input {
     font-size: 14px; }
   .sort-by {
@@ -10145,6 +10148,11 @@ h4 {
   .btn_def--helpful {
     font-size: 14px;
     line-height: 17px; }
+  .dropdown-item {
+    font-family: Inter Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; }
   .search-box input {
     font-size: 16px; }
   .sort-by {
@@ -10222,6 +10230,11 @@ h4 {
     font-size: 22px;
     line-height: 34px; }
   .btn_def--find-jobs-now {
+    font-size: 18px; }
+  .dropdown-item {
+    font-family: Inter Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px; }
   .search-box__searchInput {
     font-size: 16px; }
@@ -13114,6 +13127,12 @@ header.header-homepage .navbar {
     margin: 40px 0; }
     .homepage__find-job button {
       padding: 0; }
+    .homepage__find-job .dropdown-menu {
+      text-align: center;
+      border: 2px dotted #000000;
+      border-radius: 14px; }
+      .homepage__find-job .dropdown-menu .dropdown-item {
+        border: 1px solid rgba(232, 231, 232, 0.5); }
     .homepage__find-job__btn {
       display: flex;
       justify-content: center;
@@ -13276,6 +13295,12 @@ header.header-homepage .navbar {
     text-align: center; }
     .homepage__find-job button {
       padding: 0; }
+    .homepage__find-job .dropdown-menu {
+      text-align: center;
+      border: 2px dotted #000000;
+      border-radius: 14px; }
+      .homepage__find-job .dropdown-menu .dropdown-item {
+        border: 1px solid rgba(232, 231, 232, 0.5); }
     .homepage__find-job__btn > a {
       margin: 16px auto; } }
 
@@ -13394,6 +13419,12 @@ header.header-homepage .navbar {
     padding: 137px 120px; }
     .homepage__find-job__title {
       text-align: center; }
+    .homepage__find-job .dropdown-menu {
+      text-align: center;
+      border: 2px dotted #000000;
+      border-radius: 14px; }
+      .homepage__find-job .dropdown-menu .dropdown-item {
+        border: 1px solid rgba(232, 231, 232, 0.5); }
     .homepage__find-job__btn {
       display: flex;
       justify-content: center;
@@ -13532,6 +13563,12 @@ header.header-homepage .navbar {
       .homepage__find-job__title button {
         padding: 0;
         margin-top: -5px; }
+    .homepage__find-job .dropdown-menu {
+      text-align: center;
+      border: 2px dotted #000000;
+      border-radius: 14px; }
+      .homepage__find-job .dropdown-menu .dropdown-item {
+        border: 1px solid rgba(232, 231, 232, 0.5); }
     .homepage__find-job__btn {
       display: flex;
       padding-top: 33px; }

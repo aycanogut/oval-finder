@@ -1063,8 +1063,8 @@ h4 {
   }
 
   .dropdown-item {
-    @include font(inter, light);
-    font-size: $font-12;
+    @include font(inter, regular);
+    font-size: $font-18;
   }
 
   .search-box {
@@ -1435,6 +1435,11 @@ h4 {
     }
   }
 
+  .dropdown-item {
+    @include font(inter, regular);
+    font-size: $font-18;
+  }
+
   .search-box {
     input {
       font-size: $font-16;
@@ -1596,6 +1601,11 @@ h4 {
     &--find-jobs-now {
       font-size: $font-18;
     }
+  }
+
+  .dropdown-item {
+    @include font(inter, regular);
+    font-size: $font-18;
   }
 
   .search-box {

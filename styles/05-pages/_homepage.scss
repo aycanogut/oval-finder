@@ -320,6 +320,7 @@
         color: $color-black;
       }
     }
+
     &__btn {
       display: flex;
     }
@@ -573,6 +574,16 @@
 
       button {
         padding: 0;
+      }
+
+      .dropdown-menu {
+        text-align: center;
+        border: 2px dotted $color-black;
+        border-radius: 14px;
+
+        .dropdown-item {
+          border: 1px solid rgba($color-bonjour, 0.5);
+        }
       }
 
       &__btn {
@@ -846,8 +857,19 @@
     &__find-job {
       padding: 40px 0;
       text-align: center;
+
       button {
         padding: 0;
+      }
+
+      .dropdown-menu {
+        text-align: center;
+        border: 2px dotted $color-black;
+        border-radius: 14px;
+
+        .dropdown-item {
+          border: 1px solid rgba($color-bonjour, 0.5);
+        }
       }
 
       &__btn > a {
@@ -1053,9 +1075,21 @@
     &__find-job {
       height: 428px;
       padding: 137px 120px;
+
       &__title {
         text-align: center;
       }
+
+      .dropdown-menu {
+        text-align: center;
+        border: 2px dotted $color-black;
+        border-radius: 14px;
+
+        .dropdown-item {
+          border: 1px solid rgba($color-bonjour, 0.5);
+        }
+      }
+
       &__btn {
         display: flex;
         justify-content: center;
@@ -1280,6 +1314,17 @@
           margin-top: -5px;
         }
       }
+
+      .dropdown-menu {
+        text-align: center;
+        border: 2px dotted $color-black;
+        border-radius: 14px;
+
+        .dropdown-item {
+          border: 1px solid rgba($color-bonjour, 0.5);
+        }
+      }
+
       &__btn {
         display: flex;
         padding-top: 33px;
