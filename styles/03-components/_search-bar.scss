@@ -111,6 +111,25 @@
   color: $color-mountainmist;
 }
 
+.dropdown-menu {
+  .dropdown-item {
+    border: 1px solid rgba($color-bonjour, 0.5);
+  }
+}
+
+// search-category dropdowns
+.dropdown {
+  .dropdown-menu {
+    text-align: center;
+    border: 1px solid $color-black;
+    border-radius: 14px;
+
+    .dropdown-item {
+      border: 1px solid rgba($color-bonjour, 0.5);
+      padding: 4px 20px;
+    }
+  }
+}
 // * responsive
 
 // Extra Small devices (phone, 320px and up)

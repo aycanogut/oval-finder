@@ -9355,9 +9355,6 @@ h4 {
   font-weight: 400;
   line-height: 17px; }
 
-.dropdown-item {
-  font-size: 16px; }
-
 .search-box__top {
   font-family: Manrope ExtraBold, sans-serif;
   font-weight: 800;
@@ -9968,7 +9965,9 @@ h4 {
     font-family: Inter Regular, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px; }
+    font-size: 14px; }
+    .dropdown-item--lg {
+      font-size: 18px; }
   .search-box input {
     font-size: 14px; }
   .sort-by {
@@ -10152,7 +10151,9 @@ h4 {
     font-family: Inter Regular, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px; }
+    font-size: 14px; }
+    .dropdown-item--lg {
+      font-size: 18px; }
   .search-box input {
     font-size: 16px; }
   .sort-by {
@@ -10235,7 +10236,9 @@ h4 {
     font-family: Inter Regular, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px; }
+    font-size: 16px; }
+    .dropdown-item--lg {
+      font-size: 18px; }
   .search-box__searchInput {
     font-size: 16px; }
   .sort-by {
@@ -10327,6 +10330,13 @@ h4 {
     line-height: 20px; }
   .card--reviews .card__topper .card__position {
     font-size: 12px; }
+  .dropdown-item {
+    font-family: Inter Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; }
+    .dropdown-item--lg {
+      font-size: 18px; }
   .search-box input {
     font-size: 18px; }
   .navbar__menu, .navbar__btn {
@@ -11855,6 +11865,17 @@ h4 {
 
 .filter {
   color: #8e8c95; }
+
+.dropdown-menu .dropdown-item {
+  border: 1px solid rgba(232, 231, 232, 0.5); }
+
+.dropdown .dropdown-menu {
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 14px; }
+  .dropdown .dropdown-menu .dropdown-item {
+    border: 1px solid rgba(232, 231, 232, 0.5);
+    padding: 4px 20px; }
 
 @media (min-width: 320px) and (max-width: 576px) {
   .search-box {

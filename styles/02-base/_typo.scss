@@ -226,12 +226,6 @@ h4 {
   }
 }
 
-// dropdown-btn
-.dropdown-item {
-  @include font(inter, light);
-  font-size: $font-16;
-}
-
 //  search-box
 .search-box {
   &__top {
@@ -368,9 +362,11 @@ h4 {
       @include font(inter, regular);
       font-size: $font-12;
     }
+
     button {
       font-weight: $bold;
     }
+
     .dropdown-item {
       @include font(inter, light);
       font-size: $font-14;
@@ -1064,7 +1060,10 @@ h4 {
 
   .dropdown-item {
     @include font(inter, regular);
-    font-size: $font-18;
+    font-size: $font-14;
+    &--lg {
+      font-size: $font-18;
+    }
   }
 
   .search-box {
@@ -1437,7 +1436,10 @@ h4 {
 
   .dropdown-item {
     @include font(inter, regular);
-    font-size: $font-18;
+    font-size: $font-14;
+    &--lg {
+      font-size: $font-18;
+    }
   }
 
   .search-box {
@@ -1605,7 +1607,10 @@ h4 {
 
   .dropdown-item {
     @include font(inter, regular);
-    font-size: $font-18;
+    font-size: $font-16;
+    &--lg {
+      font-size: $font-18;
+    }
   }
 
   .search-box {
@@ -1815,6 +1820,14 @@ h4 {
           font-size: $font-12;
         }
       }
+    }
+  }
+
+  .dropdown-item {
+    @include font(inter, regular);
+    font-size: $font-18;
+    &--lg {
+      font-size: $font-18;
     }
   }
 
