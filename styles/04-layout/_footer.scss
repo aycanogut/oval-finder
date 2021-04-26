@@ -19,17 +19,20 @@
     display: flex;
     margin-left: auto;
     padding-right: 30px;
+
     p {
       padding-top: 5px;
       padding-right: 20px;
     }
+
     .dropdown-menu,
     button {
-      // margin-top: -20px;
+      margin-top: -10px;
       color: $color-midgray;
       background-color: transparent;
       border: 1px solid $color-bonjour;
       border-radius: 10px;
+      padding: 12px;
 
       &:hover,
       &:focus,
@@ -375,9 +378,6 @@
           padding-top: 0;
         }
       }
-    }
-
-    &--sm {
     }
 
     &--lg {

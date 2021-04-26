@@ -4,7 +4,7 @@
 
 h1 {
   @include font(inter, medium);
-  font-size: clamp($font-44, $font-56, $font-64);
+  // font-size: clamp($font-44, $font-56, $font-64);
   line-height: clamp(0, 76px, 87px);
   letter-spacing: 3px;
 }
