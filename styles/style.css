@@ -8991,9 +8991,6 @@ a.text-dark:hover {
     border-color: #dee2e6; } }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
-*:focus {
-  outline: none !important; }
-
 body {
   overflow-x: hidden; }
 
@@ -10128,7 +10125,7 @@ h4 {
   .card--reviews .share {
     font-size: 14px; }
   .card--benefits header {
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 17px; }
   .card--benefits p {
     font-size: 12px;
@@ -10262,7 +10259,7 @@ h4 {
     font-size: 48px; }
   .srjOne__result__top .showing,
   .srjOne__result__top .sort-by {
-    font-size: 14px !important; }
+    font-size: 14px; }
   .srjTwo .card__descriptor {
     font-size: 16px; }
   .srjTwo .card__text {
@@ -10469,7 +10466,7 @@ h4 {
 .btn {
   color: #3b3a40; }
   .btn:focus, .btn:after {
-    outline: none !important;
+    outline: none;
     box-shadow: none; }
 
 .dropdown-toggle {
@@ -10801,7 +10798,7 @@ h4 {
     transition-property: color;
     transition-duration: 00.3s;
     color: #3b3a40;
-    text-decoration: none !important; }
+    text-decoration: none; }
   .card__time {
     color: #b3b1b7; }
   .card__description {
@@ -11794,7 +11791,6 @@ h4 {
   .search-box__top__btn {
     color: #3b3a40;
     text-transform: uppercase;
-    text-decoration: none !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -12100,7 +12096,7 @@ h4 {
     .search-box__searchInput .right {
       padding-left: 40px; }
     .search-box--lg {
-      height: 80px !important; }
+      height: 80px; }
       .search-box--lg .search-box__searchInput .input {
         padding: 8px 50px; }
       .search-box--lg .search-box__searchInput .left {
@@ -12188,10 +12184,10 @@ h4 {
   white-space: nowrap; }
 
 .filter a {
-  text-decoration: none !important; }
+  text-decoration: none; }
 
 .filter hr {
-  margin: 0.8rem 0 !important; }
+  margin: 0.8rem 0; }
 
 form .checkbox {
   display: inline-flex;
@@ -12563,7 +12559,7 @@ header.header-homepage .navbar {
         background-color: #d7e5e2; }
 
 .footer__bottom-links ul li a {
-  text-decoration: none !important; }
+  text-decoration: none; }
 
 .footer--sm {
   height: 64px;
@@ -13784,7 +13780,7 @@ header.header-homepage .navbar {
           float: right; }
         .srjOne__result__top .btn {
           margin-top: -6px;
-          padding: 0 !important;
+          padding: 0;
           margin-left: 6px; } }
 
 @media (min-width: 1200px) {
@@ -13888,7 +13884,7 @@ header.header-homepage .navbar {
           float: right; }
         .search-employeers__result__top .btn {
           margin-left: 2px;
-          padding: 0 !important;
+          padding: 0;
           text-underline-offset: 2px; }
     .search-employeers .page-navigations {
       margin-bottom: 101px; } }

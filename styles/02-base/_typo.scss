@@ -1391,7 +1391,7 @@ h4 {
 
     &--benefits {
       header {
-        font-size: $font-14 !important;
+        font-size: $font-14;
         line-height: 17px;
       }
 
@@ -1673,7 +1673,7 @@ h4 {
       &__top {
         .showing,
         .sort-by {
-          font-size: $font-14 !important;
+          font-size: $font-14;
         }
       }
     }

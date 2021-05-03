@@ -1,15 +1,16 @@
 // footer
 
 .footer {
-  // padding-bottom: 44px;
   &__brand {
     img {
       color: $color-coral;
     }
   }
+
   &__list > li > p {
     color: $color-shipgray;
   }
+
   &__list > li > a {
     color: $color-midgray;
   }
@@ -58,7 +59,7 @@
   }
 
   &__bottom-links ul li a {
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
   &--sm {

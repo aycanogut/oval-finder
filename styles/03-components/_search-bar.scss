@@ -7,7 +7,6 @@
     &__btn {
       color: $color-shipgray;
       text-transform: uppercase;
-      text-decoration: none !important;
       @include transition(all 0.3s ease-in-out);
 
       &:link {
@@ -499,6 +498,7 @@
     &__top {
       margin-bottom: 10px;
     }
+
     &__searchInput {
       .input {
         .input-search {
@@ -515,7 +515,8 @@
     }
 
     &--lg {
-      height: 80px !important;
+      height: 80px;
+
       .search-box__searchInput {
         .input {
           padding: 8px 50px;

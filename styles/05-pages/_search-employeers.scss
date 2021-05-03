@@ -206,15 +206,14 @@
         height: 100%;
         padding: 0;
         margin: 0;
-        .showing {
-        }
 
         .btn-group {
           float: right;
         }
+
         .btn {
           margin-left: 2px;
-          padding: 0 !important;
+          padding: 0;
           text-underline-offset: 2px;
         }
       }
