@@ -34,3 +34,58 @@
     @include box-shadow(0px 0px 15px -3px rgba(0, 0, 0, 0.1));
   }
 }
+
+// navbar xs-sm
+@mixin navbar-sm-md {
+  .navbar {
+    z-index: 999;
+
+    &-collapse {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 346px;
+      padding-top: 12px;
+      text-align: center;
+      border-radius: 4px;
+      transition: transform 0.5s ease;
+
+      @include box-shadow(1px 71px 193px 7px rgba(0, 0, 0, 0.1));
+      background-color: rgba($color-white, 0.96);
+      transform: translateX(100%);
+    }
+
+    .burger-toggler {
+      display: block;
+      cursor: pointer;
+      margin-right: 12px;
+
+      div {
+        width: 24px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+      }
+    }
+
+    &__menu {
+      padding: 28px 0;
+    }
+
+    &__menu-left,
+    &__menu-right {
+      .navbar__link,
+      .btn_def,
+      .btn-outline {
+        padding: 0;
+      }
+    }
+
+    .btn-outline .btn_def {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 24px 100px;
+    }
+  }
+}

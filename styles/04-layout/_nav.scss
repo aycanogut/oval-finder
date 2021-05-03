@@ -47,56 +47,15 @@
 
 // Extra Small devices (phone, 320px and up)
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 576px) {
+  @include navbar-sm-md;
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  @include navbar-sm-md;
   .navbar {
-    z-index: 999;
-
     &-collapse {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width: 100%;
-      height: 346px;
-      padding-top: 12px;
-      text-align: center;
-      border-radius: 4px;
-
-      @include box-shadow(1px 71px 193px 7px rgba(0, 0, 0, 0.1));
-      background-color: rgba($color-white, 0.96);
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-
-    .burger-toggler {
-      display: block;
-      cursor: pointer;
-      margin-right: 12px;
-
-      div {
-        width: 24px;
-        height: 3px;
-        margin: 5px;
-        background-color: #000;
-      }
-    }
-
-    &__menu {
-      padding: 28px 0;
-    }
-
-    &__menu-left,
-    &__menu-right {
-      .navbar__link,
-      .btn_def,
-      .btn-outline {
-        padding: 0;
-      }
-    }
-
-    .btn-outline .btn_def {
-      display: inline-block;
-      margin: 10px 0;
-      padding: 24px 100px;
+      transition: 0s;
     }
   }
 }
@@ -108,6 +67,10 @@
     .navbar__list {
       padding: 0 20px;
       white-space: nowrap;
+    }
+
+    &__collapse {
+      transition: transform 0s;
     }
   }
 }

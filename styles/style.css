@@ -10801,7 +10801,7 @@ h4 {
     text-decoration: none; }
   .card__time {
     color: #b3b1b7; }
-  .card__description {
+  .card__description span {
     color: #64626a; }
   .card__bottom p {
     color: #3b3a40; }
@@ -11170,6 +11170,9 @@ h4 {
     .bigger-card .card__bottom {
       padding: 22px 0 20px 20px; }
       .bigger-card .card__bottom__apply span > img {
+        padding-left: 10px; }
+      .bigger-card .card__bottom__apply a {
+        color: #ff8149;
         padding-left: 10px; } }
 
 @media (min-width: 577px) {
@@ -12466,7 +12469,7 @@ form .radio-item input[type="radio"] {
   .navbar .nav-active {
     transform: translateX(0%); }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .navbar {
     z-index: 999; }
     .navbar-collapse {
@@ -12478,12 +12481,12 @@ form .radio-item input[type="radio"] {
       padding-top: 12px;
       text-align: center;
       border-radius: 4px;
+      transition: transform 0.5s ease;
       -webkit-box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
       box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
       background-color: rgba(255, 255, 255, 0.96);
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in; }
+      transform: translateX(100%); }
     .navbar .burger-toggler {
       display: block;
       cursor: pointer;
@@ -12506,10 +12509,54 @@ form .radio-item input[type="radio"] {
       margin: 10px 0;
       padding: 24px 100px; } }
 
+@media (min-width: 577px) and (max-width: 767px) {
+  .navbar {
+    z-index: 999; }
+    .navbar-collapse {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 346px;
+      padding-top: 12px;
+      text-align: center;
+      border-radius: 4px;
+      transition: transform 0.5s ease;
+      -webkit-box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      box-shadow: 1px 71px 193px 7px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.96);
+      transform: translateX(100%); }
+    .navbar .burger-toggler {
+      display: block;
+      cursor: pointer;
+      margin-right: 12px; }
+      .navbar .burger-toggler div {
+        width: 24px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000; }
+    .navbar__menu {
+      padding: 28px 0; }
+    .navbar__menu-left .navbar__link,
+    .navbar__menu-left .btn_def,
+    .navbar__menu-left .btn-outline, .navbar__menu-right .navbar__link,
+    .navbar__menu-right .btn_def,
+    .navbar__menu-right .btn-outline {
+      padding: 0; }
+    .navbar .btn-outline .btn_def {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 24px 100px; }
+  .navbar-collapse {
+    transition: 0s; } }
+
 @media (min-width: 768px) {
   .navbar .navbar__list {
     padding: 0 20px;
-    white-space: nowrap; } }
+    white-space: nowrap; }
+  .navbar__collapse {
+    transition: transform 0s; } }
 
 header.header-homepage .navbar {
   color: black; }
