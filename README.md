@@ -12,8 +12,8 @@ It's a job searching platform website with multiple pages. I learned mobile-firs
 ##### [Original Design on Figma Community](https://www.figma.com/file/0ugxQtFsqDEVbsF6OMeO7F/Oval---Job-Finder-Website-Design?node-id=724%3A0&viewport=231%2C204%2C0.015625)
 <br />
 
-[!alt oval](https://s3.gifyu.com/images/desktopd9633882591dd2f1.gif)
+[!alt oval](https://s3.gifyu.com/images/oval.gif)
 
 
 
-![Farmers Market Finder Demo](https://s3.gifyu.com/images/oval.gif)
+
