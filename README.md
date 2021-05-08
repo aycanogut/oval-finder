@@ -13,4 +13,4 @@ It's a job searching platform website with multiple pages. I learned mobile-firs
 <br />
 
 
-![alt seo-landing-page](https://s3.gifyu.com/images/project.gif)
+# <img alt="YAP" src="http://i.imgur.com/dNYswmI.gif">
