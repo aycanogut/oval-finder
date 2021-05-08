@@ -12,4 +12,5 @@ It's a job searching platform website with multiple pages. I learned mobile-firs
 ##### [Original Design on Figma Community](https://www.figma.com/file/0ugxQtFsqDEVbsF6OMeO7F/Oval---Job-Finder-Website-Design?node-id=724%3A0&viewport=231%2C204%2C0.015625)
 <br />
 
-![alt oval](https://en.wikipedia.org/wiki/SpongeBob_SquarePants_(character)#/media/File:SpongeBob_SquarePants_character.svg)
+
+![alt seo-landing-page](https://s3.gifyu.com/images/project.gif)
