@@ -13052,7 +13052,7 @@ header.header-homepage .navbar {
     place-items: center;
     width: 100%;
     height: 100%;
-    margin-top: 114px; }
+    margin-top: 105px; }
     .homepage__header__image img {
       object-fit: cover;
       min-width: 300px;
@@ -13201,24 +13201,6 @@ header.header-homepage .navbar {
       display: flex;
       justify-content: center;
       margin-top: -22px; } }
-
-@media (min-width: 370px) and (max-width: 458px) {
-  .header-homepage .navbar .btn_def--nav {
-    color: #ffffff; }
-  .header-homepage__clients {
-    background-position: 50%;
-    background-size: auto 300px; } }
-
-@media (min-width: 459px) and (max-width: 576px) {
-  .homepage__clients {
-    background-position: 50% 60%;
-    background-size: auto 280px; }
-    .homepage__clients .owl-carousel {
-      margin-top: 180px; }
-      .homepage__clients .owl-carousel .owl-item {
-        width: 100%; }
-  .homepage__trending__right {
-    padding-top: 20px; } }
 
 @media (min-width: 577px) and (max-width: 767px) {
   .header-homepage {

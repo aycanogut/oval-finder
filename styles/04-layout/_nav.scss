@@ -51,6 +51,8 @@
   @include navbar-sm-md;
 }
 
+//  Small devices (phone, 577px and up)
+
 @media (min-width: 577px) and (max-width: 767px) {
   @include navbar-sm-md;
   .navbar {
