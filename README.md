@@ -13,4 +13,4 @@ It's a job searching platform website with multiple pages. I learned mobile-firs
 <br />
 
 
-# <img alt="YAP" src="http://i.imgur.com/dNYswmI.gif">
+
