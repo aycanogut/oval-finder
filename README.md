@@ -1,6 +1,7 @@
 ### About The Project
 
-It's a job searching platform website with multiple pages. I learned mobile-first design, component based Modular CSS, re-usability of page elements and layouts, Bootstrap grid system, a better grasp usage of semantic HTML elements, responsive web design and had experience working with multiple pages. Still on development.
+It's a multi-paged job-searching platform website.
+I learnt mobile-first design, component-based Modular CSS, reusability of page elements and layouts, the Bootstrap grid system, a deeper understanding of semantic HTML elements, responsive web design, and had experience working with multiple pages.
 
 ### Built With
 ● [HTML](https://html.spec.whatwg.org/)  
