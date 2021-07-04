@@ -1,6 +1,10 @@
 ### About The Project
 
 It's a multi-paged job-searching platform website.
+
+### Preview
+<img src="https://i.ibb.co/ZgJG3z7/oval-template.png" alt="oval-job-finder template image" border="0">
+
 I learnt mobile-first design, component-based Modular CSS, reusability of page elements and layouts, the Bootstrap grid system, a deeper understanding of semantic HTML elements, responsive web design, and had experience working with multiple pages.
 
 ### Built With
@@ -13,7 +17,6 @@ I learnt mobile-first design, component-based Modular CSS, reusability of page e
 ##### [Original Design on Figma Community](https://www.figma.com/file/0ugxQtFsqDEVbsF6OMeO7F/Oval---Job-Finder-Website-Design?node-id=724%3A0&viewport=231%2C204%2C0.015625)
 <br />
 
-![alt oval-finder](https://s3.gifyu.com/images/ovalbc18137e6033c966.gif)
 
 
 
