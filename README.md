@@ -18,6 +18,8 @@ I learnt mobile-first design, component-based Modular CSS, reusability of page e
 <br />
 
 
+## License
 
+Licensed under the MIT license, see [LICENSE](https://github.com/aycanogut/oval-finder/blob/main/LICENSE) for details.
 
 
